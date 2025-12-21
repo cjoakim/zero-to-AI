@@ -1,3 +1,47 @@
+# cj
+
+**/.DS_Store
+**/.env
+**/.gradle/
+**/.idea/
+**/.promptflow/
+**/.vscode/
+**/.vscode
+**/__pycache__/
+**/__MACOSX/
+**/bin/
+**/build/
+**/chroma/
+**/dist/
+**/gradle/
+**/include/
+**/htmlcov/
+**/lib/
+**/lib64/
+**/man/
+**/node_modules/
+**/obj/
+**/out/
+**/tmp/
+**/Scripts/
+**/.venv/
+**/venv/
+
+**/*.class
+**/*.jar
+**/pyvenv.cfg
+**/.override.properties*
+
+# Terraform
+**/.terraform/*
+**/.terraform.lock.hcl
+**/.plan
+**/.tfstate
+**/.tfstate.*
+*.tfstate
+*.tfstate.*
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
