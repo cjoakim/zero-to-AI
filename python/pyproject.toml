@@ -57,3 +57,8 @@ line-length = 100
 
 [tool.ruff.lint]
 ignore = ["E722"]
+
+[tool.uv.workspace]
+members = [
+    "tmp/my-project",
+]

@@ -1,13 +1,79 @@
 # Part 1, Session 0 - Preparing for this Series
 
 
+## Who are we, and where are we going?
+
 <p align="center">
    <img src="img/hikers-looking-at-map.jpg" width="60%">
 </p>
 
+## Audience
 
-## Audience - anyone at 3Cloud interested in learning hand-on AI and Python
+- Anyone at 3Cloud interested in learning hands-on AI with Python, including:
+  - Project Managers
+  - Developers (Junior to Senior, Low-code to High-code, any programming language)
+  - Data Engineers (Spark, Databricks)
+  - Data Analysts
+  - Data Scientists (ML)
+  - AI Architects
+  - AI Engineers
+  - Testers
+  - Business Analysts
+  - Managers
+  - And more...
 
+## The Goal of this Series
+
+- **The primary goal is to enable you to learn and implement hands-on AI solutions yourself**
+  - The hands-on nature, IMO, enables you to truly learn AI
+  - Hands-on means you can execute the lesson samples yourself, and comprehendthe code
+  - Goal is 100-level, or 200, 300, or 400 level
+  - To put you in a better position to serve our customers
+
+### Secondary Goals
+
+In order to achieve the above primary goal, we will, in this sequence:
+
+- Introduce you to Application Development with Git, GitHub, and Python
+  - At a minimum, have you "git clone" this GitHub repository for your use in this series
+- Introduce you to the most relevant Azure PaaS Services for AI Applications
+  - Storage, Foundry (LLMs), OpenAI, Cosmos DB, Search
+- Introduce you to AI concepts and technologies
+  - Document Intelligence, Knowledge Graphs, MCP, Agent Framework, Prompting, RAG, Vector Search, etc.
+- Provide working code to jump-start your personal learning journey
+
+### Are we going to cover everything you need to know about AI?
+
+- No.  But we'll cover enough to jump-start your personal learning journey
+
+### Is the series customized for me and my unique needs?
+
+- No.  Obviously not, but the goal is to appeal to a broad audience wanting guidance and direction in their AI journey.
+
+
+## My Goal
+
+- Is to **"Teach you to Fish"** in these ~20 **bite-size** lessons/sessions
+- Provide you with an understanding of the core concepts and technologies
+- Provide you with a working codebase to jump-start your personal learning journey
+- To encourage, coach, and guide you
+  - But not teach you the details of each topic; my time is finite
+
+### Why Python?
+
+- Python is the most popular programming language in the world
+- **Python is the most popular language for AI**
+- Python is relatively easy to learn and use
+- Python has a very broad range of use-cases 
+  - AI/ML
+  - Web Services and Apps
+  - Data Science
+  - System Administration
+  - Ad-hoc scripting
+  - Many others...
+- Microsoft has a broad range of Python SDKs for Azure services
+  - SDK = Software Development Kit
+  - See [Microsoft Azure SDK for Python](https://github.com/Azure/azure-sdk-for-python)
 
 ## Your Guide - Chris Joakim
 
@@ -22,17 +88,10 @@
 - Successful mentor at Microsoft - Cosmos DB Insiders, Data & AI peers
 - A persistent optimist; **you CAN learn Python and AI**
 
-## Goals
+### Why did I volunteer to create and present this series?
 
-- Introduce you to Application Development with Git, GitHub, and Python
-- Introduce you to the most relevant Azure PaaS Services for AI
-- Introduce you to AI
-- **"Teach you to Fish"** in ~20 **bite-size** lessons/sessions
-
-## Why did I volunteer to create and teach this course?
-
-- I've seen the need, at Microsoft, for technical enablement amongst my peers
-- I see the same need at 3Cloud
+- I've seen a great need, at Microsoft, for technical enablement amongst my peers
+- I'm seeing the same need at 3Cloud, especially as AI is transforming us so rapidly
 - Hands-on enablement in Python and AI can unleash your understanding, skills, value, success
 - To put us in a better position to understand and serve our customers
 
@@ -48,41 +107,49 @@
 
 ## Each Session
 
-- A "Bite-size" 30-minute Teams meetings
-- First five minutes for Q&A from previous Session
-- Next 15-20 minutes for presentation and demonstration
-- Last 5-10 minutes for questions and discussion
-- Post your questions in the Teams meeting chat
+- "Bite-size" 30-minute Teams meetings to cover one topic
+- First five minutes is for Q&A from previous Session
+- Next 15-20 minutes is for presentation and demonstration (please be on mute)
+  - Post your questions in the Teams meeting chat
+- Last 5-10 minutes is for questions and discussion
+- Sessions will be recorded for your reference
 
 ## Let's build a Learning Community in Teams
 
-- Help each other.  Learn from each other.
-- I'll monitor the Teams channel, but my time for 1:1s is limited
+- Help each other.  Learn from each other
+- I'll monitor the Teams channel, but my time for one-on-one conversations is limited
+- I'd like to see leaders emerge in this channel, to help the others
 
 ## Azure
 
 - You won't use Azure Portal in this series
-- I'll share read-only keys to Azure resources instead
 - You don't have to provision Azure resources
-- Don't create or configure the Azure resources used in this series
-- But learn in another Azure Subscription if you wish to
+- I'll share read-only keys to Azure resources instead (in a 3Cloud Subscription)
+- This will enable you to focus on learning, not provisioning and DevOps
+- But please learn in another Azure Subscription if you wish to
+
+### Personal Azure Accounts 
+
+- I encourage you to create one for your ongoing educational use
+- [Create a Personal Azure Account](https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account/search)
+- [Free Services](https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account/search#Free-products)
+- [Cost Management](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/spending-limit)
+  - I've configured my personal account to have a spending limit of $20 per month
 
 ## Homework
 
-- Just execute the lesson samples yourself, and look at the code
+- **Execute the lesson samples yourself, and look at the code**
 - All code in this series can be executed from your laptop
 - Visit the referenced links in each lesson
 
 ## Expectation/Hope
 
-- Focus on learning; absorb what you can
-- The hardest sessions will be on installing git, python, uv
-- Get a working git, python, and uv on your laptop ASAP
+- The hardest sessions will be the first two on installing git, python, uv
+- Get a working git, python, uv, and cloned repository on your laptop ASAP
 - Please stay engaged, don't drop out if you feel you're falling behind
-- There will be time to catch up
-- Please excute the sample programs in the lessons; hands-on is important for learning
-- Be curious
-- Lean forward, engage, ask questions
+  - There will be time to catch up
+- **Execute the lesson samples yourself, and look at the code**
+- Be curious, lean forward, engage, learn
 
 ## Out of Scope
 
@@ -90,30 +157,15 @@
 - Databricks (but Jupyter and Notebooks are covered)
 - Provisioning Azure resources
 - DevOps
-- LangChain; the focus is on Microsoft and Agent Framework
-- Other programming languages
-- A Certificate or exam at the end of the series; just learn
+- LangChain and Semantic Kernel
+  - The focus is on the new Microsoft Agent Framework
+- Other programming languages - C#, Java, TypeScript, etc.
+- Architecture and Design
+  - The focus in this series is on the **Building-Blocks**, not designing entire applications
 
 ## In Summary, the Goal is to **"Teach you to Fish" regarding AI, with Python**
 
-### I won't give you this 
-
 <p align="center">
-   <img src="img/prepared-salmon-meal.jpg" width="60%">
+   <img src="img/fishing-pole.png" width="80%">
 </p>
 
-### But I'll help teach you how to use this 
-
-<p align="center">
-   <img src="img/fishing-pole.png" width="60%">
-</p>
-
-### This is you in 2026
-
-<p align="center">
-   <img src="img/woman-smiling-with-fish.jpg" width="60%">
-</p>
-
-<p align="center">
-   <img src="img/man-smiling-with-fish.jpg" width="60%">
-</p>
