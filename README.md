@@ -8,7 +8,7 @@ The goal is to **empower students to build AI solutions.**
 
 # Series Outline
 
-Version 2026-01-10a
+Version 2026-01-10b
 
 ## Part 1 - The Basics
 

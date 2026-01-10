@@ -29,8 +29,7 @@ from src.io.fs import FS
 from src.os.env import Env
 
 
-def print_options(msg):
-    print(msg)
+def print_options():
     arguments = docopt(__doc__, version="1.0.0")
     print(arguments)
 
@@ -39,6 +38,7 @@ def postal_codes_nc():
     """
     Read a local CSV file with DuckDB.
     Then query it with SQL.
+    Then transform the CSV data into a JSON file.
     """
     infile = "data/postal_codes/postal_codes_nc.csv"
     rel = duckdb.read_csv(infile)
@@ -51,6 +51,8 @@ def postal_codes_nc():
     davidson.show()
     print(rel.df().columns.tolist())
 
+    # Transform the CSV data into a JSON file.
+    # DuckDB has some dataframe methods - df().
     outfile = "tmp/postal_codes_nc.json"
     rel.df().to_json(outfile, orient="records", lines=True)
     print(f"file written: {outfile}")
@@ -59,7 +61,7 @@ def postal_codes_nc():
 def imdb():
     data = duckdb.read_csv("https://datasets.imdbws.com/name.basics.tsv.gz")
     data.show()
-    print(data.shape)  # (14972403, 6) <-- 14-million+ rows!
+    print(data.shape)  # (15003543, 6) <-- 15-million+ rows!
 
     # See https://developer.imdb.com/non-commercial-datasets/
     # name.basics.tsv.gz
@@ -287,7 +289,7 @@ if __name__ == "__main__":
             elif func == "augment_openflights_airports":
                 augment_openflights_airports()
             else:
-                print_options("Error: invalid function: {}".format(func))
+                print_options()
     except Exception as e:
         print(str(e))
         print(traceback.format_exc())
