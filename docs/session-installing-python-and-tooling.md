@@ -1,27 +1,54 @@
 # Part 1, Session 2 - Installing Python and Tooling
 
-## Install Python 3.x
+<br>
 
-- Please use python.org python, not Anaconda or other distributions
- - 3.13 or 3.14
- -[Download](https://www.python.org/downloads/)
- -[YouTube Video](https://www.youtube.com/watch?v=fjzwqEoFTww)
+**This may be the most important session in this series, as it will enable you to be successful with this series, and with Python and AI in general.**
+
+<br>
+
+## Install Python 3.1x
+
+- Please use **python.org python**, not Anaconda or other distributions
+- 3.13 or 3.14
+- [Download Page](https://www.python.org/downloads/)
+- [YouTube Video on Installing Python on Windows 11](https://www.youtube.com/watch?v=fjzwqEoFTww)
+
+<br><br><br>
+---
+<br><br><br>
 
 ## What are "Package Managers"?
 
-- They allow you to define and install the third-party libraries in your project
-  - The package manager will reconcile **their** dependencies
-- Current options are pip, poetry, uv, et al
-- This variety of options is typical of open-source
-- "Dependency Hell" is where you have incompatible library versions
+- **They allow you to define, then reconcile and install, the third-party libraries in your project**
+
+- For example, if you want to use Azure Cosmos DB and Azure Storage in your project
+  - Defined, in this series, in the **pyproject.toml file** - discussed below
+- Current python options are pip, poetry, **uv**, and others
+  - This variety of options is typical of open-source
+- They determine and resolve the **Dependency Graph** for you 
+  - Your app uses Library A 
+  - Library A uses Library B 
+  - Library B uses Library C
+  - Library D also uses Library C
+  - etc, etc, etc.
+  - The dependency graph also includes **the version of each library to use**
+- They download the resolved set of dependencies
+- **"Dependency Hell"** is where you have incompatible library versions.  For example:
+  - Your application depends on libraries A and Library B
+  - Library A depends on version 1.0.0 of Library X
+  - Library B depends on version 2.0.0 of Library X
 - By comparison, the Java ecosystem has several package managers also: Maven and Gradle
-- The DotNet ecosystem is much simpler
+- The DotNet ecosystem is much simpler - the dotnet CLI program
+
+<br><br><br>
+---
+<br><br><br>
 
 ## Install the uv package manager
 
-- This is a modern and very fast python project manager, written in Rust
+- This is a modern and **very fast python project manager**, written in Rust
 - It is much faster than the pip tool
-- uv is used by Microsoft for their Azure SDKs for Python
+- **uv is used by Microsoft for their Azure SDKs for Python**
 - [What is UV?](https://docs.astral.sh/uv/)
 - [Installation Instructions](https://docs.astral.sh/uv/getting-started/installation/)
   - Several options are shown there, use the one you're most comfortable with
@@ -34,10 +61,27 @@
 - I use it to reformat my code 
   - See the **code-reformat.ps1** and **code-reformat.sh** scripts in this repository
   - It's a good idea for Development teams to use a standard code style, reduces friction
-- Optionally install ruff if you'd like, but it's not required in this series
+- **Optionally install ruff if you'd like** - it's not required in this series
 - [Overview](https://docs.astral.sh/ruff/)
 - [Installation Instructions](https://docs.astral.sh/ruff/installation/)
   - Several options are shown there, use the one you're most comfortable with
+
+<br><br><br>
+---
+<br><br><br>
+
+## Terminology: Python "Virtual Environment"
+
+- A **"Virtual Environment"** is an isolated project-specific version of Python and a set of libraries you need for that project
+- So that you can have several python projects on your system 
+  - Since each project will have its own unique set of required libraries (i.e. - dependencies)
+  - The python [venv module](https://docs.python.org/3/library/venv.html) is the standard way to create a virtual environments
+  - The [uv program has a venv command](https://docs.astral.sh/uv/pip/environments/) to create a virtual environment
+    - **We will use uv venv in this series.**
+
+<br><br><br>
+---
+<br><br><br>
 
 ## Demonstration - Creating a Python Project with uv
 
@@ -52,7 +96,7 @@ cd my-project/                      Navigate ino the new direcctory (PowerShell 
 
 uv add numpy pandas jupyter         Add three third-party libraries to your project
 
-uv venv                             Creating a new python virtual environment in, the .venv directory
+uv venv                             Creating a new python virtual environment (in the .venv directory)
 
 .\.venv\Scripts\activate            Activate the virtual environment (on Windows, in PowerShell)
 - or -
@@ -66,26 +110,57 @@ uv tree                             Display the dependency graph of your project
 
 python --version                    Display the version of python you are using
 
-Python 3.14.2                       See the output in your PowerShell or Terminal
+Python 3.14.2                       See the output in your PowerShell or Terminal (you may have a different version)
 
 python main.py                      Run the program (the main.py file)
 
 Hello from my-project!              See the output from main.py
 ```
 
+<br><br>
+
 Note: The **venv.ps1** (Windows PowerShell) and **venv.sh** (macOS/Linus bash)
 scripts in this repository execute the last several commands shown above.
 You can copy and reuse these scripts in your own projects (I do).
 
+### Wait, when do you create and activate a python virtual environment?
+
+#### Create 
+
+- You should create a virtual environment when you start a new project
+- Or when your project's dependencies change
+
+#### Activate
+
+- You must **activate** the virtual environment each time you navigate into that project directory
+- Activate on Windows with the **.venv\Scripts\activate** command
+- Activate on macOS/Linux with the **source .venv/bin/activate** command
+
+<br><br><br>
+---
+<br><br><br>
+
+## Your Homework 
+
+- Install Python and uv as described in this session
+- Run the above demonstration on your computer
+- Post this message into Teams: "Installed Python and uv, and ran the demonstration!"
+  - This will enable us to know that the group is successful
+  - Reach out in Teams if you get stuck
+
+<br><br><br>
+---
+<br><br><br>
+
 ## The pyproject.toml file
 
 - uv uses this file to define your project - the dependencies, etc.
-- Dependencies are third-party libraries that your project uses
-- Python has a rich set of standard libraries
-- But you can also use third-party libraries
+- Dependencies are the third-party libraries that your project uses
+- Python has a rich set of **Standard Libraries**
+- But you can also use **Third-party Libraries**
   - One reason why Python is so popular is because of the rich set of third-party libraries available
-  - Such as the Microsoft Azure SDK for Python
-  - FastAPI, FastMCP, SQLAlchemy, etc.
+  - Such as the **Microsoft Azure SDKs for Python**
+  - **FastAPI**, **FastMCP**, **SQLAlchemy**, etc.
   - See [PyPI (Python Package Index)](https://pypi.org) for these libraries
 
 See file python/pyproject.toml in this repository.
@@ -154,23 +229,38 @@ line-length = 100
 ignore = ["E722"]
 ```
 
+<br><br><br>
+---
+<br><br><br>
+
 ## References
 
- -[venv and Virtual Environments](https://docs.python.org/3/library/venv.html)
- -[Creating Projects with uv](https://docs.astral.sh/uv/concepts/projects/init/)
- -[TOML, A config file format for humans](https://toml.io/en/)
- -[The tomllib standard library](https://docs.python.org/3/library/tomllib.html)
- -[Microsoft Azure SDK for Python](https://github.com/Azure/azure-sdk-for-python)
+- [venv and Virtual Environments](https://docs.python.org/3/library/venv.html)
+- [Creating Projects with uv](https://docs.astral.sh/uv/concepts/projects/init/)
+- [TOML, A config file format for humans](https://toml.io/en/)
+- [The tomllib standard library](https://docs.python.org/3/library/tomllib.html)
+- [Microsoft Azure SDK for Python](https://github.com/Azure/azure-sdk-for-python)
+
+<br><br><br>
+---
+<br><br><br>
 
 ## Wait, what's a "Standard Library"?
 
-- Python is a programming language
+- Python is a programming language with a defined yntax
 - But it also includes a built-in set of libraries that are included with the python distribution
- -[The Standard Libraries](https://docs.python.org/3/library/index.html)
+  - **"Batteries included"**
+- [The Standard Libraries](https://docs.python.org/3/library/index.html)
+
+
+<br><br><br>
+---
+<br><br><br>
 
 ## uv library list 
 
-You can run command **uv pip list** to see the list of libraries installed in your virtual environment.
+You can run command **uv pip list** to see the list of libraries installed in your virtual environment
+for this series.  This list will evolve over time, but you should see similar results.
 
 ```
 $ uv pip list
@@ -373,6 +463,10 @@ zero-to-ai                               0.1.0        /Users/cjoakim/github/zero
 zipp                                     3.23.0
 ```
 
+<br><br><br>
+---
+<br><br><br>
+
 ## uv library dependency graph 
 
 - The package managers do a lot "under the covers"
@@ -383,6 +477,7 @@ zipp                                     3.23.0
 - uv strives to reconcile the versions of the libraries to avoid "dependency hell"
 - The following is a visualization of the dependency graph for the zero-to-AI project
 - Execute it with the **uv tree** command
+- This graph will evolve over time, but you should see similar results
 
 ```
 uv tree

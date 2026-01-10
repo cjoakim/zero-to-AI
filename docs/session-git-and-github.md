@@ -1,24 +1,44 @@
 # Part 1, Session 1 - Git and GitHub
 
+<br><br><br>
+---
+<br><br><br>
+
+## Wait, why are we talking about Git and GitHub?
+
+- At a minimum, you'll need to "git clone" this GitHub repository for your use in this series
+- It's good to know about how team software development works, and how Git and GitHub fit into it
+- You'll want to use Git and GitHub for your own projects
+- Development teams (including PMs) can share files related to their projects
+- **It's a foundational technology for software and AI development**
+
+<br><br><br>
+---
+<br><br><br>
 
 ## Preamble
 
-- There are some things we don't think about much with modern technology 
+- **There are some things we don't think about much with modern technology**
   - They just work, but they're amazing and complex
   - Like, how do cell phones work?
   - Like, how does the Internet work?
-  - Like, how do we coordinate the changes of many people working on the same codebase?
+  - Like, how do we coordinate the changes of many people working concurrently on the same codebase?
   - **Git was created by Linus Torvalds for the development of Linux**
     - To more easily manage the many contributions by a worldwide Dev Team
-    - It just works, beautifully
+    - **It just works, beautifully**
     - It is so much better that what came before it (CVS, SVN, VSS, Panvalet, etc.)
+    - Most of "the cloud" runs on Linux, btw
 
-## Description
+<br><br><br>
+---
+<br><br><br>
+
+## What is Git?
 
 - **Git** is a **distributed** and modern Source Control System (DSCM)
+- It allows multiple developers to work on the same codebase concurrently
 - It does not use a **locking** model
 - It has some amazing **merge** functionality
-  - Allows several developers to concurrently work on the same file
 - It creates versions of each file, with incremental changes
   - Allows you to revert to a previous version of the code
   - Allows you to see a **diff** of the changes between two versions of the code
@@ -26,7 +46,7 @@
   - GitLab, BitBucket, and others
 - Git can be used locally on your workstation without GitHub
 - The .gitignore file
-  - Is used to specify the files and paths shouldn't be stored in git
+  - Is used to specify the files and paths that **shouldn't** be stored in git
   - secrets, passwords, URLs, credentials, etc.
   - binary files produced in the compilation and build process 
   - output files from the execution of the program
@@ -36,27 +56,39 @@
   - Developers create **feature branches** then **merge** these changes into the main Branch
   - You can **rebase** a feature branch to catch it up with the main branch
 - Pull Requests (i.e. - PRs)
-  - Area peer requests to review and merge a feature branch into the main branch
+  - Area peer requests to review and **merge a feature branch into the main branch**
   - There are many ways to do this - approver lists, workflows, CI/CD DevOps, etc.
   - This is out-of-scope for this series
 
+<br><br><br>
+---
+<br><br><br>
+
 ## Installation
 
-This is required for this series, so that you can clone the Series GitHubrepository.
+This is required for this series, so that you can clone the Series GitHub repository.
 
- -[Download](https://git-scm.com/install/)
- -[macOS Homebrew](https://formulae.brew.sh/formula/git)
+ - [Downloads for Windows, macOS, and Linux](https://git-scm.com/install/)
+ - [macOS Homebrew installation](https://formulae.brew.sh/formula/git)
+ - [YouTube video on installing Git](https://www.youtube.com/watch?v=8HhEupU4iGU)
+
+<br><br><br>
+---
+<br><br><br>
 
 ## GitHub Account Creation
 
-This is optional for this series, but strongly recommended for your career.
+ - [Account Creation](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
+ - [Types of Accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts)
+ - [YouTube video on creating a GitHub account](https://www.youtube.com/watch?v=w5-4WeyOtN4)
 
- -[Account Creation](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
- -[Types of Accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts)
+<br><br><br>
+---
+<br><br><br>
 
-## Configuration
+## Configuration on your Workstation/Laptop
 
-Configure your user.name and user.email.
+After git is installed, configure your **user.name** and **user.email** in Windows PowerShell or macOS Terminal.
 
 ```
 git config --help 
@@ -67,16 +99,24 @@ git config --global user.name  "Jane Smith"
 git config --global user.email "jane.smith@gmail.com"
 ```
 
+<br><br><br>
+---
+<br><br><br>
+
 ## Authentication
 
 - Password and SSH (secure shell protocol)
- -[GitHub Authentication Docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github)
+- [GitHub Authentication Docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github)
+
+<br><br><br>
+---
+<br><br><br>
 
 ## Git Commands
 
 See the [docs](https://git-scm.com/docs) for more information on the following commands.
 
-This [Git Cheat Sheet](https://git-scm.com/cheat-sheet) is useful for reference.
+This [Git Cheat Sheet](https://git-scm.com/cheat-sheet) is a useful reference.
 
 - [git help](https://git-scm.com/docs/git-branch) - create a new branch
 - [git clone](https://git-scm.com/docs/git-clone) - copy a remote repository to your local machine
@@ -99,11 +139,11 @@ git clone https://github.com/cjoakim/zero-to-AI.git
 
 ### Then, keep it up-to-date each week 
 
-I plan on updating the repository each week, on Sundays, with new content
-for the next week's sessions.
+**I plan on updating the repository each week, on Mondays, with new content for the next week's sessions.**
 
 ```
-git pull
+git reset --hard             # This abandons your current pending changes; resets git to the last commit
+git pull                     # This fetches and merges changes from the remote repository
 ```
 
 ### Creating a Branch 
@@ -135,15 +175,21 @@ Then optionally create a "Pull Request" in the GitHub UI to request a peer revie
 There are many ways to do this - approver lists, workflows, CI/CD DevOps, etc.
 This is out-of-scope for this series.
 
+<br><br><br>
+---
+<br><br><br>
 
 ## GitHub Desktop UI
 
- -[Installation](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop)
+- [Installation](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop)
 
 <p align="center">
    <img src="img/github-desktop.png" width="95%">
 </p>
 
+<br><br><br>
+---
+<br><br><br>
 
 ## Pro Tip: Aliases I use
 
@@ -189,6 +235,8 @@ function gurl {
     git config --get remote.origin.url
 }
 ```
+
+<br><br><br>
 
 ## References
 

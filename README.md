@@ -8,14 +8,14 @@ The goal is to **empower students to build AI solutions.**
 
 # Series Outline
 
-Version 2025-12-29b
+Version 2026-01-10a
 
 ## Part 1 - The Basics
 
 -  0  -  [Preparing for this Series](docs/session-preparing-for-this-series.md)
 -  1  -  [Git and GitHub](docs/session-git-and-github.md)
 -  2  -  [Installing Python and Tooling](docs/session-installing-python-and-tooling.md)
--  3  -  [A Python CLI Program](docs/session-a-python-cli-program.md)
+-  3  -  [A Python CLI (Command Line Interface) Program](docs/session-a-python-cli-program.md)
 -  4  -  [A Python UI app with Streamlit](docs/session-a-python-ui-app-with-streamlit.md)
 -  5  -  [Data Wrangling](docs/session-data-wrangling.md)
 -  6  -  [Notebooks, Jupyter, Notebooks, Dataframes, Pandas, DuckDB](docs/session-notebooks-jupyter-notebooks-dataframes-pandas-duckdb.md)
@@ -25,7 +25,7 @@ Version 2025-12-29b
 ## Part 2 - Foundational Azure Services
 
 -  9  -  [Azure Storage](docs/session-azure-storage.md)
--  10  -  [Azure Foundry, Deploying Models/LLMs, Tokens, Throughput](docs/session-azure-foundry-deploying-models/llms-tokens-throughput.md)
+-  10  -  [Azure Foundry, Deploying Models/LLMs, Tokens, Throughput](docs/session-azure-foundry-llms-tokens-throughput.md)
 -  11  -  [Azure OpenAI SDK](docs/session-azure-openai-sdk.md)
 -  12  -  [Azure CosmosDB](docs/session-azure-cosmosdb.md)
 -  13  -  [Azure Search](docs/session-azure-search.md)
