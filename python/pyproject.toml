@@ -27,6 +27,7 @@ dependencies = [
   "pandas>=2.3.0", 
   "psutil",
   "pydantic-core>=2.41.0",
+  "pylint>=4.0.4",
   "pytest-asyncio>=1.0.0",
   "pytest-cov>=6.1.1",
   "pytest>= 8.3.5",
@@ -60,13 +61,12 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/cjoakim/zero-to-AI/"
 
+# See https://docs.astral.sh/ruff/rules/
+# ruff rule --all 
+
 [tool.ruff]
 line-length = 100
 
-[tool.ruff.lint]
-ignore = ["E722"]
-
-[tool.uv.workspace]
-members = [
-    "tmp/my-project",
-]
+[tool.pylint]
+max-line-length = 120          # Set maximum line length
+output-format = "colorized"     # Set output format
