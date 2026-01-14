@@ -34,7 +34,13 @@ jobs:
       run: |
         source .venv/bin/activate
         uv pip install --editable .
-        
+
+    - name: Display uv tree
+      working-directory: ./python
+      run: |
+        source .venv/bin/activate
+        uv tree
+
     - name: Run pylint
       id: pylint
       working-directory: ./python
