@@ -39,19 +39,23 @@ jobs:
       id: pylint
       working-directory: ./python
       run: |
-        mkdir -p tmp
         source .venv/bin/activate
-        date > tmp/date.txt
-        pylint --errors-only *.py src 2>&1 > tmp/pylint_output.txt
-        cat tmp/date.txt
-        cat tmp/pylint_output.txt
+        pylint_output=$(pylint --errors-only *.py src 2>&1 || true)
+        line_count=$(echo "$pylint_output" | wc -l | tr -d ' ')
+        echo "pylint_output<<EOF" >> $GITHUB_OUTPUT
+        echo "$pylint_output" >> $GITHUB_OUTPUT
+        echo "EOF" >> $GITHUB_OUTPUT
+        echo "line_count=$line_count" >> $GITHUB_OUTPUT
+        #echo "Pylint output line count: $line_count"
+        echo "$pylint_output"
         
     - name: Check pylint results
       working-directory: ./python
       run: |
-        line_count=$(cat tmp/pylint_output.txt | wc -l)
+        line_count="${{ steps.pylint.outputs.line_count }}"
         if [ -z "$line_count" ] || [ "$line_count" -gt "0" ]; then
-          echo "Pylint found errors (output length: ${line_count:-unknown} lines)"
+          echo "Pylint found errors (output length: ${line_count:-unknown} lines). Output:"
+          echo "${{ steps.pylint.outputs.pylint_output }}"
           exit 1
         else
           echo "Pylint passed with no errors (output length: 0 lines)."
