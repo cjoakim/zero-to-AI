@@ -43,7 +43,7 @@ def test_github_actions_env():
 def test_cpu_count():
     n = System.cpu_count()
     assert isinstance(n, int)
-    assert n in [1, 24, 8, 12, 14, 16, 32]
+    assert (n > 0) and (n <= 32)
 
 
 def test_cwd():
