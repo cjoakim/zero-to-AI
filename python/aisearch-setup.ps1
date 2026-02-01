@@ -1,3 +1,4 @@
+#!/bin/bash
 
 # Invoke Azure AI Search Service, smoketest class AISearchUtil.
 # Chris Joakim, 3Cloud/Cognizant, 2026
