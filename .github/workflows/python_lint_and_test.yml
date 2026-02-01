@@ -1,0 +1,79 @@
+name: python_lint_and_test
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+        
+    - name: Install uv
+      uses: astral-sh/setup-uv@v4
+      with:
+        version: "latest"
+        
+    - name: Create virtual environment
+      working-directory: ./python
+      run: uv venv
+      
+    - name: Install dependencies
+      working-directory: ./python
+      run: |
+        source .venv/bin/activate
+        uv pip install --editable .
+
+    - name: Display uv tree
+      working-directory: ./python
+      run: |
+        source .venv/bin/activate
+        uv tree
+
+    - name: Run pylint
+      id: pylint
+      working-directory: ./python
+      run: |
+        source .venv/bin/activate
+        pylint_output=$(pylint --errors-only *.py src 2>&1 || true)
+        line_count=$(echo "$pylint_output" | wc -l | tr -d ' ')
+        echo "pylint_output<<EOF" >> $GITHUB_OUTPUT
+        echo "$pylint_output" >> $GITHUB_OUTPUT
+        echo "EOF" >> $GITHUB_OUTPUT
+        echo "line_count=$line_count" >> $GITHUB_OUTPUT
+        #echo "Pylint output line count: $line_count"
+        echo "$pylint_output"
+        
+    - name: Check pylint results
+      working-directory: ./python
+      run: |
+        line_count="${{ steps.pylint.outputs.line_count }}"
+        if [ -z "$line_count" ] || [ "$line_count" -gt "1" ]; then
+          echo "Pylint found errors (output length: ${line_count:-unknown} lines). Output:"
+          echo "${{ steps.pylint.outputs.pylint_output }}"
+          exit 1
+        else
+          echo "Pylint passed with no errors (output length: ${line_count:-unknown} lines)."
+          echo "${{ steps.pylint.outputs.pylint_output }}"
+          exit 0
+        fi
+
+    - name: Run pytest unit tests with coverage
+      working-directory: ./python
+      run: |
+        mkdir tmp
+        cp github_actions_dotenv .env
+        cat .env
+        source .venv/bin/activate
+        pytest -v --cov=.
