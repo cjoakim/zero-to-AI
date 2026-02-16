@@ -9,11 +9,19 @@ aiofiles==25.1.0
 aiohappyeyeballs==2.6.1
     # via aiohttp
 aiohttp==3.13.3
-    # via zero-to-ai (pyproject.toml)
+    # via
+    #   zero-to-ai (pyproject.toml)
+    #   azure-ai-evaluation
 aiosignal==1.4.0
     # via aiohttp
+alembic==1.18.4
+    # via zero-to-ai (pyproject.toml)
 altair==6.0.0
     # via streamlit
+annotated-doc==0.0.4
+    # via
+    #   fastapi
+    #   typer
 annotated-types==0.7.0
     # via pydantic
 anyio==4.12.1
@@ -24,8 +32,7 @@ anyio==4.12.1
     #   openai
     #   sse-starlette
     #   starlette
-appnope==0.1.4
-    # via ipykernel
+    #   watchfiles
 argon2-cffi==25.1.0
     # via jupyter-server
 argon2-cffi-bindings==25.1.0
@@ -43,25 +50,42 @@ async-lru==2.0.5
 attrs==25.4.0
     # via
     #   aiohttp
+    #   cyclopts
     #   jsonschema
     #   referencing
-azure-ai-agents==1.1.0
-    # via azure-ai-projects
+authlib==1.6.8
+    # via fastmcp
+av==16.0.1
+    # via zero-to-ai (pyproject.toml)
+azure-ai-agents==1.2.0b6
+    # via
+    #   zero-to-ai (pyproject.toml)
+    #   azure-ai-projects
 azure-ai-documentintelligence==1.0.2
+    # via zero-to-ai (pyproject.toml)
+azure-ai-evaluation==1.15.0
     # via zero-to-ai (pyproject.toml)
 azure-ai-projects==1.0.0
     # via zero-to-ai (pyproject.toml)
+azure-ai-textanalytics==5.3.0
+    # via zero-to-ai (pyproject.toml)
 azure-common==1.1.28
-    # via azure-search-documents
+    # via
+    #   azure-ai-textanalytics
+    #   azure-mgmt-applicationinsights
+    #   azure-search-documents
 azure-core==1.36.0
     # via
     #   zero-to-ai (pyproject.toml)
     #   azure-ai-agents
     #   azure-ai-documentintelligence
+    #   azure-ai-evaluation
     #   azure-ai-projects
+    #   azure-ai-textanalytics
     #   azure-core-tracing-opentelemetry
     #   azure-cosmos
     #   azure-identity
+    #   azure-keyvault-secrets
     #   azure-mgmt-core
     #   azure-monitor-opentelemetry
     #   azure-monitor-opentelemetry-exporter
@@ -69,18 +93,27 @@ azure-core==1.36.0
     #   azure-storage-blob
     #   msrest
 azure-core-tracing-opentelemetry==1.0.0b12
-    # via azure-monitor-opentelemetry
+    # via
+    #   zero-to-ai (pyproject.toml)
+    #   azure-monitor-opentelemetry
 azure-cosmos==4.14.5
     # via zero-to-ai (pyproject.toml)
 azure-identity==1.25.1
     # via
     #   zero-to-ai (pyproject.toml)
     #   agent-framework-core
+    #   azure-ai-evaluation
     #   azure-monitor-opentelemetry-exporter
+azure-keyvault-secrets==4.10.0
+    # via zero-to-ai (pyproject.toml)
+azure-mgmt-applicationinsights==4.1.0
+    # via zero-to-ai (pyproject.toml)
 azure-mgmt-cognitiveservices==14.1.0
     # via zero-to-ai (pyproject.toml)
 azure-mgmt-core==1.6.0
-    # via azure-mgmt-cognitiveservices
+    # via
+    #   azure-mgmt-applicationinsights
+    #   azure-mgmt-cognitiveservices
 azure-monitor-opentelemetry==1.8.2
     # via agent-framework-core
 azure-monitor-opentelemetry-exporter==1.0.0b45
@@ -92,9 +125,14 @@ azure-search-documents==11.5.2
 azure-storage-blob==12.28.0
     # via
     #   zero-to-ai (pyproject.toml)
+    #   azure-ai-evaluation
     #   azure-ai-projects
 babel==2.17.0
     # via jupyterlab-server
+beartype==0.22.9
+    # via
+    #   py-key-value-aio
+    #   py-key-value-shared
 beautifulsoup4==4.14.3
     # via
     #   zero-to-ai (pyproject.toml)
@@ -104,13 +142,16 @@ bleach==6.3.0
 blinker==1.9.0
     # via streamlit
 cachetools==6.2.4
-    # via streamlit
+    # via
+    #   py-key-value-aio
+    #   streamlit
 certifi==2026.1.4
     # via
     #   httpcore
     #   httpx
     #   msrest
     #   requests
+    #   sentry-sdk
 cffi==2.0.0
     # via
     #   argon2-cffi-bindings
@@ -119,7 +160,21 @@ charset-normalizer==3.4.4
     # via requests
 click==8.3.1
     # via
+    #   httpx
+    #   nltk
+    #   rich-toolkit
     #   streamlit
+    #   typer
+    #   uvicorn
+cloudpickle==3.1.2
+    # via pydocket
+colorama==0.4.6
+    # via
+    #   click
+    #   ipython
+    #   pylint
+    #   pytest
+    #   tqdm
     #   uvicorn
 comm==0.2.3
     # via
@@ -129,14 +184,19 @@ contourpy==1.3.3
     # via matplotlib
 coverage==7.13.1
     # via pytest-cov
+croniter==6.0.0
+    # via pydocket
 cryptography==46.0.3
     # via
+    #   authlib
     #   azure-identity
     #   azure-storage-blob
     #   msal
     #   pyjwt
 cycler==0.12.1
     # via matplotlib
+cyclopts==4.5.3
+    # via fastmcp
 debugpy==1.8.19
     # via ipykernel
 decorator==5.2.1
@@ -145,18 +205,44 @@ defusedxml==0.7.1
     # via nbconvert
 dill==0.4.0
     # via pylint
+diskcache==5.6.3
+    # via py-key-value-aio
 distro==1.9.0
     # via openai
+dnspython==2.8.0
+    # via email-validator
 docopt==0.6.2
     # via zero-to-ai (pyproject.toml)
+docstring-parser==0.17.0
+    # via cyclopts
+docutils==0.22.4
+    # via rich-rst
 duckdb==1.4.3
     # via zero-to-ai (pyproject.toml)
+email-validator==2.3.0
+    # via
+    #   fastapi
+    #   pydantic
+exceptiongroup==1.3.1
+    # via fastmcp
 executing==2.2.1
     # via stack-data
 faker==40.1.2
     # via zero-to-ai (pyproject.toml)
+fakeredis==2.34.0
+    # via pydocket
+fastapi==0.129.0
+    # via zero-to-ai (pyproject.toml)
+fastapi-cli==0.0.22
+    # via fastapi
+fastapi-cloud-cli==0.12.0
+    # via fastapi-cli
+fastar==0.8.0
+    # via fastapi-cloud-cli
 fastjsonschema==2.21.2
     # via nbformat
+fastmcp==2.14.5
+    # via zero-to-ai (pyproject.toml)
 fonttools==4.61.1
     # via matplotlib
 fqdn==1.5.1
@@ -175,6 +261,8 @@ gitpython==3.1.46
     # via streamlit
 googleapis-common-protos==1.72.0
     # via opentelemetry-exporter-otlp-proto-grpc
+greenlet==3.3.1
+    # via sqlalchemy
 grpcio==1.76.0
     # via opentelemetry-exporter-otlp-proto-grpc
 h11==0.16.0
@@ -184,9 +272,15 @@ h11==0.16.0
     #   uvicorn
 httpcore==1.0.9
     # via httpx
+httptools==0.7.1
+    # via uvicorn
 httpx==0.28.1
     # via
     #   zero-to-ai (pyproject.toml)
+    #   azure-ai-evaluation
+    #   fastapi
+    #   fastapi-cloud-cli
+    #   fastmcp
     #   jupyterlab
     #   mcp
     #   openai
@@ -195,6 +289,7 @@ httpx-sse==0.4.3
 idna==3.11
     # via
     #   anyio
+    #   email-validator
     #   httpx
     #   jsonschema
     #   requests
@@ -222,6 +317,9 @@ isodate==0.7.2
     #   azure-ai-agents
     #   azure-ai-documentintelligence
     #   azure-ai-projects
+    #   azure-ai-textanalytics
+    #   azure-keyvault-secrets
+    #   azure-mgmt-applicationinsights
     #   azure-search-documents
     #   azure-storage-blob
     #   msrest
@@ -229,12 +327,20 @@ isoduration==20.11.0
     # via jsonschema
 isort==7.0.0
     # via pylint
+jaraco-classes==3.4.0
+    # via keyring
+jaraco-context==6.1.0
+    # via keyring
+jaraco-functools==4.4.0
+    # via keyring
 jedi==0.19.2
     # via ipython
 jinja2==3.1.6
     # via
     #   zero-to-ai (pyproject.toml)
     #   altair
+    #   azure-ai-evaluation
+    #   fastapi
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-server
@@ -242,10 +348,14 @@ jinja2==3.1.6
     #   pydeck
 jiter==0.12.0
     # via openai
+joblib==1.5.3
+    # via nltk
 json5==0.13.0
     # via jupyterlab-server
 jsonpointer==3.0.0
     # via jsonschema
+jsonref==1.1.0
+    # via fastmcp
 jsonschema==4.26.0
     # via
     #   altair
@@ -253,6 +363,8 @@ jsonschema==4.26.0
     #   jupyterlab-server
     #   mcp
     #   nbformat
+jsonschema-path==0.3.4
+    # via fastmcp
 jsonschema-specifications==2025.9.1
     # via jsonschema
 jupyter==1.1.1
@@ -300,15 +412,26 @@ jupyterlab-server==2.28.0
     #   notebook
 jupyterlab-widgets==3.0.16
     # via ipywidgets
+keyring==25.7.0
+    # via py-key-value-aio
 kiwisolver==1.4.9
     # via matplotlib
 lark==1.3.1
     # via rfc3987-syntax
+lupa==2.6
+    # via fakeredis
 m26==0.3.2
     # via zero-to-ai (pyproject.toml)
+mako==1.3.10
+    # via alembic
+markdown==3.10.2
+    # via zero-to-ai (pyproject.toml)
+markdown-it-py==4.0.0
+    # via rich
 markupsafe==3.0.3
     # via
     #   jinja2
+    #   mako
     #   nbconvert
 matplotlib==3.10.8
     # via zero-to-ai (pyproject.toml)
@@ -319,9 +442,17 @@ matplotlib-inline==0.2.1
 mccabe==0.7.0
     # via pylint
 mcp==1.25.0
-    # via agent-framework-core
+    # via
+    #   agent-framework-core
+    #   fastmcp
+mdurl==0.1.2
+    # via markdown-it-py
 mistune==3.2.0
     # via nbconvert
+more-itertools==10.8.0
+    # via
+    #   jaraco-classes
+    #   jaraco-functools
 msal==1.34.0
     # via
     #   azure-identity
@@ -330,6 +461,7 @@ msal-extensions==1.3.1
     # via azure-identity
 msrest==0.7.1
     # via
+    #   azure-ai-evaluation
     #   azure-mgmt-cognitiveservices
     #   azure-monitor-opentelemetry-exporter
 multidict==6.7.0
@@ -351,6 +483,8 @@ nbformat==5.10.4
     #   nbconvert
 nest-asyncio==1.6.0
     # via ipykernel
+nltk==3.9.2
+    # via azure-ai-evaluation
 notebook==7.5.2
     # via jupyter
 notebook-shim==0.2.4
@@ -362,6 +496,7 @@ numpy==2.4.1
     #   contourpy
     #   matplotlib
     #   pandas
+    #   pgvector
     #   pydeck
     #   streamlit
 oauthlib==3.3.1
@@ -370,8 +505,12 @@ openai==2.15.0
     # via
     #   zero-to-ai (pyproject.toml)
     #   agent-framework-core
-opentelemetry-api==1.39.1
+    #   azure-ai-evaluation
+openapi-pydantic==0.5.1
+    # via fastmcp
+opentelemetry-api==1.38.0
     # via
+    #   zero-to-ai (pyproject.toml)
     #   agent-framework-core
     #   azure-core-tracing-opentelemetry
     #   azure-monitor-opentelemetry-exporter
@@ -382,6 +521,8 @@ opentelemetry-api==1.39.1
     #   opentelemetry-instrumentation-django
     #   opentelemetry-instrumentation-fastapi
     #   opentelemetry-instrumentation-flask
+    #   opentelemetry-instrumentation-httpx
+    #   opentelemetry-instrumentation-logging
     #   opentelemetry-instrumentation-psycopg2
     #   opentelemetry-instrumentation-requests
     #   opentelemetry-instrumentation-urllib
@@ -389,58 +530,72 @@ opentelemetry-api==1.39.1
     #   opentelemetry-instrumentation-wsgi
     #   opentelemetry-sdk
     #   opentelemetry-semantic-conventions
-opentelemetry-exporter-otlp-proto-common==1.39.1
+    #   pydocket
+opentelemetry-exporter-otlp-proto-common==1.38.0
     # via opentelemetry-exporter-otlp-proto-grpc
-opentelemetry-exporter-otlp-proto-grpc==1.39.1
-    # via agent-framework-core
-opentelemetry-instrumentation==0.60b1
+opentelemetry-exporter-otlp-proto-grpc==1.38.0
+    # via
+    #   zero-to-ai (pyproject.toml)
+    #   agent-framework-core
+opentelemetry-instrumentation==0.59b0
     # via
     #   opentelemetry-instrumentation-asgi
     #   opentelemetry-instrumentation-dbapi
     #   opentelemetry-instrumentation-django
     #   opentelemetry-instrumentation-fastapi
     #   opentelemetry-instrumentation-flask
+    #   opentelemetry-instrumentation-httpx
+    #   opentelemetry-instrumentation-logging
     #   opentelemetry-instrumentation-psycopg2
     #   opentelemetry-instrumentation-requests
     #   opentelemetry-instrumentation-urllib
     #   opentelemetry-instrumentation-urllib3
     #   opentelemetry-instrumentation-wsgi
-opentelemetry-instrumentation-asgi==0.60b1
+opentelemetry-instrumentation-asgi==0.59b0
     # via opentelemetry-instrumentation-fastapi
-opentelemetry-instrumentation-dbapi==0.60b1
+opentelemetry-instrumentation-dbapi==0.59b0
     # via opentelemetry-instrumentation-psycopg2
-opentelemetry-instrumentation-django==0.60b1
+opentelemetry-instrumentation-django==0.59b0
     # via azure-monitor-opentelemetry
-opentelemetry-instrumentation-fastapi==0.60b1
+opentelemetry-instrumentation-fastapi==0.59b0
     # via azure-monitor-opentelemetry
-opentelemetry-instrumentation-flask==0.60b1
+opentelemetry-instrumentation-flask==0.59b0
     # via azure-monitor-opentelemetry
-opentelemetry-instrumentation-psycopg2==0.60b1
+opentelemetry-instrumentation-httpx==0.59b0
+    # via zero-to-ai (pyproject.toml)
+opentelemetry-instrumentation-logging==0.59b0
+    # via zero-to-ai (pyproject.toml)
+opentelemetry-instrumentation-psycopg2==0.59b0
+    # via
+    #   zero-to-ai (pyproject.toml)
+    #   azure-monitor-opentelemetry
+opentelemetry-instrumentation-requests==0.59b0
+    # via
+    #   zero-to-ai (pyproject.toml)
+    #   azure-monitor-opentelemetry
+opentelemetry-instrumentation-urllib==0.59b0
     # via azure-monitor-opentelemetry
-opentelemetry-instrumentation-requests==0.60b1
+opentelemetry-instrumentation-urllib3==0.59b0
     # via azure-monitor-opentelemetry
-opentelemetry-instrumentation-urllib==0.60b1
-    # via azure-monitor-opentelemetry
-opentelemetry-instrumentation-urllib3==0.60b1
-    # via azure-monitor-opentelemetry
-opentelemetry-instrumentation-wsgi==0.60b1
+opentelemetry-instrumentation-wsgi==0.59b0
     # via
     #   opentelemetry-instrumentation-django
     #   opentelemetry-instrumentation-flask
-opentelemetry-proto==1.39.1
+opentelemetry-proto==1.38.0
     # via
     #   opentelemetry-exporter-otlp-proto-common
     #   opentelemetry-exporter-otlp-proto-grpc
 opentelemetry-resource-detector-azure==0.1.5
     # via azure-monitor-opentelemetry
-opentelemetry-sdk==1.39.1
+opentelemetry-sdk==1.38.0
     # via
+    #   zero-to-ai (pyproject.toml)
     #   agent-framework-core
     #   azure-monitor-opentelemetry
     #   azure-monitor-opentelemetry-exporter
     #   opentelemetry-exporter-otlp-proto-grpc
     #   opentelemetry-resource-detector-azure
-opentelemetry-semantic-conventions==0.60b1
+opentelemetry-semantic-conventions==0.59b0
     # via
     #   opentelemetry-instrumentation
     #   opentelemetry-instrumentation-asgi
@@ -448,6 +603,7 @@ opentelemetry-semantic-conventions==0.60b1
     #   opentelemetry-instrumentation-django
     #   opentelemetry-instrumentation-fastapi
     #   opentelemetry-instrumentation-flask
+    #   opentelemetry-instrumentation-httpx
     #   opentelemetry-instrumentation-requests
     #   opentelemetry-instrumentation-urllib
     #   opentelemetry-instrumentation-urllib3
@@ -455,12 +611,13 @@ opentelemetry-semantic-conventions==0.60b1
     #   opentelemetry-sdk
 opentelemetry-semantic-conventions-ai==0.4.13
     # via agent-framework-core
-opentelemetry-util-http==0.60b1
+opentelemetry-util-http==0.59b0
     # via
     #   opentelemetry-instrumentation-asgi
     #   opentelemetry-instrumentation-django
     #   opentelemetry-instrumentation-fastapi
     #   opentelemetry-instrumentation-flask
+    #   opentelemetry-instrumentation-httpx
     #   opentelemetry-instrumentation-requests
     #   opentelemetry-instrumentation-urllib
     #   opentelemetry-instrumentation-urllib3
@@ -468,6 +625,7 @@ opentelemetry-util-http==0.60b1
 packaging==25.0
     # via
     #   altair
+    #   fastmcp
     #   ipykernel
     #   jupyter-events
     #   jupyter-server
@@ -482,27 +640,39 @@ packaging==25.0
 pandas==2.3.3
     # via
     #   zero-to-ai (pyproject.toml)
+    #   azure-ai-evaluation
     #   streamlit
 pandocfilters==1.5.1
     # via nbconvert
 parso==0.8.5
     # via jedi
-pexpect==4.9.0
-    # via ipython
+pathable==0.4.4
+    # via jsonschema-path
+pathvalidate==3.3.1
+    # via py-key-value-aio
+pgvector==0.4.2
+    # via zero-to-ai (pyproject.toml)
 pillow==12.1.0
     # via
     #   matplotlib
     #   streamlit
 platformdirs==4.5.1
     # via
+    #   fastmcp
     #   jupyter-core
     #   pylint
 pluggy==1.6.0
     # via
     #   pytest
     #   pytest-cov
+polars==1.38.1
+    # via zero-to-ai (pyproject.toml)
+polars-runtime-32==1.38.1
+    # via polars
 prometheus-client==0.24.1
-    # via jupyter-server
+    # via
+    #   jupyter-server
+    #   pydocket
 prompt-toolkit==3.0.52
     # via
     #   ipython
@@ -521,92 +691,152 @@ psutil==7.2.1
     #   zero-to-ai (pyproject.toml)
     #   azure-monitor-opentelemetry-exporter
     #   ipykernel
-ptyprocess==0.7.0
-    # via
-    #   pexpect
-    #   terminado
+psycopg2-binary==2.9.11
+    # via zero-to-ai (pyproject.toml)
 pure-eval==0.2.3
     # via stack-data
+py-key-value-aio==0.3.0
+    # via
+    #   fastmcp
+    #   pydocket
+py-key-value-shared==0.3.0
+    # via py-key-value-aio
 pyarrow==22.0.0
     # via streamlit
 pycparser==2.23
     # via cffi
 pydantic==2.12.5
     # via
+    #   zero-to-ai (pyproject.toml)
     #   agent-framework-core
+    #   fastapi
+    #   fastapi-cloud-cli
+    #   fastmcp
     #   mcp
     #   openai
+    #   openapi-pydantic
+    #   pydantic-extra-types
     #   pydantic-settings
 pydantic-core==2.41.5
     # via
     #   zero-to-ai (pyproject.toml)
     #   pydantic
+pydantic-extra-types==2.11.0
+    # via fastapi
 pydantic-settings==2.12.0
     # via
     #   agent-framework-core
+    #   fastapi
     #   mcp
 pydeck==0.9.1
     # via streamlit
+pydocket==0.17.7
+    # via fastmcp
 pygments==2.19.2
     # via
+    #   httpx
     #   ipython
     #   ipython-pygments-lexers
     #   jupyter-console
     #   nbconvert
     #   pytest
+    #   rich
 pyjwt==2.10.1
     # via
+    #   azure-ai-evaluation
     #   mcp
     #   msal
 pylint==4.0.4
     # via zero-to-ai (pyproject.toml)
 pyparsing==3.3.1
-    # via matplotlib
+    # via
+    #   matplotlib
+    #   rdflib
+pyperclip==1.11.0
+    # via fastmcp
 pytest==9.0.2
     # via
     #   zero-to-ai (pyproject.toml)
     #   pytest-asyncio
     #   pytest-cov
+    #   pytest-randomly
 pytest-asyncio==1.3.0
     # via zero-to-ai (pyproject.toml)
 pytest-cov==7.0.0
     # via zero-to-ai (pyproject.toml)
+pytest-randomly==4.0.1
+    # via zero-to-ai (pyproject.toml)
 python-dateutil==2.9.0.post0
     # via
     #   arrow
+    #   croniter
     #   jupyter-client
     #   matplotlib
     #   pandas
 python-dotenv==1.2.1
     # via
     #   zero-to-ai (pyproject.toml)
+    #   fastmcp
     #   pydantic-settings
+    #   uvicorn
 python-json-logger==4.0.0
-    # via jupyter-events
+    # via
+    #   zero-to-ai (pyproject.toml)
+    #   jupyter-events
+    #   pydocket
 python-multipart==0.0.21
-    # via mcp
+    # via
+    #   zero-to-ai (pyproject.toml)
+    #   fastapi
+    #   mcp
+python-toon==0.1.3
+    # via zero-to-ai (pyproject.toml)
 pytz==2025.2
     # via
     #   zero-to-ai (pyproject.toml)
+    #   croniter
     #   pandas
+pywin32==311
+    # via mcp
+pywin32-ctypes==0.2.3
+    # via keyring
+pywinpty==3.0.3
+    # via
+    #   jupyter-server
+    #   jupyter-server-terminals
+    #   terminado
 pyyaml==6.0.3
-    # via jupyter-events
+    # via
+    #   jsonschema-path
+    #   jupyter-events
+    #   uvicorn
 pyzmq==27.1.0
     # via
     #   ipykernel
     #   jupyter-client
     #   jupyter-console
     #   jupyter-server
-referencing==0.37.0
+rdflib==7.6.0
+    # via zero-to-ai (pyproject.toml)
+redis==7.2.0
+    # via
+    #   fakeredis
+    #   py-key-value-aio
+    #   pydocket
+referencing==0.36.2
     # via
     #   jsonschema
+    #   jsonschema-path
     #   jsonschema-specifications
     #   jupyter-events
 regex==2026.1.15
-    # via tiktoken
+    # via
+    #   nltk
+    #   tiktoken
 requests==2.32.5
     # via
     #   azure-core
+    #   jsonschema-path
     #   jupyterlab-server
     #   msal
     #   msrest
@@ -625,14 +855,37 @@ rfc3986-validator==0.1.1
     #   jupyter-events
 rfc3987-syntax==1.1.0
     # via jsonschema
+rich==13.9.4
+    # via
+    #   cyclopts
+    #   fastmcp
+    #   httpx
+    #   pydocket
+    #   rich-rst
+    #   rich-toolkit
+    #   typer
+rich-rst==1.3.2
+    # via cyclopts
+rich-toolkit==0.19.4
+    # via
+    #   fastapi-cli
+    #   fastapi-cloud-cli
+rignore==0.7.6
+    # via fastapi-cloud-cli
 rpds-py==0.30.0
     # via
     #   jsonschema
     #   referencing
+ruamel-yaml==0.19.1
+    # via azure-ai-evaluation
 send2trash==2.1.0
     # via jupyter-server
+sentry-sdk==2.53.0
+    # via fastapi-cloud-cli
 setuptools==80.9.0
     # via jupyterlab
+shellingham==1.5.4
+    # via typer
 six==1.17.0
     # via
     #   zero-to-ai (pyproject.toml)
@@ -642,14 +895,24 @@ smmap==5.0.2
     # via gitdb
 sniffio==1.3.1
     # via openai
+sortedcontainers==2.4.0
+    # via fakeredis
 soupsieve==2.8.1
     # via beautifulsoup4
+sqlalchemy==2.0.46
+    # via
+    #   zero-to-ai (pyproject.toml)
+    #   alembic
+    #   sqlalchemy-utils
+sqlalchemy-utils==0.42.1
+    # via zero-to-ai (pyproject.toml)
 sse-starlette==3.2.0
     # via mcp
 stack-data==0.6.3
     # via ipython
 starlette==0.51.0
     # via
+    #   fastapi
     #   mcp
     #   sse-starlette
 streamlit==1.53.0
@@ -680,7 +943,9 @@ tornado==6.5.4
     #   streamlit
     #   terminado
 tqdm==4.67.1
-    # via openai
+    # via
+    #   nltk
+    #   openai
 traitlets==5.14.3
     # via
     #   ipykernel
@@ -696,20 +961,30 @@ traitlets==5.14.3
     #   nbclient
     #   nbconvert
     #   nbformat
+typer==0.23.2
+    # via
+    #   fastapi-cli
+    #   fastapi-cloud-cli
+    #   pydocket
 typing-extensions==4.15.0
     # via
     #   agent-framework-core
+    #   alembic
     #   altair
     #   azure-ai-agents
     #   azure-ai-documentintelligence
     #   azure-ai-projects
+    #   azure-ai-textanalytics
     #   azure-core
     #   azure-cosmos
     #   azure-identity
+    #   azure-keyvault-secrets
+    #   azure-mgmt-applicationinsights
     #   azure-mgmt-cognitiveservices
     #   azure-search-documents
     #   azure-storage-blob
     #   beautifulsoup4
+    #   fastapi
     #   grpcio
     #   mcp
     #   openai
@@ -717,27 +992,46 @@ typing-extensions==4.15.0
     #   opentelemetry-exporter-otlp-proto-grpc
     #   opentelemetry-sdk
     #   opentelemetry-semantic-conventions
+    #   py-key-value-shared
     #   pydantic
     #   pydantic-core
+    #   pydantic-extra-types
+    #   pydocket
+    #   rich-toolkit
+    #   sqlalchemy
     #   streamlit
     #   typing-inspection
 typing-inspection==0.4.2
     # via
+    #   fastapi
     #   mcp
     #   pydantic
     #   pydantic-settings
 tzdata==2025.3
     # via
     #   arrow
+    #   faker
     #   pandas
 uri-template==1.3.0
     # via jsonschema
 urllib3==2.6.3
-    # via requests
-uvicorn==0.40.0
-    # via mcp
+    # via
+    #   requests
+    #   sentry-sdk
+uvicorn==0.38.0
+    # via
+    #   zero-to-ai (pyproject.toml)
+    #   fastapi
+    #   fastapi-cli
+    #   fastapi-cloud-cli
+    #   fastmcp
+    #   mcp
 watchdog==6.0.0
-    # via zero-to-ai (pyproject.toml)
+    # via
+    #   zero-to-ai (pyproject.toml)
+    #   streamlit
+watchfiles==1.1.1
+    # via uvicorn
 wcwidth==0.2.14
     # via prompt-toolkit
 webcolors==25.10.0
@@ -749,13 +1043,17 @@ webencodings==0.5.1
 websocket-client==1.9.0
     # via jupyter-server
 websockets==16.0
-    # via mcp
+    # via
+    #   fastmcp
+    #   mcp
+    #   uvicorn
 widgetsnbextension==4.0.15
     # via ipywidgets
 wrapt==1.17.3
     # via
     #   opentelemetry-instrumentation
     #   opentelemetry-instrumentation-dbapi
+    #   opentelemetry-instrumentation-httpx
     #   opentelemetry-instrumentation-urllib3
 yarl==1.22.0
     # via aiohttp
