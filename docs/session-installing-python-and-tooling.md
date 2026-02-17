@@ -28,7 +28,7 @@ Please get Python and uv installed on your computer in the days ahead.
   - Defined, in this series, in the **pyproject.toml file** - discussed below
   - See [azure-cosmos @ pypi](https://pypi.org/project/azure-cosmos/)
   - See [azure-storage @ pypi](https://pypi.org/project/azure-storage/)
-- Current python package manageroptions are pip, poetry, **uv**, and others
+- Current python package manager options are pip, poetry, **uv**, and others
   - This variety of options is typical of open-source
 - They determine and resolve the **Dependency Graph** for you 
   - For example, your app uses Library A 
