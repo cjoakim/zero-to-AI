@@ -32,8 +32,8 @@ The goal is to <strong>empower students to build AI solutions.</strong>
 -  CLB -  [Command Line Basics and Catch-up Session](docs/command-line-cheat-sheet.md)
 -  5  -  [Data Wrangling](docs/session-data-wrangling.md)
 -  6  -  [Notebooks, Jupyter, Dataframes, Pandas](docs/session-jupyter-notebooks.md)
--  7  -  [Unit Testing, CI/CD. and Python Datatypes](docs/session-not-available.md)
--  8  -  [IDEs and Tooling - VSC, GitHub Copilot, Cursor](docs/session-not-available.md)
+-  7  -  [Unit Testing, CI/CD. and Python Datatypes](docs/session-unit-testing-and-datatypes.md)
+-  8  -  [IDEs and Tooling - VSC, GitHub Copilot, Cursor](docs/session-ides-cursor.md)
 
 ## Part 2 - Foundational Azure Services
 
