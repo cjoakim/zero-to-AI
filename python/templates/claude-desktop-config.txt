@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    {% for server in mcp_servers -%}
+    "{{ server['name'] }}": {
+      "command": "{{ server['command'] }}",
+      "args": [ "{{ server['command_args'] }}" ],
+      "env": {
+        {% for env_var_name in server['env'].keys() -%}
+        {{ env_var_name }} = "{{server['env'][env_var_name]}}"
+        {% endfor %}
+      }
+    },
+    {% endfor %}
+  }
+}

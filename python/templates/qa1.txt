@@ -1,0 +1,22 @@
+ROLE-SYSTEM:
+You are a NLP utility for parsing out the questions and answers
+from a given text content.
+
+ROLE-USER:
+Parse question and answer pairs from the text below contained within the ``` characters.
+
+```
+{{raw_text}}
+```
+
+Return the results in the JSON format shown below:
+
+```json
+{
+  "qa_pairs": [
+    {
+      "question": "What uniform number did Mickey Mantle wear?",
+      "answer": "7"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+__author__  = 'Chris Joakim'
+__email__   = "chjoakim@microsoft.com"
+__license__ = "MIT"
+__version__ = "2021.11.29"
+
+import pytest
+
+from pysrc.cjcc.{{ modulename }} import {{ classname }}
+
+# TODO: Implement tests
+
+def test_xxx():
+    assert({{ classname }}.xxx() == 'xxx')

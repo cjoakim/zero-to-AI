@@ -89,40 +89,19 @@ class UVParser:
             if idx == lib_index:
                 if lib["name"] == lib_name:
                     located = True
-                    print(f"located: {lib_name} at index {idx}")
+                    #print(f"located: {lib_name} at index {idx}")
             else:
                 if located:
                     if lib["level"] != dep_level:
                         located = False
-                        print(f"dislocated: {lib_name} at index {idx}")
+                        #print(f"dislocated: {lib_name} at index {idx}")
                     else:
                         dep = lib["name"]
                         dep_idx = lib["index"]
-                        print(
-                            f"{idx} {lib_index} adding dep: {dep} at index {dep_idx} for lib {lib_name} {lib_index}"
-                        )
+                        #print(f"{idx} {lib_index} adding dep: {dep} at index {dep_idx} for lib {lib_name} {lib_index}")
                         dependencies.append(dep)
         lib["dependencies"] = dependencies
-        print(f"lib {lib_name} -> {dependencies}")
-
-    # def set_parent_lib(self, lib: dict) -> dict:
-    #     lib_index = lib["index"]
-    #     lib_level = lib["level"]
-    #     lib_parent_level = lib_level - 1
-    #     if lib_level < 2:
-    #         lib["parent"] = None
-
-    #     for other_idx, other_lib in enumerate(self.graph_libs):
-    #         other_lib_name = other_lib["name"]
-    #         other_lib_version = other_lib["version"]
-    #         other_level = other_lib["level"]
-    #         other_index = other_lib["index"]
-    #         if other_level == lib_parent_level:
-    #             if other_index < lib_index:
-    #                 # lib may have these attributes overlaid several times
-    #                 lib["parent_name"] = other_lib_name
-    #                 lib["parent_version"] = other_lib_version
-    #                 lib["parent_index"] = other_index
+        #print(f"lib {lib_name} -> {dependencies}")
 
     def indent_to_level(self, indent: int) -> int:
         if indent == 2:

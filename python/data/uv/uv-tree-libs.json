@@ -4833,6 +4833,14 @@
   },
   {
     "index": 604,
+    "name": "python-toon",
+    "version": "v0.1.3",
+    "level": 1,
+    "indent": 2,
+    "suffix": "python-toon v0.1.3"
+  },
+  {
+    "index": 605,
     "name": "pytz",
     "version": "v2025.2",
     "level": 1,
@@ -4840,7 +4848,7 @@
     "suffix": "pytz v2025.2"
   },
   {
-    "index": 605,
+    "index": 606,
     "name": "rdflib",
     "version": "v7.5.0",
     "level": 1,
@@ -4848,7 +4856,7 @@
     "suffix": "rdflib v7.5.0"
   },
   {
-    "index": 606,
+    "index": 607,
     "name": "pyparsing",
     "version": "v3.3.1",
     "level": 2,
@@ -4856,7 +4864,7 @@
     "suffix": "pyparsing v3.3.1"
   },
   {
-    "index": 607,
+    "index": 608,
     "name": "six",
     "version": "v1.17.0",
     "level": 1,
@@ -4864,7 +4872,7 @@
     "suffix": "six v1.17.0"
   },
   {
-    "index": 608,
+    "index": 609,
     "name": "sqlalchemy",
     "version": "v2.0.46",
     "level": 1,
@@ -4872,7 +4880,7 @@
     "suffix": "sqlalchemy v2.0.46 (*)"
   },
   {
-    "index": 609,
+    "index": 610,
     "name": "sqlalchemy-utils",
     "version": "v0.42.1",
     "level": 1,
@@ -4880,7 +4888,7 @@
     "suffix": "sqlalchemy-utils v0.42.1"
   },
   {
-    "index": 610,
+    "index": 611,
     "name": "sqlalchemy",
     "version": "v2.0.46",
     "level": 2,
@@ -4888,7 +4896,7 @@
     "suffix": "sqlalchemy v2.0.46 (*)"
   },
   {
-    "index": 611,
+    "index": 612,
     "name": "streamlit",
     "version": "v1.52.2",
     "level": 1,
@@ -4896,7 +4904,7 @@
     "suffix": "streamlit v1.52.2"
   },
   {
-    "index": 612,
+    "index": 613,
     "name": "altair",
     "version": "v6.0.0",
     "level": 2,
@@ -4904,7 +4912,7 @@
     "suffix": "altair v6.0.0"
   },
   {
-    "index": 613,
+    "index": 614,
     "name": "jinja2",
     "version": "v3.1.6",
     "level": 3,
@@ -4912,7 +4920,7 @@
     "suffix": "jinja2 v3.1.6 (*)"
   },
   {
-    "index": 614,
+    "index": 615,
     "name": "jsonschema",
     "version": "v4.25.1",
     "level": 3,
@@ -4920,7 +4928,7 @@
     "suffix": "jsonschema v4.25.1 (*)"
   },
   {
-    "index": 615,
+    "index": 616,
     "name": "narwhals",
     "version": "v2.15.0",
     "level": 3,
@@ -4928,7 +4936,7 @@
     "suffix": "narwhals v2.15.0"
   },
   {
-    "index": 616,
+    "index": 617,
     "name": "packaging",
     "version": "v25.0",
     "level": 3,
@@ -4936,7 +4944,7 @@
     "suffix": "packaging v25.0"
   },
   {
-    "index": 617,
+    "index": 618,
     "name": "typing-extensions",
     "version": "v4.15.0",
     "level": 3,
@@ -4944,7 +4952,7 @@
     "suffix": "typing-extensions v4.15.0"
   },
   {
-    "index": 618,
+    "index": 619,
     "name": "blinker",
     "version": "v1.9.0",
     "level": 2,
@@ -4952,7 +4960,7 @@
     "suffix": "blinker v1.9.0"
   },
   {
-    "index": 619,
+    "index": 620,
     "name": "cachetools",
     "version": "v6.2.4",
     "level": 2,
@@ -4960,7 +4968,7 @@
     "suffix": "cachetools v6.2.4"
   },
   {
-    "index": 620,
+    "index": 621,
     "name": "click",
     "version": "v8.3.1",
     "level": 2,
@@ -4968,7 +4976,7 @@
     "suffix": "click v8.3.1"
   },
   {
-    "index": 621,
+    "index": 622,
     "name": "gitpython",
     "version": "v3.1.46",
     "level": 2,
@@ -4976,7 +4984,7 @@
     "suffix": "gitpython v3.1.46"
   },
   {
-    "index": 622,
+    "index": 623,
     "name": "gitdb",
     "version": "v4.0.12",
     "level": 3,
@@ -4984,7 +4992,7 @@
     "suffix": "gitdb v4.0.12"
   },
   {
-    "index": 623,
+    "index": 624,
     "name": "smmap",
     "version": "v5.0.2",
     "level": 4,
@@ -4992,7 +5000,7 @@
     "suffix": "smmap v5.0.2"
   },
   {
-    "index": 624,
+    "index": 625,
     "name": "numpy",
     "version": "v2.4.0",
     "level": 2,
@@ -5000,7 +5008,7 @@
     "suffix": "numpy v2.4.0"
   },
   {
-    "index": 625,
+    "index": 626,
     "name": "packaging",
     "version": "v25.0",
     "level": 2,
@@ -5008,7 +5016,7 @@
     "suffix": "packaging v25.0"
   },
   {
-    "index": 626,
+    "index": 627,
     "name": "pandas",
     "version": "v2.3.3",
     "level": 2,
@@ -5016,7 +5024,7 @@
     "suffix": "pandas v2.3.3 (*)"
   },
   {
-    "index": 627,
+    "index": 628,
     "name": "pillow",
     "version": "v12.1.0",
     "level": 2,
@@ -5024,7 +5032,7 @@
     "suffix": "pillow v12.1.0"
   },
   {
-    "index": 628,
+    "index": 629,
     "name": "protobuf",
     "version": "v6.33.2",
     "level": 2,
@@ -5032,7 +5040,7 @@
     "suffix": "protobuf v6.33.2"
   },
   {
-    "index": 629,
+    "index": 630,
     "name": "pyarrow",
     "version": "v22.0.0",
     "level": 2,
@@ -5040,7 +5048,7 @@
     "suffix": "pyarrow v22.0.0"
   },
   {
-    "index": 630,
+    "index": 631,
     "name": "pydeck",
     "version": "v0.9.1",
     "level": 2,
@@ -5048,7 +5056,7 @@
     "suffix": "pydeck v0.9.1"
   },
   {
-    "index": 631,
+    "index": 632,
     "name": "jinja2",
     "version": "v3.1.6",
     "level": 3,
@@ -5056,7 +5064,7 @@
     "suffix": "jinja2 v3.1.6 (*)"
   },
   {
-    "index": 632,
+    "index": 633,
     "name": "numpy",
     "version": "v2.4.0",
     "level": 3,
@@ -5064,7 +5072,7 @@
     "suffix": "numpy v2.4.0"
   },
   {
-    "index": 633,
+    "index": 634,
     "name": "requests",
     "version": "v2.32.5",
     "level": 2,
@@ -5072,7 +5080,7 @@
     "suffix": "requests v2.32.5 (*)"
   },
   {
-    "index": 634,
+    "index": 635,
     "name": "tenacity",
     "version": "v9.1.2",
     "level": 2,
@@ -5080,7 +5088,7 @@
     "suffix": "tenacity v9.1.2"
   },
   {
-    "index": 635,
+    "index": 636,
     "name": "toml",
     "version": "v0.10.2",
     "level": 2,
@@ -5088,7 +5096,7 @@
     "suffix": "toml v0.10.2"
   },
   {
-    "index": 636,
+    "index": 637,
     "name": "tornado",
     "version": "v6.5.4",
     "level": 2,
@@ -5096,7 +5104,7 @@
     "suffix": "tornado v6.5.4"
   },
   {
-    "index": 637,
+    "index": 638,
     "name": "typing-extensions",
     "version": "v4.15.0",
     "level": 2,
@@ -5104,7 +5112,7 @@
     "suffix": "typing-extensions v4.15.0"
   },
   {
-    "index": 638,
+    "index": 639,
     "name": "tenacity",
     "version": "v9.1.2",
     "level": 1,
@@ -5112,7 +5120,7 @@
     "suffix": "tenacity v9.1.2"
   },
   {
-    "index": 639,
+    "index": 640,
     "name": "tiktoken",
     "version": "v0.12.0",
     "level": 1,
@@ -5120,7 +5128,7 @@
     "suffix": "tiktoken v0.12.0"
   },
   {
-    "index": 640,
+    "index": 641,
     "name": "regex",
     "version": "v2025.11.3",
     "level": 2,
@@ -5128,20 +5136,12 @@
     "suffix": "regex v2025.11.3"
   },
   {
-    "index": 641,
+    "index": 642,
     "name": "requests",
     "version": "v2.32.5",
     "level": 2,
     "indent": 6,
     "suffix": "requests v2.32.5 (*)"
-  },
-  {
-    "index": 642,
-    "name": "toon-python",
-    "version": "v0.1.2",
-    "level": 1,
-    "indent": 2,
-    "suffix": "toon-python v0.1.2"
   },
   {
     "index": 643,
