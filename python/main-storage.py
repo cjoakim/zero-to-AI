@@ -34,11 +34,13 @@ def check_env():
     for name in sorted(os.environ.keys()):
         if name.startswith("AZURE_STORAGE_"):
             print("{}: {}".format(name, os.environ[name]))
-
+    conn_str = Env.azure_storage_conn_string()
+    print(f"Env.azure_storage_conn_string(): {conn_str}")
 
 def execute_examples(sleep_time: int = 3):
     print("\n===== StorageUtil constructor")
     conn_str = Env.azure_storage_conn_string()
+    #print(f"conn_str: {conn_str}")
     storage_util = StorageUtil(conn_str, logging_level=None)
     time.sleep(sleep_time)
 
@@ -89,13 +91,13 @@ def execute_examples(sleep_time: int = 3):
     FS.write_json(containers, "tmp/storage-containers.json", pretty=True, sort_keys=True)
     time.sleep(sleep_time)
 
-    print("\n===== list container, with blob details")
-    blobs = storage_util.list_container(cname, names_only=False)
-    for b in blobs:
-        print("---\nlist item: {}".format(b))
-        for key in b.keys():
-            print(f"  item key: {key}: {b[key]}")
-    time.sleep(sleep_time)
+    # print("\n===== list container, with blob details")
+    # blobs = storage_util.list_container(cname, names_only=False)
+    # for b in blobs:
+    #     print("---\nlist item: {}".format(b))
+    #     for key in b.keys():
+    #         print(f"  item key: {key}: {b[key]}")
+    # time.sleep(sleep_time)
 
     print("\n===== list container, blob names only")
     blobs = storage_util.list_container(cname, names_only=True)
@@ -126,11 +128,11 @@ def execute_examples(sleep_time: int = 3):
     FS.write_json(data, "tmp/pyproject_downloaded.json", pretty=True, sort_keys=True)
     time.sleep(sleep_time)
 
-    print("\n===== download_blob_as_string, then parse it with json.loads()")
-    txt = storage_util.download_blob_as_string(cname, "data/stdlib.json")
-    print(json.loads(txt))
-    time.sleep(sleep_time)
-    print("\ndone")
+    # print("\n===== download_blob_as_string, then parse it with json.loads()")
+    # txt = storage_util.download_blob_as_string(cname, "data/stdlib.json")
+    # print(json.loads(txt))
+    # time.sleep(sleep_time)
+    # print("\ndone")
 
 
 if __name__ == "__main__":

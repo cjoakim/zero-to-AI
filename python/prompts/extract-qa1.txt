@@ -1,0 +1,22 @@
+ROLE-SYSTEM:
+You are a Python3 code generator.
+
+ROLE-USER:
+Generate a python class named StorageUtil that implements
+separate and easy to use methods for functionality in the 
+"azure-storage-blob" SDK.
+
+In particular, create the following methods:
+- create_container(self, container_name: str) -> str:
+- delete_container(self, container_name: str) -> bool:
+- list_containers(self, recursive : bool = False) -> list[str]:
+- list_container(self, container_name: str, recursive : bool = False) -> list[str]:
+- upload_blob(self, container_name, local_filename, replace : bool = True) -> bool:
+- upload_blob_as(self, container_name, container_blobname, local_filename, replace : bool = True) -> bool:
+- download_blob(self, container_name: str, container_blobname: str, local_filename: str) -> bool:
+- delete_blob(self, container_name: str, container_blobname: str) -> bool:
+
+Catch exceptions in all methods, log the exception message, and return None or False
+if an exception is encountered.
+
+The output should be a python module, and 'ruff check' on it should produce no warnings.

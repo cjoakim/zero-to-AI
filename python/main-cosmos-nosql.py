@@ -4,11 +4,12 @@ Usage:
   python main-cosmos-nosql.py list_databases
   python main-cosmos-nosql.py create_database dev 0
   python main-cosmos-nosql.py create_container dev test /pk 1000 default_idx
-  python main-cosmos-nosql.py create_container dev airports /pk 5000 default_idx
+  python main-cosmos-nosql.py create_container dev airports /pk 1000 default_idx
   python main-cosmos-nosql.py create_container dev libraries /pk 10000 cosmos/libraries_index.json
   python main-cosmos-nosql.py delete_database test
   python main-cosmos-nosql.py delete_container dev libraries
   python main-cosmos-nosql.py list_containers dev
+  python main-cosmos-nosql.py load_airports dev airports pk --load
   python main-cosmos-nosql.py load_python_libraries dev libraries
   python main-cosmos-nosql.py test_cosmos_nosql dbname, db_ru, cname, c_ru, pkpath
   python main-cosmos-nosql.py test_cosmos_nosql dev 0 test /pk 1000
@@ -63,26 +64,30 @@ async def list_databases():
     except Exception as e:
         logging.info(str(e))
         logging.info(traceback.format_exc())
+    await cosmos.close()
 
 
 async def create_database(dbname: str, db_ru: int):
     try:
         cosmos = CosmosNoSqlUtil()
         await cosmos.initialize()
-        await cosmos.create_database(dbname, db_ru)
+        result = await cosmos.create_database(dbname, db_ru)
+        print(f"create_database result: {result}")
     except Exception as e:
         logging.info(str(e))
         logging.info(traceback.format_exc())
-
+    await cosmos.close()
 
 async def delete_database(dbname: str):
     try:
         cosmos = CosmosNoSqlUtil()
         await cosmos.initialize()
-        await cosmos.delete_database(dbname)
+        result =await cosmos.delete_database(dbname)
+        print(f"delete_database result: {result}")
     except Exception as e:
         logging.info(str(e))
         logging.info(traceback.format_exc())
+    await cosmos.close()
 
 
 async def create_container(dbname, cname, pkpath, c_ru, idx_policy_filename=None):
@@ -94,7 +99,7 @@ async def create_container(dbname, cname, pkpath, c_ru, idx_policy_filename=None
     except Exception as e:
         logging.info(str(e))
         logging.info(traceback.format_exc())
-
+    await cosmos.close()
 
 async def delete_container(dbname, cname):
     try:
@@ -105,7 +110,7 @@ async def delete_container(dbname, cname):
     except Exception as e:
         logging.info(str(e))
         logging.info(traceback.format_exc())
-
+    await cosmos.close()
 
 async def list_containers(dbname: str):
     try:
@@ -118,61 +123,59 @@ async def list_containers(dbname: str):
     except Exception as e:
         logging.info(str(e))
         logging.info(traceback.format_exc())
-
+    await cosmos.close()
 
 async def load_airports(dbname: str, cname: str, pkpath: str):
-    # See the dotnet-cosmos/ directory in this repo for a faster
-    # implementation based on bulk-loading.
     try:
-        infile = "../data/openflights/json/airports.json"
-        json_lines = FS.read_lines(infile)
+        infile = "data/openflights/openflights_airports.json"
+        airports = FS.read_json(infile)
         documents = list()
-        for line in json_lines:
-            if len(line) > 10:
-                try:
-                    rawdoc = json.loads(line)
-                    newdoc = dict()
-                    for key in sorted(rawdoc.keys()):
-                        value = rawdoc[key]
-                        newkey = key.lower()
-                        newdoc[newkey] = value
-                    newdoc["id"] = str(uuid.uuid4())
-                    newdoc["airportid"] = int(newdoc["airportid"])
-                    newdoc[pkpath] = newdoc["country"]
-                    newdoc["altitude"] = float(newdoc["altitude"])
-                    latitude = float(newdoc["latitude"])
-                    longitude = float(newdoc["longitude"])
-                    newdoc["latitude"] = latitude
-                    newdoc["longitude"] = longitude
+        nosql_util = None
+        for rawdoc in airports:
+            try:
+                newdoc = dict()
+                for key in sorted(rawdoc.keys()):
+                    value = rawdoc[key]
+                    newkey = key.lower()
+                    newdoc[newkey] = value
+                newdoc["id"] = str(uuid.uuid4())
+                newdoc["airport_id"] = int(newdoc["airport_id"])
+                newdoc[pkpath] = newdoc["country"]
+                newdoc["altitude"] = float(newdoc["altitude"])
+                latitude = float(newdoc["latitude"])
+                longitude = float(newdoc["longitude"])
+                newdoc["latitude"] = latitude
+                newdoc["longitude"] = longitude
 
-                    # See https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/query/geospatial?tabs=javascript
-                    # Google: "azure ai search index nested geojson attributes"
-                    geojson = dict()
-                    geojson["type"] = "Point"
-                    geojson["coordinates"] = [longitude, latitude]
-                    newdoc["location"] = geojson
+                # See https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/query/geospatial?tabs=javascript
+                # Google: "azure ai search index nested geojson attributes"
+                geojson = dict()
+                geojson["type"] = "Point"
+                geojson["coordinates"] = [longitude, latitude]
+                newdoc["location"] = geojson
 
-                    if newdoc[pkpath] != "\\N":
-                        if newdoc["iata"] != "\\N":
-                            print(json.dumps(newdoc, sort_keys=False, indent=2))
-                            documents.append(newdoc)
-                except:
-                    print("bad json on line: {}".format(line))
+                if newdoc[pkpath] != "\\N":
+                    if newdoc["iata_code"] != "\\N":
+                        print(json.dumps(newdoc, sort_keys=False, indent=2))
+                        documents.append(newdoc)
+            except:
+                print("bad json on rawdoc: {}".format(rawdoc))
+                logging.info("bad json on rawdoc: {}".format(rawdoc))
+                logging.info(traceback.format_exc())
         print(
-            "{} documents parsed and filtered from {} file lines".format(
-                len(documents), len(json_lines)
+            "{} documents parsed and filtered from {} raw docs".format(
+                len(documents), len(airports)
             )
         )
-
         opts = dict()
         opts["enable_diagnostics_logging"] = True
         nosql_util = CosmosNoSqlUtil(opts)
         await nosql_util.initialize()
 
-        dbproxy = nosql_util.set_db(dbname)
+        dbproxy = await nosql_util.set_db(dbname)
         print("dbproxy: {}".format(dbproxy))
 
-        ctrproxy = nosql_util.set_container(cname)
+        ctrproxy = await nosql_util.set_container(cname)
         print("ctrproxy: {}".format(ctrproxy))
 
         if "--load" in sys.argv:
@@ -188,7 +191,9 @@ async def load_airports(dbname: str, cname: str, pkpath: str):
     except Exception as e:
         logging.info(str(e))
         logging.info(traceback.format_exc())
-
+    if nosql_util is not None:
+        await nosql_util.close()
+    print("load_airports completed")
 
 async def load_pypi_libs(dbname: str, cname: str, pkpath: str):
     try:

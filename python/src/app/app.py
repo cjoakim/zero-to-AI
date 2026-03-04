@@ -16,12 +16,12 @@ from src.os.system import System
 
 class App:
     @classmethod
-    def initialize(cls, load_env_vars: bool = True, event_loop: bool = True) -> None:
+    def initialize(cls) -> None:
         try:
-            if load_env_vars:
-                load_dotenv(override=True)
-            if event_loop:
-                cls.set_event_loop_policy()
+            logging.error("App#initialize - load_dotenv starting")
+            load_dotenv(override=True)
+            logging.error("App#initialize - load_dotenv completed")
+            cls.set_event_loop_policy()
             return True
         except Exception as e:
             logging.error(f"App#initialize - Error initializing application: {e}")

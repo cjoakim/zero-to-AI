@@ -59,7 +59,7 @@ class CosmosNoSqlUtil:
             await self._client.close()
             logging.info("CosmosNoSqlUtil - client closed")
 
-    async def create_database(self, dbname, db_level_throughput=0):
+    async def create_database(self, dbname, db_level_throughput=0) -> bool:
         created = False
         if self._client is not None:
             databases = await self.list_databases()
@@ -77,14 +77,15 @@ class CosmosNoSqlUtil:
                 else:
                     await self._client.create_database(id=dbname)
                 logging.info("CosmosNoSqlUtil - database created: {}".format(dbname))
-                self.set_db(dbname)
+                await self.set_db(dbname)
                 created = True
         return created
 
-    async def delete_database(self, dbname):
-        result = True
+    async def delete_database(self, dbname) -> bool:
+        result = None
         try:
             await self._client.delete_database(dbname)
+            result = True
         except Exception as e:
             logging.critical(str(e))
             print(traceback.format_exc())

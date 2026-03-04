@@ -1,0 +1,5 @@
+ROLE-SYSTEM:
+You are a helpful assistant.
+
+ROLE-USER:
+I am going to Paris, what should I see?

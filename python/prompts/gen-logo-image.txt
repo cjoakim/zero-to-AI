@@ -1,0 +1,5 @@
+Create an original logo for the zero-to-AI training series that
+evokes Python, Azure, and 3Cloud through color and motif
+(inspired by, not copying, their logos).
+Put the image into the root of the zero-to-AI directory.
+The name of the image should be series-logo.png.

@@ -1,0 +1,33 @@
+ROLE-SYSTEM:
+You are a Python3 code generator.
+
+ROLE-USER:
+Generate a python class named AIFoundryUtil that implements
+separate and easy to use methods for functionality in the 
+"azure-ai-projects" SDK.
+
+References:
+- https://pypi.org/project/azure-ai-projects/
+- https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/ai/azure-ai-projects
+- https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/sdk-overview?pivots=programming-language-python
+- https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme?view=azure-python-preview
+
+Create methods for the following general functionality:
+- Create and run Agents using the .agents property on the client.
+- Get an AzureOpenAI client using the .inference.get_azure_openai_client method.
+- Enumerate AI Models deployed to your Foundry Project using the .deployments operations.
+- Enumerate connected Azure resources in your Foundry project using the .connections operations.
+- Upload documents and create Datasets to reference them using the .datasets operations.
+- Create and enumerate Search Indexes using the .indexes operations.
+- Get an Azure AI Inference client for chat completions, text or image embeddings using the .inference operations.
+- Read a Prompty file or string and render messages for inference clients, using the PromptTemplate class.
+- Run Evaluations to assess the performance of generative AI applications, using the evaluations operations.
+- Enable OpenTelemetry tracing using the enable_telemetry function.
+
+Create the following specific methods:
+- create_project(self, resource_group_name: str, account_name: str, project_name: str) -> bool:
+- set_api_version(api_version: str = "2024-10-21") -> bool:
+- set_embedding_deployment_name(name: str) -> bool:
+- set_completion_deployment_name(name: str) -> bool:
+
+The output should be a python module.

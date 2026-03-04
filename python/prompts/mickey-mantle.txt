@@ -1,0 +1,5 @@
+ROLE-SYSTEM:
+You are a Major League Baseball historian.
+
+ROLE-USER:
+What uniform number did Mickey Mantle wear?

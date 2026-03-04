@@ -1,0 +1,39 @@
+ROLE-SYSTEM:
+You are a Python3 code generator.
+
+ROLE-USER:
+Generate a python class named AISearchUtil that implements
+separate and easy to use methods for functionality in the 
+"azure-search-documents" SDK.
+
+In particular, create the following methods:
+- _http_request(self, function_name: str, method: str, url: str, headers={}, json_body={}) -> object | None:
+- create_cosmos_nosql_datasource(self, acct_envvar: str, key_envvar: str, database_name: str, container_name: str) -> bool:
+- create_index(self, name, schema_json_filename: str) -> bool:
+- create_indexer(self, name, schema_json_filename: str) -> bool:
+- delete_datasource(self, name: str) -> bool:
+- delete_index(self, name: str) -> bool:
+- delete_indexer(self, name: str) -> bool:
+- list_datasources(self) -> list[str]:
+- list_indexers(self) -> list[str]:
+- list_indexes(self) -> list[str]:
+- lookup_datasource(self, name: str) -> object | None:
+- lookup_doc(self, index_name: str, doc_key: str) -> object | None:
+- lookup_index(self, name: str) -> object | None:
+- lookup_indexer_schema(self, indexer_name: str, index_name: str, datasource_name: str) -> object | None:
+- lookup_indexer(self, name: str) -> object | None:
+- modify_index(self, action, name: str, schema_json_filename: str) -> object | None:
+- modify_indexer(self, action: str, name: str, schema_json_filename: str) -> object | None:
+- reset_indexer_url(self, name: str) -> str:
+- reset_indexer(self, name: str) -> str:
+- run_indexer(self, name: str) -> bool:
+- search_index(self, idx_name: str, search_name: str, search_params: object) -> list[object] | None:
+- update_index(self, name, schema_json_filename: str) -> bool:
+- update_indexer(self, name, schema_json_filename: str) -> bool:
+
+The _http_request method should use the httpx library and not the requests library.
+
+Catch exceptions in all methods, log the exception message, and return None or False
+if an exception is encountered.
+
+The output should be a python module.
