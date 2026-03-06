@@ -37,8 +37,8 @@ The goal is to <strong>empower students to build AI solutions.</strong>
 
 ## Part 2 - Foundational Azure Services
 
--  9  -  [Azure Storage](docs/session-not-available.md)
--  10  -  [Models, Catalogs, Tokens, Prompts, Foundry](docs/session-not-available.md)
+-  9  -  [Azure Storage](docs/session-azure-storage.md)
+-  10  -  [Models, Catalogs, Tokens, Prompts, Foundry](docs/session-models-catalogs-tokens-prompts-foundry.md)
 -  11  -  [Azure OpenAI SDK](docs/session-not-available.md)
 -  12  -  [Azure CosmosDB](docs/session-not-available.md)
 -  13  -  [Azure Search](docs/session-not-available.md)

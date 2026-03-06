@@ -7,7 +7,7 @@ import sys
 
 
 async def write_me_a_poem(subject: str) -> str:
-    # simulate async behavior with the sleep(seconds) method
+    # simulate async behavior with the asyncio.sleep(seconds) method
     await asyncio.sleep(0.01)
 
     color = random.choice(["blue", "green", "gray"])

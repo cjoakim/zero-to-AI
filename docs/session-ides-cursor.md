@@ -83,7 +83,7 @@
 ### Year 2000: Lots of typing
 
 <p align="center">
-   <img src="img/programmer-2000.gif" width="70%">
+   <img src="img/programmer-2000.gif" width="50%">
 </p>
 
 <br><br><br>
@@ -93,7 +93,7 @@
 Give an order (i.e. - a prompt).  Make it so, LLM!
 
 <p align="center">
-   <img src="img/programmer-2026.jpeg" width="70%">
+   <img src="img/programmer-2026.jpeg" width="50%">
 </p>
 
 <br><br><br>

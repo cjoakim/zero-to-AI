@@ -2,8 +2,9 @@
 Usage:
   python main-docintel.py <func>
   python main-docintel.py supported_filetypes
-  python main-docintel.py explore_async_local_file data/documents/2025_Outback_Consumer_Reports_v2.pdf
-  python main-docintel.py explore_async_local_file data/documents/PrinceCatalogue.pdf
+  python main-docintel.py extract_text data/documents/2025_Outback_Consumer_Reports_v2.pdf
+  python main-docintel.py extract_text data/documents/us_constitution.pdf
+  python main-docintel.py extract_text data/documents/PrinceCatalogue.pdf
 """
 
 # Chris Joakim, 3Cloud/Cognizant, 2026
@@ -52,6 +53,7 @@ def build_async_docintel_client() -> DocumentIntelligenceAsyncClient | None:
     try:
         endpoint = os.environ.get("AZURE_DOCINTEL_URL")
         key = os.environ.get("AZURE_DOCINTEL_KEY")
+        print(f"endpoint: {endpoint}")
         client = DocumentIntelligenceAsyncClient(
             endpoint=endpoint, credential=AzureKeyCredential(key)
         )
@@ -63,7 +65,7 @@ def build_async_docintel_client() -> DocumentIntelligenceAsyncClient | None:
         return None
 
 
-async def explore_async_local_file(infile: str):
+async def extract_text(infile: str):
     di_client: build_async_docintel_client = build_async_docintel_client()
     print(f"Analyzing file: {infile} ...")
 
@@ -103,9 +105,9 @@ if __name__ == "__main__":
             if func == "supported_filetypes":
                 types = supported_filetypes()
                 print("Supported file types: {}".format(", ".join(types)))
-            elif func == "explore_async_local_file":
+            elif func == "extract_text":
                 infile = sys.argv[2]
-                asyncio.run(explore_async_local_file(infile))
+                asyncio.run(extract_text(infile))
             else:
                 print_options("Error: invalid function: {}".format(func))
     except Exception as e:

@@ -5,8 +5,6 @@
 
 .\.venv\Scripts\activate
 
-python main-search.py help
-
 python main-search.py check_env
 
 Write-Host "=== SHELL deleting indexer, index, and datasource ==="
