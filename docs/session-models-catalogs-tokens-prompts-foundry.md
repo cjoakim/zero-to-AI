@@ -199,8 +199,8 @@ num_tokens: 7
 #### Final Notes on Tokens
 
 - **Tokens are used to encode content and meaning efficiently in a trained LLM**
-  - For example: laptop = 21851)
-- The LLM also understands the **associations** between tokens
+  - For example: laptop = 21851
+- The LLM may also understand the **associations** between tokens
   - For example: between 123403 and 50348 (i.e. - mary and lamb)
 - We'll talk about the similar concept of **embddings, vectors, and semantic meaning** later in this series
 
