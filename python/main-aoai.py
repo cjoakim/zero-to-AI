@@ -4,8 +4,9 @@ Usage:
   python main-aoai.py check_env
   python main-aoai.py tokens mary had a little lamb
   python main-aoai.py generate_embedding
+  python main-aoai.py generate_embedding python fastapi pydantic web app with azure cosmosdb and azure storage
   python main-aoai.py generate_completion
-  python main-aoai.py generate_completion_with_md_prompt
+  python main-aoai.py generate_completion_with_md_prompt > tmp/gettysburg.txt
 Options:
   -h --help     Show this screen.
   --version     Show version.
@@ -14,6 +15,7 @@ Options:
 # Chris Joakim, 3Cloud/Cognizant, 2026
 
 import asyncio
+import json
 import sys
 import os
 import traceback
@@ -59,99 +61,42 @@ async def tokens():
 
 
 async def generate_completion():
-    ai_util = AOAIUtil()  # See module python/src/ai/aoai_util.py in this repository
+    aoai_util = AOAIUtil()  # See module python/src/ai/aoai_util.py in this repository
     system_context = "You are a helpful assistant who knows Major League Baseball."
     user_prompt = "What uniform number did Mickey Mantle wear?"
-    completion = await ai_util.generate_completion(system_context, user_prompt)
+    completion = await aoai_util.generate_completion(system_context, user_prompt)
     print(completion)
 
 
-def generate_embedding_original():
-    # See https://platform.openai.com/docs/guides/embeddings
-    # See https://github.com/openai/openai-python/blob/main/src/openai/types/create_embedding_response.py
-
-    url = os.getenv("AZURE_OPENAI_EMBEDDINGS_URL")
-    key = os.getenv("AZURE_OPENAI_EMBEDDINGS_KEY")
-    dep = os.getenv("AZURE_OPENAI_EMBEDDINGS_DEP")
-
-    client = AzureOpenAI(azure_endpoint=url, api_key=key, api_version="2024-10-21")
-
-    embedding: CreateEmbeddingResponse = client.embeddings.create(
-        model=dep,  # your model deployment name
-        input="Running marathons and ultramarathons",
-        encoding_format="float",
-    )
-
-    print(embedding)
-    vector = embedding.data[0].embedding
-    print("Embedding: {}".format(vector))
-    print("Model:  {}".format(embedding.model))
-    print("Usage:  {}".format(embedding.usage))
-    print("Length: {}".format(len(vector)))
-
-    FS.write_json(vector, "tmp/embedding.json")
-
-    # [ ... , -0.014864896]
-    # Model:  text-embedding-ada-002
-    # Usage:  Usage(prompt_tokens=9, total_tokens=9)
-    # Length: 1536
-
-
 async def generate_embedding():
+    text = "Consulting companies like 3Cloud and Cognizant"
+    if len(sys.argv) > 2:
+        text = " ".join(sys.argv[1:])
+    print(f"generating embedding for: {text}")
     ai_util = AOAIUtil()
-    embedding = await ai_util.generate_embeddings("Consulting companies like 3Cloud and Cognizant")
+    embedding = await ai_util.generate_embeddings(text)
     print(embedding)
-
-
-def generate_completion_original():
-    url = os.getenv("AZURE_OPENAI_COMPLETIONS_URL")
-    key = os.getenv("AZURE_OPENAI_COMPLETIONS_KEY")
-    dep = os.getenv("AZURE_OPENAI_COMPLETIONS_DEP")
-
-    client = AzureOpenAI(azure_endpoint=url, api_key=key, api_version="2024-10-21")
-
-    # <class 'openai.types.chat.chat_completion.ChatCompletion'>
-    completion: ChatCompletion = client.chat.completions.create(
-        model=dep,
-        messages=[
-            {
-                "role": "system",
-                "content": "You are a helpful assistant who knows Major League Baseball.",
-            },
-            {"role": "user", "content": "What uniform number did Mickey Mantle wear?"},
-        ],
-    )
-
-    print("=== completion type ===")
-    print(str(type(completion)))
-
-    print("=== message ===")
-    print(completion.choices[0].message)
-
-    print("=== content ===")
-    print(completion.choices[0].message.content)
-    # Mickey Mantle wore the uniform number 7 for the New York Yankees throughout his Hall of Fame career.
-
-    print("=== model_dump_json ===")
-    print(completion.model_dump_json(indent=2))
-
+    print(f"generated embedding for: {text}")
 
 def generate_completion_with_md_prompt():
     url = os.getenv("AZURE_OPENAI_COMPLETIONS_URL")
     key = os.getenv("AZURE_OPENAI_COMPLETIONS_KEY")
     dep = os.getenv("AZURE_OPENAI_COMPLETIONS_DEP")
+    vers = os.getenv("AZURE_OPENAI_COMPLETIONS_VERSION")
 
-    client = AzureOpenAI(azure_endpoint=url, api_key=key, api_version="2024-10-21")
+    client = AzureOpenAI(azure_endpoint=url, api_key=key, api_version=vers)
+    messages=[
+        {"role": "system", "content": text_summarization_md()},
+        {"role": "user", "content": gettysburg_address_user_md()},
+    ]
+    print(f"prompt messages: \n{json.dumps(messages, indent=2)}")
 
     # <class 'openai.types.chat.chat_completion.ChatCompletion'>
     completion: ChatCompletion = client.chat.completions.create(
         model=dep,
         temperature=0.0,
         max_tokens=1000,
-        messages=[
-            {"role": "system", "content": text_summarization_md()},
-            {"role": "user", "content": gettysburg_address_user_md()},
-        ],
+        messages=messages,
     )
 
     print("=== completion type ===")
@@ -179,17 +124,7 @@ Summarize the following text into bullet points.
 
 
 def gettysburg_address_user_md():
-    text = FS.read("../data/misc/gettysburg-address.txt").strip()
-    return """
-## Text to summarize
-
-{}
-
-""".format(text).lstrip()
-
-
-def industrial_disease_lyrics_md():
-    text = FS.read("../data/text/industrial_disease_lyrics.txt").strip()
+    text = FS.read("data/text/gettysburg-address.txt").strip()
     return """
 ## Text to summarize
 
