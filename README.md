@@ -62,28 +62,28 @@ Notes:
 
 ## Tentative Session Schedule
 
-| Date           | Session |
-| -------------- | ------- |
-| Tue 2026-02-03 | Preparing for this Series |
-| Thu 2026-02-05 | Git and GitHub |
-| Tue 2026-02-10 | Installing Python and Tooling |
-| Thu 2026-02-12 | A Python CLI (Command Line Interface) Program |
-| Tue 2026-02-17 | A Python UI app with Streamlit |
-| Thu 2026-02-19 | Command Line Basics and Catch-up Session |
-| Thu 2026-02-24 | Data Wrangling |
-| Tue 2026-02-26 | Notebooks, Jupyter, Dataframes, Pandas |
-| Thu 2026-03-03 | Unit Testing, CI/CD. and Python Datatypes |
-| Tue 2026-03-05 | IDEs and Tooling - VSC, GitHub Copilot, Cursor |
-| Thu 2026-03-10 | Azure Storage |
-| Tue 2026-03-12 | Azure Foundry, Deploying Models/LLMs, Tokens, Throughput |
-| Thu 2026-03-17 | Azure OpenAI SDK |
-| Tue 2026-03-19 | Azure CosmosDB |
-| Thu 2026-03-24 | Azure Search |
-| Tue 2026-03-26 | PDF to Markdown with Azure Document Intelligence |
-| Thu 2026-03-31 | Knowledge Graphs |
-| Tue 2026-04-02 | MCP, the Model Context Protocol |
-| Thu 2026-04-07 | Azure Agent Framework |
-| Tue 2026-04-09 | Your Turn, Create Something! |
+| Date       | Session |
+| ---------- | ------- |
+| 2026-02-03 | Preparing for this Series |
+| 2026-02-05 | Git and GitHub |
+| 2026-02-10 | Installing Python and Tooling |
+| 2026-02-12 | A Python CLI (Command Line Interface) Program |
+| 2026-02-17 | A Python UI app with Streamlit |
+| 2026-02-19 | Command Line Basics and Catch-up Session |
+| 2026-02-24 | Data Wrangling |
+| 2026-02-26 | Notebooks, Jupyter, Dataframes, Pandas |
+| 2026-03-03 | Unit Testing, CI/CD. and Python Datatypes |
+| 2026-03-05 | IDEs and Tooling - VSC, GitHub Copilot, Cursor |
+| 2026-03-10 | Azure Storage |
+| 2026-03-12 | Azure Foundry, Deploying Models/LLMs, Tokens, Throughput |
+| 2026-03-17 | Azure OpenAI SDK |
+| 2026-03-19 | Azure CosmosDB |
+| 2026-03-24 | Azure Search |
+| 2026-03-26 | PDF to Markdown with Azure Document Intelligence |
+| 2026-03-31 | Knowledge Graphs |
+| 2026-04-02 | MCP, the Model Context Protocol |
+| 2026-04-07 | Azure Agent Framework |
+| 2026-04-09 | Your Turn, Create Something! |
 
 <br><br>
 ---
