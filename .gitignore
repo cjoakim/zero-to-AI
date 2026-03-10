@@ -1,38 +1,43 @@
 # cj
 
+**/__MACOSX/
+**/__pycache__/
 **/.DS_Store
 **/.env
 **/.gradle/
 **/.idea/
+**/.override.properties*
 **/.promptflow/
-**/.vscode/
+**/.venv/
 **/.vscode
-**/__pycache__/
-**/__MACOSX/
+**/.vscode/
+**/*.class
+**/*.jar
 **/bin/
 **/build/
 **/chroma/
 **/dist/
+**/docs/private/
 **/gradle/
-**/include/
 **/htmlcov/
+**/include/
 **/lib/
 **/lib64/
 **/man/
 **/meta/
+**/meta/
 **/node_modules/
 **/obj/
 **/out/
-**/tmp/
-**/Scripts/
-**/.venv/
-**/venv/
-
-**/*.class
-**/*.jar
+**/port*.sh
+**/private.*
+**/pvt/
+**/python/*private*
+**/python/system-test.sh
 **/pyvenv.cfg
-
-**/.override.properties*
+**/Scripts/
+**/tmp/
+**/venv/
 
 # Terraform
 **/.terraform/*
@@ -42,13 +47,6 @@
 **/.tfstate.*
 *.tfstate
 *.tfstate.*
-
-**/docs/private/
-**/meta/
-**/port*.sh
-**/private.*
-**/pvt/
-**/python/*private*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
