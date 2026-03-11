@@ -3,13 +3,16 @@ Usage:
   python main-docintel.py <func>
   python main-docintel.py supported_filetypes
   python main-docintel.py extract_text data/documents/2025_Outback_Consumer_Reports_v2.pdf
-  python main-docintel.py extract_text data/documents/us_constitution.pdf
+  python main-docintel.py extract_text data/documents/US_Constitution.pdf
   python main-docintel.py extract_text data/documents/PrinceCatalogue.pdf
+  python main-docintel.py chunk_markdown tmp/US_Constitution.pdf.md
+  python main-docintel.py chunk_markdown tmp/US_Constitution.pdf.md --create-embeddings
 """
 
 # Chris Joakim, 3Cloud/Cognizant, 2026
 
 import asyncio
+import json
 import sys
 import os
 import traceback
@@ -27,8 +30,10 @@ from azure.ai.documentintelligence.models import AnalyzeDocumentRequest
 from azure.ai.documentintelligence.models import DocumentContentFormat
 from azure.ai.documentintelligence.models import DocumentAnalysisFeature
 
+from src.ai.aoai_util import AOAIUtil
 from src.io.fs import FS
-
+from src.os.env import Env
+from src.util.markdown import TextChunk, MarkdownChunker
 
 def print_options(msg):
     print(msg)
@@ -95,6 +100,39 @@ async def extract_text(infile: str):
         FS.write_json(result.as_dict(), result_outfile)
 
 
+async def chunk_markdown(infile: str):
+    mc = MarkdownChunker(opts={})
+    content = FS.read(infile)
+    chunks = mc.chunk_content(content)
+    largest_chunk_length = 0
+    basename = os.path.basename(infile).split(".")[0]
+    create_embeddings : bool = Env.boolean_arg("--create-embeddings")
+    if create_embeddings:
+        aoai_util = AOAIUtil()
+
+    for chunk_idx, chunk in enumerate(chunks):
+        text = chunk.as_text()
+        if len(text) > largest_chunk_length:
+            largest_chunk_length = len(text)
+        print(f"========== chunk_idx: {chunk_idx} length: {len(text)} ==========")
+        print(f"chunk: {chunk.as_text()}")
+        document = dict()
+        document["file"] = basename
+        document["chunk_idx"] = chunk_idx
+        document["length"] = len(text)
+        document["text"] = text
+
+        if create_embeddings:
+            embedding = await aoai_util.generate_embeddings(text)
+            document["embedding"] = embedding
+        else:
+            document["embedding"] = []
+        #print(json.dumps(document, indent=2))
+        outfile = f"tmp/{basename}_chunk_{chunk_idx}.json".lower()
+        FS.write_json(document, outfile, sort_keys=False)
+    print(f"largest_chunk_length: {largest_chunk_length}")  
+
+
 if __name__ == "__main__":
     try:
         load_dotenv(override=True)
@@ -108,6 +146,9 @@ if __name__ == "__main__":
             elif func == "extract_text":
                 infile = sys.argv[2]
                 asyncio.run(extract_text(infile))
+            elif func == "chunk_markdown":
+                infile = sys.argv[2]
+                asyncio.run(chunk_markdown(infile))
             else:
                 print_options("Error: invalid function: {}".format(func))
     except Exception as e:
