@@ -45,9 +45,9 @@ The goal is to <strong>empower students to build AI solutions.</strong>
 
 ## Part 3 - AI
 
--  14  -  [PDF to Markdown with Azure Document Intelligence](docs/session-not-available.md)
--  15  -  [Knowledge Graphs](docs/session-not-available.md)
--  16  -  [MCP, the Model Context Protocol](docs/session-not-available.md)
+-  14  -  [Text Extraction, Markdown, Chunking, and Vectorization](docs/session-text-extraction.md)
+-  15  -  [MCP, the Model Context Protocol](docs/session-not-available.md)
+-  16  -  [Knowledge Graphs](docs/session-not-available.md)
 -  17  -  [Azure Agent Framework](docs/session-not-available.md)
 -  18  -  [Your Turn, Create Something!](docs/session-not-available.md)
 
@@ -79,9 +79,9 @@ Notes:
 | 2026-03-17 | Azure OpenAI SDK |
 | 2026-03-19 | Azure CosmosDB |
 | 2026-03-24 | Azure Search |
-| 2026-03-26 | PDF to Markdown with Azure Document Intelligence |
-| 2026-03-31 | Knowledge Graphs |
-| 2026-04-02 | MCP, the Model Context Protocol |
+| 2026-03-26 | Text Extraction, Markdown, Chunking, and Vectorization |
+| 2026-03-31 | MCP, the Model Context Protocol |
+| 2026-04-02 | Knowledge Graphs |
 | 2026-04-07 | Azure Agent Framework |
 | 2026-04-09 | Your Turn, Create Something! |
 
