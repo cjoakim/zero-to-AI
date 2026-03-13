@@ -339,7 +339,7 @@ response.status_code: 200
   "method": "POST",
   "headers": {
     "Content-Type": "application/json",
-    "api-key": "HyfrxMrAjvgcgkehoBdYTa6BJm5z5FsVl3XIWw3ZvlAzSeDzaSC1"
+    "api-key": "...redacted..."
   },
   "status_code": 200,
   "content": {
