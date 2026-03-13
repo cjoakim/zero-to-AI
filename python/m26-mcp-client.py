@@ -69,7 +69,7 @@ async def invoke_tools():
     )
     print(f"   Result: {result}")
     print(f"   Data:   {result.data}")
-    write_json_file("tmp/calculate_speed.json", result.data)
+    #write_json_file("tmp/calculate_speed.json", result.data)
 
     # 8. calculate_age
     print("\n8. calculate_age('1960-10-01', '2025-10-01'):")
@@ -96,7 +96,7 @@ async def invoke_tools():
     )
     print(f"   Result: {result}")
     print(f"   Data:   {result.data}")
-    write_json_file("tmp/calculate_run_walk.json", result.data)
+    #write_json_file("tmp/calculate_run_walk.json", result.data)
 
 
 async def access_resources():
@@ -166,13 +166,11 @@ async def main():
         # First, list server capabilities
         await list_server_capabilities()
 
-        # Then invoke all tools
-        await invoke_tools()
-
-        # Finally, access all resources
+        # Access all resources
         await access_resources()
 
-        await list_server_capabilities()
+        # Invoke all tools
+        await invoke_tools()
 
         print("\n" + "=" * 80)
         print("CLIENT EXECUTION COMPLETE")
@@ -180,8 +178,9 @@ async def main():
 
 
 def write_json_file(filename: str, data):
-    with open(filename, "w") as f:
-        json.dump(data, f, indent=4)
+    if data is not None:
+        with open(filename, "w") as f:
+            json.dump(data, f, indent=4)
 
 
 if __name__ == "__main__":
