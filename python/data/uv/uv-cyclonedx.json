@@ -1,0 +1,4201 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 1,
+  "serialNumber": "urn:uuid:6284788e-673e-427b-8a92-6dd71ce21468",
+  "metadata": {
+    "timestamp": "2026-03-14T21:54:08.099035000Z",
+    "tools": [
+      {
+        "vendor": "Astral Software Inc.",
+        "name": "uv",
+        "version": "0.10.9"
+      }
+    ],
+    "component": {
+      "type": "library",
+      "bom-ref": "zero-to-ai-1@1.0.0",
+      "name": "zero-to-ai",
+      "version": "1.0.0",
+      "properties": [
+        {
+          "name": "uv:package:is_project_root",
+          "value": "true"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "agent-framework-2@1.0.0b251120",
+      "name": "agent-framework",
+      "version": "1.0.0b251120",
+      "purl": "pkg:pypi/agent-framework@1.0.0b251120"
+    },
+    {
+      "type": "library",
+      "bom-ref": "agent-framework-core-3@1.0.0b251001",
+      "name": "agent-framework-core",
+      "version": "1.0.0b251001",
+      "purl": "pkg:pypi/agent-framework-core@1.0.0b251001"
+    },
+    {
+      "type": "library",
+      "bom-ref": "aiofiles-4@25.1.0",
+      "name": "aiofiles",
+      "version": "25.1.0",
+      "purl": "pkg:pypi/aiofiles@25.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "aiohappyeyeballs-5@2.6.1",
+      "name": "aiohappyeyeballs",
+      "version": "2.6.1",
+      "purl": "pkg:pypi/aiohappyeyeballs@2.6.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "aiohttp-6@3.13.2",
+      "name": "aiohttp",
+      "version": "3.13.2",
+      "purl": "pkg:pypi/aiohttp@3.13.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "aiosignal-7@1.4.0",
+      "name": "aiosignal",
+      "version": "1.4.0",
+      "purl": "pkg:pypi/aiosignal@1.4.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "alembic-8@1.18.1",
+      "name": "alembic",
+      "version": "1.18.1",
+      "purl": "pkg:pypi/alembic@1.18.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "altair-9@6.0.0",
+      "name": "altair",
+      "version": "6.0.0",
+      "purl": "pkg:pypi/altair@6.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "annotated-doc-10@0.0.4",
+      "name": "annotated-doc",
+      "version": "0.0.4",
+      "purl": "pkg:pypi/annotated-doc@0.0.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "annotated-types-11@0.7.0",
+      "name": "annotated-types",
+      "version": "0.7.0",
+      "purl": "pkg:pypi/annotated-types@0.7.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "anyio-12@4.12.0",
+      "name": "anyio",
+      "version": "4.12.0",
+      "purl": "pkg:pypi/anyio@4.12.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "appnope-13@0.1.4",
+      "name": "appnope",
+      "version": "0.1.4",
+      "purl": "pkg:pypi/appnope@0.1.4",
+      "properties": [
+        {
+          "name": "uv:package:marker",
+          "value": "sys_platform == 'darwin'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "argon2-cffi-14@25.1.0",
+      "name": "argon2-cffi",
+      "version": "25.1.0",
+      "purl": "pkg:pypi/argon2-cffi@25.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "argon2-cffi-bindings-15@25.1.0",
+      "name": "argon2-cffi-bindings",
+      "version": "25.1.0",
+      "purl": "pkg:pypi/argon2-cffi-bindings@25.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "arrow-16@1.4.0",
+      "name": "arrow",
+      "version": "1.4.0",
+      "purl": "pkg:pypi/arrow@1.4.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "asgiref-17@3.11.0",
+      "name": "asgiref",
+      "version": "3.11.0",
+      "purl": "pkg:pypi/asgiref@3.11.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "astroid-18@4.0.3",
+      "name": "astroid",
+      "version": "4.0.3",
+      "purl": "pkg:pypi/astroid@4.0.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "asttokens-19@3.0.1",
+      "name": "asttokens",
+      "version": "3.0.1",
+      "purl": "pkg:pypi/asttokens@3.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "async-lru-20@2.0.5",
+      "name": "async-lru",
+      "version": "2.0.5",
+      "purl": "pkg:pypi/async-lru@2.0.5"
+    },
+    {
+      "type": "library",
+      "bom-ref": "attrs-21@25.4.0",
+      "name": "attrs",
+      "version": "25.4.0",
+      "purl": "pkg:pypi/attrs@25.4.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "authlib-22@1.6.6",
+      "name": "authlib",
+      "version": "1.6.6",
+      "purl": "pkg:pypi/authlib@1.6.6"
+    },
+    {
+      "type": "library",
+      "bom-ref": "av-23@16.0.1",
+      "name": "av",
+      "version": "16.0.1",
+      "purl": "pkg:pypi/av@16.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-ai-agents-24@1.2.0b6",
+      "name": "azure-ai-agents",
+      "version": "1.2.0b6",
+      "purl": "pkg:pypi/azure-ai-agents@1.2.0b6"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-ai-documentintelligence-25@1.0.2",
+      "name": "azure-ai-documentintelligence",
+      "version": "1.0.2",
+      "purl": "pkg:pypi/azure-ai-documentintelligence@1.0.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-ai-evaluation-26@1.14.0",
+      "name": "azure-ai-evaluation",
+      "version": "1.14.0",
+      "purl": "pkg:pypi/azure-ai-evaluation@1.14.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-ai-projects-27@1.0.0",
+      "name": "azure-ai-projects",
+      "version": "1.0.0",
+      "purl": "pkg:pypi/azure-ai-projects@1.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-ai-textanalytics-28@5.3.0",
+      "name": "azure-ai-textanalytics",
+      "version": "5.3.0",
+      "purl": "pkg:pypi/azure-ai-textanalytics@5.3.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-common-29@1.1.28",
+      "name": "azure-common",
+      "version": "1.1.28",
+      "purl": "pkg:pypi/azure-common@1.1.28"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-core-30@1.38.2",
+      "name": "azure-core",
+      "version": "1.38.2",
+      "purl": "pkg:pypi/azure-core@1.38.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-core-tracing-opentelemetry-31@1.0.0b12",
+      "name": "azure-core-tracing-opentelemetry",
+      "version": "1.0.0b12",
+      "purl": "pkg:pypi/azure-core-tracing-opentelemetry@1.0.0b12"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-cosmos-32@4.15.0",
+      "name": "azure-cosmos",
+      "version": "4.15.0",
+      "purl": "pkg:pypi/azure-cosmos@4.15.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-identity-33@1.25.1",
+      "name": "azure-identity",
+      "version": "1.25.1",
+      "purl": "pkg:pypi/azure-identity@1.25.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-keyvault-secrets-34@4.10.0",
+      "name": "azure-keyvault-secrets",
+      "version": "4.10.0",
+      "purl": "pkg:pypi/azure-keyvault-secrets@4.10.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-mgmt-applicationinsights-35@4.1.0",
+      "name": "azure-mgmt-applicationinsights",
+      "version": "4.1.0",
+      "purl": "pkg:pypi/azure-mgmt-applicationinsights@4.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-mgmt-cognitiveservices-36@14.1.0",
+      "name": "azure-mgmt-cognitiveservices",
+      "version": "14.1.0",
+      "purl": "pkg:pypi/azure-mgmt-cognitiveservices@14.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-mgmt-core-37@1.6.0",
+      "name": "azure-mgmt-core",
+      "version": "1.6.0",
+      "purl": "pkg:pypi/azure-mgmt-core@1.6.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-monitor-opentelemetry-38@1.8.2",
+      "name": "azure-monitor-opentelemetry",
+      "version": "1.8.2",
+      "purl": "pkg:pypi/azure-monitor-opentelemetry@1.8.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-monitor-opentelemetry-exporter-39@1.0.0b45",
+      "name": "azure-monitor-opentelemetry-exporter",
+      "version": "1.0.0b45",
+      "purl": "pkg:pypi/azure-monitor-opentelemetry-exporter@1.0.0b45"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-search-documents-40@11.5.2",
+      "name": "azure-search-documents",
+      "version": "11.5.2",
+      "purl": "pkg:pypi/azure-search-documents@11.5.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "azure-storage-blob-41@12.27.1",
+      "name": "azure-storage-blob",
+      "version": "12.27.1",
+      "purl": "pkg:pypi/azure-storage-blob@12.27.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "babel-42@2.17.0",
+      "name": "babel",
+      "version": "2.17.0",
+      "purl": "pkg:pypi/babel@2.17.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "beartype-43@0.22.9",
+      "name": "beartype",
+      "version": "0.22.9",
+      "purl": "pkg:pypi/beartype@0.22.9"
+    },
+    {
+      "type": "library",
+      "bom-ref": "beautifulsoup4-44@4.14.3",
+      "name": "beautifulsoup4",
+      "version": "4.14.3",
+      "purl": "pkg:pypi/beautifulsoup4@4.14.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "bleach-45@6.3.0",
+      "name": "bleach",
+      "version": "6.3.0",
+      "purl": "pkg:pypi/bleach@6.3.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "blinker-46@1.9.0",
+      "name": "blinker",
+      "version": "1.9.0",
+      "purl": "pkg:pypi/blinker@1.9.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "cachetools-47@6.2.4",
+      "name": "cachetools",
+      "version": "6.2.4",
+      "purl": "pkg:pypi/cachetools@6.2.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "certifi-48@2025.11.12",
+      "name": "certifi",
+      "version": "2025.11.12",
+      "purl": "pkg:pypi/certifi@2025.11.12"
+    },
+    {
+      "type": "library",
+      "bom-ref": "cffi-49@2.0.0",
+      "name": "cffi",
+      "version": "2.0.0",
+      "purl": "pkg:pypi/cffi@2.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "charset-normalizer-50@3.4.4",
+      "name": "charset-normalizer",
+      "version": "3.4.4",
+      "purl": "pkg:pypi/charset-normalizer@3.4.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "click-51@8.3.1",
+      "name": "click",
+      "version": "8.3.1",
+      "purl": "pkg:pypi/click@8.3.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "cloudpickle-52@3.1.2",
+      "name": "cloudpickle",
+      "version": "3.1.2",
+      "purl": "pkg:pypi/cloudpickle@3.1.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "colorama-53@0.4.6",
+      "name": "colorama",
+      "version": "0.4.6",
+      "purl": "pkg:pypi/colorama@0.4.6",
+      "properties": [
+        {
+          "name": "uv:package:marker",
+          "value": "sys_platform == 'win32'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "comm-54@0.2.3",
+      "name": "comm",
+      "version": "0.2.3",
+      "purl": "pkg:pypi/comm@0.2.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "contourpy-55@1.3.3",
+      "name": "contourpy",
+      "version": "1.3.3",
+      "purl": "pkg:pypi/contourpy@1.3.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "coverage-56@7.13.1",
+      "name": "coverage",
+      "version": "7.13.1",
+      "purl": "pkg:pypi/coverage@7.13.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "cryptography-57@46.0.3",
+      "name": "cryptography",
+      "version": "46.0.3",
+      "purl": "pkg:pypi/cryptography@46.0.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "cycler-58@0.12.1",
+      "name": "cycler",
+      "version": "0.12.1",
+      "purl": "pkg:pypi/cycler@0.12.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "cyclopts-59@4.5.0",
+      "name": "cyclopts",
+      "version": "4.5.0",
+      "purl": "pkg:pypi/cyclopts@4.5.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "debugpy-60@1.8.19",
+      "name": "debugpy",
+      "version": "1.8.19",
+      "purl": "pkg:pypi/debugpy@1.8.19"
+    },
+    {
+      "type": "library",
+      "bom-ref": "decorator-61@5.2.1",
+      "name": "decorator",
+      "version": "5.2.1",
+      "purl": "pkg:pypi/decorator@5.2.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "defusedxml-62@0.7.1",
+      "name": "defusedxml",
+      "version": "0.7.1",
+      "purl": "pkg:pypi/defusedxml@0.7.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "dill-63@0.4.0",
+      "name": "dill",
+      "version": "0.4.0",
+      "purl": "pkg:pypi/dill@0.4.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "diskcache-64@5.6.3",
+      "name": "diskcache",
+      "version": "5.6.3",
+      "purl": "pkg:pypi/diskcache@5.6.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "distro-65@1.9.0",
+      "name": "distro",
+      "version": "1.9.0",
+      "purl": "pkg:pypi/distro@1.9.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "dnspython-66@2.8.0",
+      "name": "dnspython",
+      "version": "2.8.0",
+      "purl": "pkg:pypi/dnspython@2.8.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "docopt-67@0.6.2",
+      "name": "docopt",
+      "version": "0.6.2",
+      "purl": "pkg:pypi/docopt@0.6.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "docstring-parser-68@0.17.0",
+      "name": "docstring-parser",
+      "version": "0.17.0",
+      "purl": "pkg:pypi/docstring-parser@0.17.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "docutils-69@0.22.4",
+      "name": "docutils",
+      "version": "0.22.4",
+      "purl": "pkg:pypi/docutils@0.22.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "duckdb-70@1.5.0",
+      "name": "duckdb",
+      "version": "1.5.0",
+      "purl": "pkg:pypi/duckdb@1.5.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "email-validator-71@2.3.0",
+      "name": "email-validator",
+      "version": "2.3.0",
+      "purl": "pkg:pypi/email-validator@2.3.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "exceptiongroup-72@1.3.1",
+      "name": "exceptiongroup",
+      "version": "1.3.1",
+      "purl": "pkg:pypi/exceptiongroup@1.3.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "executing-73@2.2.1",
+      "name": "executing",
+      "version": "2.2.1",
+      "purl": "pkg:pypi/executing@2.2.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "faker-74@39.0.0",
+      "name": "faker",
+      "version": "39.0.0",
+      "purl": "pkg:pypi/faker@39.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "fakeredis-75@2.33.0",
+      "name": "fakeredis",
+      "version": "2.33.0",
+      "purl": "pkg:pypi/fakeredis@2.33.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "fastapi-76@0.128.0",
+      "name": "fastapi",
+      "version": "0.128.0",
+      "purl": "pkg:pypi/fastapi@0.128.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "fastapi-cli-77@0.0.20",
+      "name": "fastapi-cli",
+      "version": "0.0.20",
+      "purl": "pkg:pypi/fastapi-cli@0.0.20"
+    },
+    {
+      "type": "library",
+      "bom-ref": "fastapi-cloud-cli-78@0.11.0",
+      "name": "fastapi-cloud-cli",
+      "version": "0.11.0",
+      "purl": "pkg:pypi/fastapi-cloud-cli@0.11.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "fastar-79@0.8.0",
+      "name": "fastar",
+      "version": "0.8.0",
+      "purl": "pkg:pypi/fastar@0.8.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "fastjsonschema-80@2.21.2",
+      "name": "fastjsonschema",
+      "version": "2.21.2",
+      "purl": "pkg:pypi/fastjsonschema@2.21.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "fastmcp-81@2.14.3",
+      "name": "fastmcp",
+      "version": "2.14.3",
+      "purl": "pkg:pypi/fastmcp@2.14.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "fonttools-82@4.61.1",
+      "name": "fonttools",
+      "version": "4.61.1",
+      "purl": "pkg:pypi/fonttools@4.61.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "fqdn-83@1.5.1",
+      "name": "fqdn",
+      "version": "1.5.1",
+      "purl": "pkg:pypi/fqdn@1.5.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "frozenlist-84@1.8.0",
+      "name": "frozenlist",
+      "version": "1.8.0",
+      "purl": "pkg:pypi/frozenlist@1.8.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "geographiclib-85@2.1",
+      "name": "geographiclib",
+      "version": "2.1",
+      "purl": "pkg:pypi/geographiclib@2.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "geopy-86@2.4.1",
+      "name": "geopy",
+      "version": "2.4.1",
+      "purl": "pkg:pypi/geopy@2.4.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "gitdb-87@4.0.12",
+      "name": "gitdb",
+      "version": "4.0.12",
+      "purl": "pkg:pypi/gitdb@4.0.12"
+    },
+    {
+      "type": "library",
+      "bom-ref": "gitpython-88@3.1.46",
+      "name": "gitpython",
+      "version": "3.1.46",
+      "purl": "pkg:pypi/gitpython@3.1.46"
+    },
+    {
+      "type": "library",
+      "bom-ref": "googleapis-common-protos-89@1.72.0",
+      "name": "googleapis-common-protos",
+      "version": "1.72.0",
+      "purl": "pkg:pypi/googleapis-common-protos@1.72.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "greenlet-90@3.3.1",
+      "name": "greenlet",
+      "version": "3.3.1",
+      "purl": "pkg:pypi/greenlet@3.3.1",
+      "properties": [
+        {
+          "name": "uv:package:marker",
+          "value": "platform_machine == 'AMD64' or platform_machine == 'WIN32' or platform_machine == 'aarch64' or platform_machine == 'amd64' or platform_machine == 'ppc64le' or platform_machine == 'win32' or platform_machine == 'x86_64'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "grpcio-91@1.76.0",
+      "name": "grpcio",
+      "version": "1.76.0",
+      "purl": "pkg:pypi/grpcio@1.76.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "h11-92@0.16.0",
+      "name": "h11",
+      "version": "0.16.0",
+      "purl": "pkg:pypi/h11@0.16.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "httpcore-93@1.0.9",
+      "name": "httpcore",
+      "version": "1.0.9",
+      "purl": "pkg:pypi/httpcore@1.0.9"
+    },
+    {
+      "type": "library",
+      "bom-ref": "httptools-94@0.7.1",
+      "name": "httptools",
+      "version": "0.7.1",
+      "purl": "pkg:pypi/httptools@0.7.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "httpx-95@0.28.1",
+      "name": "httpx",
+      "version": "0.28.1",
+      "purl": "pkg:pypi/httpx@0.28.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "httpx-sse-96@0.4.3",
+      "name": "httpx-sse",
+      "version": "0.4.3",
+      "purl": "pkg:pypi/httpx-sse@0.4.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "idna-97@3.11",
+      "name": "idna",
+      "version": "3.11",
+      "purl": "pkg:pypi/idna@3.11"
+    },
+    {
+      "type": "library",
+      "bom-ref": "importlib-metadata-98@8.7.1",
+      "name": "importlib-metadata",
+      "version": "8.7.1",
+      "purl": "pkg:pypi/importlib-metadata@8.7.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "iniconfig-99@2.3.0",
+      "name": "iniconfig",
+      "version": "2.3.0",
+      "purl": "pkg:pypi/iniconfig@2.3.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "ipykernel-100@7.1.0",
+      "name": "ipykernel",
+      "version": "7.1.0",
+      "purl": "pkg:pypi/ipykernel@7.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "ipython-101@9.8.0",
+      "name": "ipython",
+      "version": "9.8.0",
+      "purl": "pkg:pypi/ipython@9.8.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "ipython-pygments-lexers-102@1.1.1",
+      "name": "ipython-pygments-lexers",
+      "version": "1.1.1",
+      "purl": "pkg:pypi/ipython-pygments-lexers@1.1.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "ipywidgets-103@8.1.8",
+      "name": "ipywidgets",
+      "version": "8.1.8",
+      "purl": "pkg:pypi/ipywidgets@8.1.8"
+    },
+    {
+      "type": "library",
+      "bom-ref": "isodate-104@0.7.2",
+      "name": "isodate",
+      "version": "0.7.2",
+      "purl": "pkg:pypi/isodate@0.7.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "isoduration-105@20.11.0",
+      "name": "isoduration",
+      "version": "20.11.0",
+      "purl": "pkg:pypi/isoduration@20.11.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "isort-106@7.0.0",
+      "name": "isort",
+      "version": "7.0.0",
+      "purl": "pkg:pypi/isort@7.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jaraco-classes-107@3.4.0",
+      "name": "jaraco-classes",
+      "version": "3.4.0",
+      "purl": "pkg:pypi/jaraco-classes@3.4.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jaraco-context-108@6.1.0",
+      "name": "jaraco-context",
+      "version": "6.1.0",
+      "purl": "pkg:pypi/jaraco-context@6.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jaraco-functools-109@4.4.0",
+      "name": "jaraco-functools",
+      "version": "4.4.0",
+      "purl": "pkg:pypi/jaraco-functools@4.4.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jedi-110@0.19.2",
+      "name": "jedi",
+      "version": "0.19.2",
+      "purl": "pkg:pypi/jedi@0.19.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jeepney-111@0.9.0",
+      "name": "jeepney",
+      "version": "0.9.0",
+      "purl": "pkg:pypi/jeepney@0.9.0",
+      "properties": [
+        {
+          "name": "uv:package:marker",
+          "value": "sys_platform == 'linux'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "jinja2-112@3.1.6",
+      "name": "jinja2",
+      "version": "3.1.6",
+      "purl": "pkg:pypi/jinja2@3.1.6"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jiter-113@0.12.0",
+      "name": "jiter",
+      "version": "0.12.0",
+      "purl": "pkg:pypi/jiter@0.12.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "joblib-114@1.5.3",
+      "name": "joblib",
+      "version": "1.5.3",
+      "purl": "pkg:pypi/joblib@1.5.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "json5-115@0.12.1",
+      "name": "json5",
+      "version": "0.12.1",
+      "purl": "pkg:pypi/json5@0.12.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jsonpickle-116@4.1.1",
+      "name": "jsonpickle",
+      "version": "4.1.1",
+      "purl": "pkg:pypi/jsonpickle@4.1.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jsonpointer-117@3.0.0",
+      "name": "jsonpointer",
+      "version": "3.0.0",
+      "purl": "pkg:pypi/jsonpointer@3.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jsonschema-118@4.25.1",
+      "name": "jsonschema",
+      "version": "4.25.1",
+      "purl": "pkg:pypi/jsonschema@4.25.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jsonschema-path-119@0.3.4",
+      "name": "jsonschema-path",
+      "version": "0.3.4",
+      "purl": "pkg:pypi/jsonschema-path@0.3.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jsonschema-specifications-120@2025.9.1",
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "purl": "pkg:pypi/jsonschema-specifications@2025.9.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jupyter-121@1.1.1",
+      "name": "jupyter",
+      "version": "1.1.1",
+      "purl": "pkg:pypi/jupyter@1.1.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jupyter-client-122@8.7.0",
+      "name": "jupyter-client",
+      "version": "8.7.0",
+      "purl": "pkg:pypi/jupyter-client@8.7.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jupyter-console-123@6.6.3",
+      "name": "jupyter-console",
+      "version": "6.6.3",
+      "purl": "pkg:pypi/jupyter-console@6.6.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jupyter-core-124@5.9.1",
+      "name": "jupyter-core",
+      "version": "5.9.1",
+      "purl": "pkg:pypi/jupyter-core@5.9.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jupyter-events-125@0.12.0",
+      "name": "jupyter-events",
+      "version": "0.12.0",
+      "purl": "pkg:pypi/jupyter-events@0.12.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jupyter-lsp-126@2.3.0",
+      "name": "jupyter-lsp",
+      "version": "2.3.0",
+      "purl": "pkg:pypi/jupyter-lsp@2.3.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jupyter-server-127@2.17.0",
+      "name": "jupyter-server",
+      "version": "2.17.0",
+      "purl": "pkg:pypi/jupyter-server@2.17.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jupyter-server-terminals-128@0.5.3",
+      "name": "jupyter-server-terminals",
+      "version": "0.5.3",
+      "purl": "pkg:pypi/jupyter-server-terminals@0.5.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jupyterlab-129@4.5.1",
+      "name": "jupyterlab",
+      "version": "4.5.1",
+      "purl": "pkg:pypi/jupyterlab@4.5.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jupyterlab-pygments-130@0.3.0",
+      "name": "jupyterlab-pygments",
+      "version": "0.3.0",
+      "purl": "pkg:pypi/jupyterlab-pygments@0.3.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jupyterlab-server-131@2.28.0",
+      "name": "jupyterlab-server",
+      "version": "2.28.0",
+      "purl": "pkg:pypi/jupyterlab-server@2.28.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "jupyterlab-widgets-132@3.0.16",
+      "name": "jupyterlab-widgets",
+      "version": "3.0.16",
+      "purl": "pkg:pypi/jupyterlab-widgets@3.0.16"
+    },
+    {
+      "type": "library",
+      "bom-ref": "keyring-133@25.7.0",
+      "name": "keyring",
+      "version": "25.7.0",
+      "purl": "pkg:pypi/keyring@25.7.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "kiwisolver-134@1.4.9",
+      "name": "kiwisolver",
+      "version": "1.4.9",
+      "purl": "pkg:pypi/kiwisolver@1.4.9"
+    },
+    {
+      "type": "library",
+      "bom-ref": "lark-135@1.3.1",
+      "name": "lark",
+      "version": "1.3.1",
+      "purl": "pkg:pypi/lark@1.3.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "lupa-136@2.6",
+      "name": "lupa",
+      "version": "2.6",
+      "purl": "pkg:pypi/lupa@2.6"
+    },
+    {
+      "type": "library",
+      "bom-ref": "m26-137@0.3.2",
+      "name": "m26",
+      "version": "0.3.2",
+      "purl": "pkg:pypi/m26@0.3.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "mako-138@1.3.10",
+      "name": "mako",
+      "version": "1.3.10",
+      "purl": "pkg:pypi/mako@1.3.10"
+    },
+    {
+      "type": "library",
+      "bom-ref": "markdown-139@3.10.1",
+      "name": "markdown",
+      "version": "3.10.1",
+      "purl": "pkg:pypi/markdown@3.10.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "markdown-it-py-140@4.0.0",
+      "name": "markdown-it-py",
+      "version": "4.0.0",
+      "purl": "pkg:pypi/markdown-it-py@4.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "markupsafe-141@3.0.3",
+      "name": "markupsafe",
+      "version": "3.0.3",
+      "purl": "pkg:pypi/markupsafe@3.0.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "matplotlib-142@3.10.8",
+      "name": "matplotlib",
+      "version": "3.10.8",
+      "purl": "pkg:pypi/matplotlib@3.10.8"
+    },
+    {
+      "type": "library",
+      "bom-ref": "matplotlib-inline-143@0.2.1",
+      "name": "matplotlib-inline",
+      "version": "0.2.1",
+      "purl": "pkg:pypi/matplotlib-inline@0.2.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "mccabe-144@0.7.0",
+      "name": "mccabe",
+      "version": "0.7.0",
+      "purl": "pkg:pypi/mccabe@0.7.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "mcp-145@1.25.0",
+      "name": "mcp",
+      "version": "1.25.0",
+      "purl": "pkg:pypi/mcp@1.25.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "mdurl-146@0.1.2",
+      "name": "mdurl",
+      "version": "0.1.2",
+      "purl": "pkg:pypi/mdurl@0.1.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "mistune-147@3.2.0",
+      "name": "mistune",
+      "version": "3.2.0",
+      "purl": "pkg:pypi/mistune@3.2.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "more-itertools-148@10.8.0",
+      "name": "more-itertools",
+      "version": "10.8.0",
+      "purl": "pkg:pypi/more-itertools@10.8.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "msal-149@1.34.0",
+      "name": "msal",
+      "version": "1.34.0",
+      "purl": "pkg:pypi/msal@1.34.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "msal-extensions-150@1.3.1",
+      "name": "msal-extensions",
+      "version": "1.3.1",
+      "purl": "pkg:pypi/msal-extensions@1.3.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "msrest-151@0.7.1",
+      "name": "msrest",
+      "version": "0.7.1",
+      "purl": "pkg:pypi/msrest@0.7.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "multidict-152@6.7.0",
+      "name": "multidict",
+      "version": "6.7.0",
+      "purl": "pkg:pypi/multidict@6.7.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "narwhals-153@2.15.0",
+      "name": "narwhals",
+      "version": "2.15.0",
+      "purl": "pkg:pypi/narwhals@2.15.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "nbclient-154@0.10.4",
+      "name": "nbclient",
+      "version": "0.10.4",
+      "purl": "pkg:pypi/nbclient@0.10.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "nbconvert-155@7.16.6",
+      "name": "nbconvert",
+      "version": "7.16.6",
+      "purl": "pkg:pypi/nbconvert@7.16.6"
+    },
+    {
+      "type": "library",
+      "bom-ref": "nbformat-156@5.10.4",
+      "name": "nbformat",
+      "version": "5.10.4",
+      "purl": "pkg:pypi/nbformat@5.10.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "nest-asyncio-157@1.6.0",
+      "name": "nest-asyncio",
+      "version": "1.6.0",
+      "purl": "pkg:pypi/nest-asyncio@1.6.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "networkx-158@3.6.1",
+      "name": "networkx",
+      "version": "3.6.1",
+      "purl": "pkg:pypi/networkx@3.6.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "nltk-159@3.9.2",
+      "name": "nltk",
+      "version": "3.9.2",
+      "purl": "pkg:pypi/nltk@3.9.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "notebook-160@7.5.1",
+      "name": "notebook",
+      "version": "7.5.1",
+      "purl": "pkg:pypi/notebook@7.5.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "notebook-shim-161@0.2.4",
+      "name": "notebook-shim",
+      "version": "0.2.4",
+      "purl": "pkg:pypi/notebook-shim@0.2.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "numpy-162@2.4.0",
+      "name": "numpy",
+      "version": "2.4.0",
+      "purl": "pkg:pypi/numpy@2.4.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "oauthlib-163@3.3.1",
+      "name": "oauthlib",
+      "version": "3.3.1",
+      "purl": "pkg:pypi/oauthlib@3.3.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "openai-164@2.26.0",
+      "name": "openai",
+      "version": "2.26.0",
+      "purl": "pkg:pypi/openai@2.26.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "openapi-pydantic-165@0.5.1",
+      "name": "openapi-pydantic",
+      "version": "0.5.1",
+      "purl": "pkg:pypi/openapi-pydantic@0.5.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-api-166@1.38.0",
+      "name": "opentelemetry-api",
+      "version": "1.38.0",
+      "purl": "pkg:pypi/opentelemetry-api@1.38.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-exporter-otlp-proto-common-167@1.38.0",
+      "name": "opentelemetry-exporter-otlp-proto-common",
+      "version": "1.38.0",
+      "purl": "pkg:pypi/opentelemetry-exporter-otlp-proto-common@1.38.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-exporter-otlp-proto-grpc-168@1.38.0",
+      "name": "opentelemetry-exporter-otlp-proto-grpc",
+      "version": "1.38.0",
+      "purl": "pkg:pypi/opentelemetry-exporter-otlp-proto-grpc@1.38.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-instrumentation-169@0.59b0",
+      "name": "opentelemetry-instrumentation",
+      "version": "0.59b0",
+      "purl": "pkg:pypi/opentelemetry-instrumentation@0.59b0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-instrumentation-asgi-170@0.59b0",
+      "name": "opentelemetry-instrumentation-asgi",
+      "version": "0.59b0",
+      "purl": "pkg:pypi/opentelemetry-instrumentation-asgi@0.59b0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-instrumentation-dbapi-171@0.59b0",
+      "name": "opentelemetry-instrumentation-dbapi",
+      "version": "0.59b0",
+      "purl": "pkg:pypi/opentelemetry-instrumentation-dbapi@0.59b0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-instrumentation-django-172@0.59b0",
+      "name": "opentelemetry-instrumentation-django",
+      "version": "0.59b0",
+      "purl": "pkg:pypi/opentelemetry-instrumentation-django@0.59b0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-instrumentation-fastapi-173@0.59b0",
+      "name": "opentelemetry-instrumentation-fastapi",
+      "version": "0.59b0",
+      "purl": "pkg:pypi/opentelemetry-instrumentation-fastapi@0.59b0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-instrumentation-flask-174@0.59b0",
+      "name": "opentelemetry-instrumentation-flask",
+      "version": "0.59b0",
+      "purl": "pkg:pypi/opentelemetry-instrumentation-flask@0.59b0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-instrumentation-httpx-175@0.59b0",
+      "name": "opentelemetry-instrumentation-httpx",
+      "version": "0.59b0",
+      "purl": "pkg:pypi/opentelemetry-instrumentation-httpx@0.59b0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-instrumentation-logging-176@0.59b0",
+      "name": "opentelemetry-instrumentation-logging",
+      "version": "0.59b0",
+      "purl": "pkg:pypi/opentelemetry-instrumentation-logging@0.59b0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-instrumentation-psycopg2-177@0.59b0",
+      "name": "opentelemetry-instrumentation-psycopg2",
+      "version": "0.59b0",
+      "purl": "pkg:pypi/opentelemetry-instrumentation-psycopg2@0.59b0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-instrumentation-requests-178@0.59b0",
+      "name": "opentelemetry-instrumentation-requests",
+      "version": "0.59b0",
+      "purl": "pkg:pypi/opentelemetry-instrumentation-requests@0.59b0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-instrumentation-urllib-179@0.59b0",
+      "name": "opentelemetry-instrumentation-urllib",
+      "version": "0.59b0",
+      "purl": "pkg:pypi/opentelemetry-instrumentation-urllib@0.59b0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-instrumentation-urllib3-180@0.59b0",
+      "name": "opentelemetry-instrumentation-urllib3",
+      "version": "0.59b0",
+      "purl": "pkg:pypi/opentelemetry-instrumentation-urllib3@0.59b0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-instrumentation-wsgi-181@0.59b0",
+      "name": "opentelemetry-instrumentation-wsgi",
+      "version": "0.59b0",
+      "purl": "pkg:pypi/opentelemetry-instrumentation-wsgi@0.59b0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-proto-182@1.38.0",
+      "name": "opentelemetry-proto",
+      "version": "1.38.0",
+      "purl": "pkg:pypi/opentelemetry-proto@1.38.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-resource-detector-azure-183@0.1.5",
+      "name": "opentelemetry-resource-detector-azure",
+      "version": "0.1.5",
+      "purl": "pkg:pypi/opentelemetry-resource-detector-azure@0.1.5"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-sdk-184@1.38.0",
+      "name": "opentelemetry-sdk",
+      "version": "1.38.0",
+      "purl": "pkg:pypi/opentelemetry-sdk@1.38.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-semantic-conventions-185@0.59b0",
+      "name": "opentelemetry-semantic-conventions",
+      "version": "0.59b0",
+      "purl": "pkg:pypi/opentelemetry-semantic-conventions@0.59b0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-semantic-conventions-ai-186@0.4.13",
+      "name": "opentelemetry-semantic-conventions-ai",
+      "version": "0.4.13",
+      "purl": "pkg:pypi/opentelemetry-semantic-conventions-ai@0.4.13"
+    },
+    {
+      "type": "library",
+      "bom-ref": "opentelemetry-util-http-187@0.59b0",
+      "name": "opentelemetry-util-http",
+      "version": "0.59b0",
+      "purl": "pkg:pypi/opentelemetry-util-http@0.59b0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "packaging-188@25.0",
+      "name": "packaging",
+      "version": "25.0",
+      "purl": "pkg:pypi/packaging@25.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pandas-189@2.3.3",
+      "name": "pandas",
+      "version": "2.3.3",
+      "purl": "pkg:pypi/pandas@2.3.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pandocfilters-190@1.5.1",
+      "name": "pandocfilters",
+      "version": "1.5.1",
+      "purl": "pkg:pypi/pandocfilters@1.5.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "parso-191@0.8.5",
+      "name": "parso",
+      "version": "0.8.5",
+      "purl": "pkg:pypi/parso@0.8.5"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pathable-192@0.4.4",
+      "name": "pathable",
+      "version": "0.4.4",
+      "purl": "pkg:pypi/pathable@0.4.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pathvalidate-193@3.3.1",
+      "name": "pathvalidate",
+      "version": "3.3.1",
+      "purl": "pkg:pypi/pathvalidate@3.3.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pexpect-194@4.9.0",
+      "name": "pexpect",
+      "version": "4.9.0",
+      "purl": "pkg:pypi/pexpect@4.9.0",
+      "properties": [
+        {
+          "name": "uv:package:marker",
+          "value": "sys_platform != 'emscripten' and sys_platform != 'win32'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pgvector-195@0.4.2",
+      "name": "pgvector",
+      "version": "0.4.2",
+      "purl": "pkg:pypi/pgvector@0.4.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pillow-196@12.1.0",
+      "name": "pillow",
+      "version": "12.1.0",
+      "purl": "pkg:pypi/pillow@12.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "platformdirs-197@4.5.1",
+      "name": "platformdirs",
+      "version": "4.5.1",
+      "purl": "pkg:pypi/platformdirs@4.5.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pluggy-198@1.6.0",
+      "name": "pluggy",
+      "version": "1.6.0",
+      "purl": "pkg:pypi/pluggy@1.6.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "polars-199@1.37.1",
+      "name": "polars",
+      "version": "1.37.1",
+      "purl": "pkg:pypi/polars@1.37.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "polars-runtime-32-200@1.37.1",
+      "name": "polars-runtime-32",
+      "version": "1.37.1",
+      "purl": "pkg:pypi/polars-runtime-32@1.37.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "prometheus-client-201@0.23.1",
+      "name": "prometheus-client",
+      "version": "0.23.1",
+      "purl": "pkg:pypi/prometheus-client@0.23.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "prompt-toolkit-202@3.0.52",
+      "name": "prompt-toolkit",
+      "version": "3.0.52",
+      "purl": "pkg:pypi/prompt-toolkit@3.0.52"
+    },
+    {
+      "type": "library",
+      "bom-ref": "propcache-203@0.4.1",
+      "name": "propcache",
+      "version": "0.4.1",
+      "purl": "pkg:pypi/propcache@0.4.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "protobuf-204@6.33.2",
+      "name": "protobuf",
+      "version": "6.33.2",
+      "purl": "pkg:pypi/protobuf@6.33.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "psutil-205@7.2.0",
+      "name": "psutil",
+      "version": "7.2.0",
+      "purl": "pkg:pypi/psutil@7.2.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "psycopg2-binary-206@2.9.11",
+      "name": "psycopg2-binary",
+      "version": "2.9.11",
+      "purl": "pkg:pypi/psycopg2-binary@2.9.11"
+    },
+    {
+      "type": "library",
+      "bom-ref": "ptyprocess-207@0.7.0",
+      "name": "ptyprocess",
+      "version": "0.7.0",
+      "purl": "pkg:pypi/ptyprocess@0.7.0",
+      "properties": [
+        {
+          "name": "uv:package:marker",
+          "value": "os_name != 'nt' or (sys_platform != 'emscripten' and sys_platform != 'win32')"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pure-eval-208@0.2.3",
+      "name": "pure-eval",
+      "version": "0.2.3",
+      "purl": "pkg:pypi/pure-eval@0.2.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "py-key-value-aio-209@0.3.0",
+      "name": "py-key-value-aio",
+      "version": "0.3.0",
+      "purl": "pkg:pypi/py-key-value-aio@0.3.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "py-key-value-shared-210@0.3.0",
+      "name": "py-key-value-shared",
+      "version": "0.3.0",
+      "purl": "pkg:pypi/py-key-value-shared@0.3.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pyarrow-211@22.0.0",
+      "name": "pyarrow",
+      "version": "22.0.0",
+      "purl": "pkg:pypi/pyarrow@22.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pycparser-212@2.23",
+      "name": "pycparser",
+      "version": "2.23",
+      "purl": "pkg:pypi/pycparser@2.23",
+      "properties": [
+        {
+          "name": "uv:package:marker",
+          "value": "implementation_name != 'PyPy'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pydantic-213@2.12.5",
+      "name": "pydantic",
+      "version": "2.12.5",
+      "purl": "pkg:pypi/pydantic@2.12.5"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pydantic-core-214@2.41.5",
+      "name": "pydantic-core",
+      "version": "2.41.5",
+      "purl": "pkg:pypi/pydantic-core@2.41.5"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pydantic-extra-types-215@2.11.0",
+      "name": "pydantic-extra-types",
+      "version": "2.11.0",
+      "purl": "pkg:pypi/pydantic-extra-types@2.11.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pydantic-settings-216@2.12.0",
+      "name": "pydantic-settings",
+      "version": "2.12.0",
+      "purl": "pkg:pypi/pydantic-settings@2.12.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pydeck-217@0.9.1",
+      "name": "pydeck",
+      "version": "0.9.1",
+      "purl": "pkg:pypi/pydeck@0.9.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pydocket-218@0.17.1",
+      "name": "pydocket",
+      "version": "0.17.1",
+      "purl": "pkg:pypi/pydocket@0.17.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pygments-219@2.19.2",
+      "name": "pygments",
+      "version": "2.19.2",
+      "purl": "pkg:pypi/pygments@2.19.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pyjwt-220@2.10.1",
+      "name": "pyjwt",
+      "version": "2.10.1",
+      "purl": "pkg:pypi/pyjwt@2.10.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pylint-221@4.0.4",
+      "name": "pylint",
+      "version": "4.0.4",
+      "purl": "pkg:pypi/pylint@4.0.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pyparsing-222@3.3.1",
+      "name": "pyparsing",
+      "version": "3.3.1",
+      "purl": "pkg:pypi/pyparsing@3.3.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pyperclip-223@1.11.0",
+      "name": "pyperclip",
+      "version": "1.11.0",
+      "purl": "pkg:pypi/pyperclip@1.11.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pytest-224@9.0.2",
+      "name": "pytest",
+      "version": "9.0.2",
+      "purl": "pkg:pypi/pytest@9.0.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pytest-asyncio-225@1.3.0",
+      "name": "pytest-asyncio",
+      "version": "1.3.0",
+      "purl": "pkg:pypi/pytest-asyncio@1.3.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pytest-cov-226@7.0.0",
+      "name": "pytest-cov",
+      "version": "7.0.0",
+      "purl": "pkg:pypi/pytest-cov@7.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pytest-randomly-227@4.0.1",
+      "name": "pytest-randomly",
+      "version": "4.0.1",
+      "purl": "pkg:pypi/pytest-randomly@4.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "python-dateutil-228@2.9.0.post0",
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "purl": "pkg:pypi/python-dateutil@2.9.0.post0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "python-dotenv-229@1.2.1",
+      "name": "python-dotenv",
+      "version": "1.2.1",
+      "purl": "pkg:pypi/python-dotenv@1.2.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "python-json-logger-230@4.0.0",
+      "name": "python-json-logger",
+      "version": "4.0.0",
+      "purl": "pkg:pypi/python-json-logger@4.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "python-multipart-231@0.0.21",
+      "name": "python-multipart",
+      "version": "0.0.21",
+      "purl": "pkg:pypi/python-multipart@0.0.21"
+    },
+    {
+      "type": "library",
+      "bom-ref": "python-toon-232@0.1.3",
+      "name": "python-toon",
+      "version": "0.1.3",
+      "purl": "pkg:pypi/python-toon@0.1.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pytz-233@2025.2",
+      "name": "pytz",
+      "version": "2025.2",
+      "purl": "pkg:pypi/pytz@2025.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pyvis-234@0.3.2",
+      "name": "pyvis",
+      "version": "0.3.2",
+      "purl": "pkg:pypi/pyvis@0.3.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pywin32-235@311",
+      "name": "pywin32",
+      "version": "311",
+      "purl": "pkg:pypi/pywin32@311",
+      "properties": [
+        {
+          "name": "uv:package:marker",
+          "value": "sys_platform == 'win32'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pywin32-ctypes-236@0.2.3",
+      "name": "pywin32-ctypes",
+      "version": "0.2.3",
+      "purl": "pkg:pypi/pywin32-ctypes@0.2.3",
+      "properties": [
+        {
+          "name": "uv:package:marker",
+          "value": "sys_platform == 'win32'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pywinpty-237@3.0.2",
+      "name": "pywinpty",
+      "version": "3.0.2",
+      "purl": "pkg:pypi/pywinpty@3.0.2",
+      "properties": [
+        {
+          "name": "uv:package:marker",
+          "value": "os_name == 'nt'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pyyaml-238@6.0.3",
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "purl": "pkg:pypi/pyyaml@6.0.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pyzmq-239@27.1.0",
+      "name": "pyzmq",
+      "version": "27.1.0",
+      "purl": "pkg:pypi/pyzmq@27.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "rdflib-240@7.5.0",
+      "name": "rdflib",
+      "version": "7.5.0",
+      "purl": "pkg:pypi/rdflib@7.5.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "redis-241@7.1.0",
+      "name": "redis",
+      "version": "7.1.0",
+      "purl": "pkg:pypi/redis@7.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "referencing-242@0.36.2",
+      "name": "referencing",
+      "version": "0.36.2",
+      "purl": "pkg:pypi/referencing@0.36.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "regex-243@2025.11.3",
+      "name": "regex",
+      "version": "2025.11.3",
+      "purl": "pkg:pypi/regex@2025.11.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "requests-244@2.32.5",
+      "name": "requests",
+      "version": "2.32.5",
+      "purl": "pkg:pypi/requests@2.32.5"
+    },
+    {
+      "type": "library",
+      "bom-ref": "requests-oauthlib-245@2.0.0",
+      "name": "requests-oauthlib",
+      "version": "2.0.0",
+      "purl": "pkg:pypi/requests-oauthlib@2.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "rfc3339-validator-246@0.1.4",
+      "name": "rfc3339-validator",
+      "version": "0.1.4",
+      "purl": "pkg:pypi/rfc3339-validator@0.1.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "rfc3986-validator-247@0.1.1",
+      "name": "rfc3986-validator",
+      "version": "0.1.1",
+      "purl": "pkg:pypi/rfc3986-validator@0.1.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "rfc3987-syntax-248@1.1.0",
+      "name": "rfc3987-syntax",
+      "version": "1.1.0",
+      "purl": "pkg:pypi/rfc3987-syntax@1.1.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "rich-249@13.9.4",
+      "name": "rich",
+      "version": "13.9.4",
+      "purl": "pkg:pypi/rich@13.9.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "rich-rst-250@1.3.2",
+      "name": "rich-rst",
+      "version": "1.3.2",
+      "purl": "pkg:pypi/rich-rst@1.3.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "rich-toolkit-251@0.17.1",
+      "name": "rich-toolkit",
+      "version": "0.17.1",
+      "purl": "pkg:pypi/rich-toolkit@0.17.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "rignore-252@0.7.6",
+      "name": "rignore",
+      "version": "0.7.6",
+      "purl": "pkg:pypi/rignore@0.7.6"
+    },
+    {
+      "type": "library",
+      "bom-ref": "rpds-py-253@0.30.0",
+      "name": "rpds-py",
+      "version": "0.30.0",
+      "purl": "pkg:pypi/rpds-py@0.30.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "ruamel-yaml-254@0.19.1",
+      "name": "ruamel-yaml",
+      "version": "0.19.1",
+      "purl": "pkg:pypi/ruamel-yaml@0.19.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "secretstorage-255@3.5.0",
+      "name": "secretstorage",
+      "version": "3.5.0",
+      "purl": "pkg:pypi/secretstorage@3.5.0",
+      "properties": [
+        {
+          "name": "uv:package:marker",
+          "value": "sys_platform == 'linux'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "send2trash-256@1.8.3",
+      "name": "send2trash",
+      "version": "1.8.3",
+      "purl": "pkg:pypi/send2trash@1.8.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "sentry-sdk-257@2.50.0",
+      "name": "sentry-sdk",
+      "version": "2.50.0",
+      "purl": "pkg:pypi/sentry-sdk@2.50.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "setuptools-258@80.9.0",
+      "name": "setuptools",
+      "version": "80.9.0",
+      "purl": "pkg:pypi/setuptools@80.9.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "shellingham-259@1.5.4",
+      "name": "shellingham",
+      "version": "1.5.4",
+      "purl": "pkg:pypi/shellingham@1.5.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "six-260@1.17.0",
+      "name": "six",
+      "version": "1.17.0",
+      "purl": "pkg:pypi/six@1.17.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "smmap-261@5.0.2",
+      "name": "smmap",
+      "version": "5.0.2",
+      "purl": "pkg:pypi/smmap@5.0.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "sniffio-262@1.3.1",
+      "name": "sniffio",
+      "version": "1.3.1",
+      "purl": "pkg:pypi/sniffio@1.3.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "sortedcontainers-263@2.4.0",
+      "name": "sortedcontainers",
+      "version": "2.4.0",
+      "purl": "pkg:pypi/sortedcontainers@2.4.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "soupsieve-264@2.8.1",
+      "name": "soupsieve",
+      "version": "2.8.1",
+      "purl": "pkg:pypi/soupsieve@2.8.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "sqlalchemy-265@2.0.46",
+      "name": "sqlalchemy",
+      "version": "2.0.46",
+      "purl": "pkg:pypi/sqlalchemy@2.0.46"
+    },
+    {
+      "type": "library",
+      "bom-ref": "sqlalchemy-utils-266@0.42.1",
+      "name": "sqlalchemy-utils",
+      "version": "0.42.1",
+      "purl": "pkg:pypi/sqlalchemy-utils@0.42.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "sse-starlette-267@3.1.1",
+      "name": "sse-starlette",
+      "version": "3.1.1",
+      "purl": "pkg:pypi/sse-starlette@3.1.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "stack-data-268@0.6.3",
+      "name": "stack-data",
+      "version": "0.6.3",
+      "purl": "pkg:pypi/stack-data@0.6.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "starlette-269@0.50.0",
+      "name": "starlette",
+      "version": "0.50.0",
+      "purl": "pkg:pypi/starlette@0.50.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "streamlit-270@1.52.2",
+      "name": "streamlit",
+      "version": "1.52.2",
+      "purl": "pkg:pypi/streamlit@1.52.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "tenacity-271@9.1.2",
+      "name": "tenacity",
+      "version": "9.1.2",
+      "purl": "pkg:pypi/tenacity@9.1.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "terminado-272@0.18.1",
+      "name": "terminado",
+      "version": "0.18.1",
+      "purl": "pkg:pypi/terminado@0.18.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "tiktoken-273@0.12.0",
+      "name": "tiktoken",
+      "version": "0.12.0",
+      "purl": "pkg:pypi/tiktoken@0.12.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "tinycss2-274@1.4.0",
+      "name": "tinycss2",
+      "version": "1.4.0",
+      "purl": "pkg:pypi/tinycss2@1.4.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "toml-275@0.10.2",
+      "name": "toml",
+      "version": "0.10.2",
+      "purl": "pkg:pypi/toml@0.10.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "tomlkit-276@0.14.0",
+      "name": "tomlkit",
+      "version": "0.14.0",
+      "purl": "pkg:pypi/tomlkit@0.14.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "tornado-277@6.5.4",
+      "name": "tornado",
+      "version": "6.5.4",
+      "purl": "pkg:pypi/tornado@6.5.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "tqdm-278@4.67.1",
+      "name": "tqdm",
+      "version": "4.67.1",
+      "purl": "pkg:pypi/tqdm@4.67.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "traitlets-279@5.14.3",
+      "name": "traitlets",
+      "version": "5.14.3",
+      "purl": "pkg:pypi/traitlets@5.14.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "typer-280@0.21.1",
+      "name": "typer",
+      "version": "0.21.1",
+      "purl": "pkg:pypi/typer@0.21.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "typing-extensions-281@4.15.0",
+      "name": "typing-extensions",
+      "version": "4.15.0",
+      "purl": "pkg:pypi/typing-extensions@4.15.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "typing-inspection-282@0.4.2",
+      "name": "typing-inspection",
+      "version": "0.4.2",
+      "purl": "pkg:pypi/typing-inspection@0.4.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "tzdata-283@2025.3",
+      "name": "tzdata",
+      "version": "2025.3",
+      "purl": "pkg:pypi/tzdata@2025.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "uri-template-284@1.3.0",
+      "name": "uri-template",
+      "version": "1.3.0",
+      "purl": "pkg:pypi/uri-template@1.3.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "urllib3-285@2.6.2",
+      "name": "urllib3",
+      "version": "2.6.2",
+      "purl": "pkg:pypi/urllib3@2.6.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "uvicorn-286@0.38.0",
+      "name": "uvicorn",
+      "version": "0.38.0",
+      "purl": "pkg:pypi/uvicorn@0.38.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "uvloop-287@0.22.1",
+      "name": "uvloop",
+      "version": "0.22.1",
+      "purl": "pkg:pypi/uvloop@0.22.1",
+      "properties": [
+        {
+          "name": "uv:package:marker",
+          "value": "platform_python_implementation != 'PyPy' and sys_platform != 'cygwin' and sys_platform != 'win32'"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "watchdog-288@6.0.0",
+      "name": "watchdog",
+      "version": "6.0.0",
+      "purl": "pkg:pypi/watchdog@6.0.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "watchfiles-289@1.1.1",
+      "name": "watchfiles",
+      "version": "1.1.1",
+      "purl": "pkg:pypi/watchfiles@1.1.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "wcwidth-290@0.2.14",
+      "name": "wcwidth",
+      "version": "0.2.14",
+      "purl": "pkg:pypi/wcwidth@0.2.14"
+    },
+    {
+      "type": "library",
+      "bom-ref": "webcolors-291@25.10.0",
+      "name": "webcolors",
+      "version": "25.10.0",
+      "purl": "pkg:pypi/webcolors@25.10.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "webencodings-292@0.5.1",
+      "name": "webencodings",
+      "version": "0.5.1",
+      "purl": "pkg:pypi/webencodings@0.5.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "websocket-client-293@1.9.0",
+      "name": "websocket-client",
+      "version": "1.9.0",
+      "purl": "pkg:pypi/websocket-client@1.9.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "websockets-294@15.0.1",
+      "name": "websockets",
+      "version": "15.0.1",
+      "purl": "pkg:pypi/websockets@15.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "widgetsnbextension-295@4.0.15",
+      "name": "widgetsnbextension",
+      "version": "4.0.15",
+      "purl": "pkg:pypi/widgetsnbextension@4.0.15"
+    },
+    {
+      "type": "library",
+      "bom-ref": "wrapt-296@1.17.3",
+      "name": "wrapt",
+      "version": "1.17.3",
+      "purl": "pkg:pypi/wrapt@1.17.3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "yarl-297@1.22.0",
+      "name": "yarl",
+      "version": "1.22.0",
+      "purl": "pkg:pypi/yarl@1.22.0"
+    },
+    {
+      "type": "library",
+      "bom-ref": "zipp-298@3.23.0",
+      "name": "zipp",
+      "version": "3.23.0",
+      "purl": "pkg:pypi/zipp@3.23.0"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "agent-framework-2@1.0.0b251120",
+      "dependsOn": [
+        "agent-framework-core-3@1.0.0b251001"
+      ]
+    },
+    {
+      "ref": "agent-framework-core-3@1.0.0b251001",
+      "dependsOn": [
+        "aiofiles-4@25.1.0",
+        "azure-identity-33@1.25.1",
+        "azure-monitor-opentelemetry-38@1.8.2",
+        "azure-monitor-opentelemetry-exporter-39@1.0.0b45",
+        "mcp-145@1.25.0",
+        "openai-164@2.26.0",
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-exporter-otlp-proto-grpc-168@1.38.0",
+        "opentelemetry-sdk-184@1.38.0",
+        "opentelemetry-semantic-conventions-ai-186@0.4.13",
+        "pydantic-213@2.12.5",
+        "pydantic-settings-216@2.12.0",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "aiofiles-4@25.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "aiohappyeyeballs-5@2.6.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "aiohttp-6@3.13.2",
+      "dependsOn": [
+        "aiohappyeyeballs-5@2.6.1",
+        "aiosignal-7@1.4.0",
+        "attrs-21@25.4.0",
+        "frozenlist-84@1.8.0",
+        "multidict-152@6.7.0",
+        "propcache-203@0.4.1",
+        "yarl-297@1.22.0"
+      ]
+    },
+    {
+      "ref": "aiosignal-7@1.4.0",
+      "dependsOn": [
+        "frozenlist-84@1.8.0"
+      ]
+    },
+    {
+      "ref": "alembic-8@1.18.1",
+      "dependsOn": [
+        "mako-138@1.3.10",
+        "sqlalchemy-265@2.0.46",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "altair-9@6.0.0",
+      "dependsOn": [
+        "jinja2-112@3.1.6",
+        "jsonschema-118@4.25.1",
+        "narwhals-153@2.15.0",
+        "packaging-188@25.0",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "annotated-doc-10@0.0.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "annotated-types-11@0.7.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "anyio-12@4.12.0",
+      "dependsOn": [
+        "idna-97@3.11"
+      ]
+    },
+    {
+      "ref": "appnope-13@0.1.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "argon2-cffi-14@25.1.0",
+      "dependsOn": [
+        "argon2-cffi-bindings-15@25.1.0"
+      ]
+    },
+    {
+      "ref": "argon2-cffi-bindings-15@25.1.0",
+      "dependsOn": [
+        "cffi-49@2.0.0"
+      ]
+    },
+    {
+      "ref": "arrow-16@1.4.0",
+      "dependsOn": [
+        "python-dateutil-228@2.9.0.post0",
+        "tzdata-283@2025.3"
+      ]
+    },
+    {
+      "ref": "asgiref-17@3.11.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "astroid-18@4.0.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "asttokens-19@3.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "async-lru-20@2.0.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "attrs-21@25.4.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "authlib-22@1.6.6",
+      "dependsOn": [
+        "cryptography-57@46.0.3"
+      ]
+    },
+    {
+      "ref": "av-23@16.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "azure-ai-agents-24@1.2.0b6",
+      "dependsOn": [
+        "azure-core-30@1.38.2",
+        "isodate-104@0.7.2",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "azure-ai-documentintelligence-25@1.0.2",
+      "dependsOn": [
+        "azure-core-30@1.38.2",
+        "isodate-104@0.7.2",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "azure-ai-evaluation-26@1.14.0",
+      "dependsOn": [
+        "aiohttp-6@3.13.2",
+        "azure-core-30@1.38.2",
+        "azure-identity-33@1.25.1",
+        "azure-storage-blob-41@12.27.1",
+        "httpx-95@0.28.1",
+        "jinja2-112@3.1.6",
+        "msrest-151@0.7.1",
+        "nltk-159@3.9.2",
+        "openai-164@2.26.0",
+        "pandas-189@2.3.3",
+        "pyjwt-220@2.10.1",
+        "ruamel-yaml-254@0.19.1"
+      ]
+    },
+    {
+      "ref": "azure-ai-projects-27@1.0.0",
+      "dependsOn": [
+        "azure-ai-agents-24@1.2.0b6",
+        "azure-core-30@1.38.2",
+        "azure-storage-blob-41@12.27.1",
+        "isodate-104@0.7.2",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "azure-ai-textanalytics-28@5.3.0",
+      "dependsOn": [
+        "azure-common-29@1.1.28",
+        "azure-core-30@1.38.2",
+        "isodate-104@0.7.2",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "azure-common-29@1.1.28",
+      "dependsOn": []
+    },
+    {
+      "ref": "azure-core-30@1.38.2",
+      "dependsOn": [
+        "requests-244@2.32.5",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "azure-core-tracing-opentelemetry-31@1.0.0b12",
+      "dependsOn": [
+        "azure-core-30@1.38.2",
+        "opentelemetry-api-166@1.38.0"
+      ]
+    },
+    {
+      "ref": "azure-cosmos-32@4.15.0",
+      "dependsOn": [
+        "azure-core-30@1.38.2",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "azure-identity-33@1.25.1",
+      "dependsOn": [
+        "azure-core-30@1.38.2",
+        "cryptography-57@46.0.3",
+        "msal-149@1.34.0",
+        "msal-extensions-150@1.3.1",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "azure-keyvault-secrets-34@4.10.0",
+      "dependsOn": [
+        "azure-core-30@1.38.2",
+        "isodate-104@0.7.2",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "azure-mgmt-applicationinsights-35@4.1.0",
+      "dependsOn": [
+        "azure-common-29@1.1.28",
+        "azure-mgmt-core-37@1.6.0",
+        "isodate-104@0.7.2",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "azure-mgmt-cognitiveservices-36@14.1.0",
+      "dependsOn": [
+        "azure-mgmt-core-37@1.6.0",
+        "msrest-151@0.7.1",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "azure-mgmt-core-37@1.6.0",
+      "dependsOn": [
+        "azure-core-30@1.38.2"
+      ]
+    },
+    {
+      "ref": "azure-monitor-opentelemetry-38@1.8.2",
+      "dependsOn": [
+        "azure-core-30@1.38.2",
+        "azure-core-tracing-opentelemetry-31@1.0.0b12",
+        "azure-monitor-opentelemetry-exporter-39@1.0.0b45",
+        "opentelemetry-instrumentation-django-172@0.59b0",
+        "opentelemetry-instrumentation-fastapi-173@0.59b0",
+        "opentelemetry-instrumentation-flask-174@0.59b0",
+        "opentelemetry-instrumentation-psycopg2-177@0.59b0",
+        "opentelemetry-instrumentation-requests-178@0.59b0",
+        "opentelemetry-instrumentation-urllib-179@0.59b0",
+        "opentelemetry-instrumentation-urllib3-180@0.59b0",
+        "opentelemetry-resource-detector-azure-183@0.1.5",
+        "opentelemetry-sdk-184@1.38.0"
+      ]
+    },
+    {
+      "ref": "azure-monitor-opentelemetry-exporter-39@1.0.0b45",
+      "dependsOn": [
+        "azure-core-30@1.38.2",
+        "azure-identity-33@1.25.1",
+        "msrest-151@0.7.1",
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-sdk-184@1.38.0",
+        "psutil-205@7.2.0"
+      ]
+    },
+    {
+      "ref": "azure-search-documents-40@11.5.2",
+      "dependsOn": [
+        "azure-common-29@1.1.28",
+        "azure-core-30@1.38.2",
+        "isodate-104@0.7.2",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "azure-storage-blob-41@12.27.1",
+      "dependsOn": [
+        "azure-core-30@1.38.2",
+        "cryptography-57@46.0.3",
+        "isodate-104@0.7.2",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "babel-42@2.17.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "beartype-43@0.22.9",
+      "dependsOn": []
+    },
+    {
+      "ref": "beautifulsoup4-44@4.14.3",
+      "dependsOn": [
+        "soupsieve-264@2.8.1",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "bleach-45@6.3.0",
+      "dependsOn": [
+        "tinycss2-274@1.4.0",
+        "webencodings-292@0.5.1"
+      ]
+    },
+    {
+      "ref": "blinker-46@1.9.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "cachetools-47@6.2.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "certifi-48@2025.11.12",
+      "dependsOn": []
+    },
+    {
+      "ref": "cffi-49@2.0.0",
+      "dependsOn": [
+        "pycparser-212@2.23"
+      ]
+    },
+    {
+      "ref": "charset-normalizer-50@3.4.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "click-51@8.3.1",
+      "dependsOn": [
+        "colorama-53@0.4.6"
+      ]
+    },
+    {
+      "ref": "cloudpickle-52@3.1.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "colorama-53@0.4.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "comm-54@0.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "contourpy-55@1.3.3",
+      "dependsOn": [
+        "numpy-162@2.4.0"
+      ]
+    },
+    {
+      "ref": "coverage-56@7.13.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "cryptography-57@46.0.3",
+      "dependsOn": [
+        "cffi-49@2.0.0"
+      ]
+    },
+    {
+      "ref": "cycler-58@0.12.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "cyclopts-59@4.5.0",
+      "dependsOn": [
+        "attrs-21@25.4.0",
+        "docstring-parser-68@0.17.0",
+        "rich-249@13.9.4",
+        "rich-rst-250@1.3.2"
+      ]
+    },
+    {
+      "ref": "debugpy-60@1.8.19",
+      "dependsOn": []
+    },
+    {
+      "ref": "decorator-61@5.2.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "defusedxml-62@0.7.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "dill-63@0.4.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "diskcache-64@5.6.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "distro-65@1.9.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "dnspython-66@2.8.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "docopt-67@0.6.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "docstring-parser-68@0.17.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "docutils-69@0.22.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "duckdb-70@1.5.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "email-validator-71@2.3.0",
+      "dependsOn": [
+        "dnspython-66@2.8.0",
+        "idna-97@3.11"
+      ]
+    },
+    {
+      "ref": "exceptiongroup-72@1.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "executing-73@2.2.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "faker-74@39.0.0",
+      "dependsOn": [
+        "tzdata-283@2025.3"
+      ]
+    },
+    {
+      "ref": "fakeredis-75@2.33.0",
+      "dependsOn": [
+        "lupa-136@2.6",
+        "redis-241@7.1.0",
+        "sortedcontainers-263@2.4.0"
+      ]
+    },
+    {
+      "ref": "fastapi-76@0.128.0",
+      "dependsOn": [
+        "annotated-doc-10@0.0.4",
+        "email-validator-71@2.3.0",
+        "fastapi-cli-77@0.0.20",
+        "httpx-95@0.28.1",
+        "jinja2-112@3.1.6",
+        "pydantic-213@2.12.5",
+        "pydantic-extra-types-215@2.11.0",
+        "pydantic-settings-216@2.12.0",
+        "python-multipart-231@0.0.21",
+        "starlette-269@0.50.0",
+        "typing-extensions-281@4.15.0",
+        "uvicorn-286@0.38.0"
+      ]
+    },
+    {
+      "ref": "fastapi-cli-77@0.0.20",
+      "dependsOn": [
+        "fastapi-cloud-cli-78@0.11.0",
+        "rich-toolkit-251@0.17.1",
+        "typer-280@0.21.1",
+        "uvicorn-286@0.38.0"
+      ]
+    },
+    {
+      "ref": "fastapi-cloud-cli-78@0.11.0",
+      "dependsOn": [
+        "fastar-79@0.8.0",
+        "httpx-95@0.28.1",
+        "pydantic-213@2.12.5",
+        "rich-toolkit-251@0.17.1",
+        "rignore-252@0.7.6",
+        "sentry-sdk-257@2.50.0",
+        "typer-280@0.21.1",
+        "uvicorn-286@0.38.0"
+      ]
+    },
+    {
+      "ref": "fastar-79@0.8.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "fastjsonschema-80@2.21.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "fastmcp-81@2.14.3",
+      "dependsOn": [
+        "authlib-22@1.6.6",
+        "cyclopts-59@4.5.0",
+        "exceptiongroup-72@1.3.1",
+        "httpx-95@0.28.1",
+        "jsonschema-path-119@0.3.4",
+        "mcp-145@1.25.0",
+        "openapi-pydantic-165@0.5.1",
+        "platformdirs-197@4.5.1",
+        "py-key-value-aio-209@0.3.0",
+        "pydantic-213@2.12.5",
+        "pydocket-218@0.17.1",
+        "pyperclip-223@1.11.0",
+        "python-dotenv-229@1.2.1",
+        "rich-249@13.9.4",
+        "uvicorn-286@0.38.0",
+        "websockets-294@15.0.1"
+      ]
+    },
+    {
+      "ref": "fonttools-82@4.61.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "fqdn-83@1.5.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "frozenlist-84@1.8.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "geographiclib-85@2.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "geopy-86@2.4.1",
+      "dependsOn": [
+        "geographiclib-85@2.1"
+      ]
+    },
+    {
+      "ref": "gitdb-87@4.0.12",
+      "dependsOn": [
+        "smmap-261@5.0.2"
+      ]
+    },
+    {
+      "ref": "gitpython-88@3.1.46",
+      "dependsOn": [
+        "gitdb-87@4.0.12"
+      ]
+    },
+    {
+      "ref": "googleapis-common-protos-89@1.72.0",
+      "dependsOn": [
+        "protobuf-204@6.33.2"
+      ]
+    },
+    {
+      "ref": "greenlet-90@3.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "grpcio-91@1.76.0",
+      "dependsOn": [
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "h11-92@0.16.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "httpcore-93@1.0.9",
+      "dependsOn": [
+        "certifi-48@2025.11.12",
+        "h11-92@0.16.0"
+      ]
+    },
+    {
+      "ref": "httptools-94@0.7.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "httpx-95@0.28.1",
+      "dependsOn": [
+        "anyio-12@4.12.0",
+        "certifi-48@2025.11.12",
+        "click-51@8.3.1",
+        "httpcore-93@1.0.9",
+        "idna-97@3.11",
+        "pygments-219@2.19.2",
+        "rich-249@13.9.4"
+      ]
+    },
+    {
+      "ref": "httpx-sse-96@0.4.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "idna-97@3.11",
+      "dependsOn": []
+    },
+    {
+      "ref": "importlib-metadata-98@8.7.1",
+      "dependsOn": [
+        "zipp-298@3.23.0"
+      ]
+    },
+    {
+      "ref": "iniconfig-99@2.3.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "ipykernel-100@7.1.0",
+      "dependsOn": [
+        "appnope-13@0.1.4",
+        "comm-54@0.2.3",
+        "debugpy-60@1.8.19",
+        "ipython-101@9.8.0",
+        "jupyter-client-122@8.7.0",
+        "jupyter-core-124@5.9.1",
+        "matplotlib-inline-143@0.2.1",
+        "nest-asyncio-157@1.6.0",
+        "packaging-188@25.0",
+        "psutil-205@7.2.0",
+        "pyzmq-239@27.1.0",
+        "tornado-277@6.5.4",
+        "traitlets-279@5.14.3"
+      ]
+    },
+    {
+      "ref": "ipython-101@9.8.0",
+      "dependsOn": [
+        "colorama-53@0.4.6",
+        "decorator-61@5.2.1",
+        "ipython-pygments-lexers-102@1.1.1",
+        "jedi-110@0.19.2",
+        "matplotlib-inline-143@0.2.1",
+        "pexpect-194@4.9.0",
+        "prompt-toolkit-202@3.0.52",
+        "pygments-219@2.19.2",
+        "stack-data-268@0.6.3",
+        "traitlets-279@5.14.3"
+      ]
+    },
+    {
+      "ref": "ipython-pygments-lexers-102@1.1.1",
+      "dependsOn": [
+        "pygments-219@2.19.2"
+      ]
+    },
+    {
+      "ref": "ipywidgets-103@8.1.8",
+      "dependsOn": [
+        "comm-54@0.2.3",
+        "ipython-101@9.8.0",
+        "jupyterlab-widgets-132@3.0.16",
+        "traitlets-279@5.14.3",
+        "widgetsnbextension-295@4.0.15"
+      ]
+    },
+    {
+      "ref": "isodate-104@0.7.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "isoduration-105@20.11.0",
+      "dependsOn": [
+        "arrow-16@1.4.0"
+      ]
+    },
+    {
+      "ref": "isort-106@7.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "jaraco-classes-107@3.4.0",
+      "dependsOn": [
+        "more-itertools-148@10.8.0"
+      ]
+    },
+    {
+      "ref": "jaraco-context-108@6.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "jaraco-functools-109@4.4.0",
+      "dependsOn": [
+        "more-itertools-148@10.8.0"
+      ]
+    },
+    {
+      "ref": "jedi-110@0.19.2",
+      "dependsOn": [
+        "parso-191@0.8.5"
+      ]
+    },
+    {
+      "ref": "jeepney-111@0.9.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "jinja2-112@3.1.6",
+      "dependsOn": [
+        "markupsafe-141@3.0.3"
+      ]
+    },
+    {
+      "ref": "jiter-113@0.12.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "joblib-114@1.5.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "json5-115@0.12.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "jsonpickle-116@4.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "jsonpointer-117@3.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "jsonschema-118@4.25.1",
+      "dependsOn": [
+        "attrs-21@25.4.0",
+        "fqdn-83@1.5.1",
+        "idna-97@3.11",
+        "isoduration-105@20.11.0",
+        "jsonpointer-117@3.0.0",
+        "jsonschema-specifications-120@2025.9.1",
+        "referencing-242@0.36.2",
+        "rfc3339-validator-246@0.1.4",
+        "rfc3986-validator-247@0.1.1",
+        "rfc3987-syntax-248@1.1.0",
+        "rpds-py-253@0.30.0",
+        "uri-template-284@1.3.0",
+        "webcolors-291@25.10.0"
+      ]
+    },
+    {
+      "ref": "jsonschema-path-119@0.3.4",
+      "dependsOn": [
+        "pathable-192@0.4.4",
+        "pyyaml-238@6.0.3",
+        "referencing-242@0.36.2",
+        "requests-244@2.32.5"
+      ]
+    },
+    {
+      "ref": "jsonschema-specifications-120@2025.9.1",
+      "dependsOn": [
+        "referencing-242@0.36.2"
+      ]
+    },
+    {
+      "ref": "jupyter-121@1.1.1",
+      "dependsOn": [
+        "ipykernel-100@7.1.0",
+        "ipywidgets-103@8.1.8",
+        "jupyter-console-123@6.6.3",
+        "jupyterlab-129@4.5.1",
+        "nbconvert-155@7.16.6",
+        "notebook-160@7.5.1"
+      ]
+    },
+    {
+      "ref": "jupyter-client-122@8.7.0",
+      "dependsOn": [
+        "jupyter-core-124@5.9.1",
+        "python-dateutil-228@2.9.0.post0",
+        "pyzmq-239@27.1.0",
+        "tornado-277@6.5.4",
+        "traitlets-279@5.14.3"
+      ]
+    },
+    {
+      "ref": "jupyter-console-123@6.6.3",
+      "dependsOn": [
+        "ipykernel-100@7.1.0",
+        "ipython-101@9.8.0",
+        "jupyter-client-122@8.7.0",
+        "jupyter-core-124@5.9.1",
+        "prompt-toolkit-202@3.0.52",
+        "pygments-219@2.19.2",
+        "pyzmq-239@27.1.0",
+        "traitlets-279@5.14.3"
+      ]
+    },
+    {
+      "ref": "jupyter-core-124@5.9.1",
+      "dependsOn": [
+        "platformdirs-197@4.5.1",
+        "traitlets-279@5.14.3"
+      ]
+    },
+    {
+      "ref": "jupyter-events-125@0.12.0",
+      "dependsOn": [
+        "jsonschema-118@4.25.1",
+        "packaging-188@25.0",
+        "python-json-logger-230@4.0.0",
+        "pyyaml-238@6.0.3",
+        "referencing-242@0.36.2",
+        "rfc3339-validator-246@0.1.4",
+        "rfc3986-validator-247@0.1.1",
+        "traitlets-279@5.14.3"
+      ]
+    },
+    {
+      "ref": "jupyter-lsp-126@2.3.0",
+      "dependsOn": [
+        "jupyter-server-127@2.17.0"
+      ]
+    },
+    {
+      "ref": "jupyter-server-127@2.17.0",
+      "dependsOn": [
+        "anyio-12@4.12.0",
+        "argon2-cffi-14@25.1.0",
+        "jinja2-112@3.1.6",
+        "jupyter-client-122@8.7.0",
+        "jupyter-core-124@5.9.1",
+        "jupyter-events-125@0.12.0",
+        "jupyter-server-terminals-128@0.5.3",
+        "nbconvert-155@7.16.6",
+        "nbformat-156@5.10.4",
+        "packaging-188@25.0",
+        "prometheus-client-201@0.23.1",
+        "pywinpty-237@3.0.2",
+        "pyzmq-239@27.1.0",
+        "send2trash-256@1.8.3",
+        "terminado-272@0.18.1",
+        "tornado-277@6.5.4",
+        "traitlets-279@5.14.3",
+        "websocket-client-293@1.9.0"
+      ]
+    },
+    {
+      "ref": "jupyter-server-terminals-128@0.5.3",
+      "dependsOn": [
+        "pywinpty-237@3.0.2",
+        "terminado-272@0.18.1"
+      ]
+    },
+    {
+      "ref": "jupyterlab-129@4.5.1",
+      "dependsOn": [
+        "async-lru-20@2.0.5",
+        "httpx-95@0.28.1",
+        "ipykernel-100@7.1.0",
+        "jinja2-112@3.1.6",
+        "jupyter-core-124@5.9.1",
+        "jupyter-lsp-126@2.3.0",
+        "jupyter-server-127@2.17.0",
+        "jupyterlab-server-131@2.28.0",
+        "notebook-shim-161@0.2.4",
+        "packaging-188@25.0",
+        "setuptools-258@80.9.0",
+        "tornado-277@6.5.4",
+        "traitlets-279@5.14.3"
+      ]
+    },
+    {
+      "ref": "jupyterlab-pygments-130@0.3.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "jupyterlab-server-131@2.28.0",
+      "dependsOn": [
+        "babel-42@2.17.0",
+        "jinja2-112@3.1.6",
+        "json5-115@0.12.1",
+        "jsonschema-118@4.25.1",
+        "jupyter-server-127@2.17.0",
+        "packaging-188@25.0",
+        "requests-244@2.32.5"
+      ]
+    },
+    {
+      "ref": "jupyterlab-widgets-132@3.0.16",
+      "dependsOn": []
+    },
+    {
+      "ref": "keyring-133@25.7.0",
+      "dependsOn": [
+        "jaraco-classes-107@3.4.0",
+        "jaraco-context-108@6.1.0",
+        "jaraco-functools-109@4.4.0",
+        "jeepney-111@0.9.0",
+        "pywin32-ctypes-236@0.2.3",
+        "secretstorage-255@3.5.0"
+      ]
+    },
+    {
+      "ref": "kiwisolver-134@1.4.9",
+      "dependsOn": []
+    },
+    {
+      "ref": "lark-135@1.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "lupa-136@2.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "m26-137@0.3.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "mako-138@1.3.10",
+      "dependsOn": [
+        "markupsafe-141@3.0.3"
+      ]
+    },
+    {
+      "ref": "markdown-139@3.10.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "markdown-it-py-140@4.0.0",
+      "dependsOn": [
+        "mdurl-146@0.1.2"
+      ]
+    },
+    {
+      "ref": "markupsafe-141@3.0.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "matplotlib-142@3.10.8",
+      "dependsOn": [
+        "contourpy-55@1.3.3",
+        "cycler-58@0.12.1",
+        "fonttools-82@4.61.1",
+        "kiwisolver-134@1.4.9",
+        "numpy-162@2.4.0",
+        "packaging-188@25.0",
+        "pillow-196@12.1.0",
+        "pyparsing-222@3.3.1",
+        "python-dateutil-228@2.9.0.post0"
+      ]
+    },
+    {
+      "ref": "matplotlib-inline-143@0.2.1",
+      "dependsOn": [
+        "traitlets-279@5.14.3"
+      ]
+    },
+    {
+      "ref": "mccabe-144@0.7.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "mcp-145@1.25.0",
+      "dependsOn": [
+        "anyio-12@4.12.0",
+        "httpx-95@0.28.1",
+        "httpx-sse-96@0.4.3",
+        "jsonschema-118@4.25.1",
+        "pydantic-213@2.12.5",
+        "pydantic-settings-216@2.12.0",
+        "pyjwt-220@2.10.1",
+        "python-multipart-231@0.0.21",
+        "pywin32-235@311",
+        "sse-starlette-267@3.1.1",
+        "starlette-269@0.50.0",
+        "typing-extensions-281@4.15.0",
+        "typing-inspection-282@0.4.2",
+        "uvicorn-286@0.38.0",
+        "websockets-294@15.0.1"
+      ]
+    },
+    {
+      "ref": "mdurl-146@0.1.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "mistune-147@3.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "more-itertools-148@10.8.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "msal-149@1.34.0",
+      "dependsOn": [
+        "cryptography-57@46.0.3",
+        "pyjwt-220@2.10.1",
+        "requests-244@2.32.5"
+      ]
+    },
+    {
+      "ref": "msal-extensions-150@1.3.1",
+      "dependsOn": [
+        "msal-149@1.34.0"
+      ]
+    },
+    {
+      "ref": "msrest-151@0.7.1",
+      "dependsOn": [
+        "azure-core-30@1.38.2",
+        "certifi-48@2025.11.12",
+        "isodate-104@0.7.2",
+        "requests-244@2.32.5",
+        "requests-oauthlib-245@2.0.0"
+      ]
+    },
+    {
+      "ref": "multidict-152@6.7.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "narwhals-153@2.15.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "nbclient-154@0.10.4",
+      "dependsOn": [
+        "jupyter-client-122@8.7.0",
+        "jupyter-core-124@5.9.1",
+        "nbformat-156@5.10.4",
+        "traitlets-279@5.14.3"
+      ]
+    },
+    {
+      "ref": "nbconvert-155@7.16.6",
+      "dependsOn": [
+        "beautifulsoup4-44@4.14.3",
+        "bleach-45@6.3.0",
+        "defusedxml-62@0.7.1",
+        "jinja2-112@3.1.6",
+        "jupyter-core-124@5.9.1",
+        "jupyterlab-pygments-130@0.3.0",
+        "markupsafe-141@3.0.3",
+        "mistune-147@3.2.0",
+        "nbclient-154@0.10.4",
+        "nbformat-156@5.10.4",
+        "packaging-188@25.0",
+        "pandocfilters-190@1.5.1",
+        "pygments-219@2.19.2",
+        "traitlets-279@5.14.3"
+      ]
+    },
+    {
+      "ref": "nbformat-156@5.10.4",
+      "dependsOn": [
+        "fastjsonschema-80@2.21.2",
+        "jsonschema-118@4.25.1",
+        "jupyter-core-124@5.9.1",
+        "traitlets-279@5.14.3"
+      ]
+    },
+    {
+      "ref": "nest-asyncio-157@1.6.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "networkx-158@3.6.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "nltk-159@3.9.2",
+      "dependsOn": [
+        "click-51@8.3.1",
+        "joblib-114@1.5.3",
+        "regex-243@2025.11.3",
+        "tqdm-278@4.67.1"
+      ]
+    },
+    {
+      "ref": "notebook-160@7.5.1",
+      "dependsOn": [
+        "jupyter-server-127@2.17.0",
+        "jupyterlab-129@4.5.1",
+        "jupyterlab-server-131@2.28.0",
+        "notebook-shim-161@0.2.4",
+        "tornado-277@6.5.4"
+      ]
+    },
+    {
+      "ref": "notebook-shim-161@0.2.4",
+      "dependsOn": [
+        "jupyter-server-127@2.17.0"
+      ]
+    },
+    {
+      "ref": "numpy-162@2.4.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "oauthlib-163@3.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "openai-164@2.26.0",
+      "dependsOn": [
+        "anyio-12@4.12.0",
+        "distro-65@1.9.0",
+        "httpx-95@0.28.1",
+        "jiter-113@0.12.0",
+        "pydantic-213@2.12.5",
+        "sniffio-262@1.3.1",
+        "tqdm-278@4.67.1",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "openapi-pydantic-165@0.5.1",
+      "dependsOn": [
+        "pydantic-213@2.12.5"
+      ]
+    },
+    {
+      "ref": "opentelemetry-api-166@1.38.0",
+      "dependsOn": [
+        "importlib-metadata-98@8.7.1",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "opentelemetry-exporter-otlp-proto-common-167@1.38.0",
+      "dependsOn": [
+        "opentelemetry-proto-182@1.38.0"
+      ]
+    },
+    {
+      "ref": "opentelemetry-exporter-otlp-proto-grpc-168@1.38.0",
+      "dependsOn": [
+        "googleapis-common-protos-89@1.72.0",
+        "grpcio-91@1.76.0",
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-exporter-otlp-proto-common-167@1.38.0",
+        "opentelemetry-proto-182@1.38.0",
+        "opentelemetry-sdk-184@1.38.0",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "opentelemetry-instrumentation-169@0.59b0",
+      "dependsOn": [
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-semantic-conventions-185@0.59b0",
+        "packaging-188@25.0",
+        "wrapt-296@1.17.3"
+      ]
+    },
+    {
+      "ref": "opentelemetry-instrumentation-asgi-170@0.59b0",
+      "dependsOn": [
+        "asgiref-17@3.11.0",
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-instrumentation-169@0.59b0",
+        "opentelemetry-semantic-conventions-185@0.59b0",
+        "opentelemetry-util-http-187@0.59b0"
+      ]
+    },
+    {
+      "ref": "opentelemetry-instrumentation-dbapi-171@0.59b0",
+      "dependsOn": [
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-instrumentation-169@0.59b0",
+        "opentelemetry-semantic-conventions-185@0.59b0",
+        "wrapt-296@1.17.3"
+      ]
+    },
+    {
+      "ref": "opentelemetry-instrumentation-django-172@0.59b0",
+      "dependsOn": [
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-instrumentation-169@0.59b0",
+        "opentelemetry-instrumentation-wsgi-181@0.59b0",
+        "opentelemetry-semantic-conventions-185@0.59b0",
+        "opentelemetry-util-http-187@0.59b0"
+      ]
+    },
+    {
+      "ref": "opentelemetry-instrumentation-fastapi-173@0.59b0",
+      "dependsOn": [
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-instrumentation-169@0.59b0",
+        "opentelemetry-instrumentation-asgi-170@0.59b0",
+        "opentelemetry-semantic-conventions-185@0.59b0",
+        "opentelemetry-util-http-187@0.59b0"
+      ]
+    },
+    {
+      "ref": "opentelemetry-instrumentation-flask-174@0.59b0",
+      "dependsOn": [
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-instrumentation-169@0.59b0",
+        "opentelemetry-instrumentation-wsgi-181@0.59b0",
+        "opentelemetry-semantic-conventions-185@0.59b0",
+        "opentelemetry-util-http-187@0.59b0",
+        "packaging-188@25.0"
+      ]
+    },
+    {
+      "ref": "opentelemetry-instrumentation-httpx-175@0.59b0",
+      "dependsOn": [
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-instrumentation-169@0.59b0",
+        "opentelemetry-semantic-conventions-185@0.59b0",
+        "opentelemetry-util-http-187@0.59b0",
+        "wrapt-296@1.17.3"
+      ]
+    },
+    {
+      "ref": "opentelemetry-instrumentation-logging-176@0.59b0",
+      "dependsOn": [
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-instrumentation-169@0.59b0"
+      ]
+    },
+    {
+      "ref": "opentelemetry-instrumentation-psycopg2-177@0.59b0",
+      "dependsOn": [
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-instrumentation-169@0.59b0",
+        "opentelemetry-instrumentation-dbapi-171@0.59b0"
+      ]
+    },
+    {
+      "ref": "opentelemetry-instrumentation-requests-178@0.59b0",
+      "dependsOn": [
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-instrumentation-169@0.59b0",
+        "opentelemetry-semantic-conventions-185@0.59b0",
+        "opentelemetry-util-http-187@0.59b0"
+      ]
+    },
+    {
+      "ref": "opentelemetry-instrumentation-urllib-179@0.59b0",
+      "dependsOn": [
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-instrumentation-169@0.59b0",
+        "opentelemetry-semantic-conventions-185@0.59b0",
+        "opentelemetry-util-http-187@0.59b0"
+      ]
+    },
+    {
+      "ref": "opentelemetry-instrumentation-urllib3-180@0.59b0",
+      "dependsOn": [
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-instrumentation-169@0.59b0",
+        "opentelemetry-semantic-conventions-185@0.59b0",
+        "opentelemetry-util-http-187@0.59b0",
+        "wrapt-296@1.17.3"
+      ]
+    },
+    {
+      "ref": "opentelemetry-instrumentation-wsgi-181@0.59b0",
+      "dependsOn": [
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-instrumentation-169@0.59b0",
+        "opentelemetry-semantic-conventions-185@0.59b0",
+        "opentelemetry-util-http-187@0.59b0"
+      ]
+    },
+    {
+      "ref": "opentelemetry-proto-182@1.38.0",
+      "dependsOn": [
+        "protobuf-204@6.33.2"
+      ]
+    },
+    {
+      "ref": "opentelemetry-resource-detector-azure-183@0.1.5",
+      "dependsOn": [
+        "opentelemetry-sdk-184@1.38.0"
+      ]
+    },
+    {
+      "ref": "opentelemetry-sdk-184@1.38.0",
+      "dependsOn": [
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-semantic-conventions-185@0.59b0",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "opentelemetry-semantic-conventions-185@0.59b0",
+      "dependsOn": [
+        "opentelemetry-api-166@1.38.0",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "opentelemetry-semantic-conventions-ai-186@0.4.13",
+      "dependsOn": []
+    },
+    {
+      "ref": "opentelemetry-util-http-187@0.59b0",
+      "dependsOn": []
+    },
+    {
+      "ref": "packaging-188@25.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pandas-189@2.3.3",
+      "dependsOn": [
+        "numpy-162@2.4.0",
+        "python-dateutil-228@2.9.0.post0",
+        "pytz-233@2025.2",
+        "tzdata-283@2025.3"
+      ]
+    },
+    {
+      "ref": "pandocfilters-190@1.5.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "parso-191@0.8.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "pathable-192@0.4.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "pathvalidate-193@3.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pexpect-194@4.9.0",
+      "dependsOn": [
+        "ptyprocess-207@0.7.0"
+      ]
+    },
+    {
+      "ref": "pgvector-195@0.4.2",
+      "dependsOn": [
+        "numpy-162@2.4.0"
+      ]
+    },
+    {
+      "ref": "pillow-196@12.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "platformdirs-197@4.5.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pluggy-198@1.6.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "polars-199@1.37.1",
+      "dependsOn": [
+        "polars-runtime-32-200@1.37.1"
+      ]
+    },
+    {
+      "ref": "polars-runtime-32-200@1.37.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "prometheus-client-201@0.23.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "prompt-toolkit-202@3.0.52",
+      "dependsOn": [
+        "wcwidth-290@0.2.14"
+      ]
+    },
+    {
+      "ref": "propcache-203@0.4.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "protobuf-204@6.33.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "psutil-205@7.2.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "psycopg2-binary-206@2.9.11",
+      "dependsOn": []
+    },
+    {
+      "ref": "ptyprocess-207@0.7.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pure-eval-208@0.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "py-key-value-aio-209@0.3.0",
+      "dependsOn": [
+        "beartype-43@0.22.9",
+        "cachetools-47@6.2.4",
+        "diskcache-64@5.6.3",
+        "keyring-133@25.7.0",
+        "pathvalidate-193@3.3.1",
+        "py-key-value-shared-210@0.3.0",
+        "redis-241@7.1.0"
+      ]
+    },
+    {
+      "ref": "py-key-value-shared-210@0.3.0",
+      "dependsOn": [
+        "beartype-43@0.22.9",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "pyarrow-211@22.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pycparser-212@2.23",
+      "dependsOn": []
+    },
+    {
+      "ref": "pydantic-213@2.12.5",
+      "dependsOn": [
+        "annotated-types-11@0.7.0",
+        "email-validator-71@2.3.0",
+        "pydantic-core-214@2.41.5",
+        "typing-extensions-281@4.15.0",
+        "typing-inspection-282@0.4.2"
+      ]
+    },
+    {
+      "ref": "pydantic-core-214@2.41.5",
+      "dependsOn": [
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "pydantic-extra-types-215@2.11.0",
+      "dependsOn": [
+        "pydantic-213@2.12.5",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "pydantic-settings-216@2.12.0",
+      "dependsOn": [
+        "pydantic-213@2.12.5",
+        "python-dotenv-229@1.2.1",
+        "typing-inspection-282@0.4.2"
+      ]
+    },
+    {
+      "ref": "pydeck-217@0.9.1",
+      "dependsOn": [
+        "jinja2-112@3.1.6",
+        "numpy-162@2.4.0"
+      ]
+    },
+    {
+      "ref": "pydocket-218@0.17.1",
+      "dependsOn": [
+        "cloudpickle-52@3.1.2",
+        "fakeredis-75@2.33.0",
+        "opentelemetry-api-166@1.38.0",
+        "prometheus-client-201@0.23.1",
+        "py-key-value-aio-209@0.3.0",
+        "python-json-logger-230@4.0.0",
+        "redis-241@7.1.0",
+        "rich-249@13.9.4",
+        "typer-280@0.21.1",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "pygments-219@2.19.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pyjwt-220@2.10.1",
+      "dependsOn": [
+        "cryptography-57@46.0.3"
+      ]
+    },
+    {
+      "ref": "pylint-221@4.0.4",
+      "dependsOn": [
+        "astroid-18@4.0.3",
+        "colorama-53@0.4.6",
+        "dill-63@0.4.0",
+        "isort-106@7.0.0",
+        "mccabe-144@0.7.0",
+        "platformdirs-197@4.5.1",
+        "tomlkit-276@0.14.0"
+      ]
+    },
+    {
+      "ref": "pyparsing-222@3.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pyperclip-223@1.11.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pytest-224@9.0.2",
+      "dependsOn": [
+        "colorama-53@0.4.6",
+        "iniconfig-99@2.3.0",
+        "packaging-188@25.0",
+        "pluggy-198@1.6.0",
+        "pygments-219@2.19.2"
+      ]
+    },
+    {
+      "ref": "pytest-asyncio-225@1.3.0",
+      "dependsOn": [
+        "pytest-224@9.0.2"
+      ]
+    },
+    {
+      "ref": "pytest-cov-226@7.0.0",
+      "dependsOn": [
+        "coverage-56@7.13.1",
+        "pluggy-198@1.6.0",
+        "pytest-224@9.0.2"
+      ]
+    },
+    {
+      "ref": "pytest-randomly-227@4.0.1",
+      "dependsOn": [
+        "pytest-224@9.0.2"
+      ]
+    },
+    {
+      "ref": "python-dateutil-228@2.9.0.post0",
+      "dependsOn": [
+        "six-260@1.17.0"
+      ]
+    },
+    {
+      "ref": "python-dotenv-229@1.2.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "python-json-logger-230@4.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "python-multipart-231@0.0.21",
+      "dependsOn": []
+    },
+    {
+      "ref": "python-toon-232@0.1.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pytz-233@2025.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pyvis-234@0.3.2",
+      "dependsOn": [
+        "ipython-101@9.8.0",
+        "jinja2-112@3.1.6",
+        "jsonpickle-116@4.1.1",
+        "networkx-158@3.6.1"
+      ]
+    },
+    {
+      "ref": "pywin32-235@311",
+      "dependsOn": []
+    },
+    {
+      "ref": "pywin32-ctypes-236@0.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pywinpty-237@3.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pyyaml-238@6.0.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pyzmq-239@27.1.0",
+      "dependsOn": [
+        "cffi-49@2.0.0"
+      ]
+    },
+    {
+      "ref": "rdflib-240@7.5.0",
+      "dependsOn": [
+        "pyparsing-222@3.3.1"
+      ]
+    },
+    {
+      "ref": "redis-241@7.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "referencing-242@0.36.2",
+      "dependsOn": [
+        "attrs-21@25.4.0",
+        "rpds-py-253@0.30.0"
+      ]
+    },
+    {
+      "ref": "regex-243@2025.11.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "requests-244@2.32.5",
+      "dependsOn": [
+        "certifi-48@2025.11.12",
+        "charset-normalizer-50@3.4.4",
+        "idna-97@3.11",
+        "urllib3-285@2.6.2"
+      ]
+    },
+    {
+      "ref": "requests-oauthlib-245@2.0.0",
+      "dependsOn": [
+        "oauthlib-163@3.3.1",
+        "requests-244@2.32.5"
+      ]
+    },
+    {
+      "ref": "rfc3339-validator-246@0.1.4",
+      "dependsOn": [
+        "six-260@1.17.0"
+      ]
+    },
+    {
+      "ref": "rfc3986-validator-247@0.1.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "rfc3987-syntax-248@1.1.0",
+      "dependsOn": [
+        "lark-135@1.3.1"
+      ]
+    },
+    {
+      "ref": "rich-249@13.9.4",
+      "dependsOn": [
+        "markdown-it-py-140@4.0.0",
+        "pygments-219@2.19.2"
+      ]
+    },
+    {
+      "ref": "rich-rst-250@1.3.2",
+      "dependsOn": [
+        "docutils-69@0.22.4",
+        "rich-249@13.9.4"
+      ]
+    },
+    {
+      "ref": "rich-toolkit-251@0.17.1",
+      "dependsOn": [
+        "click-51@8.3.1",
+        "rich-249@13.9.4",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "rignore-252@0.7.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "rpds-py-253@0.30.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "ruamel-yaml-254@0.19.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "secretstorage-255@3.5.0",
+      "dependsOn": [
+        "cryptography-57@46.0.3",
+        "jeepney-111@0.9.0"
+      ]
+    },
+    {
+      "ref": "send2trash-256@1.8.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "sentry-sdk-257@2.50.0",
+      "dependsOn": [
+        "certifi-48@2025.11.12",
+        "urllib3-285@2.6.2"
+      ]
+    },
+    {
+      "ref": "setuptools-258@80.9.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "shellingham-259@1.5.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "six-260@1.17.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "smmap-261@5.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "sniffio-262@1.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "sortedcontainers-263@2.4.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "soupsieve-264@2.8.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "sqlalchemy-265@2.0.46",
+      "dependsOn": [
+        "greenlet-90@3.3.1",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "sqlalchemy-utils-266@0.42.1",
+      "dependsOn": [
+        "sqlalchemy-265@2.0.46"
+      ]
+    },
+    {
+      "ref": "sse-starlette-267@3.1.1",
+      "dependsOn": [
+        "anyio-12@4.12.0",
+        "starlette-269@0.50.0"
+      ]
+    },
+    {
+      "ref": "stack-data-268@0.6.3",
+      "dependsOn": [
+        "asttokens-19@3.0.1",
+        "executing-73@2.2.1",
+        "pure-eval-208@0.2.3"
+      ]
+    },
+    {
+      "ref": "starlette-269@0.50.0",
+      "dependsOn": [
+        "anyio-12@4.12.0"
+      ]
+    },
+    {
+      "ref": "streamlit-270@1.52.2",
+      "dependsOn": [
+        "altair-9@6.0.0",
+        "blinker-46@1.9.0",
+        "cachetools-47@6.2.4",
+        "click-51@8.3.1",
+        "gitpython-88@3.1.46",
+        "numpy-162@2.4.0",
+        "packaging-188@25.0",
+        "pandas-189@2.3.3",
+        "pillow-196@12.1.0",
+        "protobuf-204@6.33.2",
+        "pyarrow-211@22.0.0",
+        "pydeck-217@0.9.1",
+        "requests-244@2.32.5",
+        "tenacity-271@9.1.2",
+        "toml-275@0.10.2",
+        "tornado-277@6.5.4",
+        "typing-extensions-281@4.15.0",
+        "watchdog-288@6.0.0"
+      ]
+    },
+    {
+      "ref": "tenacity-271@9.1.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "terminado-272@0.18.1",
+      "dependsOn": [
+        "ptyprocess-207@0.7.0",
+        "pywinpty-237@3.0.2",
+        "tornado-277@6.5.4"
+      ]
+    },
+    {
+      "ref": "tiktoken-273@0.12.0",
+      "dependsOn": [
+        "regex-243@2025.11.3",
+        "requests-244@2.32.5"
+      ]
+    },
+    {
+      "ref": "tinycss2-274@1.4.0",
+      "dependsOn": [
+        "webencodings-292@0.5.1"
+      ]
+    },
+    {
+      "ref": "toml-275@0.10.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "tomlkit-276@0.14.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "tornado-277@6.5.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "tqdm-278@4.67.1",
+      "dependsOn": [
+        "colorama-53@0.4.6"
+      ]
+    },
+    {
+      "ref": "traitlets-279@5.14.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "typer-280@0.21.1",
+      "dependsOn": [
+        "click-51@8.3.1",
+        "rich-249@13.9.4",
+        "shellingham-259@1.5.4",
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "typing-extensions-281@4.15.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "typing-inspection-282@0.4.2",
+      "dependsOn": [
+        "typing-extensions-281@4.15.0"
+      ]
+    },
+    {
+      "ref": "tzdata-283@2025.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "uri-template-284@1.3.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "urllib3-285@2.6.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "uvicorn-286@0.38.0",
+      "dependsOn": [
+        "click-51@8.3.1",
+        "colorama-53@0.4.6",
+        "h11-92@0.16.0",
+        "httptools-94@0.7.1",
+        "python-dotenv-229@1.2.1",
+        "pyyaml-238@6.0.3",
+        "uvloop-287@0.22.1",
+        "watchfiles-289@1.1.1",
+        "websockets-294@15.0.1"
+      ]
+    },
+    {
+      "ref": "uvloop-287@0.22.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "watchdog-288@6.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "watchfiles-289@1.1.1",
+      "dependsOn": [
+        "anyio-12@4.12.0"
+      ]
+    },
+    {
+      "ref": "wcwidth-290@0.2.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "webcolors-291@25.10.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "webencodings-292@0.5.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "websocket-client-293@1.9.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "websockets-294@15.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "widgetsnbextension-295@4.0.15",
+      "dependsOn": []
+    },
+    {
+      "ref": "wrapt-296@1.17.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "yarl-297@1.22.0",
+      "dependsOn": [
+        "idna-97@3.11",
+        "multidict-152@6.7.0",
+        "propcache-203@0.4.1"
+      ]
+    },
+    {
+      "ref": "zero-to-ai-1@1.0.0",
+      "dependsOn": [
+        "agent-framework-2@1.0.0b251120",
+        "aiohttp-6@3.13.2",
+        "alembic-8@1.18.1",
+        "av-23@16.0.1",
+        "azure-ai-agents-24@1.2.0b6",
+        "azure-ai-documentintelligence-25@1.0.2",
+        "azure-ai-evaluation-26@1.14.0",
+        "azure-ai-projects-27@1.0.0",
+        "azure-ai-textanalytics-28@5.3.0",
+        "azure-core-30@1.38.2",
+        "azure-core-tracing-opentelemetry-31@1.0.0b12",
+        "azure-cosmos-32@4.15.0",
+        "azure-identity-33@1.25.1",
+        "azure-keyvault-secrets-34@4.10.0",
+        "azure-mgmt-applicationinsights-35@4.1.0",
+        "azure-mgmt-cognitiveservices-36@14.1.0",
+        "azure-search-documents-40@11.5.2",
+        "azure-storage-blob-41@12.27.1",
+        "beautifulsoup4-44@4.14.3",
+        "docopt-67@0.6.2",
+        "duckdb-70@1.5.0",
+        "faker-74@39.0.0",
+        "fastapi-76@0.128.0",
+        "fastmcp-81@2.14.3",
+        "geopy-86@2.4.1",
+        "h11-92@0.16.0",
+        "httpx-95@0.28.1",
+        "jinja2-112@3.1.6",
+        "jupyter-121@1.1.1",
+        "m26-137@0.3.2",
+        "markdown-139@3.10.1",
+        "matplotlib-142@3.10.8",
+        "networkx-158@3.6.1",
+        "openai-164@2.26.0",
+        "opentelemetry-api-166@1.38.0",
+        "opentelemetry-exporter-otlp-proto-grpc-168@1.38.0",
+        "opentelemetry-instrumentation-httpx-175@0.59b0",
+        "opentelemetry-instrumentation-logging-176@0.59b0",
+        "opentelemetry-instrumentation-psycopg2-177@0.59b0",
+        "opentelemetry-instrumentation-requests-178@0.59b0",
+        "opentelemetry-sdk-184@1.38.0",
+        "pandas-189@2.3.3",
+        "pgvector-195@0.4.2",
+        "polars-199@1.37.1",
+        "psutil-205@7.2.0",
+        "psycopg2-binary-206@2.9.11",
+        "pydantic-213@2.12.5",
+        "pydantic-core-214@2.41.5",
+        "pylint-221@4.0.4",
+        "pytest-224@9.0.2",
+        "pytest-asyncio-225@1.3.0",
+        "pytest-cov-226@7.0.0",
+        "pytest-randomly-227@4.0.1",
+        "python-dotenv-229@1.2.1",
+        "python-json-logger-230@4.0.0",
+        "python-multipart-231@0.0.21",
+        "python-toon-232@0.1.3",
+        "pytz-233@2025.2",
+        "pyvis-234@0.3.2",
+        "rdflib-240@7.5.0",
+        "six-260@1.17.0",
+        "sqlalchemy-265@2.0.46",
+        "sqlalchemy-utils-266@0.42.1",
+        "streamlit-270@1.52.2",
+        "tenacity-271@9.1.2",
+        "tiktoken-273@0.12.0",
+        "uvicorn-286@0.38.0",
+        "watchdog-288@6.0.0"
+      ]
+    },
+    {
+      "ref": "zipp-298@3.23.0",
+      "dependsOn": []
+    }
+  ]
+}

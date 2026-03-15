@@ -4,124 +4,123 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://example.org/libgraph/azure-mgmt-applicationinsights">
+  <rdf:Description rdf:about="http://example.org/libgraph/jupyter-console">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-common"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-mgmt-core"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isodate"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/nbclient">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ipykernel"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ipython"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-client"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-core"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/nbformat"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pytest">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/colorama"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/iniconfig"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/packaging"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pluggy"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/prompt-toolkit"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pygments"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/lupa">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/azure-mgmt-cognitiveservices">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-mgmt-core"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/msrest"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/ipywidgets">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/comm"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ipython"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyterlab-widgets"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyzmq"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/widgetsnbextension"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/tiktoken">
+  <rdf:Description rdf:about="http://example.org/libgraph/jsonschema-path">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/regex"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/requests"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/agent-framework-core">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/aiofiles"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-identity"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-monitor-opentelemetry"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-monitor-opentelemetry-exporter"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/mcp"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/openai"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-exporter-otlp-proto-grpc"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-sdk"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions-ai"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic-settings"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jupyter-events">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jsonschema"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/packaging"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-json-logger"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pathable"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyyaml"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/referencing"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rfc3339-validator"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rfc3986-validator"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/requests"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pyzmq">
+  <rdf:Description rdf:about="http://example.org/libgraph/msal">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cffi"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cryptography"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyjwt"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/requests"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-semantic-conventions">
+  <rdf:Description rdf:about="http://example.org/libgraph/jaraco-classes">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/more-itertools"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/typing-inspection">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/nbconvert">
+  <rdf:Description rdf:about="http://example.org/libgraph/azure-monitor-opentelemetry">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/beautifulsoup4"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/bleach"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/defusedxml"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core-tracing-opentelemetry"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-monitor-opentelemetry-exporter"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-django"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-fastapi"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-flask"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-psycopg2"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-requests"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-urllib"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-urllib3"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-resource-detector-azure"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-sdk"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/altair">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jinja2"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-core"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyterlab-pygments"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/markupsafe"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/mistune"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/nbclient"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/nbformat"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jsonschema"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/narwhals"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/packaging"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pandocfilters"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/ipython">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/colorama"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/decorator"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ipython-pygments-lexers"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jedi"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/matplotlib-inline"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pexpect"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/prompt-toolkit"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pygments"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/stack-data"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jsonschema">
+  <rdf:Description rdf:about="http://example.org/libgraph/polars-runtime-32">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/attrs"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/fqdn"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/idna"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isoduration"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jsonpointer"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jsonschema-specifications"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/referencing"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rfc3339-validator"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rfc3986-validator"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rfc3987-syntax"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rpds-py"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/uri-template"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/webcolors"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-psycopg2">
+  <rdf:Description rdf:about="http://example.org/libgraph/fastapi-cloud-cli">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/fastar"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/httpx"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rich-toolkit"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rignore"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/sentry-sdk"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typer"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/uvicorn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/tomlkit">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/aiohttp">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/aiohappyeyeballs"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/aiosignal"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/attrs"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/frozenlist"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/multidict"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/propcache"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/yarl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-exporter-otlp-proto-common">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-proto"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/sse-starlette">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/anyio"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/starlette"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-exporter-otlp-proto-grpc">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/googleapis-common-protos"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/grpcio"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-dbapi"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-exporter-otlp-proto-common"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-proto"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-sdk"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/tinycss2">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/webencodings"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/jupyter-server">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
@@ -144,23 +143,58 @@
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/websocket-client"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/matplotlib">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/contourpy"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cycler"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/fonttools"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/kiwisolver"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/numpy"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/packaging"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pillow"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyparsing"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-dateutil"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jiter">
+  <rdf:Description rdf:about="http://example.org/libgraph/cachetools">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/toml">
+  <rdf:Description rdf:about="http://example.org/libgraph/markupsafe">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-fastapi">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-asgi"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-util-http"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/anyio">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/idna"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/idna">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pydocket">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cloudpickle"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/fakeredis"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/prometheus-client"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/py-key-value-aio"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-json-logger"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/redis"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rich"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typer"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/fastmcp">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/authlib"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cyclopts"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/exceptiongroup"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/httpx"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jsonschema-path"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/mcp"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/openapi-pydantic"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/platformdirs"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/py-key-value-aio"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydocket"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyperclip"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-dotenv"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rich"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/uvicorn"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/websockets"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/streamlit">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
@@ -183,20 +217,11 @@
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/watchdog"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/nltk">
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-sdk">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/click"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/joblib"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/regex"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tqdm"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/python-dateutil">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/six"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/matplotlib-inline">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/azure-identity">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
@@ -206,20 +231,32 @@
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/msal-extensions"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/annotated-doc">
+  <rdf:Description rdf:about="http://example.org/libgraph/lark">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pandas">
+  <rdf:Description rdf:about="http://example.org/libgraph/coverage">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/numpy"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-dateutil"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pytz"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tzdata"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/requests-oauthlib">
+  <rdf:Description rdf:about="http://example.org/libgraph/azure-ai-evaluation">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/oauthlib"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/requests"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/aiohttp"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-identity"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-storage-blob"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/httpx"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jinja2"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/msrest"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/nltk"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/openai"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pandas"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyjwt"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ruamel-yaml"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/azure-mgmt-cognitiveservices">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-mgmt-core"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/msrest"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/ipykernel">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
@@ -237,32 +274,165 @@
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tornado"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/rfc3987-syntax">
+  <rdf:Description rdf:about="http://example.org/libgraph/notebook-shim">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/lark"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-server"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/altair">
+  <rdf:Description rdf:about="http://example.org/libgraph/matplotlib">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jinja2"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jsonschema"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/narwhals"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/contourpy"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cycler"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/fonttools"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/kiwisolver"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/numpy"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/packaging"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pillow"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyparsing"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-dateutil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/tqdm">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/colorama"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/contourpy">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/numpy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pywinpty">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/beartype">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/click">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/colorama"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/notebook">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-server"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyterlab"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyterlab-server"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/notebook-shim"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tornado"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/tiktoken">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/regex"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/requests"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pytest">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/colorama"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/iniconfig"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/packaging"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pluggy"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pygments"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pandas">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/numpy"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-dateutil"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pytz"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tzdata"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-django">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-wsgi"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-util-http"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-proto">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/protobuf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pydantic">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/annotated-types"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/email-validator"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic-core"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-inspection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/packaging"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/wrapt"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/azure-ai-documentintelligence">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isodate"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/fastapi">
+  <rdf:Description rdf:about="http://example.org/libgraph/jsonschema">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/annotated-doc"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/email-validator"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/fastapi-cli"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/httpx"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/attrs"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/fqdn"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/idna"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isoduration"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jsonpointer"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jsonschema-specifications"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/referencing"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rfc3339-validator"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rfc3986-validator"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rfc3987-syntax"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rpds-py"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/uri-template"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/webcolors"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/nbconvert">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/beautifulsoup4"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/bleach"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/defusedxml"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jinja2"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic-extra-types"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic-settings"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-multipart"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/starlette"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-core"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyterlab-pygments"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/markupsafe"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/mistune"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/nbclient"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/nbformat"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/packaging"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pandocfilters"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pygments"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/secretstorage">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cryptography"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jeepney"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/py-key-value-shared">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/beartype"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/uvicorn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pylint">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/astroid"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/colorama"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/dill"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isort"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/mccabe"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/platformdirs"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tomlkit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pywin32-ctypes">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pillow">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph#name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/libgraph#Library"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>name</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/openai">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
@@ -273,6 +443,27 @@
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/sniffio"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tqdm"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/nest-asyncio">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/uvicorn">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/click"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/colorama"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/h11"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/httptools"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-dotenv"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyyaml"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/uvloop"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/watchfiles"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/websockets"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/azure-keyvault-secrets">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isodate"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/jupyterlab">
@@ -291,168 +482,46 @@
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tornado"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/fastapi-cloud-cli">
+  <rdf:Description rdf:about="http://example.org/libgraph/python-dotenv">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/fastar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/tenacity">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/faker">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tzdata"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/fastapi">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/annotated-doc"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/email-validator"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/fastapi-cli"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/httpx"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jinja2"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rich-toolkit"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rignore"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/sentry-sdk"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typer"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic-extra-types"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic-settings"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-multipart"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/starlette"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/uvicorn"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/azure-mgmt-core">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
+  <rdf:Description rdf:about="http://example.org/libgraph#Library">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Library</rdfs:label>
+    <rdfs:comment>A Python library in the dependency graph</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/decorator">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-urllib3">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-util-http"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/wrapt"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/msal">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cryptography"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyjwt"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/requests"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/azure-ai-agents">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isodate"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/aiosignal">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/frozenlist"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jupyterlab-pygments">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pydantic">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/annotated-types"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/email-validator"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic-core"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-inspection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/yarl">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/idna"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/multidict"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/propcache"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jupyterlab-server">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/babel"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jinja2"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/json5"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jsonschema"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-server"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/packaging"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/requests"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pytest-cov">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/coverage"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pluggy"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pytest"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-dbapi">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/wrapt"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/azure-ai-evaluation">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/aiohttp"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-identity"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-storage-blob"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/httpx"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jinja2"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/msrest"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/nltk"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/openai"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pandas"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyjwt"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ruamel-yaml"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/rich-toolkit">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/click"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rich"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-httpx">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-util-http"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/wrapt"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/azure-ai-documentintelligence">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isodate"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-requests">
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-wsgi">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-util-http"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/azure-storage-blob">
+  <rdf:Description rdf:about="http://example.org/libgraph/prompt-toolkit">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cryptography"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isodate"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-fastapi">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-asgi"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-util-http"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/azure-ai-textanalytics">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-common"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isodate"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph#name">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://example.org/libgraph#Library"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label>name</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/notebook">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-server"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyterlab"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyterlab-server"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/notebook-shim"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tornado"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pandocfilters">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/wcwidth"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/typer">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
@@ -461,139 +530,80 @@
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/shellingham"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jsonschema-path">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pathable"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyyaml"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/referencing"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/requests"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pytz">
+  <rdf:Description rdf:about="http://example.org/libgraph/jaraco-context">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/bleach">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tinycss2"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/webencodings"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-resource-detector-azure">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-sdk"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/diskcache">
+  <rdf:Description rdf:about="http://example.org/libgraph/protobuf">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pyjwt">
+  <rdf:Description rdf:about="http://example.org/libgraph#uses_lib">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/libgraph#Library"/>
+    <rdfs:range rdf:resource="http://example.org/libgraph#Library"/>
+    <rdfs:label>uses_lib</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pydantic-settings">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-dotenv"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-inspection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/authlib">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cryptography"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/click">
+  <rdf:Description rdf:about="http://example.org/libgraph/aiosignal">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/colorama"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/frozenlist"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/grpcio">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/astroid">
+  <rdf:Description rdf:about="http://example.org/libgraph/traitlets">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/mako">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/markupsafe"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/uvloop">
+  <rdf:Description rdf:about="http://example.org/libgraph/certifi">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-urllib">
+  <rdf:Description rdf:about="http://example.org/libgraph/cffi">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-util-http"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pycparser"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/azure-cosmos">
+  <rdf:Description rdf:about="http://example.org/libgraph/nbformat">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/av">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pywin32">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/ipython">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/colorama"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/decorator"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ipython-pygments-lexers"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jedi"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/matplotlib-inline"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pexpect"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/prompt-toolkit"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pygments"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/stack-data"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/uri-template">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jupyter-client">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/fastjsonschema"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jsonschema"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-core"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-dateutil"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyzmq"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tornado"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/rpds-py">
+  <rdf:Description rdf:about="http://example.org/libgraph/cyclopts">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/msal-extensions">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/msal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/send2trash">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/ipython-pygments-lexers">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pygments"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/idna">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <rdfs:label>Library Graph Ontology</rdfs:label>
-    <rdfs:comment>Ontology for the RDF Graph Model representing Python Libraries in this project</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jsonschema-specifications">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/referencing"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/colorama">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/attrs">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pydocket">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cloudpickle"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/fakeredis"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/prometheus-client"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/py-key-value-aio"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-json-logger"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/redis"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/attrs"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/docstring-parser"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rich"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typer"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rich-rst"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/agent-framework-core">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/aiofiles"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-identity"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-monitor-opentelemetry"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-monitor-opentelemetry-exporter"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/mcp"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/openai"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-exporter-otlp-proto-grpc"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-sdk"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions-ai"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic-settings"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/zipp">
+  <rdf:Description rdf:about="http://example.org/libgraph/rich">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/markdown-it-py"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pygments"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/rdflib">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyparsing"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/mcp">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
@@ -613,6 +623,18 @@
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/uvicorn"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/websockets"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/ipywidgets">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/comm"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ipython"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyterlab-widgets"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/widgetsnbextension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/openapi-pydantic">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/azure-monitor-opentelemetry-exporter">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
@@ -622,332 +644,52 @@
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-sdk"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/psutil"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/rfc3339-validator">
+  <rdf:Description rdf:about="http://example.org/libgraph/pyzmq">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/six"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cffi"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/py-key-value-aio">
+  <rdf:Description rdf:about="http://example.org/libgraph/jupyterlab-server">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/beartype"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cachetools"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/diskcache"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/keyring"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pathvalidate"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/py-key-value-shared"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/redis"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/babel"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jinja2"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/json5"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jsonschema"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-server"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/packaging"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/requests"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/appnope">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pluggy">
+  <rdf:Description rdf:about="http://example.org/libgraph/ruamel-yaml">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/httpx-sse">
+  <rdf:Description rdf:about="http://example.org/libgraph/fastapi-cli">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/fastapi-cloud-cli"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rich-toolkit"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typer"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/uvicorn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/mistune">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jedi">
+  <rdf:Description rdf:about="http://example.org/libgraph/alembic">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/parso"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/dill">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/beautifulsoup4">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/soupsieve"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/mako"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/sqlalchemy"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/azure-search-documents">
+  <rdf:Description rdf:about="http://example.org/libgraph/azure-storage-blob">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-common"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cryptography"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isodate"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/packaging"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/wrapt"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jupyter">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ipykernel"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ipywidgets"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-console"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyterlab"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/nbconvert"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/notebook"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph#Library">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Library</rdfs:label>
-    <rdfs:comment>A Python library in the dependency graph</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/secretstorage">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cryptography"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jeepney"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jupyter-console">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ipykernel"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ipython"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-client"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-core"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/prompt-toolkit"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pygments"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyzmq"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/httpx">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/anyio"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/certifi"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/click"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/httpcore"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/idna"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pygments"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rich"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-api">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/importlib-metadata"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/m26">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/py-key-value-shared">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/beartype"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pydeck">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jinja2"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/numpy"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/multidict">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jupyter-server-terminals">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pywinpty"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/terminado"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/azure-core-tracing-opentelemetry">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/fonttools">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/azure-monitor-opentelemetry">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core-tracing-opentelemetry"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-monitor-opentelemetry-exporter"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-django"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-fastapi"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-flask"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-psycopg2"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-requests"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-urllib"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-urllib3"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-resource-detector-azure"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-sdk"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jaraco-functools">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/more-itertools"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/lark">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph#uses_lib">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://example.org/libgraph#Library"/>
-    <rdfs:range rdf:resource="http://example.org/libgraph#Library"/>
-    <rdfs:label>uses_lib</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/aiohttp">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/aiohappyeyeballs"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/aiosignal"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/attrs"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/frozenlist"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/multidict"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/propcache"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/yarl"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/comm">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/fastmcp">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/authlib"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cyclopts"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/exceptiongroup"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/httpx"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jsonschema-path"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/mcp"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/openapi-pydantic"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/platformdirs"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/py-key-value-aio"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydocket"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyperclip"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-dotenv"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rich"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/uvicorn"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/websockets"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/prompt-toolkit">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/wcwidth"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/cloudpickle">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/redis">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/httpcore">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/certifi"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/h11"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pylint">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/astroid"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/colorama"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/dill"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isort"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/mccabe"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/platformdirs"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tomlkit"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/geopy">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/geographiclib"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/typing-inspection">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/httptools">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/starlette">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/anyio"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/debugpy">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/fqdn">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/charset-normalizer">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/terminado">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ptyprocess"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pywinpty"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tornado"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/packaging">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/fakeredis">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/lupa"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/redis"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/sortedcontainers"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-exporter-otlp-proto-grpc">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/googleapis-common-protos"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/grpcio"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-exporter-otlp-proto-common"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-proto"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-sdk"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/uvicorn">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/click"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/colorama"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/h11"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/httptools"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-dotenv"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyyaml"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/uvloop"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/watchfiles"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/websockets"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-django">
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-logging">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-wsgi"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-util-http"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jaraco-classes">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/more-itertools"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/numpy">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/googleapis-common-protos">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/protobuf"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/exceptiongroup">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jupyter-lsp">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-server"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/stack-data">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/asttokens"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/executing"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pure-eval"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/gitdb">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/smmap"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pillow">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-flask">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-wsgi"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-util-http"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/packaging"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pexpect">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ptyprocess"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/sqlalchemy-utils">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/sqlalchemy"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/typing-extensions">
+  <rdf:Description rdf:about="http://example.org/libgraph/widgetsnbextension">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/keyring">
@@ -959,41 +701,84 @@
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pywin32-ctypes"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/secretstorage"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/azure-core">
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-psycopg2">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/requests"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-dbapi"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/jupyter-client">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-core"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-dateutil"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyzmq"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tornado"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/typing-extensions">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-api">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/importlib-metadata"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/docstring-parser">
+  <rdf:Description rdf:about="http://example.org/libgraph/nbclient">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-client"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-core"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/nbformat"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/docutils">
+  <rdf:Description rdf:about="http://example.org/libgraph/isoduration">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/arrow"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/rich-rst">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/docutils"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rich"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/six">
+  <rdf:Description rdf:about="http://example.org/libgraph/sentry-sdk">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/certifi"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/urllib3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/annotated-doc">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/sse-starlette">
+  <rdf:Description rdf:about="http://example.org/libgraph/isodate">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/anyio"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/starlette"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jinja2">
+  <rdf:Description rdf:about="http://example.org/libgraph/bleach">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/markupsafe"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tinycss2"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/webencodings"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/azure-ai-projects">
+  <rdf:Description rdf:about="http://example.org/libgraph/soupsieve">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-ai-agents"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-storage-blob"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isodate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/httptools">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/rich-toolkit">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/click"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rich"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-httpx">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-util-http"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/wrapt"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/jupyter-server-terminals">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pywinpty"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/terminado"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-asgi">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
@@ -1003,77 +788,83 @@
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-util-http"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/json5">
+  <rdf:Description rdf:about="http://example.org/libgraph/httpcore">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/certifi"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/h11"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/googleapis-common-protos">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/protobuf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/nltk">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/click"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/joblib"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/regex"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tqdm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/packaging">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/arrow">
+  <rdf:Description rdf:about="http://example.org/libgraph/email-validator">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-dateutil"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tzdata"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/dnspython"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/idna"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/sqlalchemy">
+  <rdf:Description rdf:about="http://example.org/libgraph/jedi">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/greenlet"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/parso"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pydantic-extra-types">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/watchfiles">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/anyio"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/authlib">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cryptography"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/cryptography">
+  <rdf:Description rdf:about="http://example.org/libgraph/argon2-cffi-bindings">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cffi"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/notebook-shim">
+  <rdf:Description rdf:about="http://example.org/libgraph/azure-core-tracing-opentelemetry">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-server"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/webencodings">
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-requests">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-util-http"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/cachetools">
+  <rdf:Description rdf:about="http://example.org/libgraph/py-key-value-aio">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/beartype"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cachetools"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/diskcache"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/keyring"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pathvalidate"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/py-key-value-shared"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/redis"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/faker">
+  <rdf:Description rdf:about="http://example.org/libgraph/terminado">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tzdata"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ptyprocess"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pywinpty"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tornado"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/referencing">
+  <rdf:Description rdf:about="http://example.org/libgraph/pytest-cov">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/attrs"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rpds-py"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/coverage"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pluggy"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pytest"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pydantic-settings">
+  <rdf:Description rdf:about="http://example.org/libgraph/azure-search-documents">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-dotenv"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-inspection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pathvalidate">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/azure-keyvault-secrets">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-common"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isodate"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/certifi">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/kiwisolver">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pydantic-core">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/urllib3">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/msrest">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
@@ -1083,76 +874,6 @@
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/requests"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/requests-oauthlib"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/propcache">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/python-dotenv">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/agent-framework">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/agent-framework-core"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-sdk">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/isodate">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/alembic">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/mako"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/sqlalchemy"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/argon2-cffi">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/argon2-cffi-bindings"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/traitlets">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/nbformat">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/fastjsonschema"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jsonschema"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-core"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/aiofiles">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/shellingham">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/argon2-cffi-bindings">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cffi"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/nest-asyncio">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/watchdog">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/fastapi-cli">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/fastapi-cloud-cli"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rich-toolkit"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typer"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/uvicorn"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/contourpy">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/numpy"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/importlib-metadata">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/zipp"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/requests">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/certifi"/>
@@ -1160,257 +881,65 @@
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/idna"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/urllib3"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/blinker">
+  <rdf:Description rdf:about="http://example.org/libgraph/grpcio">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/markdown-it-py">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/mdurl"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/tqdm">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/colorama"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/cyclopts">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/attrs"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/docstring-parser"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rich"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rich-rst"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/async-lru">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pywin32-ctypes">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/email-validator">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/dnspython"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/idna"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/duckdb">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pygments">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/markupsafe">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pyyaml">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pyarrow">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-util-http">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/anyio">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/idna"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/mccabe">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pytest-randomly">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pytest"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pydantic-extra-types">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pure-eval">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pywinpty">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/python-multipart">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/tinycss2">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/webencodings"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/azure-common">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/isoduration">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/arrow"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/isort">
+  <rdf:Description rdf:about="http://example.org/libgraph/sniffio">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/soupsieve">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/widgetsnbextension">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pyperclip">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/rich">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/markdown-it-py"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pygments"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/rfc3986-validator">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/sortedcontainers">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/dnspython">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/markdown">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/asgiref">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/parso">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-semantic-conventions-ai">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-wsgi">
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-urllib3">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-util-http"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/wrapt"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/sniffio">
+  <rdf:Description rdf:about="http://example.org/libgraph/msal-extensions">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/msal"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/fastar">
+  <rdf:Description rdf:about="http://example.org/libgraph/jupyter-events">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jupyter-core">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/platformdirs"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jsonschema"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/packaging"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-json-logger"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyyaml"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/referencing"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rfc3339-validator"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rfc3986-validator"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/oauthlib">
+  <rdf:Description rdf:about="http://example.org/libgraph/fqdn">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/sentry-sdk">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/certifi"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/urllib3"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pytest-asyncio">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pytest"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/joblib">
+  <rdf:Description rdf:about="http://example.org/libgraph/setuptools">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/tomlkit">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jeepney">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/regex">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-logging">
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-flask">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
     <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation-wsgi"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-util-http"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/packaging"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pycparser">
+  <rdf:Description rdf:about="http://example.org/libgraph/httpx">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/anyio"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/certifi"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/click"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/httpcore"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/idna"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pygments"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rich"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/protobuf">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/geographiclib">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/rdflib">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pyparsing"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jupyterlab-widgets">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/ruamel-yaml">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/websocket-client">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/python-json-logger">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/frozenlist">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/tzdata">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/babel">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-exporter-otlp-proto-common">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-proto"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/h11">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jsonpointer">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/docopt">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/prometheus-client">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/iniconfig">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/aiohappyeyeballs">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/beartype">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/mdurl">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/openapi-pydantic">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pydantic"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/websockets">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/wrapt">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/mistune">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pgvector">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/numpy"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/coverage">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/greenlet">
+  <rdf:Description rdf:about="http://example.org/libgraph/sortedcontainers">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/more-itertools">
@@ -1419,79 +948,560 @@
   <rdf:Description rdf:about="http://example.org/libgraph/tornado">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/gitpython">
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-semantic-conventions">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/gitdb"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/annotated-types">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/ptyprocess">
+  <rdf:Description rdf:about="http://example.org/libgraph/pywin32">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/fastjsonschema">
+  <rdf:Description rdf:about="http://example.org/libgraph/pytest-randomly">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pytest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/rfc3987-syntax">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/lark"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/stack-data">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/asttokens"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/executing"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pure-eval"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/webcolors">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/jupyter-core">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/platformdirs"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/jupyter">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ipykernel"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ipywidgets"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-console"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyterlab"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/nbconvert"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/notebook"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/send2trash">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/smmap">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pathable">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/cycler">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/jaraco-context">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/cffi">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pycparser"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/defusedxml">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/asttokens">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/tenacity">
+  <rdf:Description rdf:about="http://example.org/libgraph/rfc3339-validator">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/six"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/azure-mgmt-applicationinsights">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-common"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-mgmt-core"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isodate"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pydantic-core">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/frozenlist">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/platformdirs">
+  <rdf:Description rdf:about="http://example.org/libgraph/azure-ai-projects">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-ai-agents"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-storage-blob"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isodate"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/sqlalchemy">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/greenlet"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/fakeredis">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/lupa"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/redis"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/sortedcontainers"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/asgiref">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/psutil">
+  <rdf:Description rdf:about="http://example.org/libgraph">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>Library Graph Ontology</rdfs:label>
+    <rdfs:comment>Ontology for the RDF Graph Model representing Python Libraries in this project</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/debugpy">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/distro">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-proto">
-    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
-    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/protobuf"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/pyparsing">
+  <rdf:Description rdf:about="http://example.org/libgraph/pandocfilters">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/executing">
+  <rdf:Description rdf:about="http://example.org/libgraph/watchdog">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/narwhals">
+  <rdf:Description rdf:about="http://example.org/libgraph/websocket-client">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/wcwidth">
+  <rdf:Description rdf:about="http://example.org/libgraph/webencodings">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/rignore">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/webcolors">
+  <rdf:Description rdf:about="http://example.org/libgraph/jupyter-lsp">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jupyter-server"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/dnspython">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/cycler">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pytest-asyncio">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pytest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/iniconfig">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/python-json-logger">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/mccabe">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/azure-cosmos">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/comm">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pydeck">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/jinja2"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/numpy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-resource-detector-azure">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-sdk"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-urllib">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-util-http"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/arrow">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/python-dateutil"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/tzdata"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/agent-framework">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/agent-framework-core"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/fastjsonschema">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/blinker">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/polars">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/polars-runtime-32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/annotated-types">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pyarrow">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/markdown">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/wcwidth">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/rpds-py">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/jaraco-functools">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/more-itertools"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/importlib-metadata">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/zipp"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/jsonschema-specifications">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/referencing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/requests-oauthlib">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/oauthlib"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/requests"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-instrumentation-dbapi">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-api"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-instrumentation"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/opentelemetry-semantic-conventions"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/wrapt"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/jiter">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/uvloop">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/libgraph/psycopg2-binary">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/libgraph/setuptools">
+  <rdf:Description rdf:about="http://example.org/libgraph/websockets">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pyjwt">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cryptography"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/docstring-parser">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/yarl">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/idna"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/multidict"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/propcache"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/narwhals">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/azure-ai-textanalytics">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-common"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isodate"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/docutils">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/azure-mgmt-core">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-util-http">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pgvector">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/numpy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/regex">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/argon2-cffi">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/argon2-cffi-bindings"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/astroid">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/toml">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/beautifulsoup4">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/soupsieve"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/sqlalchemy-utils">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/sqlalchemy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/matplotlib-inline">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/traitlets"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/multidict">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pyparsing">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/opentelemetry-semantic-conventions-ai">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/duckdb">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/zipp">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/python-dateutil">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/six"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pyyaml">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/watchfiles">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/anyio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/cryptography">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/cffi"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/gitpython">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/gitdb"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pexpect">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/ptyprocess"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/prometheus-client">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/uri-template">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/gitdb">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/smmap"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/oauthlib">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/redis">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/ipython-pygments-lexers">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/pygments"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/jinja2">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/markupsafe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/attrs">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/azure-core">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/requests"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/shellingham">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/markdown-it-py">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/mdurl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/mako">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/markupsafe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/lupa">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/python-toon">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/aiofiles">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/azure-ai-agents">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/azure-core"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/isodate"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/typing-extensions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pathvalidate">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/jeepney">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/tzdata">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/charset-normalizer">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/async-lru">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pathable">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/aiohappyeyeballs">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/parso">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/json5">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/referencing">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/attrs"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/rpds-py"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/rfc3986-validator">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/numpy">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/starlette">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/anyio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/fastar">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/geographiclib">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/fonttools">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/propcache">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/psutil">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/colorama">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/joblib">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pluggy">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/dill">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/diskcache">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/isort">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pycparser">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/geopy">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+    <libgraph:uses_lib rdf:resource="http://example.org/libgraph/geographiclib"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pure-eval">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/m26">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/kiwisolver">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/defusedxml">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/six">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/docopt">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/jupyterlab-pygments">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/urllib3">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/python-multipart">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/appnope">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/platformdirs">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pyperclip">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/greenlet">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/executing">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/mdurl">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/jsonpointer">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/httpx-sse">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/exceptiongroup">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/decorator">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/babel">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/cloudpickle">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pytz">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/pygments">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/av">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/wrapt">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/ptyprocess">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/jupyterlab-widgets">
+    <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/libgraph/h11">
     <rdf:type rdf:resource="http://example.org/libgraph#Library"/>
   </rdf:Description>
 </rdf:RDF>

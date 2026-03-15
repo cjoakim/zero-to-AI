@@ -1,0 +1,10 @@
+You are a python code generator and are fluent in the networkx python library.
+
+Instructions:
+- Generate a python file named main-networkx.py 
+- main-networkx.py should read input file data/uv/uv-cyclonedx.json 
+- Parse the input file into a networkx directed graph 
+- Ignore library version numbers in the graph, use only library names
+- Write the graph to GraphML file python-libraries.graphml 
+- Also write the graph to a pyviz visualization named python-libraries.html
+- Both output files should be written to the networkx directory 

@@ -7,12 +7,17 @@ Usage:
     python main-rdf-graph.py query deps_for_library azure-cosmos
     python main-rdf-graph.py query deps_for_library jupyter
     python main-rdf-graph.py query centrality_sparql_query
-
+    python main-rdf-graph.py gen_gephi_visualization
 """
+
+# https://gephi.org/quickstart/
+# https://pypi.org/project/networkx/
 
 import sys
 import traceback
 from typing import Any
+
+import networkx as nx
 
 from docopt import docopt
 from dotenv import load_dotenv
@@ -135,7 +140,7 @@ def wrangle_and_add_triples(g: Graph):
     # Thus, uv itself provides much of the raw data necessary for this graph.
 
     cyclone_dict = FS.read_json("data/uv/uv-cyclonedx.json")
-    print(f"cyclone_dict keys: {sorted(cyclone_dict.keys())}")
+    #print(f"cyclone_dict keys: {sorted(cyclone_dict.keys())}")
     libname_lookup_dict = dict[str, str]()
     libs_and_dependencies_dict = dict()
 
@@ -223,6 +228,7 @@ def query():
             print_options(f"Invalid query name: " + query_name)
             return
 
+        print(f"Executing SPARQL query: \n{q}\n")
         for row in g.query(q):
             print(row)
             # name = str(row.dep).split("/")[-1]
@@ -350,6 +356,21 @@ def paas_service_sparql_query(paas_service_name):
     """
     return query
 
+def gen_gephi_visualization():
+    G = nx.DiGraph() # a networkx directed graph
+
+    G.add_node("Hello", label="hello", popularity=1, uri="http://example.com")
+    G.add_node("World", label="world")
+    G.add_node("Python", label="PY")
+
+    # 3. Add edges (you can also add weights or other attributes)
+    G.add_edge("Hello", "World", weight=1)
+    G.add_edge("World", "Python", weight=1)
+
+    # 4. Write the graph to a GEXF file
+    # The output file 'hello_world.gexf' will be created in the same directory
+    nx.write_gexf(G, "/Users/cjoakim/hello_world.gexf")
+
 
 if __name__ == "__main__":
     try:
@@ -359,6 +380,8 @@ if __name__ == "__main__":
             build_rdf_graph()
         elif function_name == "query":
             query()
+        elif function_name == "gen_gephi_visualization":
+            gen_gephi_visualization()
         else:
             print_options(f"Invalid function name: " + function_name)
     except Exception as e:

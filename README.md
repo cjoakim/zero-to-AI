@@ -106,6 +106,7 @@ Notes:
     │   ├── pypi                   Data files related to the Python Package Index (PyPI)
     │   ├── pypi_libs              JSON data for Python Package Index (PyPI) libraries
     │   ├── rdf                    RDF graph data
+    │   ├── text                   Text data
     │   └── uv                     Data files created by the uv package manager
     ├── htmlcov                    Not in GitHub; created by pytest-cov library
     ├── jupyter                    Jupyter Notebooks
@@ -122,6 +123,9 @@ Notes:
     ├── tests                      Unit tests for the python code, implemented with the pytest library
     │   ├── fixtures               Sample data for the unit tests
     │   └── templates              Jinja2 text templates for the unit tests
+CLAUDE.md                          Guidence file for Claude Code and Cursor  
+LICENSE                            MIT License, see https://en.wikipedia.org/wiki/MIT_License
+README.md                          Main/home page for the series
 ``` 
 
 <br><br>

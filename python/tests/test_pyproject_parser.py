@@ -19,7 +19,7 @@ def test_all():
     dep_names = pp.get_dependency_names()
     # for name in sorted(dep_names):
     #     print(f"assert '{name}' in dep_names")
-    assert len(dep_names) == 67
+    assert len(dep_names) == 69
     assert "Faker" in dep_names
     assert "Jinja2" in dep_names
     assert "SQLAlchemy" in dep_names

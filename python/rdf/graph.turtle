@@ -164,6 +164,9 @@ libgraph:uses_lib a owl:ObjectProperty ;
 <http://example.org/libgraph/pgvector> a libgraph:Library ;
     libgraph:uses_lib <http://example.org/libgraph/numpy> .
 
+<http://example.org/libgraph/polars> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/polars-runtime-32> .
+
 <http://example.org/libgraph/psycopg2-binary> a libgraph:Library .
 
 <http://example.org/libgraph/pylint> a libgraph:Library ;
@@ -185,6 +188,8 @@ libgraph:uses_lib a owl:ObjectProperty ;
 
 <http://example.org/libgraph/pytest-randomly> a libgraph:Library ;
     libgraph:uses_lib <http://example.org/libgraph/pytest> .
+
+<http://example.org/libgraph/python-toon> a libgraph:Library .
 
 <http://example.org/libgraph/rdflib> a libgraph:Library ;
     libgraph:uses_lib <http://example.org/libgraph/pyparsing> .
@@ -630,6 +635,8 @@ libgraph:uses_lib a owl:ObjectProperty ;
 
 <http://example.org/libgraph/pexpect> a libgraph:Library ;
     libgraph:uses_lib <http://example.org/libgraph/ptyprocess> .
+
+<http://example.org/libgraph/polars-runtime-32> a libgraph:Library .
 
 <http://example.org/libgraph/pure-eval> a libgraph:Library .
 

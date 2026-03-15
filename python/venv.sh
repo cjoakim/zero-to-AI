@@ -26,6 +26,9 @@ uv pip install --prerelease=allow --editable .
 # echo "Creating a requirements.txt file for users of pip instead of uv ..."
 # uv pip compile pyproject.toml -o requirements.txt
 
+# uv-cyclonedx.json is used in the RDF Graph session
+# uv export --format cyclonedx1.5 > data/uv/uv-cyclonedx.json
+
 uv tree > data/uv/uv-tree.txt
 uv tree --outdated --depth=1 > tmp/uv-tree-outdated.txt
  

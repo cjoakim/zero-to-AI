@@ -1,218 +1,34 @@
 [
   {
-    "@id": "http://example.org/libgraph/geopy",
+    "@id": "http://example.org/libgraph/aiohappyeyeballs",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/send2trash",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/ipykernel",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/geographiclib"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/mako",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/markupsafe"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pydeck",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/jinja2"
+        "@id": "http://example.org/libgraph/appnope"
       },
       {
-        "@id": "http://example.org/libgraph/numpy"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/contourpy",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/numpy"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/markdown-it-py",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/mdurl"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/lupa",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/requests-oauthlib",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/oauthlib"
+        "@id": "http://example.org/libgraph/comm"
       },
       {
-        "@id": "http://example.org/libgraph/requests"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/shellingham",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pydantic-extra-types",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/pydantic"
+        "@id": "http://example.org/libgraph/debugpy"
       },
       {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-wsgi",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-api"
+        "@id": "http://example.org/libgraph/ipython"
       },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-util-http"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/rich-rst",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/docutils"
-      },
-      {
-        "@id": "http://example.org/libgraph/rich"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/blinker",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/openai",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/anyio"
-      },
-      {
-        "@id": "http://example.org/libgraph/distro"
-      },
-      {
-        "@id": "http://example.org/libgraph/httpx"
-      },
-      {
-        "@id": "http://example.org/libgraph/jiter"
-      },
-      {
-        "@id": "http://example.org/libgraph/pydantic"
-      },
-      {
-        "@id": "http://example.org/libgraph/sniffio"
-      },
-      {
-        "@id": "http://example.org/libgraph/tqdm"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/tornado",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/httpx-sse",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/asttokens",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/azure-mgmt-applicationinsights",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/azure-common"
-      },
-      {
-        "@id": "http://example.org/libgraph/azure-mgmt-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/isodate"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/nbclient",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
       {
         "@id": "http://example.org/libgraph/jupyter-client"
       },
@@ -220,76 +36,25 @@
         "@id": "http://example.org/libgraph/jupyter-core"
       },
       {
-        "@id": "http://example.org/libgraph/nbformat"
+        "@id": "http://example.org/libgraph/matplotlib-inline"
       },
       {
-        "@id": "http://example.org/libgraph/traitlets"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/appnope",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/notebook",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/jupyter-server"
+        "@id": "http://example.org/libgraph/nest-asyncio"
       },
       {
-        "@id": "http://example.org/libgraph/jupyterlab"
+        "@id": "http://example.org/libgraph/packaging"
       },
       {
-        "@id": "http://example.org/libgraph/jupyterlab-server"
+        "@id": "http://example.org/libgraph/psutil"
       },
       {
-        "@id": "http://example.org/libgraph/notebook-shim"
+        "@id": "http://example.org/libgraph/pyzmq"
       },
       {
         "@id": "http://example.org/libgraph/tornado"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-asgi",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/asgiref"
       },
       {
-        "@id": "http://example.org/libgraph/opentelemetry-api"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-util-http"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/sse-starlette",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/anyio"
-      },
-      {
-        "@id": "http://example.org/libgraph/starlette"
+        "@id": "http://example.org/libgraph/traitlets"
       }
     ]
   },
@@ -332,57 +97,409 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/mccabe",
+    "@id": "http://example.org/libgraph/dill",
     "@type": [
       "http://example.org/libgraph#Library"
     ]
   },
   {
-    "@id": "http://example.org/libgraph/keyring",
+    "@id": "http://example.org/libgraph/anyio",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/jaraco-classes"
-      },
-      {
-        "@id": "http://example.org/libgraph/jaraco-context"
-      },
-      {
-        "@id": "http://example.org/libgraph/jaraco-functools"
-      },
-      {
-        "@id": "http://example.org/libgraph/jeepney"
-      },
-      {
-        "@id": "http://example.org/libgraph/pywin32-ctypes"
-      },
-      {
-        "@id": "http://example.org/libgraph/secretstorage"
+        "@id": "http://example.org/libgraph/idna"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/rdflib",
+    "@id": "http://example.org/libgraph/decorator",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-flask",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/pyparsing"
+        "@id": "http://example.org/libgraph/opentelemetry-api"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-wsgi"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-util-http"
+      },
+      {
+        "@id": "http://example.org/libgraph/packaging"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/pytest-asyncio",
+    "@id": "http://example.org/libgraph/pygments",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pathvalidate",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/websocket-client",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/wrapt",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/msal",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/pytest"
+        "@id": "http://example.org/libgraph/cryptography"
+      },
+      {
+        "@id": "http://example.org/libgraph/pyjwt"
+      },
+      {
+        "@id": "http://example.org/libgraph/requests"
       }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/azure-ai-evaluation",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/aiohttp"
+      },
+      {
+        "@id": "http://example.org/libgraph/azure-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/azure-identity"
+      },
+      {
+        "@id": "http://example.org/libgraph/azure-storage-blob"
+      },
+      {
+        "@id": "http://example.org/libgraph/httpx"
+      },
+      {
+        "@id": "http://example.org/libgraph/jinja2"
+      },
+      {
+        "@id": "http://example.org/libgraph/msrest"
+      },
+      {
+        "@id": "http://example.org/libgraph/nltk"
+      },
+      {
+        "@id": "http://example.org/libgraph/openai"
+      },
+      {
+        "@id": "http://example.org/libgraph/pandas"
+      },
+      {
+        "@id": "http://example.org/libgraph/pyjwt"
+      },
+      {
+        "@id": "http://example.org/libgraph/ruamel-yaml"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/rpds-py",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/widgetsnbextension",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/jsonschema-specifications",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/referencing"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/cryptography",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/cffi"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/msal-extensions",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/msal"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pydantic",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/annotated-types"
+      },
+      {
+        "@id": "http://example.org/libgraph/email-validator"
+      },
+      {
+        "@id": "http://example.org/libgraph/pydantic-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-inspection"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/attrs",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/markdown-it-py",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/mdurl"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/email-validator",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/dnspython"
+      },
+      {
+        "@id": "http://example.org/libgraph/idna"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/requests",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/certifi"
+      },
+      {
+        "@id": "http://example.org/libgraph/charset-normalizer"
+      },
+      {
+        "@id": "http://example.org/libgraph/idna"
+      },
+      {
+        "@id": "http://example.org/libgraph/urllib3"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/uvicorn",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/click"
+      },
+      {
+        "@id": "http://example.org/libgraph/colorama"
+      },
+      {
+        "@id": "http://example.org/libgraph/h11"
+      },
+      {
+        "@id": "http://example.org/libgraph/httptools"
+      },
+      {
+        "@id": "http://example.org/libgraph/python-dotenv"
+      },
+      {
+        "@id": "http://example.org/libgraph/pyyaml"
+      },
+      {
+        "@id": "http://example.org/libgraph/uvloop"
+      },
+      {
+        "@id": "http://example.org/libgraph/watchfiles"
+      },
+      {
+        "@id": "http://example.org/libgraph/websockets"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/cffi",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/pycparser"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/mistune",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/certifi",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/dnspython",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-requests",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-api"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-util-http"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/numpy",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pyjwt",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/cryptography"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/asgiref",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/zipp",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/contourpy",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/numpy"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/webencodings",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/azure-ai-agents",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/azure-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/isodate"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/m26",
+    "@type": [
+      "http://example.org/libgraph#Library"
     ]
   },
   {
@@ -397,84 +514,60 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph#uses_lib",
+    "@id": "http://example.org/libgraph/httptools",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://example.org/libgraph#Library"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "uses_lib"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://example.org/libgraph#Library"
-      }
+      "http://example.org/libgraph#Library"
     ]
   },
   {
-    "@id": "http://example.org/libgraph/gitpython",
+    "@id": "http://example.org/libgraph/six",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/webcolors",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/polars",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/gitdb"
+        "@id": "http://example.org/libgraph/polars-runtime-32"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/bleach",
+    "@id": "http://example.org/libgraph/propcache",
     "@type": [
       "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/tinycss2"
-      },
-      {
-        "@id": "http://example.org/libgraph/webencodings"
-      }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/opentelemetry-proto",
+    "@id": "http://example.org/libgraph/traitlets",
     "@type": [
       "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/protobuf"
-      }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/azure-storage-blob",
+    "@id": "http://example.org/libgraph/beartype",
     "@type": [
       "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/azure-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/cryptography"
-      },
-      {
-        "@id": "http://example.org/libgraph/isodate"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-httpx",
+    "@id": "http://example.org/libgraph/fastar",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-logging",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
@@ -484,169 +577,6 @@
       },
       {
         "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-util-http"
-      },
-      {
-        "@id": "http://example.org/libgraph/wrapt"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/grpcio",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/aiofiles",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/markdown",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/altair",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/jinja2"
-      },
-      {
-        "@id": "http://example.org/libgraph/jsonschema"
-      },
-      {
-        "@id": "http://example.org/libgraph/narwhals"
-      },
-      {
-        "@id": "http://example.org/libgraph/packaging"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-fastapi",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-api"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-asgi"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-util-http"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/jiter",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pytest-cov",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/coverage"
-      },
-      {
-        "@id": "http://example.org/libgraph/pluggy"
-      },
-      {
-        "@id": "http://example.org/libgraph/pytest"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/numpy",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/docutils",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/ruamel-yaml",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/fastapi",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/annotated-doc"
-      },
-      {
-        "@id": "http://example.org/libgraph/email-validator"
-      },
-      {
-        "@id": "http://example.org/libgraph/fastapi-cli"
-      },
-      {
-        "@id": "http://example.org/libgraph/httpx"
-      },
-      {
-        "@id": "http://example.org/libgraph/jinja2"
-      },
-      {
-        "@id": "http://example.org/libgraph/pydantic"
-      },
-      {
-        "@id": "http://example.org/libgraph/pydantic-extra-types"
-      },
-      {
-        "@id": "http://example.org/libgraph/pydantic-settings"
-      },
-      {
-        "@id": "http://example.org/libgraph/python-multipart"
-      },
-      {
-        "@id": "http://example.org/libgraph/starlette"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      },
-      {
-        "@id": "http://example.org/libgraph/uvicorn"
       }
     ]
   },
@@ -657,15 +587,89 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/zipp",
+    "@id": "http://example.org/libgraph/pywinpty",
     "@type": [
       "http://example.org/libgraph#Library"
     ]
   },
   {
-    "@id": "http://example.org/libgraph/pywin32-ctypes",
+    "@id": "http://example.org/libgraph/pandocfilters",
     "@type": [
       "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/fastjsonschema",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/fonttools",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/jedi",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/parso"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/cachetools",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-django",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-api"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-wsgi"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-util-http"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pydantic-core",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/geopy",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/geographiclib"
+      }
     ]
   },
   {
@@ -722,6 +726,279 @@
     ]
   },
   {
+    "@id": "http://example.org/libgraph/openapi-pydantic",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/pydantic"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/jupyterlab-server",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/babel"
+      },
+      {
+        "@id": "http://example.org/libgraph/jinja2"
+      },
+      {
+        "@id": "http://example.org/libgraph/json5"
+      },
+      {
+        "@id": "http://example.org/libgraph/jsonschema"
+      },
+      {
+        "@id": "http://example.org/libgraph/jupyter-server"
+      },
+      {
+        "@id": "http://example.org/libgraph/packaging"
+      },
+      {
+        "@id": "http://example.org/libgraph/requests"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pyparsing",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pyperclip",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/jaraco-context",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/openai",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/anyio"
+      },
+      {
+        "@id": "http://example.org/libgraph/distro"
+      },
+      {
+        "@id": "http://example.org/libgraph/httpx"
+      },
+      {
+        "@id": "http://example.org/libgraph/jiter"
+      },
+      {
+        "@id": "http://example.org/libgraph/pydantic"
+      },
+      {
+        "@id": "http://example.org/libgraph/sniffio"
+      },
+      {
+        "@id": "http://example.org/libgraph/tqdm"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/bleach",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/tinycss2"
+      },
+      {
+        "@id": "http://example.org/libgraph/webencodings"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/jaraco-classes",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/more-itertools"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pytz",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/azure-storage-blob",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/azure-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/cryptography"
+      },
+      {
+        "@id": "http://example.org/libgraph/isodate"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/opentelemetry-util-http",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/aiofiles",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/tiktoken",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/regex"
+      },
+      {
+        "@id": "http://example.org/libgraph/requests"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/azure-search-documents",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/azure-common"
+      },
+      {
+        "@id": "http://example.org/libgraph/azure-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/isodate"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-urllib",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-api"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-util-http"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/ipywidgets",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/comm"
+      },
+      {
+        "@id": "http://example.org/libgraph/ipython"
+      },
+      {
+        "@id": "http://example.org/libgraph/jupyterlab-widgets"
+      },
+      {
+        "@id": "http://example.org/libgraph/traitlets"
+      },
+      {
+        "@id": "http://example.org/libgraph/widgetsnbextension"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/arrow",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/python-dateutil"
+      },
+      {
+        "@id": "http://example.org/libgraph/tzdata"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/msrest",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/azure-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/certifi"
+      },
+      {
+        "@id": "http://example.org/libgraph/isodate"
+      },
+      {
+        "@id": "http://example.org/libgraph/requests"
+      },
+      {
+        "@id": "http://example.org/libgraph/requests-oauthlib"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pluggy",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
     "@id": "http://example.org/libgraph/jupyter-server-terminals",
     "@type": [
       "http://example.org/libgraph#Library"
@@ -736,27 +1013,13 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/agent-framework",
+    "@id": "http://example.org/libgraph/azure-core",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/agent-framework-core"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/azure-keyvault-secrets",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/azure-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/isodate"
+        "@id": "http://example.org/libgraph/requests"
       },
       {
         "@id": "http://example.org/libgraph/typing-extensions"
@@ -764,7 +1027,13 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions",
+    "@id": "http://example.org/libgraph/mdurl",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/opentelemetry-sdk",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
@@ -773,102 +1042,167 @@
         "@id": "http://example.org/libgraph/opentelemetry-api"
       },
       {
+        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
+      },
+      {
         "@id": "http://example.org/libgraph/typing-extensions"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/annotated-types",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/redis",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pyjwt",
+    "@id": "http://example.org/libgraph/beautifulsoup4",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/cryptography"
+        "@id": "http://example.org/libgraph/soupsieve"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/azure-monitor-opentelemetry-exporter",
+    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-fastapi",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/azure-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/azure-identity"
-      },
-      {
-        "@id": "http://example.org/libgraph/msrest"
-      },
       {
         "@id": "http://example.org/libgraph/opentelemetry-api"
       },
       {
-        "@id": "http://example.org/libgraph/opentelemetry-sdk"
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
       },
       {
-        "@id": "http://example.org/libgraph/psutil"
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-asgi"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-util-http"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/sqlalchemy-utils",
+    "@id": "http://example.org/libgraph/docutils",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/typer",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/sqlalchemy"
+        "@id": "http://example.org/libgraph/click"
+      },
+      {
+        "@id": "http://example.org/libgraph/rich"
+      },
+      {
+        "@id": "http://example.org/libgraph/shellingham"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/pydantic-settings",
+    "@id": "http://example.org/libgraph/importlib-metadata",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/pydantic"
-      },
-      {
-        "@id": "http://example.org/libgraph/python-dotenv"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-inspection"
+        "@id": "http://example.org/libgraph/zipp"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/lark",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/jsonschema-specifications",
+    "@id": "http://example.org/libgraph/sentry-sdk",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/referencing"
+        "@id": "http://example.org/libgraph/certifi"
+      },
+      {
+        "@id": "http://example.org/libgraph/urllib3"
       }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/rdflib",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/pyparsing"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pytest-asyncio",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/pytest"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions-ai",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/wcwidth",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pytest-randomly",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/pytest"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/docopt",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/ipython-pygments-lexers",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/pygments"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/blinker",
+    "@type": [
+      "http://example.org/libgraph#Library"
     ]
   },
   {
@@ -879,6 +1213,148 @@
     "http://example.org/libgraph#uses_lib": [
       {
         "@id": "http://example.org/libgraph/tzdata"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/gitpython",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/gitdb"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pydeck",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/jinja2"
+      },
+      {
+        "@id": "http://example.org/libgraph/numpy"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/fastapi-cli",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/fastapi-cloud-cli"
+      },
+      {
+        "@id": "http://example.org/libgraph/rich-toolkit"
+      },
+      {
+        "@id": "http://example.org/libgraph/typer"
+      },
+      {
+        "@id": "http://example.org/libgraph/uvicorn"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/rich-toolkit",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/click"
+      },
+      {
+        "@id": "http://example.org/libgraph/rich"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/opentelemetry-instrumentation",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-api"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
+      },
+      {
+        "@id": "http://example.org/libgraph/packaging"
+      },
+      {
+        "@id": "http://example.org/libgraph/wrapt"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/python-json-logger",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/py-key-value-shared",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/beartype"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/setuptools",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/prompt-toolkit",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/wcwidth"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/polars-runtime-32",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/terminado",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/ptyprocess"
+      },
+      {
+        "@id": "http://example.org/libgraph/pywinpty"
+      },
+      {
+        "@id": "http://example.org/libgraph/tornado"
       }
     ]
   },
@@ -897,55 +1373,47 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/jupyterlab-pygments",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/beautifulsoup4",
+    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-asgi",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/soupsieve"
+        "@id": "http://example.org/libgraph/asgiref"
       },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-api"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-util-http"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/typing-inspection",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
       {
         "@id": "http://example.org/libgraph/typing-extensions"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/tinycss2",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/webencodings"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/m26",
+    "@id": "http://example.org/libgraph/markupsafe",
     "@type": [
       "http://example.org/libgraph#Library"
     ]
   },
   {
-    "@id": "http://example.org/libgraph/anyio",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/idna"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/cyclopts",
+    "@id": "http://example.org/libgraph/referencing",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
@@ -954,67 +1422,186 @@
         "@id": "http://example.org/libgraph/attrs"
       },
       {
-        "@id": "http://example.org/libgraph/docstring-parser"
-      },
-      {
-        "@id": "http://example.org/libgraph/rich"
-      },
-      {
-        "@id": "http://example.org/libgraph/rich-rst"
+        "@id": "http://example.org/libgraph/rpds-py"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/colorama",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/secretstorage",
+    "@id": "http://example.org/libgraph/click",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/cryptography"
-      },
-      {
-        "@id": "http://example.org/libgraph/jeepney"
+        "@id": "http://example.org/libgraph/colorama"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/webencodings",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/beartype",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pgvector",
+    "@id": "http://example.org/libgraph/jupyter",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/numpy"
+        "@id": "http://example.org/libgraph/ipykernel"
+      },
+      {
+        "@id": "http://example.org/libgraph/ipywidgets"
+      },
+      {
+        "@id": "http://example.org/libgraph/jupyter-console"
+      },
+      {
+        "@id": "http://example.org/libgraph/jupyterlab"
+      },
+      {
+        "@id": "http://example.org/libgraph/nbconvert"
+      },
+      {
+        "@id": "http://example.org/libgraph/notebook"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/astroid",
+    "@id": "http://example.org/libgraph/azure-ai-documentintelligence",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/azure-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/isodate"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/requests-oauthlib",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/oauthlib"
+      },
+      {
+        "@id": "http://example.org/libgraph/requests"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph#name",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/libgraph#Library"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "name"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/jupyterlab-pygments",
     "@type": [
       "http://example.org/libgraph#Library"
     ]
   },
   {
-    "@id": "http://example.org/libgraph/python-multipart",
+    "@id": "http://example.org/libgraph/jinja2",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/markupsafe"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Ontology for the RDF Graph Model representing Python Libraries in this project"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Library Graph Ontology"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pathable",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/greenlet",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/kiwisolver",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/urllib3",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/mako",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/markupsafe"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/babel",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/aiosignal",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/frozenlist"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/websockets",
     "@type": [
       "http://example.org/libgraph#Library"
     ]
@@ -1037,37 +1624,32 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/azure-common",
+    "@id": "http://example.org/libgraph/azure-ai-projects",
     "@type": [
       "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/toml",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pathable",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Ontology"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://example.org/libgraph#uses_lib": [
       {
-        "@value": "Ontology for the RDF Graph Model representing Python Libraries in this project"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+        "@id": "http://example.org/libgraph/azure-ai-agents"
+      },
       {
-        "@value": "Library Graph Ontology"
+        "@id": "http://example.org/libgraph/azure-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/azure-storage-blob"
+      },
+      {
+        "@id": "http://example.org/libgraph/isodate"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
       }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/uri-template",
+    "@type": [
+      "http://example.org/libgraph#Library"
     ]
   },
   {
@@ -1100,46 +1682,42 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/jupyterlab",
+    "@id": "http://example.org/libgraph/pgvector",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/async-lru"
+        "@id": "http://example.org/libgraph/numpy"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/charset-normalizer",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/iniconfig",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/nbformat",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/fastjsonschema"
       },
       {
-        "@id": "http://example.org/libgraph/httpx"
-      },
-      {
-        "@id": "http://example.org/libgraph/ipykernel"
-      },
-      {
-        "@id": "http://example.org/libgraph/jinja2"
+        "@id": "http://example.org/libgraph/jsonschema"
       },
       {
         "@id": "http://example.org/libgraph/jupyter-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/jupyter-lsp"
-      },
-      {
-        "@id": "http://example.org/libgraph/jupyter-server"
-      },
-      {
-        "@id": "http://example.org/libgraph/jupyterlab-server"
-      },
-      {
-        "@id": "http://example.org/libgraph/notebook-shim"
-      },
-      {
-        "@id": "http://example.org/libgraph/packaging"
-      },
-      {
-        "@id": "http://example.org/libgraph/setuptools"
-      },
-      {
-        "@id": "http://example.org/libgraph/tornado"
       },
       {
         "@id": "http://example.org/libgraph/traitlets"
@@ -1147,69 +1725,163 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/pywin32",
+    "@id": "http://example.org/libgraph/asttokens",
     "@type": [
       "http://example.org/libgraph#Library"
     ]
   },
   {
-    "@id": "http://example.org/libgraph/arrow",
+    "@id": "http://example.org/libgraph/multidict",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/more-itertools",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/appnope",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/alembic",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/python-dateutil"
+        "@id": "http://example.org/libgraph/mako"
       },
       {
-        "@id": "http://example.org/libgraph/tzdata"
+        "@id": "http://example.org/libgraph/sqlalchemy"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-urllib",
+    "@id": "http://example.org/libgraph/sqlalchemy-utils",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/opentelemetry-api"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-util-http"
+        "@id": "http://example.org/libgraph/sqlalchemy"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-flask",
+    "@id": "http://example.org/libgraph/parso",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/altair",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/opentelemetry-api"
+        "@id": "http://example.org/libgraph/jinja2"
       },
       {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
+        "@id": "http://example.org/libgraph/jsonschema"
       },
       {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-wsgi"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-util-http"
+        "@id": "http://example.org/libgraph/narwhals"
       },
       {
         "@id": "http://example.org/libgraph/packaging"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
       }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/python-dotenv",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/watchdog",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/tzdata",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/agent-framework",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/agent-framework-core"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/diskcache",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/ruamel-yaml",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/annotated-doc",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/psutil",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/uvloop",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pydantic-extra-types",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/pydantic"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/joblib",
+    "@type": [
+      "http://example.org/libgraph#Library"
     ]
   },
   {
@@ -1245,1257 +1917,13 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/pexpect",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/ptyprocess"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/asgiref",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/defusedxml",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/attrs",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pyyaml",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/dnspython",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/tiktoken",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/regex"
-      },
-      {
-        "@id": "http://example.org/libgraph/requests"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pywinpty",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/psycopg2-binary",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/regex",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/jupyter-lsp",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/jupyter-server"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/azure-core",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/requests"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/decorator",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/jupyter-core",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/platformdirs"
-      },
-      {
-        "@id": "http://example.org/libgraph/traitlets"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/sentry-sdk",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/certifi"
-      },
-      {
-        "@id": "http://example.org/libgraph/urllib3"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/prometheus-client",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pyparsing",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/jaraco-context",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/charset-normalizer",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/tzdata",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/python-json-logger",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/jupyter-console",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/ipykernel"
-      },
-      {
-        "@id": "http://example.org/libgraph/ipython"
-      },
-      {
-        "@id": "http://example.org/libgraph/jupyter-client"
-      },
-      {
-        "@id": "http://example.org/libgraph/jupyter-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/prompt-toolkit"
-      },
-      {
-        "@id": "http://example.org/libgraph/pygments"
-      },
-      {
-        "@id": "http://example.org/libgraph/pyzmq"
-      },
-      {
-        "@id": "http://example.org/libgraph/traitlets"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/terminado",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/ptyprocess"
-      },
-      {
-        "@id": "http://example.org/libgraph/pywinpty"
-      },
-      {
-        "@id": "http://example.org/libgraph/tornado"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/dill",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/sniffio",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions-ai",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/wrapt",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/mistune",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/idna",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/packaging",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pathvalidate",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/argon2-cffi",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/argon2-cffi-bindings"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pillow",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/azure-ai-documentintelligence",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/azure-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/isodate"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/uri-template",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/opentelemetry-exporter-otlp-proto-grpc",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/googleapis-common-protos"
-      },
-      {
-        "@id": "http://example.org/libgraph/grpcio"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-api"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-exporter-otlp-proto-common"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-proto"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-sdk"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/exceptiongroup",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/av",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/azure-core-tracing-opentelemetry",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/azure-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-api"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/ipykernel",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/appnope"
-      },
-      {
-        "@id": "http://example.org/libgraph/comm"
-      },
-      {
-        "@id": "http://example.org/libgraph/debugpy"
-      },
-      {
-        "@id": "http://example.org/libgraph/ipython"
-      },
-      {
-        "@id": "http://example.org/libgraph/jupyter-client"
-      },
-      {
-        "@id": "http://example.org/libgraph/jupyter-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/matplotlib-inline"
-      },
-      {
-        "@id": "http://example.org/libgraph/nest-asyncio"
-      },
-      {
-        "@id": "http://example.org/libgraph/packaging"
-      },
-      {
-        "@id": "http://example.org/libgraph/psutil"
-      },
-      {
-        "@id": "http://example.org/libgraph/pyzmq"
-      },
-      {
-        "@id": "http://example.org/libgraph/tornado"
-      },
-      {
-        "@id": "http://example.org/libgraph/traitlets"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/rfc3339-validator",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/six"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/starlette",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/anyio"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/azure-cosmos",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/azure-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/importlib-metadata",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/zipp"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pylint",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/astroid"
-      },
-      {
-        "@id": "http://example.org/libgraph/colorama"
-      },
-      {
-        "@id": "http://example.org/libgraph/dill"
-      },
-      {
-        "@id": "http://example.org/libgraph/isort"
-      },
-      {
-        "@id": "http://example.org/libgraph/mccabe"
-      },
-      {
-        "@id": "http://example.org/libgraph/platformdirs"
-      },
-      {
-        "@id": "http://example.org/libgraph/tomlkit"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/markupsafe",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/python-dateutil",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/six"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/protobuf",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/json5",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/notebook-shim",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/jupyter-server"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pure-eval",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/platformdirs",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/stack-data",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/asttokens"
-      },
-      {
-        "@id": "http://example.org/libgraph/executing"
-      },
-      {
-        "@id": "http://example.org/libgraph/pure-eval"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pytest-randomly",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/pytest"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph#Library",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A Python library in the dependency graph"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Library"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/aiosignal",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/frozenlist"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/oauthlib",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/websocket-client",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pytz",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/azure-ai-agents",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/azure-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/isodate"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/docopt",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/opentelemetry-instrumentation",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-api"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
-      },
-      {
-        "@id": "http://example.org/libgraph/packaging"
-      },
-      {
-        "@id": "http://example.org/libgraph/wrapt"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pytest",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/colorama"
-      },
-      {
-        "@id": "http://example.org/libgraph/iniconfig"
-      },
-      {
-        "@id": "http://example.org/libgraph/packaging"
-      },
-      {
-        "@id": "http://example.org/libgraph/pluggy"
-      },
-      {
-        "@id": "http://example.org/libgraph/pygments"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/prompt-toolkit",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/wcwidth"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/typing-extensions",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/uvloop",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/duckdb",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/email-validator",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/dnspython"
-      },
-      {
-        "@id": "http://example.org/libgraph/idna"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pandocfilters",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/jsonschema",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/attrs"
-      },
-      {
-        "@id": "http://example.org/libgraph/fqdn"
-      },
-      {
-        "@id": "http://example.org/libgraph/idna"
-      },
-      {
-        "@id": "http://example.org/libgraph/isoduration"
-      },
-      {
-        "@id": "http://example.org/libgraph/jsonpointer"
-      },
-      {
-        "@id": "http://example.org/libgraph/jsonschema-specifications"
-      },
-      {
-        "@id": "http://example.org/libgraph/referencing"
-      },
-      {
-        "@id": "http://example.org/libgraph/rfc3339-validator"
-      },
-      {
-        "@id": "http://example.org/libgraph/rfc3986-validator"
-      },
-      {
-        "@id": "http://example.org/libgraph/rfc3987-syntax"
-      },
-      {
-        "@id": "http://example.org/libgraph/rpds-py"
-      },
-      {
-        "@id": "http://example.org/libgraph/uri-template"
-      },
-      {
-        "@id": "http://example.org/libgraph/webcolors"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/ptyprocess",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/openapi-pydantic",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/pydantic"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/azure-ai-projects",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/azure-ai-agents"
-      },
-      {
-        "@id": "http://example.org/libgraph/azure-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/azure-storage-blob"
-      },
-      {
-        "@id": "http://example.org/libgraph/isodate"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/rfc3986-validator",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/rfc3987-syntax",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/lark"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/opentelemetry-resource-detector-azure",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-sdk"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pygments",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/narwhals",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/ipywidgets",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/comm"
-      },
-      {
-        "@id": "http://example.org/libgraph/ipython"
-      },
-      {
-        "@id": "http://example.org/libgraph/jupyterlab-widgets"
-      },
-      {
-        "@id": "http://example.org/libgraph/traitlets"
-      },
-      {
-        "@id": "http://example.org/libgraph/widgetsnbextension"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/urllib3",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/ipython-pygments-lexers",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/pygments"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/watchfiles",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/anyio"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/httpcore",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/certifi"
-      },
-      {
-        "@id": "http://example.org/libgraph/h11"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/iniconfig",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/h11",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/smmap",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/distro",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pyarrow",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/python-dotenv",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/jupyterlab-widgets",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/isoduration",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/arrow"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/sortedcontainers",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/argon2-cffi-bindings",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/cffi"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/more-itertools",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/jeepney",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/tomlkit",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/jsonschema-path",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/pathable"
-      },
-      {
-        "@id": "http://example.org/libgraph/pyyaml"
-      },
-      {
-        "@id": "http://example.org/libgraph/referencing"
-      },
-      {
-        "@id": "http://example.org/libgraph/requests"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/nbconvert",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/beautifulsoup4"
-      },
-      {
-        "@id": "http://example.org/libgraph/bleach"
-      },
-      {
-        "@id": "http://example.org/libgraph/defusedxml"
-      },
-      {
-        "@id": "http://example.org/libgraph/jinja2"
-      },
-      {
-        "@id": "http://example.org/libgraph/jupyter-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/jupyterlab-pygments"
-      },
-      {
-        "@id": "http://example.org/libgraph/markupsafe"
-      },
-      {
-        "@id": "http://example.org/libgraph/mistune"
-      },
-      {
-        "@id": "http://example.org/libgraph/nbclient"
-      },
-      {
-        "@id": "http://example.org/libgraph/nbformat"
-      },
-      {
-        "@id": "http://example.org/libgraph/packaging"
-      },
-      {
-        "@id": "http://example.org/libgraph/pandocfilters"
-      },
-      {
-        "@id": "http://example.org/libgraph/pygments"
-      },
-      {
-        "@id": "http://example.org/libgraph/traitlets"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/multidict",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/sqlalchemy",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/greenlet"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/parso",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/azure-identity",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/azure-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/cryptography"
-      },
-      {
-        "@id": "http://example.org/libgraph/msal"
-      },
-      {
-        "@id": "http://example.org/libgraph/msal-extensions"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/opentelemetry-util-http",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/cryptography",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/cffi"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/tenacity",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/azure-mgmt-cognitiveservices",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/azure-mgmt-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/msrest"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pydantic",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/annotated-types"
-      },
-      {
-        "@id": "http://example.org/libgraph/email-validator"
-      },
-      {
-        "@id": "http://example.org/libgraph/pydantic-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-inspection"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pydantic-core",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/propcache",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/authlib",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/cryptography"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/jaraco-classes",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/more-itertools"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/requests",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/certifi"
-      },
-      {
-        "@id": "http://example.org/libgraph/charset-normalizer"
-      },
-      {
-        "@id": "http://example.org/libgraph/idna"
-      },
-      {
-        "@id": "http://example.org/libgraph/urllib3"
-      }
-    ]
-  },
-  {
     "@id": "http://example.org/libgraph/cloudpickle",
     "@type": [
       "http://example.org/libgraph#Library"
     ]
   },
   {
-    "@id": "http://example.org/libgraph/opentelemetry-sdk",
+    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-wsgi",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
@@ -2504,79 +1932,14 @@
         "@id": "http://example.org/libgraph/opentelemetry-api"
       },
       {
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
+      },
+      {
         "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
       },
       {
-        "@id": "http://example.org/libgraph/typing-extensions"
+        "@id": "http://example.org/libgraph/opentelemetry-util-http"
       }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/aiohttp",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/aiohappyeyeballs"
-      },
-      {
-        "@id": "http://example.org/libgraph/aiosignal"
-      },
-      {
-        "@id": "http://example.org/libgraph/attrs"
-      },
-      {
-        "@id": "http://example.org/libgraph/frozenlist"
-      },
-      {
-        "@id": "http://example.org/libgraph/multidict"
-      },
-      {
-        "@id": "http://example.org/libgraph/propcache"
-      },
-      {
-        "@id": "http://example.org/libgraph/yarl"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pyzmq",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/cffi"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/googleapis-common-protos",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/protobuf"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/azure-mgmt-core",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/azure-core"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/websockets",
-    "@type": [
-      "http://example.org/libgraph#Library"
     ]
   },
   {
@@ -2642,125 +2005,11 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/babel",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-dbapi",
+    "@id": "http://example.org/libgraph/azure-keyvault-secrets",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-api"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
-      },
-      {
-        "@id": "http://example.org/libgraph/wrapt"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/send2trash",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/debugpy",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/joblib",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/coverage",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-urllib3",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-api"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-util-http"
-      },
-      {
-        "@id": "http://example.org/libgraph/wrapt"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/executing",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/fonttools",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/docstring-parser",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/fastapi-cli",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/fastapi-cloud-cli"
-      },
-      {
-        "@id": "http://example.org/libgraph/rich-toolkit"
-      },
-      {
-        "@id": "http://example.org/libgraph/typer"
-      },
-      {
-        "@id": "http://example.org/libgraph/uvicorn"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/azure-ai-textanalytics",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/azure-common"
-      },
       {
         "@id": "http://example.org/libgraph/azure-core"
       },
@@ -2773,54 +2022,219 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/fastjsonschema",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/jupyter",
+    "@id": "http://example.org/libgraph/argon2-cffi-bindings",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/ipykernel"
-      },
-      {
-        "@id": "http://example.org/libgraph/ipywidgets"
-      },
-      {
-        "@id": "http://example.org/libgraph/jupyter-console"
-      },
-      {
-        "@id": "http://example.org/libgraph/jupyterlab"
-      },
-      {
-        "@id": "http://example.org/libgraph/nbconvert"
-      },
-      {
-        "@id": "http://example.org/libgraph/notebook"
+        "@id": "http://example.org/libgraph/cffi"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/jupyter-client",
+    "@id": "http://example.org/libgraph/cyclopts",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
+        "@id": "http://example.org/libgraph/attrs"
+      },
+      {
+        "@id": "http://example.org/libgraph/docstring-parser"
+      },
+      {
+        "@id": "http://example.org/libgraph/rich"
+      },
+      {
+        "@id": "http://example.org/libgraph/rich-rst"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/tomlkit",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/astroid",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/azure-core-tracing-opentelemetry",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/azure-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-api"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/duckdb",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/async-lru",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/annotated-types",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/watchfiles",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/anyio"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/sse-starlette",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/anyio"
+      },
+      {
+        "@id": "http://example.org/libgraph/starlette"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/idna",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/rignore",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/yarl",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/idna"
+      },
+      {
+        "@id": "http://example.org/libgraph/multidict"
+      },
+      {
+        "@id": "http://example.org/libgraph/propcache"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/httpcore",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/certifi"
+      },
+      {
+        "@id": "http://example.org/libgraph/h11"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/jaraco-functools",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/more-itertools"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/comm",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/rich",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/markdown-it-py"
+      },
+      {
+        "@id": "http://example.org/libgraph/pygments"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/jsonschema-path",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/pathable"
+      },
+      {
+        "@id": "http://example.org/libgraph/pyyaml"
+      },
+      {
+        "@id": "http://example.org/libgraph/referencing"
+      },
+      {
+        "@id": "http://example.org/libgraph/requests"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/jsonpointer",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/nbclient",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/jupyter-client"
+      },
+      {
         "@id": "http://example.org/libgraph/jupyter-core"
       },
       {
-        "@id": "http://example.org/libgraph/python-dateutil"
-      },
-      {
-        "@id": "http://example.org/libgraph/pyzmq"
-      },
-      {
-        "@id": "http://example.org/libgraph/tornado"
+        "@id": "http://example.org/libgraph/nbformat"
       },
       {
         "@id": "http://example.org/libgraph/traitlets"
@@ -2828,28 +2242,203 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/cachetools",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/rpds-py",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/py-key-value-shared",
+    "@id": "http://example.org/libgraph/opentelemetry-resource-detector-azure",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/beartype"
+        "@id": "http://example.org/libgraph/opentelemetry-sdk"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/coverage",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pylint",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/astroid"
+      },
+      {
+        "@id": "http://example.org/libgraph/colorama"
+      },
+      {
+        "@id": "http://example.org/libgraph/dill"
+      },
+      {
+        "@id": "http://example.org/libgraph/isort"
+      },
+      {
+        "@id": "http://example.org/libgraph/mccabe"
+      },
+      {
+        "@id": "http://example.org/libgraph/platformdirs"
+      },
+      {
+        "@id": "http://example.org/libgraph/tomlkit"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/gitdb",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/smmap"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/markdown",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/soupsieve",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/cycler",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/matplotlib",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/contourpy"
+      },
+      {
+        "@id": "http://example.org/libgraph/cycler"
+      },
+      {
+        "@id": "http://example.org/libgraph/fonttools"
+      },
+      {
+        "@id": "http://example.org/libgraph/kiwisolver"
+      },
+      {
+        "@id": "http://example.org/libgraph/numpy"
+      },
+      {
+        "@id": "http://example.org/libgraph/packaging"
+      },
+      {
+        "@id": "http://example.org/libgraph/pillow"
+      },
+      {
+        "@id": "http://example.org/libgraph/pyparsing"
+      },
+      {
+        "@id": "http://example.org/libgraph/python-dateutil"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pytest",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/colorama"
+      },
+      {
+        "@id": "http://example.org/libgraph/iniconfig"
+      },
+      {
+        "@id": "http://example.org/libgraph/packaging"
+      },
+      {
+        "@id": "http://example.org/libgraph/pluggy"
+      },
+      {
+        "@id": "http://example.org/libgraph/pygments"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/keyring",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/jaraco-classes"
+      },
+      {
+        "@id": "http://example.org/libgraph/jaraco-context"
+      },
+      {
+        "@id": "http://example.org/libgraph/jaraco-functools"
+      },
+      {
+        "@id": "http://example.org/libgraph/jeepney"
+      },
+      {
+        "@id": "http://example.org/libgraph/pywin32-ctypes"
+      },
+      {
+        "@id": "http://example.org/libgraph/secretstorage"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-api"
       },
       {
         "@id": "http://example.org/libgraph/typing-extensions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/matplotlib-inline",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/traitlets"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pure-eval",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/opentelemetry-proto",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/protobuf"
       }
     ]
   },
@@ -2910,7 +2499,132 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-django",
+    "@id": "http://example.org/libgraph/jsonschema",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/attrs"
+      },
+      {
+        "@id": "http://example.org/libgraph/fqdn"
+      },
+      {
+        "@id": "http://example.org/libgraph/idna"
+      },
+      {
+        "@id": "http://example.org/libgraph/isoduration"
+      },
+      {
+        "@id": "http://example.org/libgraph/jsonpointer"
+      },
+      {
+        "@id": "http://example.org/libgraph/jsonschema-specifications"
+      },
+      {
+        "@id": "http://example.org/libgraph/referencing"
+      },
+      {
+        "@id": "http://example.org/libgraph/rfc3339-validator"
+      },
+      {
+        "@id": "http://example.org/libgraph/rfc3986-validator"
+      },
+      {
+        "@id": "http://example.org/libgraph/rfc3987-syntax"
+      },
+      {
+        "@id": "http://example.org/libgraph/rpds-py"
+      },
+      {
+        "@id": "http://example.org/libgraph/uri-template"
+      },
+      {
+        "@id": "http://example.org/libgraph/webcolors"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pycparser",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/rfc3987-syntax",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/lark"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/fastapi",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/annotated-doc"
+      },
+      {
+        "@id": "http://example.org/libgraph/email-validator"
+      },
+      {
+        "@id": "http://example.org/libgraph/fastapi-cli"
+      },
+      {
+        "@id": "http://example.org/libgraph/httpx"
+      },
+      {
+        "@id": "http://example.org/libgraph/jinja2"
+      },
+      {
+        "@id": "http://example.org/libgraph/pydantic"
+      },
+      {
+        "@id": "http://example.org/libgraph/pydantic-extra-types"
+      },
+      {
+        "@id": "http://example.org/libgraph/pydantic-settings"
+      },
+      {
+        "@id": "http://example.org/libgraph/python-multipart"
+      },
+      {
+        "@id": "http://example.org/libgraph/starlette"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      },
+      {
+        "@id": "http://example.org/libgraph/uvicorn"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pytest-cov",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/coverage"
+      },
+      {
+        "@id": "http://example.org/libgraph/pluggy"
+      },
+      {
+        "@id": "http://example.org/libgraph/pytest"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-urllib3",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
@@ -2922,27 +2636,164 @@
         "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
       },
       {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-wsgi"
-      },
-      {
         "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
       },
       {
         "@id": "http://example.org/libgraph/opentelemetry-util-http"
+      },
+      {
+        "@id": "http://example.org/libgraph/wrapt"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/alembic",
+    "@id": "http://example.org/libgraph/docstring-parser",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/python-dateutil",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/mako"
+        "@id": "http://example.org/libgraph/six"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/toml",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/av",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/platformdirs",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/distro",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/notebook",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/jupyter-server"
       },
       {
-        "@id": "http://example.org/libgraph/sqlalchemy"
+        "@id": "http://example.org/libgraph/jupyterlab"
+      },
+      {
+        "@id": "http://example.org/libgraph/jupyterlab-server"
+      },
+      {
+        "@id": "http://example.org/libgraph/notebook-shim"
+      },
+      {
+        "@id": "http://example.org/libgraph/tornado"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/rfc3986-validator",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/tinycss2",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/webencodings"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/py-key-value-aio",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/beartype"
+      },
+      {
+        "@id": "http://example.org/libgraph/cachetools"
+      },
+      {
+        "@id": "http://example.org/libgraph/diskcache"
+      },
+      {
+        "@id": "http://example.org/libgraph/keyring"
+      },
+      {
+        "@id": "http://example.org/libgraph/pathvalidate"
+      },
+      {
+        "@id": "http://example.org/libgraph/py-key-value-shared"
+      },
+      {
+        "@id": "http://example.org/libgraph/redis"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/packaging",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/regex",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/shellingham",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/executing",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/azure-mgmt-applicationinsights",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/azure-common"
+      },
+      {
+        "@id": "http://example.org/libgraph/azure-mgmt-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/isodate"
       },
       {
         "@id": "http://example.org/libgraph/typing-extensions"
@@ -2950,13 +2801,27 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/rignore",
+    "@id": "http://example.org/libgraph/azure-cosmos",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/azure-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/narwhals",
     "@type": [
       "http://example.org/libgraph#Library"
     ]
   },
   {
-    "@id": "http://example.org/libgraph/isort",
+    "@id": "http://example.org/libgraph/jupyterlab-widgets",
     "@type": [
       "http://example.org/libgraph#Library"
     ]
@@ -2994,437 +2859,35 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/pycparser",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/jinja2",
+    "@id": "http://example.org/libgraph/starlette",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/markupsafe"
+        "@id": "http://example.org/libgraph/anyio"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/pydocket",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/cloudpickle"
-      },
-      {
-        "@id": "http://example.org/libgraph/fakeredis"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-api"
-      },
-      {
-        "@id": "http://example.org/libgraph/prometheus-client"
-      },
-      {
-        "@id": "http://example.org/libgraph/py-key-value-aio"
-      },
-      {
-        "@id": "http://example.org/libgraph/python-json-logger"
-      },
-      {
-        "@id": "http://example.org/libgraph/redis"
-      },
-      {
-        "@id": "http://example.org/libgraph/rich"
-      },
-      {
-        "@id": "http://example.org/libgraph/typer"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/traitlets",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/fastar",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/referencing",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/attrs"
-      },
-      {
-        "@id": "http://example.org/libgraph/rpds-py"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/jedi",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/parso"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/httptools",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/py-key-value-aio",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/beartype"
-      },
-      {
-        "@id": "http://example.org/libgraph/cachetools"
-      },
-      {
-        "@id": "http://example.org/libgraph/diskcache"
-      },
-      {
-        "@id": "http://example.org/libgraph/keyring"
-      },
-      {
-        "@id": "http://example.org/libgraph/pathvalidate"
-      },
-      {
-        "@id": "http://example.org/libgraph/py-key-value-shared"
-      },
-      {
-        "@id": "http://example.org/libgraph/redis"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/tqdm",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/colorama"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/rich-toolkit",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/click"
-      },
-      {
-        "@id": "http://example.org/libgraph/rich"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/click",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/colorama"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pluggy",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/fqdn",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/async-lru",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/msrest",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/azure-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/certifi"
-      },
-      {
-        "@id": "http://example.org/libgraph/isodate"
-      },
-      {
-        "@id": "http://example.org/libgraph/requests"
-      },
-      {
-        "@id": "http://example.org/libgraph/requests-oauthlib"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/wcwidth",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/typer",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/click"
-      },
-      {
-        "@id": "http://example.org/libgraph/rich"
-      },
-      {
-        "@id": "http://example.org/libgraph/shellingham"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/nltk",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/click"
-      },
-      {
-        "@id": "http://example.org/libgraph/joblib"
-      },
-      {
-        "@id": "http://example.org/libgraph/regex"
-      },
-      {
-        "@id": "http://example.org/libgraph/tqdm"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/greenlet",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/azure-search-documents",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/azure-common"
-      },
-      {
-        "@id": "http://example.org/libgraph/azure-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/isodate"
-      },
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/kiwisolver",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/aiohappyeyeballs",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/cffi",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/pycparser"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/geographiclib",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/diskcache",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/msal-extensions",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/msal"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/pyperclip",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/setuptools",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/uvicorn",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/click"
-      },
-      {
-        "@id": "http://example.org/libgraph/colorama"
-      },
-      {
-        "@id": "http://example.org/libgraph/h11"
-      },
-      {
-        "@id": "http://example.org/libgraph/httptools"
-      },
-      {
-        "@id": "http://example.org/libgraph/python-dotenv"
-      },
-      {
-        "@id": "http://example.org/libgraph/pyyaml"
-      },
-      {
-        "@id": "http://example.org/libgraph/uvloop"
-      },
-      {
-        "@id": "http://example.org/libgraph/watchfiles"
-      },
-      {
-        "@id": "http://example.org/libgraph/websockets"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/msal",
+    "@id": "http://example.org/libgraph/authlib",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
         "@id": "http://example.org/libgraph/cryptography"
-      },
-      {
-        "@id": "http://example.org/libgraph/pyjwt"
-      },
-      {
-        "@id": "http://example.org/libgraph/requests"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph#name",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://example.org/libgraph#Library"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "name"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/isodate",
+    "@id": "http://example.org/libgraph/pywin32-ctypes",
     "@type": [
       "http://example.org/libgraph#Library"
     ]
   },
   {
-    "@id": "http://example.org/libgraph/rich",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/markdown-it-py"
-      },
-      {
-        "@id": "http://example.org/libgraph/pygments"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-logging",
+    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-dbapi",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
@@ -3434,254 +2897,37 @@
       },
       {
         "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
+      },
+      {
+        "@id": "http://example.org/libgraph/wrapt"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/matplotlib-inline",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/traitlets"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/certifi",
+    "@id": "http://example.org/libgraph/h11",
     "@type": [
       "http://example.org/libgraph#Library"
     ]
   },
   {
-    "@id": "http://example.org/libgraph/comm",
+    "@id": "http://example.org/libgraph/mccabe",
     "@type": [
       "http://example.org/libgraph#Library"
     ]
   },
   {
-    "@id": "http://example.org/libgraph/six",
+    "@id": "http://example.org/libgraph/python-multipart",
     "@type": [
       "http://example.org/libgraph#Library"
     ]
   },
   {
-    "@id": "http://example.org/libgraph/typing-inspection",
+    "@id": "http://example.org/libgraph/ptyprocess",
     "@type": [
       "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/typing-extensions"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/yarl",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/idna"
-      },
-      {
-        "@id": "http://example.org/libgraph/multidict"
-      },
-      {
-        "@id": "http://example.org/libgraph/propcache"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/widgetsnbextension",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/annotated-doc",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/cycler",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/azure-ai-evaluation",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/aiohttp"
-      },
-      {
-        "@id": "http://example.org/libgraph/azure-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/azure-identity"
-      },
-      {
-        "@id": "http://example.org/libgraph/azure-storage-blob"
-      },
-      {
-        "@id": "http://example.org/libgraph/httpx"
-      },
-      {
-        "@id": "http://example.org/libgraph/jinja2"
-      },
-      {
-        "@id": "http://example.org/libgraph/msrest"
-      },
-      {
-        "@id": "http://example.org/libgraph/nltk"
-      },
-      {
-        "@id": "http://example.org/libgraph/openai"
-      },
-      {
-        "@id": "http://example.org/libgraph/pandas"
-      },
-      {
-        "@id": "http://example.org/libgraph/pyjwt"
-      },
-      {
-        "@id": "http://example.org/libgraph/ruamel-yaml"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/webcolors",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/azure-monitor-opentelemetry",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/azure-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/azure-core-tracing-opentelemetry"
-      },
-      {
-        "@id": "http://example.org/libgraph/azure-monitor-opentelemetry-exporter"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-django"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-fastapi"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-flask"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-psycopg2"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-requests"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-urllib"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-urllib3"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-resource-detector-azure"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-sdk"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/nbformat",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/fastjsonschema"
-      },
-      {
-        "@id": "http://example.org/libgraph/jsonschema"
-      },
-      {
-        "@id": "http://example.org/libgraph/jupyter-core"
-      },
-      {
-        "@id": "http://example.org/libgraph/traitlets"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/jaraco-functools",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/more-itertools"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/psutil",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/soupsieve",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/matplotlib",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ],
-    "http://example.org/libgraph#uses_lib": [
-      {
-        "@id": "http://example.org/libgraph/contourpy"
-      },
-      {
-        "@id": "http://example.org/libgraph/cycler"
-      },
-      {
-        "@id": "http://example.org/libgraph/fonttools"
-      },
-      {
-        "@id": "http://example.org/libgraph/kiwisolver"
-      },
-      {
-        "@id": "http://example.org/libgraph/numpy"
-      },
-      {
-        "@id": "http://example.org/libgraph/packaging"
-      },
-      {
-        "@id": "http://example.org/libgraph/pillow"
-      },
-      {
-        "@id": "http://example.org/libgraph/pyparsing"
-      },
-      {
-        "@id": "http://example.org/libgraph/python-dateutil"
-      }
     ]
   },
   {
@@ -3732,74 +2978,580 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/mdurl",
-    "@type": [
-      "http://example.org/libgraph#Library"
-    ]
-  },
-  {
-    "@id": "http://example.org/libgraph/gitdb",
+    "@id": "http://example.org/libgraph/grpcio",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/smmap"
+        "@id": "http://example.org/libgraph/typing-extensions"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/jsonpointer",
+    "@id": "http://example.org/libgraph/azure-common",
     "@type": [
       "http://example.org/libgraph#Library"
     ]
   },
   {
-    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-requests",
+    "@id": "http://example.org/libgraph/googleapis-common-protos",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/opentelemetry-api"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
-      },
-      {
-        "@id": "http://example.org/libgraph/opentelemetry-util-http"
+        "@id": "http://example.org/libgraph/protobuf"
       }
     ]
   },
   {
-    "@id": "http://example.org/libgraph/jupyterlab-server",
+    "@id": "http://example.org/libgraph/tqdm",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/babel"
+        "@id": "http://example.org/libgraph/colorama"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/lark",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/protobuf",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/secretstorage",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/cryptography"
+      },
+      {
+        "@id": "http://example.org/libgraph/jeepney"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pydantic-settings",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/pydantic"
+      },
+      {
+        "@id": "http://example.org/libgraph/python-dotenv"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-inspection"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pillow",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/rfc3339-validator",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/six"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/colorama",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/isort",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pyarrow",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/json5",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/jupyter-console",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/ipykernel"
+      },
+      {
+        "@id": "http://example.org/libgraph/ipython"
+      },
+      {
+        "@id": "http://example.org/libgraph/jupyter-client"
+      },
+      {
+        "@id": "http://example.org/libgraph/jupyter-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/prompt-toolkit"
+      },
+      {
+        "@id": "http://example.org/libgraph/pygments"
+      },
+      {
+        "@id": "http://example.org/libgraph/pyzmq"
+      },
+      {
+        "@id": "http://example.org/libgraph/traitlets"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/jupyterlab",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/async-lru"
+      },
+      {
+        "@id": "http://example.org/libgraph/httpx"
+      },
+      {
+        "@id": "http://example.org/libgraph/ipykernel"
       },
       {
         "@id": "http://example.org/libgraph/jinja2"
       },
       {
-        "@id": "http://example.org/libgraph/json5"
+        "@id": "http://example.org/libgraph/jupyter-core"
       },
       {
-        "@id": "http://example.org/libgraph/jsonschema"
+        "@id": "http://example.org/libgraph/jupyter-lsp"
       },
       {
         "@id": "http://example.org/libgraph/jupyter-server"
       },
       {
+        "@id": "http://example.org/libgraph/jupyterlab-server"
+      },
+      {
+        "@id": "http://example.org/libgraph/notebook-shim"
+      },
+      {
         "@id": "http://example.org/libgraph/packaging"
       },
       {
-        "@id": "http://example.org/libgraph/requests"
+        "@id": "http://example.org/libgraph/setuptools"
+      },
+      {
+        "@id": "http://example.org/libgraph/tornado"
+      },
+      {
+        "@id": "http://example.org/libgraph/traitlets"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/jeepney",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/sniffio",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/azure-monitor-opentelemetry",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/azure-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/azure-core-tracing-opentelemetry"
+      },
+      {
+        "@id": "http://example.org/libgraph/azure-monitor-opentelemetry-exporter"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-django"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-fastapi"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-flask"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-psycopg2"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-requests"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-urllib"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation-urllib3"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-resource-detector-azure"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-sdk"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/jupyter-client",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/jupyter-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/python-dateutil"
+      },
+      {
+        "@id": "http://example.org/libgraph/pyzmq"
+      },
+      {
+        "@id": "http://example.org/libgraph/tornado"
+      },
+      {
+        "@id": "http://example.org/libgraph/traitlets"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/debugpy",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/tenacity",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/defusedxml",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pexpect",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/ptyprocess"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/azure-mgmt-cognitiveservices",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/azure-mgmt-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/msrest"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/tornado",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/isoduration",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/arrow"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/smmap",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pyyaml",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/sortedcontainers",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/jiter",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/fakeredis",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/lupa"
+      },
+      {
+        "@id": "http://example.org/libgraph/redis"
+      },
+      {
+        "@id": "http://example.org/libgraph/sortedcontainers"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/geographiclib",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/redis",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/typing-extensions",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/opentelemetry-exporter-otlp-proto-grpc",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/googleapis-common-protos"
+      },
+      {
+        "@id": "http://example.org/libgraph/grpcio"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-api"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-exporter-otlp-proto-common"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-proto"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-sdk"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph#Library",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A Python library in the dependency graph"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Library"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/nbconvert",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/beautifulsoup4"
+      },
+      {
+        "@id": "http://example.org/libgraph/bleach"
+      },
+      {
+        "@id": "http://example.org/libgraph/defusedxml"
+      },
+      {
+        "@id": "http://example.org/libgraph/jinja2"
+      },
+      {
+        "@id": "http://example.org/libgraph/jupyter-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/jupyterlab-pygments"
+      },
+      {
+        "@id": "http://example.org/libgraph/markupsafe"
+      },
+      {
+        "@id": "http://example.org/libgraph/mistune"
+      },
+      {
+        "@id": "http://example.org/libgraph/nbclient"
+      },
+      {
+        "@id": "http://example.org/libgraph/nbformat"
+      },
+      {
+        "@id": "http://example.org/libgraph/packaging"
+      },
+      {
+        "@id": "http://example.org/libgraph/pandocfilters"
+      },
+      {
+        "@id": "http://example.org/libgraph/pygments"
+      },
+      {
+        "@id": "http://example.org/libgraph/traitlets"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/pydocket",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/cloudpickle"
+      },
+      {
+        "@id": "http://example.org/libgraph/fakeredis"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-api"
+      },
+      {
+        "@id": "http://example.org/libgraph/prometheus-client"
+      },
+      {
+        "@id": "http://example.org/libgraph/py-key-value-aio"
+      },
+      {
+        "@id": "http://example.org/libgraph/python-json-logger"
+      },
+      {
+        "@id": "http://example.org/libgraph/redis"
+      },
+      {
+        "@id": "http://example.org/libgraph/rich"
+      },
+      {
+        "@id": "http://example.org/libgraph/typer"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/jupyter-core",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/platformdirs"
+      },
+      {
+        "@id": "http://example.org/libgraph/traitlets"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/azure-mgmt-core",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/azure-core"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/oauthlib",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/argon2-cffi",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/argon2-cffi-bindings"
       }
     ]
   },
@@ -3866,7 +3618,241 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/watchdog",
+    "@id": "http://example.org/libgraph/pywin32",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/lupa",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/stack-data",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/asttokens"
+      },
+      {
+        "@id": "http://example.org/libgraph/executing"
+      },
+      {
+        "@id": "http://example.org/libgraph/pure-eval"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/aiohttp",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/aiohappyeyeballs"
+      },
+      {
+        "@id": "http://example.org/libgraph/aiosignal"
+      },
+      {
+        "@id": "http://example.org/libgraph/attrs"
+      },
+      {
+        "@id": "http://example.org/libgraph/frozenlist"
+      },
+      {
+        "@id": "http://example.org/libgraph/multidict"
+      },
+      {
+        "@id": "http://example.org/libgraph/propcache"
+      },
+      {
+        "@id": "http://example.org/libgraph/yarl"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/azure-monitor-opentelemetry-exporter",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/azure-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/azure-identity"
+      },
+      {
+        "@id": "http://example.org/libgraph/msrest"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-api"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-sdk"
+      },
+      {
+        "@id": "http://example.org/libgraph/psutil"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/prometheus-client",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/exceptiongroup",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/azure-identity",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/azure-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/cryptography"
+      },
+      {
+        "@id": "http://example.org/libgraph/msal"
+      },
+      {
+        "@id": "http://example.org/libgraph/msal-extensions"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/jupyter-lsp",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/jupyter-server"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/opentelemetry-instrumentation-httpx",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-api"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-instrumentation"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-semantic-conventions"
+      },
+      {
+        "@id": "http://example.org/libgraph/opentelemetry-util-http"
+      },
+      {
+        "@id": "http://example.org/libgraph/wrapt"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/nltk",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/click"
+      },
+      {
+        "@id": "http://example.org/libgraph/joblib"
+      },
+      {
+        "@id": "http://example.org/libgraph/regex"
+      },
+      {
+        "@id": "http://example.org/libgraph/tqdm"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/azure-ai-textanalytics",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/azure-common"
+      },
+      {
+        "@id": "http://example.org/libgraph/azure-core"
+      },
+      {
+        "@id": "http://example.org/libgraph/isodate"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/fqdn",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph#uses_lib",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/libgraph#Library"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "uses_lib"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/libgraph#Library"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/sqlalchemy",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/greenlet"
+      },
+      {
+        "@id": "http://example.org/libgraph/typing-extensions"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/psycopg2-binary",
     "@type": [
       "http://example.org/libgraph#Library"
     ]
@@ -3892,24 +3878,61 @@
     ]
   },
   {
-    "@id": "http://example.org/libgraph/fakeredis",
+    "@id": "http://example.org/libgraph/pyzmq",
     "@type": [
       "http://example.org/libgraph#Library"
     ],
     "http://example.org/libgraph#uses_lib": [
       {
-        "@id": "http://example.org/libgraph/lupa"
-      },
-      {
-        "@id": "http://example.org/libgraph/redis"
-      },
-      {
-        "@id": "http://example.org/libgraph/sortedcontainers"
+        "@id": "http://example.org/libgraph/cffi"
       }
     ]
   },
   {
+    "@id": "http://example.org/libgraph/rich-rst",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/docutils"
+      },
+      {
+        "@id": "http://example.org/libgraph/rich"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/isodate",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/httpx-sse",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
     "@id": "http://example.org/libgraph/frozenlist",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/notebook-shim",
+    "@type": [
+      "http://example.org/libgraph#Library"
+    ],
+    "http://example.org/libgraph#uses_lib": [
+      {
+        "@id": "http://example.org/libgraph/jupyter-server"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/libgraph/python-toon",
     "@type": [
       "http://example.org/libgraph#Library"
     ]

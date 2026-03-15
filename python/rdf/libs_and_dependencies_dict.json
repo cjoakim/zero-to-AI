@@ -1,0 +1,2224 @@
+{
+  "agent-framework": {
+    "dependencies": [
+      "agent-framework-core"
+    ],
+    "name": "agent-framework",
+    "ref": "agent-framework-2@1.0.0b251120"
+  },
+  "agent-framework-core": {
+    "dependencies": [
+      "aiofiles",
+      "azure-identity",
+      "azure-monitor-opentelemetry",
+      "azure-monitor-opentelemetry-exporter",
+      "mcp",
+      "openai",
+      "opentelemetry-api",
+      "opentelemetry-exporter-otlp-proto-grpc",
+      "opentelemetry-sdk",
+      "opentelemetry-semantic-conventions-ai",
+      "pydantic",
+      "pydantic-settings",
+      "typing-extensions"
+    ],
+    "name": "agent-framework-core",
+    "ref": "agent-framework-core-3@1.0.0b251001"
+  },
+  "aiofiles": {
+    "dependencies": [],
+    "name": "aiofiles",
+    "ref": "aiofiles-4@25.1.0"
+  },
+  "aiohappyeyeballs": {
+    "dependencies": [],
+    "name": "aiohappyeyeballs",
+    "ref": "aiohappyeyeballs-5@2.6.1"
+  },
+  "aiohttp": {
+    "dependencies": [
+      "aiohappyeyeballs",
+      "aiosignal",
+      "attrs",
+      "frozenlist",
+      "multidict",
+      "propcache",
+      "yarl"
+    ],
+    "name": "aiohttp",
+    "ref": "aiohttp-6@3.13.2"
+  },
+  "aiosignal": {
+    "dependencies": [
+      "frozenlist"
+    ],
+    "name": "aiosignal",
+    "ref": "aiosignal-7@1.4.0"
+  },
+  "alembic": {
+    "dependencies": [
+      "mako",
+      "sqlalchemy",
+      "typing-extensions"
+    ],
+    "name": "alembic",
+    "ref": "alembic-8@1.18.1"
+  },
+  "altair": {
+    "dependencies": [
+      "jinja2",
+      "jsonschema",
+      "narwhals",
+      "packaging",
+      "typing-extensions"
+    ],
+    "name": "altair",
+    "ref": "altair-9@6.0.0"
+  },
+  "annotated-doc": {
+    "dependencies": [],
+    "name": "annotated-doc",
+    "ref": "annotated-doc-10@0.0.4"
+  },
+  "annotated-types": {
+    "dependencies": [],
+    "name": "annotated-types",
+    "ref": "annotated-types-11@0.7.0"
+  },
+  "anyio": {
+    "dependencies": [
+      "idna"
+    ],
+    "name": "anyio",
+    "ref": "anyio-12@4.12.0"
+  },
+  "appnope": {
+    "dependencies": [],
+    "name": "appnope",
+    "ref": "appnope-13@0.1.4"
+  },
+  "argon2-cffi": {
+    "dependencies": [
+      "argon2-cffi-bindings"
+    ],
+    "name": "argon2-cffi",
+    "ref": "argon2-cffi-14@25.1.0"
+  },
+  "argon2-cffi-bindings": {
+    "dependencies": [
+      "cffi"
+    ],
+    "name": "argon2-cffi-bindings",
+    "ref": "argon2-cffi-bindings-15@25.1.0"
+  },
+  "arrow": {
+    "dependencies": [
+      "python-dateutil",
+      "tzdata"
+    ],
+    "name": "arrow",
+    "ref": "arrow-16@1.4.0"
+  },
+  "asgiref": {
+    "dependencies": [],
+    "name": "asgiref",
+    "ref": "asgiref-17@3.11.0"
+  },
+  "astroid": {
+    "dependencies": [],
+    "name": "astroid",
+    "ref": "astroid-18@4.0.3"
+  },
+  "asttokens": {
+    "dependencies": [],
+    "name": "asttokens",
+    "ref": "asttokens-19@3.0.1"
+  },
+  "async-lru": {
+    "dependencies": [],
+    "name": "async-lru",
+    "ref": "async-lru-20@2.0.5"
+  },
+  "attrs": {
+    "dependencies": [],
+    "name": "attrs",
+    "ref": "attrs-21@25.4.0"
+  },
+  "authlib": {
+    "dependencies": [
+      "cryptography"
+    ],
+    "name": "authlib",
+    "ref": "authlib-22@1.6.6"
+  },
+  "av": {
+    "dependencies": [],
+    "name": "av",
+    "ref": "av-23@16.0.1"
+  },
+  "azure-ai-agents": {
+    "dependencies": [
+      "azure-core",
+      "isodate",
+      "typing-extensions"
+    ],
+    "name": "azure-ai-agents",
+    "ref": "azure-ai-agents-24@1.2.0b6"
+  },
+  "azure-ai-documentintelligence": {
+    "dependencies": [
+      "azure-core",
+      "isodate",
+      "typing-extensions"
+    ],
+    "name": "azure-ai-documentintelligence",
+    "ref": "azure-ai-documentintelligence-25@1.0.2"
+  },
+  "azure-ai-evaluation": {
+    "dependencies": [
+      "aiohttp",
+      "azure-core",
+      "azure-identity",
+      "azure-storage-blob",
+      "httpx",
+      "jinja2",
+      "msrest",
+      "nltk",
+      "openai",
+      "pandas",
+      "pyjwt",
+      "ruamel-yaml"
+    ],
+    "name": "azure-ai-evaluation",
+    "ref": "azure-ai-evaluation-26@1.14.0"
+  },
+  "azure-ai-projects": {
+    "dependencies": [
+      "azure-ai-agents",
+      "azure-core",
+      "azure-storage-blob",
+      "isodate",
+      "typing-extensions"
+    ],
+    "name": "azure-ai-projects",
+    "ref": "azure-ai-projects-27@1.0.0"
+  },
+  "azure-ai-textanalytics": {
+    "dependencies": [
+      "azure-common",
+      "azure-core",
+      "isodate",
+      "typing-extensions"
+    ],
+    "name": "azure-ai-textanalytics",
+    "ref": "azure-ai-textanalytics-28@5.3.0"
+  },
+  "azure-common": {
+    "dependencies": [],
+    "name": "azure-common",
+    "ref": "azure-common-29@1.1.28"
+  },
+  "azure-core": {
+    "dependencies": [
+      "requests",
+      "typing-extensions"
+    ],
+    "name": "azure-core",
+    "ref": "azure-core-30@1.38.2"
+  },
+  "azure-core-tracing-opentelemetry": {
+    "dependencies": [
+      "azure-core",
+      "opentelemetry-api"
+    ],
+    "name": "azure-core-tracing-opentelemetry",
+    "ref": "azure-core-tracing-opentelemetry-31@1.0.0b12"
+  },
+  "azure-cosmos": {
+    "dependencies": [
+      "azure-core",
+      "typing-extensions"
+    ],
+    "name": "azure-cosmos",
+    "ref": "azure-cosmos-32@4.15.0"
+  },
+  "azure-identity": {
+    "dependencies": [
+      "azure-core",
+      "cryptography",
+      "msal",
+      "msal-extensions",
+      "typing-extensions"
+    ],
+    "name": "azure-identity",
+    "ref": "azure-identity-33@1.25.1"
+  },
+  "azure-keyvault-secrets": {
+    "dependencies": [
+      "azure-core",
+      "isodate",
+      "typing-extensions"
+    ],
+    "name": "azure-keyvault-secrets",
+    "ref": "azure-keyvault-secrets-34@4.10.0"
+  },
+  "azure-mgmt-applicationinsights": {
+    "dependencies": [
+      "azure-common",
+      "azure-mgmt-core",
+      "isodate",
+      "typing-extensions"
+    ],
+    "name": "azure-mgmt-applicationinsights",
+    "ref": "azure-mgmt-applicationinsights-35@4.1.0"
+  },
+  "azure-mgmt-cognitiveservices": {
+    "dependencies": [
+      "azure-mgmt-core",
+      "msrest",
+      "typing-extensions"
+    ],
+    "name": "azure-mgmt-cognitiveservices",
+    "ref": "azure-mgmt-cognitiveservices-36@14.1.0"
+  },
+  "azure-mgmt-core": {
+    "dependencies": [
+      "azure-core"
+    ],
+    "name": "azure-mgmt-core",
+    "ref": "azure-mgmt-core-37@1.6.0"
+  },
+  "azure-monitor-opentelemetry": {
+    "dependencies": [
+      "azure-core",
+      "azure-core-tracing-opentelemetry",
+      "azure-monitor-opentelemetry-exporter",
+      "opentelemetry-instrumentation-django",
+      "opentelemetry-instrumentation-fastapi",
+      "opentelemetry-instrumentation-flask",
+      "opentelemetry-instrumentation-psycopg2",
+      "opentelemetry-instrumentation-requests",
+      "opentelemetry-instrumentation-urllib",
+      "opentelemetry-instrumentation-urllib3",
+      "opentelemetry-resource-detector-azure",
+      "opentelemetry-sdk"
+    ],
+    "name": "azure-monitor-opentelemetry",
+    "ref": "azure-monitor-opentelemetry-38@1.8.2"
+  },
+  "azure-monitor-opentelemetry-exporter": {
+    "dependencies": [
+      "azure-core",
+      "azure-identity",
+      "msrest",
+      "opentelemetry-api",
+      "opentelemetry-sdk",
+      "psutil"
+    ],
+    "name": "azure-monitor-opentelemetry-exporter",
+    "ref": "azure-monitor-opentelemetry-exporter-39@1.0.0b45"
+  },
+  "azure-search-documents": {
+    "dependencies": [
+      "azure-common",
+      "azure-core",
+      "isodate",
+      "typing-extensions"
+    ],
+    "name": "azure-search-documents",
+    "ref": "azure-search-documents-40@11.5.2"
+  },
+  "azure-storage-blob": {
+    "dependencies": [
+      "azure-core",
+      "cryptography",
+      "isodate",
+      "typing-extensions"
+    ],
+    "name": "azure-storage-blob",
+    "ref": "azure-storage-blob-41@12.27.1"
+  },
+  "babel": {
+    "dependencies": [],
+    "name": "babel",
+    "ref": "babel-42@2.17.0"
+  },
+  "beartype": {
+    "dependencies": [],
+    "name": "beartype",
+    "ref": "beartype-43@0.22.9"
+  },
+  "beautifulsoup4": {
+    "dependencies": [
+      "soupsieve",
+      "typing-extensions"
+    ],
+    "name": "beautifulsoup4",
+    "ref": "beautifulsoup4-44@4.14.3"
+  },
+  "bleach": {
+    "dependencies": [
+      "tinycss2",
+      "webencodings"
+    ],
+    "name": "bleach",
+    "ref": "bleach-45@6.3.0"
+  },
+  "blinker": {
+    "dependencies": [],
+    "name": "blinker",
+    "ref": "blinker-46@1.9.0"
+  },
+  "cachetools": {
+    "dependencies": [],
+    "name": "cachetools",
+    "ref": "cachetools-47@6.2.4"
+  },
+  "certifi": {
+    "dependencies": [],
+    "name": "certifi",
+    "ref": "certifi-48@2025.11.12"
+  },
+  "cffi": {
+    "dependencies": [
+      "pycparser"
+    ],
+    "name": "cffi",
+    "ref": "cffi-49@2.0.0"
+  },
+  "charset-normalizer": {
+    "dependencies": [],
+    "name": "charset-normalizer",
+    "ref": "charset-normalizer-50@3.4.4"
+  },
+  "click": {
+    "dependencies": [
+      "colorama"
+    ],
+    "name": "click",
+    "ref": "click-51@8.3.1"
+  },
+  "cloudpickle": {
+    "dependencies": [],
+    "name": "cloudpickle",
+    "ref": "cloudpickle-52@3.1.2"
+  },
+  "colorama": {
+    "dependencies": [],
+    "name": "colorama",
+    "ref": "colorama-53@0.4.6"
+  },
+  "comm": {
+    "dependencies": [],
+    "name": "comm",
+    "ref": "comm-54@0.2.3"
+  },
+  "contourpy": {
+    "dependencies": [
+      "numpy"
+    ],
+    "name": "contourpy",
+    "ref": "contourpy-55@1.3.3"
+  },
+  "coverage": {
+    "dependencies": [],
+    "name": "coverage",
+    "ref": "coverage-56@7.13.1"
+  },
+  "cryptography": {
+    "dependencies": [
+      "cffi"
+    ],
+    "name": "cryptography",
+    "ref": "cryptography-57@46.0.3"
+  },
+  "cycler": {
+    "dependencies": [],
+    "name": "cycler",
+    "ref": "cycler-58@0.12.1"
+  },
+  "cyclopts": {
+    "dependencies": [
+      "attrs",
+      "docstring-parser",
+      "rich",
+      "rich-rst"
+    ],
+    "name": "cyclopts",
+    "ref": "cyclopts-59@4.5.0"
+  },
+  "debugpy": {
+    "dependencies": [],
+    "name": "debugpy",
+    "ref": "debugpy-60@1.8.19"
+  },
+  "decorator": {
+    "dependencies": [],
+    "name": "decorator",
+    "ref": "decorator-61@5.2.1"
+  },
+  "defusedxml": {
+    "dependencies": [],
+    "name": "defusedxml",
+    "ref": "defusedxml-62@0.7.1"
+  },
+  "dill": {
+    "dependencies": [],
+    "name": "dill",
+    "ref": "dill-63@0.4.0"
+  },
+  "diskcache": {
+    "dependencies": [],
+    "name": "diskcache",
+    "ref": "diskcache-64@5.6.3"
+  },
+  "distro": {
+    "dependencies": [],
+    "name": "distro",
+    "ref": "distro-65@1.9.0"
+  },
+  "dnspython": {
+    "dependencies": [],
+    "name": "dnspython",
+    "ref": "dnspython-66@2.8.0"
+  },
+  "docopt": {
+    "dependencies": [],
+    "name": "docopt",
+    "ref": "docopt-67@0.6.2"
+  },
+  "docstring-parser": {
+    "dependencies": [],
+    "name": "docstring-parser",
+    "ref": "docstring-parser-68@0.17.0"
+  },
+  "docutils": {
+    "dependencies": [],
+    "name": "docutils",
+    "ref": "docutils-69@0.22.4"
+  },
+  "duckdb": {
+    "dependencies": [],
+    "name": "duckdb",
+    "ref": "duckdb-70@1.5.0"
+  },
+  "email-validator": {
+    "dependencies": [
+      "dnspython",
+      "idna"
+    ],
+    "name": "email-validator",
+    "ref": "email-validator-71@2.3.0"
+  },
+  "exceptiongroup": {
+    "dependencies": [],
+    "name": "exceptiongroup",
+    "ref": "exceptiongroup-72@1.3.1"
+  },
+  "executing": {
+    "dependencies": [],
+    "name": "executing",
+    "ref": "executing-73@2.2.1"
+  },
+  "faker": {
+    "dependencies": [
+      "tzdata"
+    ],
+    "name": "faker",
+    "ref": "faker-74@39.0.0"
+  },
+  "fakeredis": {
+    "dependencies": [
+      "lupa",
+      "redis",
+      "sortedcontainers"
+    ],
+    "name": "fakeredis",
+    "ref": "fakeredis-75@2.33.0"
+  },
+  "fastapi": {
+    "dependencies": [
+      "annotated-doc",
+      "email-validator",
+      "fastapi-cli",
+      "httpx",
+      "jinja2",
+      "pydantic",
+      "pydantic-extra-types",
+      "pydantic-settings",
+      "python-multipart",
+      "starlette",
+      "typing-extensions",
+      "uvicorn"
+    ],
+    "name": "fastapi",
+    "ref": "fastapi-76@0.128.0"
+  },
+  "fastapi-cli": {
+    "dependencies": [
+      "fastapi-cloud-cli",
+      "rich-toolkit",
+      "typer",
+      "uvicorn"
+    ],
+    "name": "fastapi-cli",
+    "ref": "fastapi-cli-77@0.0.20"
+  },
+  "fastapi-cloud-cli": {
+    "dependencies": [
+      "fastar",
+      "httpx",
+      "pydantic",
+      "rich-toolkit",
+      "rignore",
+      "sentry-sdk",
+      "typer",
+      "uvicorn"
+    ],
+    "name": "fastapi-cloud-cli",
+    "ref": "fastapi-cloud-cli-78@0.11.0"
+  },
+  "fastar": {
+    "dependencies": [],
+    "name": "fastar",
+    "ref": "fastar-79@0.8.0"
+  },
+  "fastjsonschema": {
+    "dependencies": [],
+    "name": "fastjsonschema",
+    "ref": "fastjsonschema-80@2.21.2"
+  },
+  "fastmcp": {
+    "dependencies": [
+      "authlib",
+      "cyclopts",
+      "exceptiongroup",
+      "httpx",
+      "jsonschema-path",
+      "mcp",
+      "openapi-pydantic",
+      "platformdirs",
+      "py-key-value-aio",
+      "pydantic",
+      "pydocket",
+      "pyperclip",
+      "python-dotenv",
+      "rich",
+      "uvicorn",
+      "websockets"
+    ],
+    "name": "fastmcp",
+    "ref": "fastmcp-81@2.14.3"
+  },
+  "fonttools": {
+    "dependencies": [],
+    "name": "fonttools",
+    "ref": "fonttools-82@4.61.1"
+  },
+  "fqdn": {
+    "dependencies": [],
+    "name": "fqdn",
+    "ref": "fqdn-83@1.5.1"
+  },
+  "frozenlist": {
+    "dependencies": [],
+    "name": "frozenlist",
+    "ref": "frozenlist-84@1.8.0"
+  },
+  "geographiclib": {
+    "dependencies": [],
+    "name": "geographiclib",
+    "ref": "geographiclib-85@2.1"
+  },
+  "geopy": {
+    "dependencies": [
+      "geographiclib"
+    ],
+    "name": "geopy",
+    "ref": "geopy-86@2.4.1"
+  },
+  "gitdb": {
+    "dependencies": [
+      "smmap"
+    ],
+    "name": "gitdb",
+    "ref": "gitdb-87@4.0.12"
+  },
+  "gitpython": {
+    "dependencies": [
+      "gitdb"
+    ],
+    "name": "gitpython",
+    "ref": "gitpython-88@3.1.46"
+  },
+  "googleapis-common-protos": {
+    "dependencies": [
+      "protobuf"
+    ],
+    "name": "googleapis-common-protos",
+    "ref": "googleapis-common-protos-89@1.72.0"
+  },
+  "greenlet": {
+    "dependencies": [],
+    "name": "greenlet",
+    "ref": "greenlet-90@3.3.1"
+  },
+  "grpcio": {
+    "dependencies": [
+      "typing-extensions"
+    ],
+    "name": "grpcio",
+    "ref": "grpcio-91@1.76.0"
+  },
+  "h11": {
+    "dependencies": [],
+    "name": "h11",
+    "ref": "h11-92@0.16.0"
+  },
+  "httpcore": {
+    "dependencies": [
+      "certifi",
+      "h11"
+    ],
+    "name": "httpcore",
+    "ref": "httpcore-93@1.0.9"
+  },
+  "httptools": {
+    "dependencies": [],
+    "name": "httptools",
+    "ref": "httptools-94@0.7.1"
+  },
+  "httpx": {
+    "dependencies": [
+      "anyio",
+      "certifi",
+      "click",
+      "httpcore",
+      "idna",
+      "pygments",
+      "rich"
+    ],
+    "name": "httpx",
+    "ref": "httpx-95@0.28.1"
+  },
+  "httpx-sse": {
+    "dependencies": [],
+    "name": "httpx-sse",
+    "ref": "httpx-sse-96@0.4.3"
+  },
+  "idna": {
+    "dependencies": [],
+    "name": "idna",
+    "ref": "idna-97@3.11"
+  },
+  "importlib-metadata": {
+    "dependencies": [
+      "zipp"
+    ],
+    "name": "importlib-metadata",
+    "ref": "importlib-metadata-98@8.7.1"
+  },
+  "iniconfig": {
+    "dependencies": [],
+    "name": "iniconfig",
+    "ref": "iniconfig-99@2.3.0"
+  },
+  "ipykernel": {
+    "dependencies": [
+      "appnope",
+      "comm",
+      "debugpy",
+      "ipython",
+      "jupyter-client",
+      "jupyter-core",
+      "matplotlib-inline",
+      "nest-asyncio",
+      "packaging",
+      "psutil",
+      "pyzmq",
+      "tornado",
+      "traitlets"
+    ],
+    "name": "ipykernel",
+    "ref": "ipykernel-100@7.1.0"
+  },
+  "ipython": {
+    "dependencies": [
+      "colorama",
+      "decorator",
+      "ipython-pygments-lexers",
+      "jedi",
+      "matplotlib-inline",
+      "pexpect",
+      "prompt-toolkit",
+      "pygments",
+      "stack-data",
+      "traitlets"
+    ],
+    "name": "ipython",
+    "ref": "ipython-101@9.8.0"
+  },
+  "ipython-pygments-lexers": {
+    "dependencies": [
+      "pygments"
+    ],
+    "name": "ipython-pygments-lexers",
+    "ref": "ipython-pygments-lexers-102@1.1.1"
+  },
+  "ipywidgets": {
+    "dependencies": [
+      "comm",
+      "ipython",
+      "jupyterlab-widgets",
+      "traitlets",
+      "widgetsnbextension"
+    ],
+    "name": "ipywidgets",
+    "ref": "ipywidgets-103@8.1.8"
+  },
+  "isodate": {
+    "dependencies": [],
+    "name": "isodate",
+    "ref": "isodate-104@0.7.2"
+  },
+  "isoduration": {
+    "dependencies": [
+      "arrow"
+    ],
+    "name": "isoduration",
+    "ref": "isoduration-105@20.11.0"
+  },
+  "isort": {
+    "dependencies": [],
+    "name": "isort",
+    "ref": "isort-106@7.0.0"
+  },
+  "jaraco-classes": {
+    "dependencies": [
+      "more-itertools"
+    ],
+    "name": "jaraco-classes",
+    "ref": "jaraco-classes-107@3.4.0"
+  },
+  "jaraco-context": {
+    "dependencies": [],
+    "name": "jaraco-context",
+    "ref": "jaraco-context-108@6.1.0"
+  },
+  "jaraco-functools": {
+    "dependencies": [
+      "more-itertools"
+    ],
+    "name": "jaraco-functools",
+    "ref": "jaraco-functools-109@4.4.0"
+  },
+  "jedi": {
+    "dependencies": [
+      "parso"
+    ],
+    "name": "jedi",
+    "ref": "jedi-110@0.19.2"
+  },
+  "jeepney": {
+    "dependencies": [],
+    "name": "jeepney",
+    "ref": "jeepney-111@0.9.0"
+  },
+  "jinja2": {
+    "dependencies": [
+      "markupsafe"
+    ],
+    "name": "jinja2",
+    "ref": "jinja2-112@3.1.6"
+  },
+  "jiter": {
+    "dependencies": [],
+    "name": "jiter",
+    "ref": "jiter-113@0.12.0"
+  },
+  "joblib": {
+    "dependencies": [],
+    "name": "joblib",
+    "ref": "joblib-114@1.5.3"
+  },
+  "json5": {
+    "dependencies": [],
+    "name": "json5",
+    "ref": "json5-115@0.12.1"
+  },
+  "jsonpointer": {
+    "dependencies": [],
+    "name": "jsonpointer",
+    "ref": "jsonpointer-116@3.0.0"
+  },
+  "jsonschema": {
+    "dependencies": [
+      "attrs",
+      "fqdn",
+      "idna",
+      "isoduration",
+      "jsonpointer",
+      "jsonschema-specifications",
+      "referencing",
+      "rfc3339-validator",
+      "rfc3986-validator",
+      "rfc3987-syntax",
+      "rpds-py",
+      "uri-template",
+      "webcolors"
+    ],
+    "name": "jsonschema",
+    "ref": "jsonschema-117@4.25.1"
+  },
+  "jsonschema-path": {
+    "dependencies": [
+      "pathable",
+      "pyyaml",
+      "referencing",
+      "requests"
+    ],
+    "name": "jsonschema-path",
+    "ref": "jsonschema-path-118@0.3.4"
+  },
+  "jsonschema-specifications": {
+    "dependencies": [
+      "referencing"
+    ],
+    "name": "jsonschema-specifications",
+    "ref": "jsonschema-specifications-119@2025.9.1"
+  },
+  "jupyter": {
+    "dependencies": [
+      "ipykernel",
+      "ipywidgets",
+      "jupyter-console",
+      "jupyterlab",
+      "nbconvert",
+      "notebook"
+    ],
+    "name": "jupyter",
+    "ref": "jupyter-120@1.1.1"
+  },
+  "jupyter-client": {
+    "dependencies": [
+      "jupyter-core",
+      "python-dateutil",
+      "pyzmq",
+      "tornado",
+      "traitlets"
+    ],
+    "name": "jupyter-client",
+    "ref": "jupyter-client-121@8.7.0"
+  },
+  "jupyter-console": {
+    "dependencies": [
+      "ipykernel",
+      "ipython",
+      "jupyter-client",
+      "jupyter-core",
+      "prompt-toolkit",
+      "pygments",
+      "pyzmq",
+      "traitlets"
+    ],
+    "name": "jupyter-console",
+    "ref": "jupyter-console-122@6.6.3"
+  },
+  "jupyter-core": {
+    "dependencies": [
+      "platformdirs",
+      "traitlets"
+    ],
+    "name": "jupyter-core",
+    "ref": "jupyter-core-123@5.9.1"
+  },
+  "jupyter-events": {
+    "dependencies": [
+      "jsonschema",
+      "packaging",
+      "python-json-logger",
+      "pyyaml",
+      "referencing",
+      "rfc3339-validator",
+      "rfc3986-validator",
+      "traitlets"
+    ],
+    "name": "jupyter-events",
+    "ref": "jupyter-events-124@0.12.0"
+  },
+  "jupyter-lsp": {
+    "dependencies": [
+      "jupyter-server"
+    ],
+    "name": "jupyter-lsp",
+    "ref": "jupyter-lsp-125@2.3.0"
+  },
+  "jupyter-server": {
+    "dependencies": [
+      "anyio",
+      "argon2-cffi",
+      "jinja2",
+      "jupyter-client",
+      "jupyter-core",
+      "jupyter-events",
+      "jupyter-server-terminals",
+      "nbconvert",
+      "nbformat",
+      "packaging",
+      "prometheus-client",
+      "pywinpty",
+      "pyzmq",
+      "send2trash",
+      "terminado",
+      "tornado",
+      "traitlets",
+      "websocket-client"
+    ],
+    "name": "jupyter-server",
+    "ref": "jupyter-server-126@2.17.0"
+  },
+  "jupyter-server-terminals": {
+    "dependencies": [
+      "pywinpty",
+      "terminado"
+    ],
+    "name": "jupyter-server-terminals",
+    "ref": "jupyter-server-terminals-127@0.5.3"
+  },
+  "jupyterlab": {
+    "dependencies": [
+      "async-lru",
+      "httpx",
+      "ipykernel",
+      "jinja2",
+      "jupyter-core",
+      "jupyter-lsp",
+      "jupyter-server",
+      "jupyterlab-server",
+      "notebook-shim",
+      "packaging",
+      "setuptools",
+      "tornado",
+      "traitlets"
+    ],
+    "name": "jupyterlab",
+    "ref": "jupyterlab-128@4.5.1"
+  },
+  "jupyterlab-pygments": {
+    "dependencies": [],
+    "name": "jupyterlab-pygments",
+    "ref": "jupyterlab-pygments-129@0.3.0"
+  },
+  "jupyterlab-server": {
+    "dependencies": [
+      "babel",
+      "jinja2",
+      "json5",
+      "jsonschema",
+      "jupyter-server",
+      "packaging",
+      "requests"
+    ],
+    "name": "jupyterlab-server",
+    "ref": "jupyterlab-server-130@2.28.0"
+  },
+  "jupyterlab-widgets": {
+    "dependencies": [],
+    "name": "jupyterlab-widgets",
+    "ref": "jupyterlab-widgets-131@3.0.16"
+  },
+  "keyring": {
+    "dependencies": [
+      "jaraco-classes",
+      "jaraco-context",
+      "jaraco-functools",
+      "jeepney",
+      "pywin32-ctypes",
+      "secretstorage"
+    ],
+    "name": "keyring",
+    "ref": "keyring-132@25.7.0"
+  },
+  "kiwisolver": {
+    "dependencies": [],
+    "name": "kiwisolver",
+    "ref": "kiwisolver-133@1.4.9"
+  },
+  "lark": {
+    "dependencies": [],
+    "name": "lark",
+    "ref": "lark-134@1.3.1"
+  },
+  "lupa": {
+    "dependencies": [],
+    "name": "lupa",
+    "ref": "lupa-135@2.6"
+  },
+  "m26": {
+    "dependencies": [],
+    "name": "m26",
+    "ref": "m26-136@0.3.2"
+  },
+  "mako": {
+    "dependencies": [
+      "markupsafe"
+    ],
+    "name": "mako",
+    "ref": "mako-137@1.3.10"
+  },
+  "markdown": {
+    "dependencies": [],
+    "name": "markdown",
+    "ref": "markdown-138@3.10.1"
+  },
+  "markdown-it-py": {
+    "dependencies": [
+      "mdurl"
+    ],
+    "name": "markdown-it-py",
+    "ref": "markdown-it-py-139@4.0.0"
+  },
+  "markupsafe": {
+    "dependencies": [],
+    "name": "markupsafe",
+    "ref": "markupsafe-140@3.0.3"
+  },
+  "matplotlib": {
+    "dependencies": [
+      "contourpy",
+      "cycler",
+      "fonttools",
+      "kiwisolver",
+      "numpy",
+      "packaging",
+      "pillow",
+      "pyparsing",
+      "python-dateutil"
+    ],
+    "name": "matplotlib",
+    "ref": "matplotlib-141@3.10.8"
+  },
+  "matplotlib-inline": {
+    "dependencies": [
+      "traitlets"
+    ],
+    "name": "matplotlib-inline",
+    "ref": "matplotlib-inline-142@0.2.1"
+  },
+  "mccabe": {
+    "dependencies": [],
+    "name": "mccabe",
+    "ref": "mccabe-143@0.7.0"
+  },
+  "mcp": {
+    "dependencies": [
+      "anyio",
+      "httpx",
+      "httpx-sse",
+      "jsonschema",
+      "pydantic",
+      "pydantic-settings",
+      "pyjwt",
+      "python-multipart",
+      "pywin32",
+      "sse-starlette",
+      "starlette",
+      "typing-extensions",
+      "typing-inspection",
+      "uvicorn",
+      "websockets"
+    ],
+    "name": "mcp",
+    "ref": "mcp-144@1.25.0"
+  },
+  "mdurl": {
+    "dependencies": [],
+    "name": "mdurl",
+    "ref": "mdurl-145@0.1.2"
+  },
+  "mistune": {
+    "dependencies": [],
+    "name": "mistune",
+    "ref": "mistune-146@3.2.0"
+  },
+  "more-itertools": {
+    "dependencies": [],
+    "name": "more-itertools",
+    "ref": "more-itertools-147@10.8.0"
+  },
+  "msal": {
+    "dependencies": [
+      "cryptography",
+      "pyjwt",
+      "requests"
+    ],
+    "name": "msal",
+    "ref": "msal-148@1.34.0"
+  },
+  "msal-extensions": {
+    "dependencies": [
+      "msal"
+    ],
+    "name": "msal-extensions",
+    "ref": "msal-extensions-149@1.3.1"
+  },
+  "msrest": {
+    "dependencies": [
+      "azure-core",
+      "certifi",
+      "isodate",
+      "requests",
+      "requests-oauthlib"
+    ],
+    "name": "msrest",
+    "ref": "msrest-150@0.7.1"
+  },
+  "multidict": {
+    "dependencies": [],
+    "name": "multidict",
+    "ref": "multidict-151@6.7.0"
+  },
+  "narwhals": {
+    "dependencies": [],
+    "name": "narwhals",
+    "ref": "narwhals-152@2.15.0"
+  },
+  "nbclient": {
+    "dependencies": [
+      "jupyter-client",
+      "jupyter-core",
+      "nbformat",
+      "traitlets"
+    ],
+    "name": "nbclient",
+    "ref": "nbclient-153@0.10.4"
+  },
+  "nbconvert": {
+    "dependencies": [
+      "beautifulsoup4",
+      "bleach",
+      "defusedxml",
+      "jinja2",
+      "jupyter-core",
+      "jupyterlab-pygments",
+      "markupsafe",
+      "mistune",
+      "nbclient",
+      "nbformat",
+      "packaging",
+      "pandocfilters",
+      "pygments",
+      "traitlets"
+    ],
+    "name": "nbconvert",
+    "ref": "nbconvert-154@7.16.6"
+  },
+  "nbformat": {
+    "dependencies": [
+      "fastjsonschema",
+      "jsonschema",
+      "jupyter-core",
+      "traitlets"
+    ],
+    "name": "nbformat",
+    "ref": "nbformat-155@5.10.4"
+  },
+  "nest-asyncio": {
+    "dependencies": [],
+    "name": "nest-asyncio",
+    "ref": "nest-asyncio-156@1.6.0"
+  },
+  "nltk": {
+    "dependencies": [
+      "click",
+      "joblib",
+      "regex",
+      "tqdm"
+    ],
+    "name": "nltk",
+    "ref": "nltk-157@3.9.2"
+  },
+  "notebook": {
+    "dependencies": [
+      "jupyter-server",
+      "jupyterlab",
+      "jupyterlab-server",
+      "notebook-shim",
+      "tornado"
+    ],
+    "name": "notebook",
+    "ref": "notebook-158@7.5.1"
+  },
+  "notebook-shim": {
+    "dependencies": [
+      "jupyter-server"
+    ],
+    "name": "notebook-shim",
+    "ref": "notebook-shim-159@0.2.4"
+  },
+  "numpy": {
+    "dependencies": [],
+    "name": "numpy",
+    "ref": "numpy-160@2.4.0"
+  },
+  "oauthlib": {
+    "dependencies": [],
+    "name": "oauthlib",
+    "ref": "oauthlib-161@3.3.1"
+  },
+  "openai": {
+    "dependencies": [
+      "anyio",
+      "distro",
+      "httpx",
+      "jiter",
+      "pydantic",
+      "sniffio",
+      "tqdm",
+      "typing-extensions"
+    ],
+    "name": "openai",
+    "ref": "openai-162@2.26.0"
+  },
+  "openapi-pydantic": {
+    "dependencies": [
+      "pydantic"
+    ],
+    "name": "openapi-pydantic",
+    "ref": "openapi-pydantic-163@0.5.1"
+  },
+  "opentelemetry-api": {
+    "dependencies": [
+      "importlib-metadata",
+      "typing-extensions"
+    ],
+    "name": "opentelemetry-api",
+    "ref": "opentelemetry-api-164@1.38.0"
+  },
+  "opentelemetry-exporter-otlp-proto-common": {
+    "dependencies": [
+      "opentelemetry-proto"
+    ],
+    "name": "opentelemetry-exporter-otlp-proto-common",
+    "ref": "opentelemetry-exporter-otlp-proto-common-165@1.38.0"
+  },
+  "opentelemetry-exporter-otlp-proto-grpc": {
+    "dependencies": [
+      "googleapis-common-protos",
+      "grpcio",
+      "opentelemetry-api",
+      "opentelemetry-exporter-otlp-proto-common",
+      "opentelemetry-proto",
+      "opentelemetry-sdk",
+      "typing-extensions"
+    ],
+    "name": "opentelemetry-exporter-otlp-proto-grpc",
+    "ref": "opentelemetry-exporter-otlp-proto-grpc-166@1.38.0"
+  },
+  "opentelemetry-instrumentation": {
+    "dependencies": [
+      "opentelemetry-api",
+      "opentelemetry-semantic-conventions",
+      "packaging",
+      "wrapt"
+    ],
+    "name": "opentelemetry-instrumentation",
+    "ref": "opentelemetry-instrumentation-167@0.59b0"
+  },
+  "opentelemetry-instrumentation-asgi": {
+    "dependencies": [
+      "asgiref",
+      "opentelemetry-api",
+      "opentelemetry-instrumentation",
+      "opentelemetry-semantic-conventions",
+      "opentelemetry-util-http"
+    ],
+    "name": "opentelemetry-instrumentation-asgi",
+    "ref": "opentelemetry-instrumentation-asgi-168@0.59b0"
+  },
+  "opentelemetry-instrumentation-dbapi": {
+    "dependencies": [
+      "opentelemetry-api",
+      "opentelemetry-instrumentation",
+      "opentelemetry-semantic-conventions",
+      "wrapt"
+    ],
+    "name": "opentelemetry-instrumentation-dbapi",
+    "ref": "opentelemetry-instrumentation-dbapi-169@0.59b0"
+  },
+  "opentelemetry-instrumentation-django": {
+    "dependencies": [
+      "opentelemetry-api",
+      "opentelemetry-instrumentation",
+      "opentelemetry-instrumentation-wsgi",
+      "opentelemetry-semantic-conventions",
+      "opentelemetry-util-http"
+    ],
+    "name": "opentelemetry-instrumentation-django",
+    "ref": "opentelemetry-instrumentation-django-170@0.59b0"
+  },
+  "opentelemetry-instrumentation-fastapi": {
+    "dependencies": [
+      "opentelemetry-api",
+      "opentelemetry-instrumentation",
+      "opentelemetry-instrumentation-asgi",
+      "opentelemetry-semantic-conventions",
+      "opentelemetry-util-http"
+    ],
+    "name": "opentelemetry-instrumentation-fastapi",
+    "ref": "opentelemetry-instrumentation-fastapi-171@0.59b0"
+  },
+  "opentelemetry-instrumentation-flask": {
+    "dependencies": [
+      "opentelemetry-api",
+      "opentelemetry-instrumentation",
+      "opentelemetry-instrumentation-wsgi",
+      "opentelemetry-semantic-conventions",
+      "opentelemetry-util-http",
+      "packaging"
+    ],
+    "name": "opentelemetry-instrumentation-flask",
+    "ref": "opentelemetry-instrumentation-flask-172@0.59b0"
+  },
+  "opentelemetry-instrumentation-httpx": {
+    "dependencies": [
+      "opentelemetry-api",
+      "opentelemetry-instrumentation",
+      "opentelemetry-semantic-conventions",
+      "opentelemetry-util-http",
+      "wrapt"
+    ],
+    "name": "opentelemetry-instrumentation-httpx",
+    "ref": "opentelemetry-instrumentation-httpx-173@0.59b0"
+  },
+  "opentelemetry-instrumentation-logging": {
+    "dependencies": [
+      "opentelemetry-api",
+      "opentelemetry-instrumentation"
+    ],
+    "name": "opentelemetry-instrumentation-logging",
+    "ref": "opentelemetry-instrumentation-logging-174@0.59b0"
+  },
+  "opentelemetry-instrumentation-psycopg2": {
+    "dependencies": [
+      "opentelemetry-api",
+      "opentelemetry-instrumentation",
+      "opentelemetry-instrumentation-dbapi"
+    ],
+    "name": "opentelemetry-instrumentation-psycopg2",
+    "ref": "opentelemetry-instrumentation-psycopg2-175@0.59b0"
+  },
+  "opentelemetry-instrumentation-requests": {
+    "dependencies": [
+      "opentelemetry-api",
+      "opentelemetry-instrumentation",
+      "opentelemetry-semantic-conventions",
+      "opentelemetry-util-http"
+    ],
+    "name": "opentelemetry-instrumentation-requests",
+    "ref": "opentelemetry-instrumentation-requests-176@0.59b0"
+  },
+  "opentelemetry-instrumentation-urllib": {
+    "dependencies": [
+      "opentelemetry-api",
+      "opentelemetry-instrumentation",
+      "opentelemetry-semantic-conventions",
+      "opentelemetry-util-http"
+    ],
+    "name": "opentelemetry-instrumentation-urllib",
+    "ref": "opentelemetry-instrumentation-urllib-177@0.59b0"
+  },
+  "opentelemetry-instrumentation-urllib3": {
+    "dependencies": [
+      "opentelemetry-api",
+      "opentelemetry-instrumentation",
+      "opentelemetry-semantic-conventions",
+      "opentelemetry-util-http",
+      "wrapt"
+    ],
+    "name": "opentelemetry-instrumentation-urllib3",
+    "ref": "opentelemetry-instrumentation-urllib3-178@0.59b0"
+  },
+  "opentelemetry-instrumentation-wsgi": {
+    "dependencies": [
+      "opentelemetry-api",
+      "opentelemetry-instrumentation",
+      "opentelemetry-semantic-conventions",
+      "opentelemetry-util-http"
+    ],
+    "name": "opentelemetry-instrumentation-wsgi",
+    "ref": "opentelemetry-instrumentation-wsgi-179@0.59b0"
+  },
+  "opentelemetry-proto": {
+    "dependencies": [
+      "protobuf"
+    ],
+    "name": "opentelemetry-proto",
+    "ref": "opentelemetry-proto-180@1.38.0"
+  },
+  "opentelemetry-resource-detector-azure": {
+    "dependencies": [
+      "opentelemetry-sdk"
+    ],
+    "name": "opentelemetry-resource-detector-azure",
+    "ref": "opentelemetry-resource-detector-azure-181@0.1.5"
+  },
+  "opentelemetry-sdk": {
+    "dependencies": [
+      "opentelemetry-api",
+      "opentelemetry-semantic-conventions",
+      "typing-extensions"
+    ],
+    "name": "opentelemetry-sdk",
+    "ref": "opentelemetry-sdk-182@1.38.0"
+  },
+  "opentelemetry-semantic-conventions": {
+    "dependencies": [
+      "opentelemetry-api",
+      "typing-extensions"
+    ],
+    "name": "opentelemetry-semantic-conventions",
+    "ref": "opentelemetry-semantic-conventions-183@0.59b0"
+  },
+  "opentelemetry-semantic-conventions-ai": {
+    "dependencies": [],
+    "name": "opentelemetry-semantic-conventions-ai",
+    "ref": "opentelemetry-semantic-conventions-ai-184@0.4.13"
+  },
+  "opentelemetry-util-http": {
+    "dependencies": [],
+    "name": "opentelemetry-util-http",
+    "ref": "opentelemetry-util-http-185@0.59b0"
+  },
+  "packaging": {
+    "dependencies": [],
+    "name": "packaging",
+    "ref": "packaging-186@25.0"
+  },
+  "pandas": {
+    "dependencies": [
+      "numpy",
+      "python-dateutil",
+      "pytz",
+      "tzdata"
+    ],
+    "name": "pandas",
+    "ref": "pandas-187@2.3.3"
+  },
+  "pandocfilters": {
+    "dependencies": [],
+    "name": "pandocfilters",
+    "ref": "pandocfilters-188@1.5.1"
+  },
+  "parso": {
+    "dependencies": [],
+    "name": "parso",
+    "ref": "parso-189@0.8.5"
+  },
+  "pathable": {
+    "dependencies": [],
+    "name": "pathable",
+    "ref": "pathable-190@0.4.4"
+  },
+  "pathvalidate": {
+    "dependencies": [],
+    "name": "pathvalidate",
+    "ref": "pathvalidate-191@3.3.1"
+  },
+  "pexpect": {
+    "dependencies": [
+      "ptyprocess"
+    ],
+    "name": "pexpect",
+    "ref": "pexpect-192@4.9.0"
+  },
+  "pgvector": {
+    "dependencies": [
+      "numpy"
+    ],
+    "name": "pgvector",
+    "ref": "pgvector-193@0.4.2"
+  },
+  "pillow": {
+    "dependencies": [],
+    "name": "pillow",
+    "ref": "pillow-194@12.1.0"
+  },
+  "platformdirs": {
+    "dependencies": [],
+    "name": "platformdirs",
+    "ref": "platformdirs-195@4.5.1"
+  },
+  "pluggy": {
+    "dependencies": [],
+    "name": "pluggy",
+    "ref": "pluggy-196@1.6.0"
+  },
+  "polars": {
+    "dependencies": [
+      "polars-runtime-32"
+    ],
+    "name": "polars",
+    "ref": "polars-197@1.37.1"
+  },
+  "polars-runtime-32": {
+    "dependencies": [],
+    "name": "polars-runtime-32",
+    "ref": "polars-runtime-32-198@1.37.1"
+  },
+  "prometheus-client": {
+    "dependencies": [],
+    "name": "prometheus-client",
+    "ref": "prometheus-client-199@0.23.1"
+  },
+  "prompt-toolkit": {
+    "dependencies": [
+      "wcwidth"
+    ],
+    "name": "prompt-toolkit",
+    "ref": "prompt-toolkit-200@3.0.52"
+  },
+  "propcache": {
+    "dependencies": [],
+    "name": "propcache",
+    "ref": "propcache-201@0.4.1"
+  },
+  "protobuf": {
+    "dependencies": [],
+    "name": "protobuf",
+    "ref": "protobuf-202@6.33.2"
+  },
+  "psutil": {
+    "dependencies": [],
+    "name": "psutil",
+    "ref": "psutil-203@7.2.0"
+  },
+  "psycopg2-binary": {
+    "dependencies": [],
+    "name": "psycopg2-binary",
+    "ref": "psycopg2-binary-204@2.9.11"
+  },
+  "ptyprocess": {
+    "dependencies": [],
+    "name": "ptyprocess",
+    "ref": "ptyprocess-205@0.7.0"
+  },
+  "pure-eval": {
+    "dependencies": [],
+    "name": "pure-eval",
+    "ref": "pure-eval-206@0.2.3"
+  },
+  "py-key-value-aio": {
+    "dependencies": [
+      "beartype",
+      "cachetools",
+      "diskcache",
+      "keyring",
+      "pathvalidate",
+      "py-key-value-shared",
+      "redis"
+    ],
+    "name": "py-key-value-aio",
+    "ref": "py-key-value-aio-207@0.3.0"
+  },
+  "py-key-value-shared": {
+    "dependencies": [
+      "beartype",
+      "typing-extensions"
+    ],
+    "name": "py-key-value-shared",
+    "ref": "py-key-value-shared-208@0.3.0"
+  },
+  "pyarrow": {
+    "dependencies": [],
+    "name": "pyarrow",
+    "ref": "pyarrow-209@22.0.0"
+  },
+  "pycparser": {
+    "dependencies": [],
+    "name": "pycparser",
+    "ref": "pycparser-210@2.23"
+  },
+  "pydantic": {
+    "dependencies": [
+      "annotated-types",
+      "email-validator",
+      "pydantic-core",
+      "typing-extensions",
+      "typing-inspection"
+    ],
+    "name": "pydantic",
+    "ref": "pydantic-211@2.12.5"
+  },
+  "pydantic-core": {
+    "dependencies": [
+      "typing-extensions"
+    ],
+    "name": "pydantic-core",
+    "ref": "pydantic-core-212@2.41.5"
+  },
+  "pydantic-extra-types": {
+    "dependencies": [
+      "pydantic",
+      "typing-extensions"
+    ],
+    "name": "pydantic-extra-types",
+    "ref": "pydantic-extra-types-213@2.11.0"
+  },
+  "pydantic-settings": {
+    "dependencies": [
+      "pydantic",
+      "python-dotenv",
+      "typing-inspection"
+    ],
+    "name": "pydantic-settings",
+    "ref": "pydantic-settings-214@2.12.0"
+  },
+  "pydeck": {
+    "dependencies": [
+      "jinja2",
+      "numpy"
+    ],
+    "name": "pydeck",
+    "ref": "pydeck-215@0.9.1"
+  },
+  "pydocket": {
+    "dependencies": [
+      "cloudpickle",
+      "fakeredis",
+      "opentelemetry-api",
+      "prometheus-client",
+      "py-key-value-aio",
+      "python-json-logger",
+      "redis",
+      "rich",
+      "typer",
+      "typing-extensions"
+    ],
+    "name": "pydocket",
+    "ref": "pydocket-216@0.17.1"
+  },
+  "pygments": {
+    "dependencies": [],
+    "name": "pygments",
+    "ref": "pygments-217@2.19.2"
+  },
+  "pyjwt": {
+    "dependencies": [
+      "cryptography"
+    ],
+    "name": "pyjwt",
+    "ref": "pyjwt-218@2.10.1"
+  },
+  "pylint": {
+    "dependencies": [
+      "astroid",
+      "colorama",
+      "dill",
+      "isort",
+      "mccabe",
+      "platformdirs",
+      "tomlkit"
+    ],
+    "name": "pylint",
+    "ref": "pylint-219@4.0.4"
+  },
+  "pyparsing": {
+    "dependencies": [],
+    "name": "pyparsing",
+    "ref": "pyparsing-220@3.3.1"
+  },
+  "pyperclip": {
+    "dependencies": [],
+    "name": "pyperclip",
+    "ref": "pyperclip-221@1.11.0"
+  },
+  "pytest": {
+    "dependencies": [
+      "colorama",
+      "iniconfig",
+      "packaging",
+      "pluggy",
+      "pygments"
+    ],
+    "name": "pytest",
+    "ref": "pytest-222@9.0.2"
+  },
+  "pytest-asyncio": {
+    "dependencies": [
+      "pytest"
+    ],
+    "name": "pytest-asyncio",
+    "ref": "pytest-asyncio-223@1.3.0"
+  },
+  "pytest-cov": {
+    "dependencies": [
+      "coverage",
+      "pluggy",
+      "pytest"
+    ],
+    "name": "pytest-cov",
+    "ref": "pytest-cov-224@7.0.0"
+  },
+  "pytest-randomly": {
+    "dependencies": [
+      "pytest"
+    ],
+    "name": "pytest-randomly",
+    "ref": "pytest-randomly-225@4.0.1"
+  },
+  "python-dateutil": {
+    "dependencies": [
+      "six"
+    ],
+    "name": "python-dateutil",
+    "ref": "python-dateutil-226@2.9.0.post0"
+  },
+  "python-dotenv": {
+    "dependencies": [],
+    "name": "python-dotenv",
+    "ref": "python-dotenv-227@1.2.1"
+  },
+  "python-json-logger": {
+    "dependencies": [],
+    "name": "python-json-logger",
+    "ref": "python-json-logger-228@4.0.0"
+  },
+  "python-multipart": {
+    "dependencies": [],
+    "name": "python-multipart",
+    "ref": "python-multipart-229@0.0.21"
+  },
+  "python-toon": {
+    "dependencies": [],
+    "name": "python-toon",
+    "ref": "python-toon-230@0.1.3"
+  },
+  "pytz": {
+    "dependencies": [],
+    "name": "pytz",
+    "ref": "pytz-231@2025.2"
+  },
+  "pywin32": {
+    "dependencies": [],
+    "name": "pywin32",
+    "ref": "pywin32-232@311"
+  },
+  "pywin32-ctypes": {
+    "dependencies": [],
+    "name": "pywin32-ctypes",
+    "ref": "pywin32-ctypes-233@0.2.3"
+  },
+  "pywinpty": {
+    "dependencies": [],
+    "name": "pywinpty",
+    "ref": "pywinpty-234@3.0.2"
+  },
+  "pyyaml": {
+    "dependencies": [],
+    "name": "pyyaml",
+    "ref": "pyyaml-235@6.0.3"
+  },
+  "pyzmq": {
+    "dependencies": [
+      "cffi"
+    ],
+    "name": "pyzmq",
+    "ref": "pyzmq-236@27.1.0"
+  },
+  "rdflib": {
+    "dependencies": [
+      "pyparsing"
+    ],
+    "name": "rdflib",
+    "ref": "rdflib-237@7.5.0"
+  },
+  "redis": {
+    "dependencies": [],
+    "name": "redis",
+    "ref": "redis-238@7.1.0"
+  },
+  "referencing": {
+    "dependencies": [
+      "attrs",
+      "rpds-py"
+    ],
+    "name": "referencing",
+    "ref": "referencing-239@0.36.2"
+  },
+  "regex": {
+    "dependencies": [],
+    "name": "regex",
+    "ref": "regex-240@2025.11.3"
+  },
+  "requests": {
+    "dependencies": [
+      "certifi",
+      "charset-normalizer",
+      "idna",
+      "urllib3"
+    ],
+    "name": "requests",
+    "ref": "requests-241@2.32.5"
+  },
+  "requests-oauthlib": {
+    "dependencies": [
+      "oauthlib",
+      "requests"
+    ],
+    "name": "requests-oauthlib",
+    "ref": "requests-oauthlib-242@2.0.0"
+  },
+  "rfc3339-validator": {
+    "dependencies": [
+      "six"
+    ],
+    "name": "rfc3339-validator",
+    "ref": "rfc3339-validator-243@0.1.4"
+  },
+  "rfc3986-validator": {
+    "dependencies": [],
+    "name": "rfc3986-validator",
+    "ref": "rfc3986-validator-244@0.1.1"
+  },
+  "rfc3987-syntax": {
+    "dependencies": [
+      "lark"
+    ],
+    "name": "rfc3987-syntax",
+    "ref": "rfc3987-syntax-245@1.1.0"
+  },
+  "rich": {
+    "dependencies": [
+      "markdown-it-py",
+      "pygments"
+    ],
+    "name": "rich",
+    "ref": "rich-246@13.9.4"
+  },
+  "rich-rst": {
+    "dependencies": [
+      "docutils",
+      "rich"
+    ],
+    "name": "rich-rst",
+    "ref": "rich-rst-247@1.3.2"
+  },
+  "rich-toolkit": {
+    "dependencies": [
+      "click",
+      "rich",
+      "typing-extensions"
+    ],
+    "name": "rich-toolkit",
+    "ref": "rich-toolkit-248@0.17.1"
+  },
+  "rignore": {
+    "dependencies": [],
+    "name": "rignore",
+    "ref": "rignore-249@0.7.6"
+  },
+  "rpds-py": {
+    "dependencies": [],
+    "name": "rpds-py",
+    "ref": "rpds-py-250@0.30.0"
+  },
+  "ruamel-yaml": {
+    "dependencies": [],
+    "name": "ruamel-yaml",
+    "ref": "ruamel-yaml-251@0.19.1"
+  },
+  "secretstorage": {
+    "dependencies": [
+      "cryptography",
+      "jeepney"
+    ],
+    "name": "secretstorage",
+    "ref": "secretstorage-252@3.5.0"
+  },
+  "send2trash": {
+    "dependencies": [],
+    "name": "send2trash",
+    "ref": "send2trash-253@1.8.3"
+  },
+  "sentry-sdk": {
+    "dependencies": [
+      "certifi",
+      "urllib3"
+    ],
+    "name": "sentry-sdk",
+    "ref": "sentry-sdk-254@2.50.0"
+  },
+  "setuptools": {
+    "dependencies": [],
+    "name": "setuptools",
+    "ref": "setuptools-255@80.9.0"
+  },
+  "shellingham": {
+    "dependencies": [],
+    "name": "shellingham",
+    "ref": "shellingham-256@1.5.4"
+  },
+  "six": {
+    "dependencies": [],
+    "name": "six",
+    "ref": "six-257@1.17.0"
+  },
+  "smmap": {
+    "dependencies": [],
+    "name": "smmap",
+    "ref": "smmap-258@5.0.2"
+  },
+  "sniffio": {
+    "dependencies": [],
+    "name": "sniffio",
+    "ref": "sniffio-259@1.3.1"
+  },
+  "sortedcontainers": {
+    "dependencies": [],
+    "name": "sortedcontainers",
+    "ref": "sortedcontainers-260@2.4.0"
+  },
+  "soupsieve": {
+    "dependencies": [],
+    "name": "soupsieve",
+    "ref": "soupsieve-261@2.8.1"
+  },
+  "sqlalchemy": {
+    "dependencies": [
+      "greenlet",
+      "typing-extensions"
+    ],
+    "name": "sqlalchemy",
+    "ref": "sqlalchemy-262@2.0.46"
+  },
+  "sqlalchemy-utils": {
+    "dependencies": [
+      "sqlalchemy"
+    ],
+    "name": "sqlalchemy-utils",
+    "ref": "sqlalchemy-utils-263@0.42.1"
+  },
+  "sse-starlette": {
+    "dependencies": [
+      "anyio",
+      "starlette"
+    ],
+    "name": "sse-starlette",
+    "ref": "sse-starlette-264@3.1.1"
+  },
+  "stack-data": {
+    "dependencies": [
+      "asttokens",
+      "executing",
+      "pure-eval"
+    ],
+    "name": "stack-data",
+    "ref": "stack-data-265@0.6.3"
+  },
+  "starlette": {
+    "dependencies": [
+      "anyio"
+    ],
+    "name": "starlette",
+    "ref": "starlette-266@0.50.0"
+  },
+  "streamlit": {
+    "dependencies": [
+      "altair",
+      "blinker",
+      "cachetools",
+      "click",
+      "gitpython",
+      "numpy",
+      "packaging",
+      "pandas",
+      "pillow",
+      "protobuf",
+      "pyarrow",
+      "pydeck",
+      "requests",
+      "tenacity",
+      "toml",
+      "tornado",
+      "typing-extensions",
+      "watchdog"
+    ],
+    "name": "streamlit",
+    "ref": "streamlit-267@1.52.2"
+  },
+  "tenacity": {
+    "dependencies": [],
+    "name": "tenacity",
+    "ref": "tenacity-268@9.1.2"
+  },
+  "terminado": {
+    "dependencies": [
+      "ptyprocess",
+      "pywinpty",
+      "tornado"
+    ],
+    "name": "terminado",
+    "ref": "terminado-269@0.18.1"
+  },
+  "tiktoken": {
+    "dependencies": [
+      "regex",
+      "requests"
+    ],
+    "name": "tiktoken",
+    "ref": "tiktoken-270@0.12.0"
+  },
+  "tinycss2": {
+    "dependencies": [
+      "webencodings"
+    ],
+    "name": "tinycss2",
+    "ref": "tinycss2-271@1.4.0"
+  },
+  "toml": {
+    "dependencies": [],
+    "name": "toml",
+    "ref": "toml-272@0.10.2"
+  },
+  "tomlkit": {
+    "dependencies": [],
+    "name": "tomlkit",
+    "ref": "tomlkit-273@0.14.0"
+  },
+  "tornado": {
+    "dependencies": [],
+    "name": "tornado",
+    "ref": "tornado-274@6.5.4"
+  },
+  "tqdm": {
+    "dependencies": [
+      "colorama"
+    ],
+    "name": "tqdm",
+    "ref": "tqdm-275@4.67.1"
+  },
+  "traitlets": {
+    "dependencies": [],
+    "name": "traitlets",
+    "ref": "traitlets-276@5.14.3"
+  },
+  "typer": {
+    "dependencies": [
+      "click",
+      "rich",
+      "shellingham",
+      "typing-extensions"
+    ],
+    "name": "typer",
+    "ref": "typer-277@0.21.1"
+  },
+  "typing-extensions": {
+    "dependencies": [],
+    "name": "typing-extensions",
+    "ref": "typing-extensions-278@4.15.0"
+  },
+  "typing-inspection": {
+    "dependencies": [
+      "typing-extensions"
+    ],
+    "name": "typing-inspection",
+    "ref": "typing-inspection-279@0.4.2"
+  },
+  "tzdata": {
+    "dependencies": [],
+    "name": "tzdata",
+    "ref": "tzdata-280@2025.3"
+  },
+  "uri-template": {
+    "dependencies": [],
+    "name": "uri-template",
+    "ref": "uri-template-281@1.3.0"
+  },
+  "urllib3": {
+    "dependencies": [],
+    "name": "urllib3",
+    "ref": "urllib3-282@2.6.2"
+  },
+  "uvicorn": {
+    "dependencies": [
+      "click",
+      "colorama",
+      "h11",
+      "httptools",
+      "python-dotenv",
+      "pyyaml",
+      "uvloop",
+      "watchfiles",
+      "websockets"
+    ],
+    "name": "uvicorn",
+    "ref": "uvicorn-283@0.38.0"
+  },
+  "uvloop": {
+    "dependencies": [],
+    "name": "uvloop",
+    "ref": "uvloop-284@0.22.1"
+  },
+  "watchdog": {
+    "dependencies": [],
+    "name": "watchdog",
+    "ref": "watchdog-285@6.0.0"
+  },
+  "watchfiles": {
+    "dependencies": [
+      "anyio"
+    ],
+    "name": "watchfiles",
+    "ref": "watchfiles-286@1.1.1"
+  },
+  "wcwidth": {
+    "dependencies": [],
+    "name": "wcwidth",
+    "ref": "wcwidth-287@0.2.14"
+  },
+  "webcolors": {
+    "dependencies": [],
+    "name": "webcolors",
+    "ref": "webcolors-288@25.10.0"
+  },
+  "webencodings": {
+    "dependencies": [],
+    "name": "webencodings",
+    "ref": "webencodings-289@0.5.1"
+  },
+  "websocket-client": {
+    "dependencies": [],
+    "name": "websocket-client",
+    "ref": "websocket-client-290@1.9.0"
+  },
+  "websockets": {
+    "dependencies": [],
+    "name": "websockets",
+    "ref": "websockets-291@15.0.1"
+  },
+  "widgetsnbextension": {
+    "dependencies": [],
+    "name": "widgetsnbextension",
+    "ref": "widgetsnbextension-292@4.0.15"
+  },
+  "wrapt": {
+    "dependencies": [],
+    "name": "wrapt",
+    "ref": "wrapt-293@1.17.3"
+  },
+  "yarl": {
+    "dependencies": [
+      "idna",
+      "multidict",
+      "propcache"
+    ],
+    "name": "yarl",
+    "ref": "yarl-294@1.22.0"
+  },
+  "zipp": {
+    "dependencies": [],
+    "name": "zipp",
+    "ref": "zipp-295@3.23.0"
+  }
+}
