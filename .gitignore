@@ -32,6 +32,7 @@
 **/port*.sh
 **/private.*
 **/pvt/
+**/python/env.txt
 **/python/*private*
 **/python/system-test.sh
 **/pyvenv.cfg
