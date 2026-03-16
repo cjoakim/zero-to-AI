@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 800px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "font": {"color": "#333333"}, "id": "wcwidth", "label": "wcwidth", "shape": "dot", "size": 10, "title": "wcwidth"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "setuptools", "label": "setuptools", "shape": "dot", "size": 10, "title": "setuptools"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "pygments", "label": "pygments", "shape": "dot", "size": 10, "title": "pygments"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "webcolors", "label": "webcolors", "shape": "dot", "size": 10, "title": "webcolors"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "ipykernel", "label": "ipykernel", "shape": "dot", "size": 10, "title": "ipykernel"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "parso", "label": "parso", "shape": "dot", "size": 10, "title": "parso"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "python-json-logger", "label": "python-json-logger", "shape": "dot", "size": 10, "title": "python-json-logger"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "matplotlib-inline", "label": "matplotlib-inline", "shape": "dot", "size": 10, "title": "matplotlib-inline"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "ptyprocess", "label": "ptyprocess", "shape": "dot", "size": 10, "title": "ptyprocess"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "rfc3986-validator", "label": "rfc3986-validator", "shape": "dot", "size": 10, "title": "rfc3986-validator"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jupyter-core", "label": "jupyter-core", "shape": "dot", "size": 10, "title": "jupyter-core"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "nbconvert", "label": "nbconvert", "shape": "dot", "size": 10, "title": "nbconvert"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "executing", "label": "executing", "shape": "dot", "size": 10, "title": "executing"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jupyter-client", "label": "jupyter-client", "shape": "dot", "size": 10, "title": "jupyter-client"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "platformdirs", "label": "platformdirs", "shape": "dot", "size": 10, "title": "platformdirs"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "appnope", "label": "appnope", "shape": "dot", "size": 10, "title": "appnope"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "idna", "label": "idna", "shape": "dot", "size": 10, "title": "idna"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jsonschema-specifications", "label": "jsonschema-specifications", "shape": "dot", "size": 10, "title": "jsonschema-specifications"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "pywinpty", "label": "pywinpty", "shape": "dot", "size": 10, "title": "pywinpty"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "decorator", "label": "decorator", "shape": "dot", "size": 10, "title": "decorator"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "debugpy", "label": "debugpy", "shape": "dot", "size": 10, "title": "debugpy"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "async-lru", "label": "async-lru", "shape": "dot", "size": 10, "title": "async-lru"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "colorama", "label": "colorama", "shape": "dot", "size": 10, "title": "colorama"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "uri-template", "label": "uri-template", "shape": "dot", "size": 10, "title": "uri-template"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "fqdn", "label": "fqdn", "shape": "dot", "size": 10, "title": "fqdn"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "pure-eval", "label": "pure-eval", "shape": "dot", "size": 10, "title": "pure-eval"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "pexpect", "label": "pexpect", "shape": "dot", "size": 10, "title": "pexpect"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "send2trash", "label": "send2trash", "shape": "dot", "size": 10, "title": "send2trash"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "nest-asyncio", "label": "nest-asyncio", "shape": "dot", "size": 10, "title": "nest-asyncio"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "tinycss2", "label": "tinycss2", "shape": "dot", "size": 10, "title": "tinycss2"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "isoduration", "label": "isoduration", "shape": "dot", "size": 10, "title": "isoduration"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "charset-normalizer", "label": "charset-normalizer", "shape": "dot", "size": 10, "title": "charset-normalizer"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "widgetsnbextension", "label": "widgetsnbextension", "shape": "dot", "size": 10, "title": "widgetsnbextension"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "attrs", "label": "attrs", "shape": "dot", "size": 10, "title": "attrs"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "click", "label": "click", "shape": "dot", "size": 10, "title": "click"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "defusedxml", "label": "defusedxml", "shape": "dot", "size": 10, "title": "defusedxml"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "markdown-it-py", "label": "markdown-it-py", "shape": "dot", "size": 10, "title": "markdown-it-py"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "nbclient", "label": "nbclient", "shape": "dot", "size": 10, "title": "nbclient"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jupyter-server", "label": "jupyter-server", "shape": "dot", "size": 10, "title": "jupyter-server"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "rpds-py", "label": "rpds-py", "shape": "dot", "size": 10, "title": "rpds-py"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jupyter-lsp", "label": "jupyter-lsp", "shape": "dot", "size": 10, "title": "jupyter-lsp"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "requests", "label": "requests", "shape": "dot", "size": 10, "title": "requests"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "comm", "label": "comm", "shape": "dot", "size": 10, "title": "comm"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "fastjsonschema", "label": "fastjsonschema", "shape": "dot", "size": 10, "title": "fastjsonschema"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "soupsieve", "label": "soupsieve", "shape": "dot", "size": 10, "title": "soupsieve"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "pandocfilters", "label": "pandocfilters", "shape": "dot", "size": 10, "title": "pandocfilters"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "notebook-shim", "label": "notebook-shim", "shape": "dot", "size": 10, "title": "notebook-shim"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "certifi", "label": "certifi", "shape": "dot", "size": 10, "title": "certifi"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "websocket-client", "label": "websocket-client", "shape": "dot", "size": 10, "title": "websocket-client"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "rfc3987-syntax", "label": "rfc3987-syntax", "shape": "dot", "size": 10, "title": "rfc3987-syntax"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "psutil", "label": "psutil", "shape": "dot", "size": 10, "title": "psutil"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jupyterlab-widgets", "label": "jupyterlab-widgets", "shape": "dot", "size": 10, "title": "jupyterlab-widgets"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "rich", "label": "rich", "shape": "dot", "size": 10, "title": "rich"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jedi", "label": "jedi", "shape": "dot", "size": 10, "title": "jedi"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "argon2-cffi", "label": "argon2-cffi", "shape": "dot", "size": 10, "title": "argon2-cffi"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "asttokens", "label": "asttokens", "shape": "dot", "size": 10, "title": "asttokens"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "urllib3", "label": "urllib3", "shape": "dot", "size": 10, "title": "urllib3"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "babel", "label": "babel", "shape": "dot", "size": 10, "title": "babel"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jupyterlab-pygments", "label": "jupyterlab-pygments", "shape": "dot", "size": 10, "title": "jupyterlab-pygments"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "six", "label": "six", "shape": "dot", "size": 10, "title": "six"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "lark", "label": "lark", "shape": "dot", "size": 10, "title": "lark"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "h11", "label": "h11", "shape": "dot", "size": 10, "title": "h11"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "typing-extensions", "label": "typing-extensions", "shape": "dot", "size": 10, "title": "typing-extensions"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "prompt-toolkit", "label": "prompt-toolkit", "shape": "dot", "size": 10, "title": "prompt-toolkit"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "nbformat", "label": "nbformat", "shape": "dot", "size": 10, "title": "nbformat"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "mistune", "label": "mistune", "shape": "dot", "size": 10, "title": "mistune"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "pyzmq", "label": "pyzmq", "shape": "dot", "size": 10, "title": "pyzmq"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "webencodings", "label": "webencodings", "shape": "dot", "size": 10, "title": "webencodings"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "mdurl", "label": "mdurl", "shape": "dot", "size": 10, "title": "mdurl"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "httpx", "label": "httpx", "shape": "dot", "size": 10, "title": "httpx"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jinja2", "label": "jinja2", "shape": "dot", "size": 10, "title": "jinja2"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "pycparser", "label": "pycparser", "shape": "dot", "size": 10, "title": "pycparser"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "packaging", "label": "packaging", "shape": "dot", "size": 10, "title": "packaging"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "tzdata", "label": "tzdata", "shape": "dot", "size": 10, "title": "tzdata"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "cffi", "label": "cffi", "shape": "dot", "size": 10, "title": "cffi"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "python-dateutil", "label": "python-dateutil", "shape": "dot", "size": 10, "title": "python-dateutil"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jupyter-console", "label": "jupyter-console", "shape": "dot", "size": 10, "title": "jupyter-console"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "bleach", "label": "bleach", "shape": "dot", "size": 10, "title": "bleach"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jsonschema", "label": "jsonschema", "shape": "dot", "size": 10, "title": "jsonschema"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "argon2-cffi-bindings", "label": "argon2-cffi-bindings", "shape": "dot", "size": 10, "title": "argon2-cffi-bindings"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "ipython", "label": "ipython", "shape": "dot", "size": 10, "title": "ipython"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "ipywidgets", "label": "ipywidgets", "shape": "dot", "size": 10, "title": "ipywidgets"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "traitlets", "label": "traitlets", "shape": "dot", "size": 10, "title": "traitlets"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jupyter-events", "label": "jupyter-events", "shape": "dot", "size": 10, "title": "jupyter-events"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "rfc3339-validator", "label": "rfc3339-validator", "shape": "dot", "size": 10, "title": "rfc3339-validator"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "json5", "label": "json5", "shape": "dot", "size": 10, "title": "json5"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "prometheus-client", "label": "prometheus-client", "shape": "dot", "size": 10, "title": "prometheus-client"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "referencing", "label": "referencing", "shape": "dot", "size": 10, "title": "referencing"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "pyyaml", "label": "pyyaml", "shape": "dot", "size": 10, "title": "pyyaml"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "terminado", "label": "terminado", "shape": "dot", "size": 10, "title": "terminado"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "ipython-pygments-lexers", "label": "ipython-pygments-lexers", "shape": "dot", "size": 10, "title": "ipython-pygments-lexers"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "arrow", "label": "arrow", "shape": "dot", "size": 10, "title": "arrow"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "httpcore", "label": "httpcore", "shape": "dot", "size": 10, "title": "httpcore"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "markupsafe", "label": "markupsafe", "shape": "dot", "size": 10, "title": "markupsafe"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "anyio", "label": "anyio", "shape": "dot", "size": 10, "title": "anyio"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "notebook", "label": "notebook", "shape": "dot", "size": 10, "title": "notebook"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "tornado", "label": "tornado", "shape": "dot", "size": 10, "title": "tornado"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jupyterlab-server", "label": "jupyterlab-server", "shape": "dot", "size": 10, "title": "jupyterlab-server"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "stack-data", "label": "stack-data", "shape": "dot", "size": 10, "title": "stack-data"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jupyter-server-terminals", "label": "jupyter-server-terminals", "shape": "dot", "size": 10, "title": "jupyter-server-terminals"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jsonpointer", "label": "jsonpointer", "shape": "dot", "size": 10, "title": "jsonpointer"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jupyter", "label": "jupyter", "shape": "dot", "size": 10, "title": "jupyter"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "beautifulsoup4", "label": "beautifulsoup4", "shape": "dot", "size": 10, "title": "beautifulsoup4"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jupyterlab", "label": "jupyterlab", "shape": "dot", "size": 10, "title": "jupyterlab"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "ipykernel", "to": "appnope"}, {"arrows": "to", "from": "ipykernel", "to": "comm"}, {"arrows": "to", "from": "ipykernel", "to": "debugpy"}, {"arrows": "to", "from": "ipykernel", "to": "ipython"}, {"arrows": "to", "from": "ipykernel", "to": "jupyter-client"}, {"arrows": "to", "from": "ipykernel", "to": "jupyter-core"}, {"arrows": "to", "from": "ipykernel", "to": "matplotlib-inline"}, {"arrows": "to", "from": "ipykernel", "to": "nest-asyncio"}, {"arrows": "to", "from": "ipykernel", "to": "packaging"}, {"arrows": "to", "from": "ipykernel", "to": "psutil"}, {"arrows": "to", "from": "ipykernel", "to": "pyzmq"}, {"arrows": "to", "from": "ipykernel", "to": "tornado"}, {"arrows": "to", "from": "ipykernel", "to": "traitlets"}, {"arrows": "to", "from": "matplotlib-inline", "to": "traitlets"}, {"arrows": "to", "from": "jupyter-core", "to": "platformdirs"}, {"arrows": "to", "from": "jupyter-core", "to": "traitlets"}, {"arrows": "to", "from": "nbconvert", "to": "beautifulsoup4"}, {"arrows": "to", "from": "nbconvert", "to": "bleach"}, {"arrows": "to", "from": "nbconvert", "to": "defusedxml"}, {"arrows": "to", "from": "nbconvert", "to": "jinja2"}, {"arrows": "to", "from": "nbconvert", "to": "jupyter-core"}, {"arrows": "to", "from": "nbconvert", "to": "jupyterlab-pygments"}, {"arrows": "to", "from": "nbconvert", "to": "markupsafe"}, {"arrows": "to", "from": "nbconvert", "to": "mistune"}, {"arrows": "to", "from": "nbconvert", "to": "nbclient"}, {"arrows": "to", "from": "nbconvert", "to": "nbformat"}, {"arrows": "to", "from": "nbconvert", "to": "packaging"}, {"arrows": "to", "from": "nbconvert", "to": "pandocfilters"}, {"arrows": "to", "from": "nbconvert", "to": "pygments"}, {"arrows": "to", "from": "nbconvert", "to": "traitlets"}, {"arrows": "to", "from": "jupyter-client", "to": "jupyter-core"}, {"arrows": "to", "from": "jupyter-client", "to": "python-dateutil"}, {"arrows": "to", "from": "jupyter-client", "to": "pyzmq"}, {"arrows": "to", "from": "jupyter-client", "to": "tornado"}, {"arrows": "to", "from": "jupyter-client", "to": "traitlets"}, {"arrows": "to", "from": "jsonschema-specifications", "to": "referencing"}, {"arrows": "to", "from": "pexpect", "to": "ptyprocess"}, {"arrows": "to", "from": "tinycss2", "to": "webencodings"}, {"arrows": "to", "from": "isoduration", "to": "arrow"}, {"arrows": "to", "from": "click", "to": "colorama"}, {"arrows": "to", "from": "markdown-it-py", "to": "mdurl"}, {"arrows": "to", "from": "nbclient", "to": "jupyter-client"}, {"arrows": "to", "from": "nbclient", "to": "jupyter-core"}, {"arrows": "to", "from": "nbclient", "to": "nbformat"}, {"arrows": "to", "from": "nbclient", "to": "traitlets"}, {"arrows": "to", "from": "jupyter-server", "to": "anyio"}, {"arrows": "to", "from": "jupyter-server", "to": "argon2-cffi"}, {"arrows": "to", "from": "jupyter-server", "to": "jinja2"}, {"arrows": "to", "from": "jupyter-server", "to": "jupyter-client"}, {"arrows": "to", "from": "jupyter-server", "to": "jupyter-core"}, {"arrows": "to", "from": "jupyter-server", "to": "jupyter-events"}, {"arrows": "to", "from": "jupyter-server", "to": "jupyter-server-terminals"}, {"arrows": "to", "from": "jupyter-server", "to": "nbconvert"}, {"arrows": "to", "from": "jupyter-server", "to": "nbformat"}, {"arrows": "to", "from": "jupyter-server", "to": "packaging"}, {"arrows": "to", "from": "jupyter-server", "to": "prometheus-client"}, {"arrows": "to", "from": "jupyter-server", "to": "pywinpty"}, {"arrows": "to", "from": "jupyter-server", "to": "pyzmq"}, {"arrows": "to", "from": "jupyter-server", "to": "send2trash"}, {"arrows": "to", "from": "jupyter-server", "to": "terminado"}, {"arrows": "to", "from": "jupyter-server", "to": "tornado"}, {"arrows": "to", "from": "jupyter-server", "to": "traitlets"}, {"arrows": "to", "from": "jupyter-server", "to": "websocket-client"}, {"arrows": "to", "from": "jupyter-lsp", "to": "jupyter-server"}, {"arrows": "to", "from": "requests", "to": "certifi"}, {"arrows": "to", "from": "requests", "to": "charset-normalizer"}, {"arrows": "to", "from": "requests", "to": "idna"}, {"arrows": "to", "from": "requests", "to": "urllib3"}, {"arrows": "to", "from": "notebook-shim", "to": "jupyter-server"}, {"arrows": "to", "from": "rfc3987-syntax", "to": "lark"}, {"arrows": "to", "from": "rich", "to": "markdown-it-py"}, {"arrows": "to", "from": "rich", "to": "pygments"}, {"arrows": "to", "from": "jedi", "to": "parso"}, {"arrows": "to", "from": "argon2-cffi", "to": "argon2-cffi-bindings"}, {"arrows": "to", "from": "prompt-toolkit", "to": "wcwidth"}, {"arrows": "to", "from": "nbformat", "to": "fastjsonschema"}, {"arrows": "to", "from": "nbformat", "to": "jsonschema"}, {"arrows": "to", "from": "nbformat", "to": "jupyter-core"}, {"arrows": "to", "from": "nbformat", "to": "traitlets"}, {"arrows": "to", "from": "pyzmq", "to": "cffi"}, {"arrows": "to", "from": "httpx", "to": "anyio"}, {"arrows": "to", "from": "httpx", "to": "certifi"}, {"arrows": "to", "from": "httpx", "to": "click"}, {"arrows": "to", "from": "httpx", "to": "httpcore"}, {"arrows": "to", "from": "httpx", "to": "idna"}, {"arrows": "to", "from": "httpx", "to": "pygments"}, {"arrows": "to", "from": "httpx", "to": "rich"}, {"arrows": "to", "from": "jinja2", "to": "markupsafe"}, {"arrows": "to", "from": "cffi", "to": "pycparser"}, {"arrows": "to", "from": "python-dateutil", "to": "six"}, {"arrows": "to", "from": "jupyter-console", "to": "ipykernel"}, {"arrows": "to", "from": "jupyter-console", "to": "ipython"}, {"arrows": "to", "from": "jupyter-console", "to": "jupyter-client"}, {"arrows": "to", "from": "jupyter-console", "to": "jupyter-core"}, {"arrows": "to", "from": "jupyter-console", "to": "prompt-toolkit"}, {"arrows": "to", "from": "jupyter-console", "to": "pygments"}, {"arrows": "to", "from": "jupyter-console", "to": "pyzmq"}, {"arrows": "to", "from": "jupyter-console", "to": "traitlets"}, {"arrows": "to", "from": "bleach", "to": "tinycss2"}, {"arrows": "to", "from": "bleach", "to": "webencodings"}, {"arrows": "to", "from": "jsonschema", "to": "attrs"}, {"arrows": "to", "from": "jsonschema", "to": "fqdn"}, {"arrows": "to", "from": "jsonschema", "to": "idna"}, {"arrows": "to", "from": "jsonschema", "to": "isoduration"}, {"arrows": "to", "from": "jsonschema", "to": "jsonpointer"}, {"arrows": "to", "from": "jsonschema", "to": "jsonschema-specifications"}, {"arrows": "to", "from": "jsonschema", "to": "referencing"}, {"arrows": "to", "from": "jsonschema", "to": "rfc3339-validator"}, {"arrows": "to", "from": "jsonschema", "to": "rfc3986-validator"}, {"arrows": "to", "from": "jsonschema", "to": "rfc3987-syntax"}, {"arrows": "to", "from": "jsonschema", "to": "rpds-py"}, {"arrows": "to", "from": "jsonschema", "to": "uri-template"}, {"arrows": "to", "from": "jsonschema", "to": "webcolors"}, {"arrows": "to", "from": "argon2-cffi-bindings", "to": "cffi"}, {"arrows": "to", "from": "ipython", "to": "colorama"}, {"arrows": "to", "from": "ipython", "to": "decorator"}, {"arrows": "to", "from": "ipython", "to": "ipython-pygments-lexers"}, {"arrows": "to", "from": "ipython", "to": "jedi"}, {"arrows": "to", "from": "ipython", "to": "matplotlib-inline"}, {"arrows": "to", "from": "ipython", "to": "pexpect"}, {"arrows": "to", "from": "ipython", "to": "prompt-toolkit"}, {"arrows": "to", "from": "ipython", "to": "pygments"}, {"arrows": "to", "from": "ipython", "to": "stack-data"}, {"arrows": "to", "from": "ipython", "to": "traitlets"}, {"arrows": "to", "from": "ipywidgets", "to": "comm"}, {"arrows": "to", "from": "ipywidgets", "to": "ipython"}, {"arrows": "to", "from": "ipywidgets", "to": "jupyterlab-widgets"}, {"arrows": "to", "from": "ipywidgets", "to": "traitlets"}, {"arrows": "to", "from": "ipywidgets", "to": "widgetsnbextension"}, {"arrows": "to", "from": "jupyter-events", "to": "jsonschema"}, {"arrows": "to", "from": "jupyter-events", "to": "packaging"}, {"arrows": "to", "from": "jupyter-events", "to": "python-json-logger"}, {"arrows": "to", "from": "jupyter-events", "to": "pyyaml"}, {"arrows": "to", "from": "jupyter-events", "to": "referencing"}, {"arrows": "to", "from": "jupyter-events", "to": "rfc3339-validator"}, {"arrows": "to", "from": "jupyter-events", "to": "rfc3986-validator"}, {"arrows": "to", "from": "jupyter-events", "to": "traitlets"}, {"arrows": "to", "from": "rfc3339-validator", "to": "six"}, {"arrows": "to", "from": "referencing", "to": "attrs"}, {"arrows": "to", "from": "referencing", "to": "rpds-py"}, {"arrows": "to", "from": "terminado", "to": "ptyprocess"}, {"arrows": "to", "from": "terminado", "to": "pywinpty"}, {"arrows": "to", "from": "terminado", "to": "tornado"}, {"arrows": "to", "from": "ipython-pygments-lexers", "to": "pygments"}, {"arrows": "to", "from": "arrow", "to": "python-dateutil"}, {"arrows": "to", "from": "arrow", "to": "tzdata"}, {"arrows": "to", "from": "httpcore", "to": "certifi"}, {"arrows": "to", "from": "httpcore", "to": "h11"}, {"arrows": "to", "from": "anyio", "to": "idna"}, {"arrows": "to", "from": "notebook", "to": "jupyter-server"}, {"arrows": "to", "from": "notebook", "to": "jupyterlab"}, {"arrows": "to", "from": "notebook", "to": "jupyterlab-server"}, {"arrows": "to", "from": "notebook", "to": "notebook-shim"}, {"arrows": "to", "from": "notebook", "to": "tornado"}, {"arrows": "to", "from": "jupyterlab-server", "to": "babel"}, {"arrows": "to", "from": "jupyterlab-server", "to": "jinja2"}, {"arrows": "to", "from": "jupyterlab-server", "to": "json5"}, {"arrows": "to", "from": "jupyterlab-server", "to": "jsonschema"}, {"arrows": "to", "from": "jupyterlab-server", "to": "jupyter-server"}, {"arrows": "to", "from": "jupyterlab-server", "to": "packaging"}, {"arrows": "to", "from": "jupyterlab-server", "to": "requests"}, {"arrows": "to", "from": "stack-data", "to": "asttokens"}, {"arrows": "to", "from": "stack-data", "to": "executing"}, {"arrows": "to", "from": "stack-data", "to": "pure-eval"}, {"arrows": "to", "from": "jupyter-server-terminals", "to": "pywinpty"}, {"arrows": "to", "from": "jupyter-server-terminals", "to": "terminado"}, {"arrows": "to", "from": "jupyter", "to": "ipykernel"}, {"arrows": "to", "from": "jupyter", "to": "ipywidgets"}, {"arrows": "to", "from": "jupyter", "to": "jupyter-console"}, {"arrows": "to", "from": "jupyter", "to": "jupyterlab"}, {"arrows": "to", "from": "jupyter", "to": "nbconvert"}, {"arrows": "to", "from": "jupyter", "to": "notebook"}, {"arrows": "to", "from": "beautifulsoup4", "to": "soupsieve"}, {"arrows": "to", "from": "beautifulsoup4", "to": "typing-extensions"}, {"arrows": "to", "from": "jupyterlab", "to": "async-lru"}, {"arrows": "to", "from": "jupyterlab", "to": "httpx"}, {"arrows": "to", "from": "jupyterlab", "to": "ipykernel"}, {"arrows": "to", "from": "jupyterlab", "to": "jinja2"}, {"arrows": "to", "from": "jupyterlab", "to": "jupyter-core"}, {"arrows": "to", "from": "jupyterlab", "to": "jupyter-lsp"}, {"arrows": "to", "from": "jupyterlab", "to": "jupyter-server"}, {"arrows": "to", "from": "jupyterlab", "to": "jupyterlab-server"}, {"arrows": "to", "from": "jupyterlab", "to": "notebook-shim"}, {"arrows": "to", "from": "jupyterlab", "to": "packaging"}, {"arrows": "to", "from": "jupyterlab", "to": "setuptools"}, {"arrows": "to", "from": "jupyterlab", "to": "tornado"}, {"arrows": "to", "from": "jupyterlab", "to": "traitlets"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"title": "jupyterandtransitivedependencies", "edges": {"color": {"inherit": true}, "smooth": {"enabled": true, "type": "dynamic"}}, "physics": {"enabled": true, "stabilization": {"enabled": true, "iterations": 1000}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

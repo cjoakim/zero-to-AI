@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="wcwidth" />
+    <node id="setuptools" />
+    <node id="pygments" />
+    <node id="webcolors" />
+    <node id="ipykernel" />
+    <node id="parso" />
+    <node id="python-json-logger" />
+    <node id="matplotlib-inline" />
+    <node id="ptyprocess" />
+    <node id="rfc3986-validator" />
+    <node id="jupyter-core" />
+    <node id="nbconvert" />
+    <node id="executing" />
+    <node id="jupyter-client" />
+    <node id="platformdirs" />
+    <node id="appnope" />
+    <node id="idna" />
+    <node id="jsonschema-specifications" />
+    <node id="pywinpty" />
+    <node id="decorator" />
+    <node id="debugpy" />
+    <node id="async-lru" />
+    <node id="colorama" />
+    <node id="uri-template" />
+    <node id="fqdn" />
+    <node id="pure-eval" />
+    <node id="pexpect" />
+    <node id="send2trash" />
+    <node id="nest-asyncio" />
+    <node id="tinycss2" />
+    <node id="isoduration" />
+    <node id="charset-normalizer" />
+    <node id="widgetsnbextension" />
+    <node id="attrs" />
+    <node id="click" />
+    <node id="defusedxml" />
+    <node id="markdown-it-py" />
+    <node id="nbclient" />
+    <node id="jupyter-server" />
+    <node id="rpds-py" />
+    <node id="jupyter-lsp" />
+    <node id="requests" />
+    <node id="comm" />
+    <node id="fastjsonschema" />
+    <node id="soupsieve" />
+    <node id="pandocfilters" />
+    <node id="notebook-shim" />
+    <node id="certifi" />
+    <node id="websocket-client" />
+    <node id="rfc3987-syntax" />
+    <node id="psutil" />
+    <node id="jupyterlab-widgets" />
+    <node id="rich" />
+    <node id="jedi" />
+    <node id="argon2-cffi" />
+    <node id="asttokens" />
+    <node id="urllib3" />
+    <node id="babel" />
+    <node id="jupyterlab-pygments" />
+    <node id="six" />
+    <node id="lark" />
+    <node id="h11" />
+    <node id="typing-extensions" />
+    <node id="prompt-toolkit" />
+    <node id="nbformat" />
+    <node id="mistune" />
+    <node id="pyzmq" />
+    <node id="webencodings" />
+    <node id="mdurl" />
+    <node id="httpx" />
+    <node id="jinja2" />
+    <node id="pycparser" />
+    <node id="packaging" />
+    <node id="tzdata" />
+    <node id="cffi" />
+    <node id="python-dateutil" />
+    <node id="jupyter-console" />
+    <node id="bleach" />
+    <node id="jsonschema" />
+    <node id="argon2-cffi-bindings" />
+    <node id="ipython" />
+    <node id="ipywidgets" />
+    <node id="traitlets" />
+    <node id="jupyter-events" />
+    <node id="rfc3339-validator" />
+    <node id="json5" />
+    <node id="prometheus-client" />
+    <node id="referencing" />
+    <node id="pyyaml" />
+    <node id="terminado" />
+    <node id="ipython-pygments-lexers" />
+    <node id="arrow" />
+    <node id="httpcore" />
+    <node id="markupsafe" />
+    <node id="anyio" />
+    <node id="notebook" />
+    <node id="tornado" />
+    <node id="jupyterlab-server" />
+    <node id="stack-data" />
+    <node id="jupyter-server-terminals" />
+    <node id="jsonpointer" />
+    <node id="jupyter" />
+    <node id="beautifulsoup4" />
+    <node id="jupyterlab" />
+    <edge source="ipykernel" target="appnope" />
+    <edge source="ipykernel" target="comm" />
+    <edge source="ipykernel" target="debugpy" />
+    <edge source="ipykernel" target="ipython" />
+    <edge source="ipykernel" target="jupyter-client" />
+    <edge source="ipykernel" target="jupyter-core" />
+    <edge source="ipykernel" target="matplotlib-inline" />
+    <edge source="ipykernel" target="nest-asyncio" />
+    <edge source="ipykernel" target="packaging" />
+    <edge source="ipykernel" target="psutil" />
+    <edge source="ipykernel" target="pyzmq" />
+    <edge source="ipykernel" target="tornado" />
+    <edge source="ipykernel" target="traitlets" />
+    <edge source="matplotlib-inline" target="traitlets" />
+    <edge source="jupyter-core" target="platformdirs" />
+    <edge source="jupyter-core" target="traitlets" />
+    <edge source="nbconvert" target="beautifulsoup4" />
+    <edge source="nbconvert" target="bleach" />
+    <edge source="nbconvert" target="defusedxml" />
+    <edge source="nbconvert" target="jinja2" />
+    <edge source="nbconvert" target="jupyter-core" />
+    <edge source="nbconvert" target="jupyterlab-pygments" />
+    <edge source="nbconvert" target="markupsafe" />
+    <edge source="nbconvert" target="mistune" />
+    <edge source="nbconvert" target="nbclient" />
+    <edge source="nbconvert" target="nbformat" />
+    <edge source="nbconvert" target="packaging" />
+    <edge source="nbconvert" target="pandocfilters" />
+    <edge source="nbconvert" target="pygments" />
+    <edge source="nbconvert" target="traitlets" />
+    <edge source="jupyter-client" target="jupyter-core" />
+    <edge source="jupyter-client" target="python-dateutil" />
+    <edge source="jupyter-client" target="pyzmq" />
+    <edge source="jupyter-client" target="tornado" />
+    <edge source="jupyter-client" target="traitlets" />
+    <edge source="jsonschema-specifications" target="referencing" />
+    <edge source="pexpect" target="ptyprocess" />
+    <edge source="tinycss2" target="webencodings" />
+    <edge source="isoduration" target="arrow" />
+    <edge source="click" target="colorama" />
+    <edge source="markdown-it-py" target="mdurl" />
+    <edge source="nbclient" target="jupyter-client" />
+    <edge source="nbclient" target="jupyter-core" />
+    <edge source="nbclient" target="nbformat" />
+    <edge source="nbclient" target="traitlets" />
+    <edge source="jupyter-server" target="anyio" />
+    <edge source="jupyter-server" target="argon2-cffi" />
+    <edge source="jupyter-server" target="jinja2" />
+    <edge source="jupyter-server" target="jupyter-client" />
+    <edge source="jupyter-server" target="jupyter-core" />
+    <edge source="jupyter-server" target="jupyter-events" />
+    <edge source="jupyter-server" target="jupyter-server-terminals" />
+    <edge source="jupyter-server" target="nbconvert" />
+    <edge source="jupyter-server" target="nbformat" />
+    <edge source="jupyter-server" target="packaging" />
+    <edge source="jupyter-server" target="prometheus-client" />
+    <edge source="jupyter-server" target="pywinpty" />
+    <edge source="jupyter-server" target="pyzmq" />
+    <edge source="jupyter-server" target="send2trash" />
+    <edge source="jupyter-server" target="terminado" />
+    <edge source="jupyter-server" target="tornado" />
+    <edge source="jupyter-server" target="traitlets" />
+    <edge source="jupyter-server" target="websocket-client" />
+    <edge source="jupyter-lsp" target="jupyter-server" />
+    <edge source="requests" target="certifi" />
+    <edge source="requests" target="charset-normalizer" />
+    <edge source="requests" target="idna" />
+    <edge source="requests" target="urllib3" />
+    <edge source="notebook-shim" target="jupyter-server" />
+    <edge source="rfc3987-syntax" target="lark" />
+    <edge source="rich" target="markdown-it-py" />
+    <edge source="rich" target="pygments" />
+    <edge source="jedi" target="parso" />
+    <edge source="argon2-cffi" target="argon2-cffi-bindings" />
+    <edge source="prompt-toolkit" target="wcwidth" />
+    <edge source="nbformat" target="fastjsonschema" />
+    <edge source="nbformat" target="jsonschema" />
+    <edge source="nbformat" target="jupyter-core" />
+    <edge source="nbformat" target="traitlets" />
+    <edge source="pyzmq" target="cffi" />
+    <edge source="httpx" target="anyio" />
+    <edge source="httpx" target="certifi" />
+    <edge source="httpx" target="click" />
+    <edge source="httpx" target="httpcore" />
+    <edge source="httpx" target="idna" />
+    <edge source="httpx" target="pygments" />
+    <edge source="httpx" target="rich" />
+    <edge source="jinja2" target="markupsafe" />
+    <edge source="cffi" target="pycparser" />
+    <edge source="python-dateutil" target="six" />
+    <edge source="jupyter-console" target="ipykernel" />
+    <edge source="jupyter-console" target="ipython" />
+    <edge source="jupyter-console" target="jupyter-client" />
+    <edge source="jupyter-console" target="jupyter-core" />
+    <edge source="jupyter-console" target="prompt-toolkit" />
+    <edge source="jupyter-console" target="pygments" />
+    <edge source="jupyter-console" target="pyzmq" />
+    <edge source="jupyter-console" target="traitlets" />
+    <edge source="bleach" target="tinycss2" />
+    <edge source="bleach" target="webencodings" />
+    <edge source="jsonschema" target="attrs" />
+    <edge source="jsonschema" target="fqdn" />
+    <edge source="jsonschema" target="idna" />
+    <edge source="jsonschema" target="isoduration" />
+    <edge source="jsonschema" target="jsonpointer" />
+    <edge source="jsonschema" target="jsonschema-specifications" />
+    <edge source="jsonschema" target="referencing" />
+    <edge source="jsonschema" target="rfc3339-validator" />
+    <edge source="jsonschema" target="rfc3986-validator" />
+    <edge source="jsonschema" target="rfc3987-syntax" />
+    <edge source="jsonschema" target="rpds-py" />
+    <edge source="jsonschema" target="uri-template" />
+    <edge source="jsonschema" target="webcolors" />
+    <edge source="argon2-cffi-bindings" target="cffi" />
+    <edge source="ipython" target="colorama" />
+    <edge source="ipython" target="decorator" />
+    <edge source="ipython" target="ipython-pygments-lexers" />
+    <edge source="ipython" target="jedi" />
+    <edge source="ipython" target="matplotlib-inline" />
+    <edge source="ipython" target="pexpect" />
+    <edge source="ipython" target="prompt-toolkit" />
+    <edge source="ipython" target="pygments" />
+    <edge source="ipython" target="stack-data" />
+    <edge source="ipython" target="traitlets" />
+    <edge source="ipywidgets" target="comm" />
+    <edge source="ipywidgets" target="ipython" />
+    <edge source="ipywidgets" target="jupyterlab-widgets" />
+    <edge source="ipywidgets" target="traitlets" />
+    <edge source="ipywidgets" target="widgetsnbextension" />
+    <edge source="jupyter-events" target="jsonschema" />
+    <edge source="jupyter-events" target="packaging" />
+    <edge source="jupyter-events" target="python-json-logger" />
+    <edge source="jupyter-events" target="pyyaml" />
+    <edge source="jupyter-events" target="referencing" />
+    <edge source="jupyter-events" target="rfc3339-validator" />
+    <edge source="jupyter-events" target="rfc3986-validator" />
+    <edge source="jupyter-events" target="traitlets" />
+    <edge source="rfc3339-validator" target="six" />
+    <edge source="referencing" target="attrs" />
+    <edge source="referencing" target="rpds-py" />
+    <edge source="terminado" target="ptyprocess" />
+    <edge source="terminado" target="pywinpty" />
+    <edge source="terminado" target="tornado" />
+    <edge source="ipython-pygments-lexers" target="pygments" />
+    <edge source="arrow" target="python-dateutil" />
+    <edge source="arrow" target="tzdata" />
+    <edge source="httpcore" target="certifi" />
+    <edge source="httpcore" target="h11" />
+    <edge source="anyio" target="idna" />
+    <edge source="notebook" target="jupyter-server" />
+    <edge source="notebook" target="jupyterlab" />
+    <edge source="notebook" target="jupyterlab-server" />
+    <edge source="notebook" target="notebook-shim" />
+    <edge source="notebook" target="tornado" />
+    <edge source="jupyterlab-server" target="babel" />
+    <edge source="jupyterlab-server" target="jinja2" />
+    <edge source="jupyterlab-server" target="json5" />
+    <edge source="jupyterlab-server" target="jsonschema" />
+    <edge source="jupyterlab-server" target="jupyter-server" />
+    <edge source="jupyterlab-server" target="packaging" />
+    <edge source="jupyterlab-server" target="requests" />
+    <edge source="stack-data" target="asttokens" />
+    <edge source="stack-data" target="executing" />
+    <edge source="stack-data" target="pure-eval" />
+    <edge source="jupyter-server-terminals" target="pywinpty" />
+    <edge source="jupyter-server-terminals" target="terminado" />
+    <edge source="jupyter" target="ipykernel" />
+    <edge source="jupyter" target="ipywidgets" />
+    <edge source="jupyter" target="jupyter-console" />
+    <edge source="jupyter" target="jupyterlab" />
+    <edge source="jupyter" target="nbconvert" />
+    <edge source="jupyter" target="notebook" />
+    <edge source="beautifulsoup4" target="soupsieve" />
+    <edge source="beautifulsoup4" target="typing-extensions" />
+    <edge source="jupyterlab" target="async-lru" />
+    <edge source="jupyterlab" target="httpx" />
+    <edge source="jupyterlab" target="ipykernel" />
+    <edge source="jupyterlab" target="jinja2" />
+    <edge source="jupyterlab" target="jupyter-core" />
+    <edge source="jupyterlab" target="jupyter-lsp" />
+    <edge source="jupyterlab" target="jupyter-server" />
+    <edge source="jupyterlab" target="jupyterlab-server" />
+    <edge source="jupyterlab" target="notebook-shim" />
+    <edge source="jupyterlab" target="packaging" />
+    <edge source="jupyterlab" target="setuptools" />
+    <edge source="jupyterlab" target="tornado" />
+    <edge source="jupyterlab" target="traitlets" />
+  </graph>
+</graphml>

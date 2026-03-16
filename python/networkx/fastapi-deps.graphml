@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="pygments" />
+    <node id="certifi" />
+    <node id="markupsafe" />
+    <node id="rich" />
+    <node id="typing-extensions" />
+    <node id="email-validator" />
+    <node id="idna" />
+    <node id="rich-toolkit" />
+    <node id="annotated-doc" />
+    <node id="fastapi-cli" />
+    <node id="httpcore" />
+    <node id="mdurl" />
+    <node id="typing-inspection" />
+    <node id="pydantic-extra-types" />
+    <node id="starlette" />
+    <node id="h11" />
+    <node id="uvloop" />
+    <node id="annotated-types" />
+    <node id="fastapi-cloud-cli" />
+    <node id="httptools" />
+    <node id="urllib3" />
+    <node id="pyyaml" />
+    <node id="sentry-sdk" />
+    <node id="websockets" />
+    <node id="python-dotenv" />
+    <node id="click" />
+    <node id="shellingham" />
+    <node id="python-multipart" />
+    <node id="typer" />
+    <node id="pydantic-settings" />
+    <node id="watchfiles" />
+    <node id="pydantic-core" />
+    <node id="anyio" />
+    <node id="uvicorn" />
+    <node id="markdown-it-py" />
+    <node id="jinja2" />
+    <node id="dnspython" />
+    <node id="fastapi" />
+    <node id="colorama" />
+    <node id="pydantic" />
+    <node id="rignore" />
+    <node id="fastar" />
+    <node id="httpx" />
+    <edge source="rich" target="markdown-it-py" />
+    <edge source="rich" target="pygments" />
+    <edge source="email-validator" target="dnspython" />
+    <edge source="email-validator" target="idna" />
+    <edge source="rich-toolkit" target="click" />
+    <edge source="rich-toolkit" target="rich" />
+    <edge source="rich-toolkit" target="typing-extensions" />
+    <edge source="fastapi-cli" target="fastapi-cloud-cli" />
+    <edge source="fastapi-cli" target="rich-toolkit" />
+    <edge source="fastapi-cli" target="typer" />
+    <edge source="fastapi-cli" target="uvicorn" />
+    <edge source="httpcore" target="certifi" />
+    <edge source="httpcore" target="h11" />
+    <edge source="typing-inspection" target="typing-extensions" />
+    <edge source="pydantic-extra-types" target="pydantic" />
+    <edge source="pydantic-extra-types" target="typing-extensions" />
+    <edge source="starlette" target="anyio" />
+    <edge source="fastapi-cloud-cli" target="fastar" />
+    <edge source="fastapi-cloud-cli" target="httpx" />
+    <edge source="fastapi-cloud-cli" target="pydantic" />
+    <edge source="fastapi-cloud-cli" target="rich-toolkit" />
+    <edge source="fastapi-cloud-cli" target="rignore" />
+    <edge source="fastapi-cloud-cli" target="sentry-sdk" />
+    <edge source="fastapi-cloud-cli" target="typer" />
+    <edge source="fastapi-cloud-cli" target="uvicorn" />
+    <edge source="sentry-sdk" target="certifi" />
+    <edge source="sentry-sdk" target="urllib3" />
+    <edge source="click" target="colorama" />
+    <edge source="typer" target="click" />
+    <edge source="typer" target="rich" />
+    <edge source="typer" target="shellingham" />
+    <edge source="typer" target="typing-extensions" />
+    <edge source="pydantic-settings" target="pydantic" />
+    <edge source="pydantic-settings" target="python-dotenv" />
+    <edge source="pydantic-settings" target="typing-inspection" />
+    <edge source="watchfiles" target="anyio" />
+    <edge source="pydantic-core" target="typing-extensions" />
+    <edge source="anyio" target="idna" />
+    <edge source="uvicorn" target="click" />
+    <edge source="uvicorn" target="colorama" />
+    <edge source="uvicorn" target="h11" />
+    <edge source="uvicorn" target="httptools" />
+    <edge source="uvicorn" target="python-dotenv" />
+    <edge source="uvicorn" target="pyyaml" />
+    <edge source="uvicorn" target="uvloop" />
+    <edge source="uvicorn" target="watchfiles" />
+    <edge source="uvicorn" target="websockets" />
+    <edge source="markdown-it-py" target="mdurl" />
+    <edge source="jinja2" target="markupsafe" />
+    <edge source="fastapi" target="annotated-doc" />
+    <edge source="fastapi" target="email-validator" />
+    <edge source="fastapi" target="fastapi-cli" />
+    <edge source="fastapi" target="httpx" />
+    <edge source="fastapi" target="jinja2" />
+    <edge source="fastapi" target="pydantic" />
+    <edge source="fastapi" target="pydantic-extra-types" />
+    <edge source="fastapi" target="pydantic-settings" />
+    <edge source="fastapi" target="python-multipart" />
+    <edge source="fastapi" target="starlette" />
+    <edge source="fastapi" target="typing-extensions" />
+    <edge source="fastapi" target="uvicorn" />
+    <edge source="pydantic" target="annotated-types" />
+    <edge source="pydantic" target="email-validator" />
+    <edge source="pydantic" target="pydantic-core" />
+    <edge source="pydantic" target="typing-extensions" />
+    <edge source="pydantic" target="typing-inspection" />
+    <edge source="httpx" target="anyio" />
+    <edge source="httpx" target="certifi" />
+    <edge source="httpx" target="click" />
+    <edge source="httpx" target="httpcore" />
+    <edge source="httpx" target="idna" />
+    <edge source="httpx" target="pygments" />
+    <edge source="httpx" target="rich" />
+  </graph>
+</graphml>

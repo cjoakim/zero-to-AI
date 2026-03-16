@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="certifi" />
+    <node id="charset-normalizer" />
+    <node id="azure-core" />
+    <node id="urllib3" />
+    <node id="requests" />
+    <node id="azure-cosmos" />
+    <node id="typing-extensions" />
+    <node id="idna" />
+    <edge source="azure-core" target="requests" />
+    <edge source="azure-core" target="typing-extensions" />
+    <edge source="requests" target="certifi" />
+    <edge source="requests" target="charset-normalizer" />
+    <edge source="requests" target="idna" />
+    <edge source="requests" target="urllib3" />
+    <edge source="azure-cosmos" target="azure-core" />
+    <edge source="azure-cosmos" target="typing-extensions" />
+  </graph>
+</graphml>

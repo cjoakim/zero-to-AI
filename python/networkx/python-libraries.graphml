@@ -1,0 +1,971 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="zero-to-ai" />
+    <node id="agent-framework" />
+    <node id="agent-framework-core" />
+    <node id="aiofiles" />
+    <node id="aiohappyeyeballs" />
+    <node id="aiohttp" />
+    <node id="aiosignal" />
+    <node id="alembic" />
+    <node id="altair" />
+    <node id="annotated-doc" />
+    <node id="annotated-types" />
+    <node id="anyio" />
+    <node id="appnope" />
+    <node id="argon2-cffi" />
+    <node id="argon2-cffi-bindings" />
+    <node id="arrow" />
+    <node id="asgiref" />
+    <node id="astroid" />
+    <node id="asttokens" />
+    <node id="async-lru" />
+    <node id="attrs" />
+    <node id="authlib" />
+    <node id="av" />
+    <node id="azure-ai-agents" />
+    <node id="azure-ai-documentintelligence" />
+    <node id="azure-ai-evaluation" />
+    <node id="azure-ai-projects" />
+    <node id="azure-ai-textanalytics" />
+    <node id="azure-common" />
+    <node id="azure-core" />
+    <node id="azure-core-tracing-opentelemetry" />
+    <node id="azure-cosmos" />
+    <node id="azure-identity" />
+    <node id="azure-keyvault-secrets" />
+    <node id="azure-mgmt-applicationinsights" />
+    <node id="azure-mgmt-cognitiveservices" />
+    <node id="azure-mgmt-core" />
+    <node id="azure-monitor-opentelemetry" />
+    <node id="azure-monitor-opentelemetry-exporter" />
+    <node id="azure-search-documents" />
+    <node id="azure-storage-blob" />
+    <node id="babel" />
+    <node id="beartype" />
+    <node id="beautifulsoup4" />
+    <node id="bleach" />
+    <node id="blinker" />
+    <node id="cachetools" />
+    <node id="certifi" />
+    <node id="cffi" />
+    <node id="charset-normalizer" />
+    <node id="click" />
+    <node id="cloudpickle" />
+    <node id="colorama" />
+    <node id="comm" />
+    <node id="contourpy" />
+    <node id="coverage" />
+    <node id="cryptography" />
+    <node id="cycler" />
+    <node id="cyclopts" />
+    <node id="debugpy" />
+    <node id="decorator" />
+    <node id="defusedxml" />
+    <node id="dill" />
+    <node id="diskcache" />
+    <node id="distro" />
+    <node id="dnspython" />
+    <node id="docopt" />
+    <node id="docstring-parser" />
+    <node id="docutils" />
+    <node id="duckdb" />
+    <node id="email-validator" />
+    <node id="exceptiongroup" />
+    <node id="executing" />
+    <node id="faker" />
+    <node id="fakeredis" />
+    <node id="fastapi" />
+    <node id="fastapi-cli" />
+    <node id="fastapi-cloud-cli" />
+    <node id="fastar" />
+    <node id="fastjsonschema" />
+    <node id="fastmcp" />
+    <node id="fonttools" />
+    <node id="fqdn" />
+    <node id="frozenlist" />
+    <node id="geographiclib" />
+    <node id="geopy" />
+    <node id="gitdb" />
+    <node id="gitpython" />
+    <node id="googleapis-common-protos" />
+    <node id="greenlet" />
+    <node id="grpcio" />
+    <node id="h11" />
+    <node id="httpcore" />
+    <node id="httptools" />
+    <node id="httpx" />
+    <node id="httpx-sse" />
+    <node id="idna" />
+    <node id="importlib-metadata" />
+    <node id="iniconfig" />
+    <node id="ipykernel" />
+    <node id="ipython" />
+    <node id="ipython-pygments-lexers" />
+    <node id="ipywidgets" />
+    <node id="isodate" />
+    <node id="isoduration" />
+    <node id="isort" />
+    <node id="jaraco-classes" />
+    <node id="jaraco-context" />
+    <node id="jaraco-functools" />
+    <node id="jedi" />
+    <node id="jeepney" />
+    <node id="jinja2" />
+    <node id="jiter" />
+    <node id="joblib" />
+    <node id="json5" />
+    <node id="jsonpickle" />
+    <node id="jsonpointer" />
+    <node id="jsonschema" />
+    <node id="jsonschema-path" />
+    <node id="jsonschema-specifications" />
+    <node id="jupyter" />
+    <node id="jupyter-client" />
+    <node id="jupyter-console" />
+    <node id="jupyter-core" />
+    <node id="jupyter-events" />
+    <node id="jupyter-lsp" />
+    <node id="jupyter-server" />
+    <node id="jupyter-server-terminals" />
+    <node id="jupyterlab" />
+    <node id="jupyterlab-pygments" />
+    <node id="jupyterlab-server" />
+    <node id="jupyterlab-widgets" />
+    <node id="keyring" />
+    <node id="kiwisolver" />
+    <node id="lark" />
+    <node id="lupa" />
+    <node id="m26" />
+    <node id="mako" />
+    <node id="markdown" />
+    <node id="markdown-it-py" />
+    <node id="markupsafe" />
+    <node id="matplotlib" />
+    <node id="matplotlib-inline" />
+    <node id="mccabe" />
+    <node id="mcp" />
+    <node id="mdurl" />
+    <node id="mistune" />
+    <node id="more-itertools" />
+    <node id="msal" />
+    <node id="msal-extensions" />
+    <node id="msrest" />
+    <node id="multidict" />
+    <node id="narwhals" />
+    <node id="nbclient" />
+    <node id="nbconvert" />
+    <node id="nbformat" />
+    <node id="nest-asyncio" />
+    <node id="networkx" />
+    <node id="nltk" />
+    <node id="notebook" />
+    <node id="notebook-shim" />
+    <node id="numpy" />
+    <node id="oauthlib" />
+    <node id="openai" />
+    <node id="openapi-pydantic" />
+    <node id="opentelemetry-api" />
+    <node id="opentelemetry-exporter-otlp-proto-common" />
+    <node id="opentelemetry-exporter-otlp-proto-grpc" />
+    <node id="opentelemetry-instrumentation" />
+    <node id="opentelemetry-instrumentation-asgi" />
+    <node id="opentelemetry-instrumentation-dbapi" />
+    <node id="opentelemetry-instrumentation-django" />
+    <node id="opentelemetry-instrumentation-fastapi" />
+    <node id="opentelemetry-instrumentation-flask" />
+    <node id="opentelemetry-instrumentation-httpx" />
+    <node id="opentelemetry-instrumentation-logging" />
+    <node id="opentelemetry-instrumentation-psycopg2" />
+    <node id="opentelemetry-instrumentation-requests" />
+    <node id="opentelemetry-instrumentation-urllib" />
+    <node id="opentelemetry-instrumentation-urllib3" />
+    <node id="opentelemetry-instrumentation-wsgi" />
+    <node id="opentelemetry-proto" />
+    <node id="opentelemetry-resource-detector-azure" />
+    <node id="opentelemetry-sdk" />
+    <node id="opentelemetry-semantic-conventions" />
+    <node id="opentelemetry-semantic-conventions-ai" />
+    <node id="opentelemetry-util-http" />
+    <node id="packaging" />
+    <node id="pandas" />
+    <node id="pandocfilters" />
+    <node id="parso" />
+    <node id="pathable" />
+    <node id="pathvalidate" />
+    <node id="pexpect" />
+    <node id="pgvector" />
+    <node id="pillow" />
+    <node id="platformdirs" />
+    <node id="pluggy" />
+    <node id="polars" />
+    <node id="polars-runtime-32" />
+    <node id="prometheus-client" />
+    <node id="prompt-toolkit" />
+    <node id="propcache" />
+    <node id="protobuf" />
+    <node id="psutil" />
+    <node id="psycopg2-binary" />
+    <node id="ptyprocess" />
+    <node id="pure-eval" />
+    <node id="py-key-value-aio" />
+    <node id="py-key-value-shared" />
+    <node id="pyarrow" />
+    <node id="pycparser" />
+    <node id="pydantic" />
+    <node id="pydantic-core" />
+    <node id="pydantic-extra-types" />
+    <node id="pydantic-settings" />
+    <node id="pydeck" />
+    <node id="pydocket" />
+    <node id="pygments" />
+    <node id="pyjwt" />
+    <node id="pylint" />
+    <node id="pyparsing" />
+    <node id="pyperclip" />
+    <node id="pytest" />
+    <node id="pytest-asyncio" />
+    <node id="pytest-cov" />
+    <node id="pytest-randomly" />
+    <node id="python-dateutil" />
+    <node id="python-dotenv" />
+    <node id="python-json-logger" />
+    <node id="python-multipart" />
+    <node id="python-toon" />
+    <node id="pytz" />
+    <node id="pyvis" />
+    <node id="pywin32" />
+    <node id="pywin32-ctypes" />
+    <node id="pywinpty" />
+    <node id="pyyaml" />
+    <node id="pyzmq" />
+    <node id="rdflib" />
+    <node id="redis" />
+    <node id="referencing" />
+    <node id="regex" />
+    <node id="requests" />
+    <node id="requests-oauthlib" />
+    <node id="rfc3339-validator" />
+    <node id="rfc3986-validator" />
+    <node id="rfc3987-syntax" />
+    <node id="rich" />
+    <node id="rich-rst" />
+    <node id="rich-toolkit" />
+    <node id="rignore" />
+    <node id="rpds-py" />
+    <node id="ruamel-yaml" />
+    <node id="secretstorage" />
+    <node id="send2trash" />
+    <node id="sentry-sdk" />
+    <node id="setuptools" />
+    <node id="shellingham" />
+    <node id="six" />
+    <node id="smmap" />
+    <node id="sniffio" />
+    <node id="sortedcontainers" />
+    <node id="soupsieve" />
+    <node id="sqlalchemy" />
+    <node id="sqlalchemy-utils" />
+    <node id="sse-starlette" />
+    <node id="stack-data" />
+    <node id="starlette" />
+    <node id="streamlit" />
+    <node id="tenacity" />
+    <node id="terminado" />
+    <node id="tiktoken" />
+    <node id="tinycss2" />
+    <node id="toml" />
+    <node id="tomlkit" />
+    <node id="tornado" />
+    <node id="tqdm" />
+    <node id="traitlets" />
+    <node id="typer" />
+    <node id="typing-extensions" />
+    <node id="typing-inspection" />
+    <node id="tzdata" />
+    <node id="uri-template" />
+    <node id="urllib3" />
+    <node id="uvicorn" />
+    <node id="uvloop" />
+    <node id="watchdog" />
+    <node id="watchfiles" />
+    <node id="wcwidth" />
+    <node id="webcolors" />
+    <node id="webencodings" />
+    <node id="websocket-client" />
+    <node id="websockets" />
+    <node id="widgetsnbextension" />
+    <node id="wrapt" />
+    <node id="yarl" />
+    <node id="zipp" />
+    <edge source="zero-to-ai" target="agent-framework" />
+    <edge source="zero-to-ai" target="aiohttp" />
+    <edge source="zero-to-ai" target="alembic" />
+    <edge source="zero-to-ai" target="av" />
+    <edge source="zero-to-ai" target="azure-ai-agents" />
+    <edge source="zero-to-ai" target="azure-ai-documentintelligence" />
+    <edge source="zero-to-ai" target="azure-ai-evaluation" />
+    <edge source="zero-to-ai" target="azure-ai-projects" />
+    <edge source="zero-to-ai" target="azure-ai-textanalytics" />
+    <edge source="zero-to-ai" target="azure-core" />
+    <edge source="zero-to-ai" target="azure-core-tracing-opentelemetry" />
+    <edge source="zero-to-ai" target="azure-cosmos" />
+    <edge source="zero-to-ai" target="azure-identity" />
+    <edge source="zero-to-ai" target="azure-keyvault-secrets" />
+    <edge source="zero-to-ai" target="azure-mgmt-applicationinsights" />
+    <edge source="zero-to-ai" target="azure-mgmt-cognitiveservices" />
+    <edge source="zero-to-ai" target="azure-search-documents" />
+    <edge source="zero-to-ai" target="azure-storage-blob" />
+    <edge source="zero-to-ai" target="beautifulsoup4" />
+    <edge source="zero-to-ai" target="docopt" />
+    <edge source="zero-to-ai" target="duckdb" />
+    <edge source="zero-to-ai" target="faker" />
+    <edge source="zero-to-ai" target="fastapi" />
+    <edge source="zero-to-ai" target="fastmcp" />
+    <edge source="zero-to-ai" target="geopy" />
+    <edge source="zero-to-ai" target="h11" />
+    <edge source="zero-to-ai" target="httpx" />
+    <edge source="zero-to-ai" target="jinja2" />
+    <edge source="zero-to-ai" target="jupyter" />
+    <edge source="zero-to-ai" target="m26" />
+    <edge source="zero-to-ai" target="markdown" />
+    <edge source="zero-to-ai" target="matplotlib" />
+    <edge source="zero-to-ai" target="networkx" />
+    <edge source="zero-to-ai" target="openai" />
+    <edge source="zero-to-ai" target="opentelemetry-api" />
+    <edge source="zero-to-ai" target="opentelemetry-exporter-otlp-proto-grpc" />
+    <edge source="zero-to-ai" target="opentelemetry-instrumentation-httpx" />
+    <edge source="zero-to-ai" target="opentelemetry-instrumentation-logging" />
+    <edge source="zero-to-ai" target="opentelemetry-instrumentation-psycopg2" />
+    <edge source="zero-to-ai" target="opentelemetry-instrumentation-requests" />
+    <edge source="zero-to-ai" target="opentelemetry-sdk" />
+    <edge source="zero-to-ai" target="pandas" />
+    <edge source="zero-to-ai" target="pgvector" />
+    <edge source="zero-to-ai" target="polars" />
+    <edge source="zero-to-ai" target="psutil" />
+    <edge source="zero-to-ai" target="psycopg2-binary" />
+    <edge source="zero-to-ai" target="pydantic" />
+    <edge source="zero-to-ai" target="pydantic-core" />
+    <edge source="zero-to-ai" target="pylint" />
+    <edge source="zero-to-ai" target="pytest" />
+    <edge source="zero-to-ai" target="pytest-asyncio" />
+    <edge source="zero-to-ai" target="pytest-cov" />
+    <edge source="zero-to-ai" target="pytest-randomly" />
+    <edge source="zero-to-ai" target="python-dotenv" />
+    <edge source="zero-to-ai" target="python-json-logger" />
+    <edge source="zero-to-ai" target="python-multipart" />
+    <edge source="zero-to-ai" target="python-toon" />
+    <edge source="zero-to-ai" target="pytz" />
+    <edge source="zero-to-ai" target="pyvis" />
+    <edge source="zero-to-ai" target="rdflib" />
+    <edge source="zero-to-ai" target="six" />
+    <edge source="zero-to-ai" target="sqlalchemy" />
+    <edge source="zero-to-ai" target="sqlalchemy-utils" />
+    <edge source="zero-to-ai" target="streamlit" />
+    <edge source="zero-to-ai" target="tenacity" />
+    <edge source="zero-to-ai" target="tiktoken" />
+    <edge source="zero-to-ai" target="uvicorn" />
+    <edge source="zero-to-ai" target="watchdog" />
+    <edge source="agent-framework" target="agent-framework-core" />
+    <edge source="agent-framework-core" target="aiofiles" />
+    <edge source="agent-framework-core" target="azure-identity" />
+    <edge source="agent-framework-core" target="azure-monitor-opentelemetry" />
+    <edge source="agent-framework-core" target="azure-monitor-opentelemetry-exporter" />
+    <edge source="agent-framework-core" target="mcp" />
+    <edge source="agent-framework-core" target="openai" />
+    <edge source="agent-framework-core" target="opentelemetry-api" />
+    <edge source="agent-framework-core" target="opentelemetry-exporter-otlp-proto-grpc" />
+    <edge source="agent-framework-core" target="opentelemetry-sdk" />
+    <edge source="agent-framework-core" target="opentelemetry-semantic-conventions-ai" />
+    <edge source="agent-framework-core" target="pydantic" />
+    <edge source="agent-framework-core" target="pydantic-settings" />
+    <edge source="agent-framework-core" target="typing-extensions" />
+    <edge source="aiohttp" target="aiohappyeyeballs" />
+    <edge source="aiohttp" target="aiosignal" />
+    <edge source="aiohttp" target="attrs" />
+    <edge source="aiohttp" target="frozenlist" />
+    <edge source="aiohttp" target="multidict" />
+    <edge source="aiohttp" target="propcache" />
+    <edge source="aiohttp" target="yarl" />
+    <edge source="aiosignal" target="frozenlist" />
+    <edge source="alembic" target="mako" />
+    <edge source="alembic" target="sqlalchemy" />
+    <edge source="alembic" target="typing-extensions" />
+    <edge source="altair" target="jinja2" />
+    <edge source="altair" target="jsonschema" />
+    <edge source="altair" target="narwhals" />
+    <edge source="altair" target="packaging" />
+    <edge source="altair" target="typing-extensions" />
+    <edge source="anyio" target="idna" />
+    <edge source="argon2-cffi" target="argon2-cffi-bindings" />
+    <edge source="argon2-cffi-bindings" target="cffi" />
+    <edge source="arrow" target="python-dateutil" />
+    <edge source="arrow" target="tzdata" />
+    <edge source="authlib" target="cryptography" />
+    <edge source="azure-ai-agents" target="azure-core" />
+    <edge source="azure-ai-agents" target="isodate" />
+    <edge source="azure-ai-agents" target="typing-extensions" />
+    <edge source="azure-ai-documentintelligence" target="azure-core" />
+    <edge source="azure-ai-documentintelligence" target="isodate" />
+    <edge source="azure-ai-documentintelligence" target="typing-extensions" />
+    <edge source="azure-ai-evaluation" target="aiohttp" />
+    <edge source="azure-ai-evaluation" target="azure-core" />
+    <edge source="azure-ai-evaluation" target="azure-identity" />
+    <edge source="azure-ai-evaluation" target="azure-storage-blob" />
+    <edge source="azure-ai-evaluation" target="httpx" />
+    <edge source="azure-ai-evaluation" target="jinja2" />
+    <edge source="azure-ai-evaluation" target="msrest" />
+    <edge source="azure-ai-evaluation" target="nltk" />
+    <edge source="azure-ai-evaluation" target="openai" />
+    <edge source="azure-ai-evaluation" target="pandas" />
+    <edge source="azure-ai-evaluation" target="pyjwt" />
+    <edge source="azure-ai-evaluation" target="ruamel-yaml" />
+    <edge source="azure-ai-projects" target="azure-ai-agents" />
+    <edge source="azure-ai-projects" target="azure-core" />
+    <edge source="azure-ai-projects" target="azure-storage-blob" />
+    <edge source="azure-ai-projects" target="isodate" />
+    <edge source="azure-ai-projects" target="typing-extensions" />
+    <edge source="azure-ai-textanalytics" target="azure-common" />
+    <edge source="azure-ai-textanalytics" target="azure-core" />
+    <edge source="azure-ai-textanalytics" target="isodate" />
+    <edge source="azure-ai-textanalytics" target="typing-extensions" />
+    <edge source="azure-core" target="requests" />
+    <edge source="azure-core" target="typing-extensions" />
+    <edge source="azure-core-tracing-opentelemetry" target="azure-core" />
+    <edge source="azure-core-tracing-opentelemetry" target="opentelemetry-api" />
+    <edge source="azure-cosmos" target="azure-core" />
+    <edge source="azure-cosmos" target="typing-extensions" />
+    <edge source="azure-identity" target="azure-core" />
+    <edge source="azure-identity" target="cryptography" />
+    <edge source="azure-identity" target="msal" />
+    <edge source="azure-identity" target="msal-extensions" />
+    <edge source="azure-identity" target="typing-extensions" />
+    <edge source="azure-keyvault-secrets" target="azure-core" />
+    <edge source="azure-keyvault-secrets" target="isodate" />
+    <edge source="azure-keyvault-secrets" target="typing-extensions" />
+    <edge source="azure-mgmt-applicationinsights" target="azure-common" />
+    <edge source="azure-mgmt-applicationinsights" target="azure-mgmt-core" />
+    <edge source="azure-mgmt-applicationinsights" target="isodate" />
+    <edge source="azure-mgmt-applicationinsights" target="typing-extensions" />
+    <edge source="azure-mgmt-cognitiveservices" target="azure-mgmt-core" />
+    <edge source="azure-mgmt-cognitiveservices" target="msrest" />
+    <edge source="azure-mgmt-cognitiveservices" target="typing-extensions" />
+    <edge source="azure-mgmt-core" target="azure-core" />
+    <edge source="azure-monitor-opentelemetry" target="azure-core" />
+    <edge source="azure-monitor-opentelemetry" target="azure-core-tracing-opentelemetry" />
+    <edge source="azure-monitor-opentelemetry" target="azure-monitor-opentelemetry-exporter" />
+    <edge source="azure-monitor-opentelemetry" target="opentelemetry-instrumentation-django" />
+    <edge source="azure-monitor-opentelemetry" target="opentelemetry-instrumentation-fastapi" />
+    <edge source="azure-monitor-opentelemetry" target="opentelemetry-instrumentation-flask" />
+    <edge source="azure-monitor-opentelemetry" target="opentelemetry-instrumentation-psycopg2" />
+    <edge source="azure-monitor-opentelemetry" target="opentelemetry-instrumentation-requests" />
+    <edge source="azure-monitor-opentelemetry" target="opentelemetry-instrumentation-urllib" />
+    <edge source="azure-monitor-opentelemetry" target="opentelemetry-instrumentation-urllib3" />
+    <edge source="azure-monitor-opentelemetry" target="opentelemetry-resource-detector-azure" />
+    <edge source="azure-monitor-opentelemetry" target="opentelemetry-sdk" />
+    <edge source="azure-monitor-opentelemetry-exporter" target="azure-core" />
+    <edge source="azure-monitor-opentelemetry-exporter" target="azure-identity" />
+    <edge source="azure-monitor-opentelemetry-exporter" target="msrest" />
+    <edge source="azure-monitor-opentelemetry-exporter" target="opentelemetry-api" />
+    <edge source="azure-monitor-opentelemetry-exporter" target="opentelemetry-sdk" />
+    <edge source="azure-monitor-opentelemetry-exporter" target="psutil" />
+    <edge source="azure-search-documents" target="azure-common" />
+    <edge source="azure-search-documents" target="azure-core" />
+    <edge source="azure-search-documents" target="isodate" />
+    <edge source="azure-search-documents" target="typing-extensions" />
+    <edge source="azure-storage-blob" target="azure-core" />
+    <edge source="azure-storage-blob" target="cryptography" />
+    <edge source="azure-storage-blob" target="isodate" />
+    <edge source="azure-storage-blob" target="typing-extensions" />
+    <edge source="beautifulsoup4" target="soupsieve" />
+    <edge source="beautifulsoup4" target="typing-extensions" />
+    <edge source="bleach" target="tinycss2" />
+    <edge source="bleach" target="webencodings" />
+    <edge source="cffi" target="pycparser" />
+    <edge source="click" target="colorama" />
+    <edge source="contourpy" target="numpy" />
+    <edge source="cryptography" target="cffi" />
+    <edge source="cyclopts" target="attrs" />
+    <edge source="cyclopts" target="docstring-parser" />
+    <edge source="cyclopts" target="rich" />
+    <edge source="cyclopts" target="rich-rst" />
+    <edge source="email-validator" target="dnspython" />
+    <edge source="email-validator" target="idna" />
+    <edge source="faker" target="tzdata" />
+    <edge source="fakeredis" target="lupa" />
+    <edge source="fakeredis" target="redis" />
+    <edge source="fakeredis" target="sortedcontainers" />
+    <edge source="fastapi" target="annotated-doc" />
+    <edge source="fastapi" target="email-validator" />
+    <edge source="fastapi" target="fastapi-cli" />
+    <edge source="fastapi" target="httpx" />
+    <edge source="fastapi" target="jinja2" />
+    <edge source="fastapi" target="pydantic" />
+    <edge source="fastapi" target="pydantic-extra-types" />
+    <edge source="fastapi" target="pydantic-settings" />
+    <edge source="fastapi" target="python-multipart" />
+    <edge source="fastapi" target="starlette" />
+    <edge source="fastapi" target="typing-extensions" />
+    <edge source="fastapi" target="uvicorn" />
+    <edge source="fastapi-cli" target="fastapi-cloud-cli" />
+    <edge source="fastapi-cli" target="rich-toolkit" />
+    <edge source="fastapi-cli" target="typer" />
+    <edge source="fastapi-cli" target="uvicorn" />
+    <edge source="fastapi-cloud-cli" target="fastar" />
+    <edge source="fastapi-cloud-cli" target="httpx" />
+    <edge source="fastapi-cloud-cli" target="pydantic" />
+    <edge source="fastapi-cloud-cli" target="rich-toolkit" />
+    <edge source="fastapi-cloud-cli" target="rignore" />
+    <edge source="fastapi-cloud-cli" target="sentry-sdk" />
+    <edge source="fastapi-cloud-cli" target="typer" />
+    <edge source="fastapi-cloud-cli" target="uvicorn" />
+    <edge source="fastmcp" target="authlib" />
+    <edge source="fastmcp" target="cyclopts" />
+    <edge source="fastmcp" target="exceptiongroup" />
+    <edge source="fastmcp" target="httpx" />
+    <edge source="fastmcp" target="jsonschema-path" />
+    <edge source="fastmcp" target="mcp" />
+    <edge source="fastmcp" target="openapi-pydantic" />
+    <edge source="fastmcp" target="platformdirs" />
+    <edge source="fastmcp" target="py-key-value-aio" />
+    <edge source="fastmcp" target="pydantic" />
+    <edge source="fastmcp" target="pydocket" />
+    <edge source="fastmcp" target="pyperclip" />
+    <edge source="fastmcp" target="python-dotenv" />
+    <edge source="fastmcp" target="rich" />
+    <edge source="fastmcp" target="uvicorn" />
+    <edge source="fastmcp" target="websockets" />
+    <edge source="geopy" target="geographiclib" />
+    <edge source="gitdb" target="smmap" />
+    <edge source="gitpython" target="gitdb" />
+    <edge source="googleapis-common-protos" target="protobuf" />
+    <edge source="grpcio" target="typing-extensions" />
+    <edge source="httpcore" target="certifi" />
+    <edge source="httpcore" target="h11" />
+    <edge source="httpx" target="anyio" />
+    <edge source="httpx" target="certifi" />
+    <edge source="httpx" target="click" />
+    <edge source="httpx" target="httpcore" />
+    <edge source="httpx" target="idna" />
+    <edge source="httpx" target="pygments" />
+    <edge source="httpx" target="rich" />
+    <edge source="importlib-metadata" target="zipp" />
+    <edge source="ipykernel" target="appnope" />
+    <edge source="ipykernel" target="comm" />
+    <edge source="ipykernel" target="debugpy" />
+    <edge source="ipykernel" target="ipython" />
+    <edge source="ipykernel" target="jupyter-client" />
+    <edge source="ipykernel" target="jupyter-core" />
+    <edge source="ipykernel" target="matplotlib-inline" />
+    <edge source="ipykernel" target="nest-asyncio" />
+    <edge source="ipykernel" target="packaging" />
+    <edge source="ipykernel" target="psutil" />
+    <edge source="ipykernel" target="pyzmq" />
+    <edge source="ipykernel" target="tornado" />
+    <edge source="ipykernel" target="traitlets" />
+    <edge source="ipython" target="colorama" />
+    <edge source="ipython" target="decorator" />
+    <edge source="ipython" target="ipython-pygments-lexers" />
+    <edge source="ipython" target="jedi" />
+    <edge source="ipython" target="matplotlib-inline" />
+    <edge source="ipython" target="pexpect" />
+    <edge source="ipython" target="prompt-toolkit" />
+    <edge source="ipython" target="pygments" />
+    <edge source="ipython" target="stack-data" />
+    <edge source="ipython" target="traitlets" />
+    <edge source="ipython-pygments-lexers" target="pygments" />
+    <edge source="ipywidgets" target="comm" />
+    <edge source="ipywidgets" target="ipython" />
+    <edge source="ipywidgets" target="jupyterlab-widgets" />
+    <edge source="ipywidgets" target="traitlets" />
+    <edge source="ipywidgets" target="widgetsnbextension" />
+    <edge source="isoduration" target="arrow" />
+    <edge source="jaraco-classes" target="more-itertools" />
+    <edge source="jaraco-functools" target="more-itertools" />
+    <edge source="jedi" target="parso" />
+    <edge source="jinja2" target="markupsafe" />
+    <edge source="jsonschema" target="attrs" />
+    <edge source="jsonschema" target="fqdn" />
+    <edge source="jsonschema" target="idna" />
+    <edge source="jsonschema" target="isoduration" />
+    <edge source="jsonschema" target="jsonpointer" />
+    <edge source="jsonschema" target="jsonschema-specifications" />
+    <edge source="jsonschema" target="referencing" />
+    <edge source="jsonschema" target="rfc3339-validator" />
+    <edge source="jsonschema" target="rfc3986-validator" />
+    <edge source="jsonschema" target="rfc3987-syntax" />
+    <edge source="jsonschema" target="rpds-py" />
+    <edge source="jsonschema" target="uri-template" />
+    <edge source="jsonschema" target="webcolors" />
+    <edge source="jsonschema-path" target="pathable" />
+    <edge source="jsonschema-path" target="pyyaml" />
+    <edge source="jsonschema-path" target="referencing" />
+    <edge source="jsonschema-path" target="requests" />
+    <edge source="jsonschema-specifications" target="referencing" />
+    <edge source="jupyter" target="ipykernel" />
+    <edge source="jupyter" target="ipywidgets" />
+    <edge source="jupyter" target="jupyter-console" />
+    <edge source="jupyter" target="jupyterlab" />
+    <edge source="jupyter" target="nbconvert" />
+    <edge source="jupyter" target="notebook" />
+    <edge source="jupyter-client" target="jupyter-core" />
+    <edge source="jupyter-client" target="python-dateutil" />
+    <edge source="jupyter-client" target="pyzmq" />
+    <edge source="jupyter-client" target="tornado" />
+    <edge source="jupyter-client" target="traitlets" />
+    <edge source="jupyter-console" target="ipykernel" />
+    <edge source="jupyter-console" target="ipython" />
+    <edge source="jupyter-console" target="jupyter-client" />
+    <edge source="jupyter-console" target="jupyter-core" />
+    <edge source="jupyter-console" target="prompt-toolkit" />
+    <edge source="jupyter-console" target="pygments" />
+    <edge source="jupyter-console" target="pyzmq" />
+    <edge source="jupyter-console" target="traitlets" />
+    <edge source="jupyter-core" target="platformdirs" />
+    <edge source="jupyter-core" target="traitlets" />
+    <edge source="jupyter-events" target="jsonschema" />
+    <edge source="jupyter-events" target="packaging" />
+    <edge source="jupyter-events" target="python-json-logger" />
+    <edge source="jupyter-events" target="pyyaml" />
+    <edge source="jupyter-events" target="referencing" />
+    <edge source="jupyter-events" target="rfc3339-validator" />
+    <edge source="jupyter-events" target="rfc3986-validator" />
+    <edge source="jupyter-events" target="traitlets" />
+    <edge source="jupyter-lsp" target="jupyter-server" />
+    <edge source="jupyter-server" target="anyio" />
+    <edge source="jupyter-server" target="argon2-cffi" />
+    <edge source="jupyter-server" target="jinja2" />
+    <edge source="jupyter-server" target="jupyter-client" />
+    <edge source="jupyter-server" target="jupyter-core" />
+    <edge source="jupyter-server" target="jupyter-events" />
+    <edge source="jupyter-server" target="jupyter-server-terminals" />
+    <edge source="jupyter-server" target="nbconvert" />
+    <edge source="jupyter-server" target="nbformat" />
+    <edge source="jupyter-server" target="packaging" />
+    <edge source="jupyter-server" target="prometheus-client" />
+    <edge source="jupyter-server" target="pywinpty" />
+    <edge source="jupyter-server" target="pyzmq" />
+    <edge source="jupyter-server" target="send2trash" />
+    <edge source="jupyter-server" target="terminado" />
+    <edge source="jupyter-server" target="tornado" />
+    <edge source="jupyter-server" target="traitlets" />
+    <edge source="jupyter-server" target="websocket-client" />
+    <edge source="jupyter-server-terminals" target="pywinpty" />
+    <edge source="jupyter-server-terminals" target="terminado" />
+    <edge source="jupyterlab" target="async-lru" />
+    <edge source="jupyterlab" target="httpx" />
+    <edge source="jupyterlab" target="ipykernel" />
+    <edge source="jupyterlab" target="jinja2" />
+    <edge source="jupyterlab" target="jupyter-core" />
+    <edge source="jupyterlab" target="jupyter-lsp" />
+    <edge source="jupyterlab" target="jupyter-server" />
+    <edge source="jupyterlab" target="jupyterlab-server" />
+    <edge source="jupyterlab" target="notebook-shim" />
+    <edge source="jupyterlab" target="packaging" />
+    <edge source="jupyterlab" target="setuptools" />
+    <edge source="jupyterlab" target="tornado" />
+    <edge source="jupyterlab" target="traitlets" />
+    <edge source="jupyterlab-server" target="babel" />
+    <edge source="jupyterlab-server" target="jinja2" />
+    <edge source="jupyterlab-server" target="json5" />
+    <edge source="jupyterlab-server" target="jsonschema" />
+    <edge source="jupyterlab-server" target="jupyter-server" />
+    <edge source="jupyterlab-server" target="packaging" />
+    <edge source="jupyterlab-server" target="requests" />
+    <edge source="keyring" target="jaraco-classes" />
+    <edge source="keyring" target="jaraco-context" />
+    <edge source="keyring" target="jaraco-functools" />
+    <edge source="keyring" target="jeepney" />
+    <edge source="keyring" target="pywin32-ctypes" />
+    <edge source="keyring" target="secretstorage" />
+    <edge source="mako" target="markupsafe" />
+    <edge source="markdown-it-py" target="mdurl" />
+    <edge source="matplotlib" target="contourpy" />
+    <edge source="matplotlib" target="cycler" />
+    <edge source="matplotlib" target="fonttools" />
+    <edge source="matplotlib" target="kiwisolver" />
+    <edge source="matplotlib" target="numpy" />
+    <edge source="matplotlib" target="packaging" />
+    <edge source="matplotlib" target="pillow" />
+    <edge source="matplotlib" target="pyparsing" />
+    <edge source="matplotlib" target="python-dateutil" />
+    <edge source="matplotlib-inline" target="traitlets" />
+    <edge source="mcp" target="anyio" />
+    <edge source="mcp" target="httpx" />
+    <edge source="mcp" target="httpx-sse" />
+    <edge source="mcp" target="jsonschema" />
+    <edge source="mcp" target="pydantic" />
+    <edge source="mcp" target="pydantic-settings" />
+    <edge source="mcp" target="pyjwt" />
+    <edge source="mcp" target="python-multipart" />
+    <edge source="mcp" target="pywin32" />
+    <edge source="mcp" target="sse-starlette" />
+    <edge source="mcp" target="starlette" />
+    <edge source="mcp" target="typing-extensions" />
+    <edge source="mcp" target="typing-inspection" />
+    <edge source="mcp" target="uvicorn" />
+    <edge source="mcp" target="websockets" />
+    <edge source="msal" target="cryptography" />
+    <edge source="msal" target="pyjwt" />
+    <edge source="msal" target="requests" />
+    <edge source="msal-extensions" target="msal" />
+    <edge source="msrest" target="azure-core" />
+    <edge source="msrest" target="certifi" />
+    <edge source="msrest" target="isodate" />
+    <edge source="msrest" target="requests" />
+    <edge source="msrest" target="requests-oauthlib" />
+    <edge source="nbclient" target="jupyter-client" />
+    <edge source="nbclient" target="jupyter-core" />
+    <edge source="nbclient" target="nbformat" />
+    <edge source="nbclient" target="traitlets" />
+    <edge source="nbconvert" target="beautifulsoup4" />
+    <edge source="nbconvert" target="bleach" />
+    <edge source="nbconvert" target="defusedxml" />
+    <edge source="nbconvert" target="jinja2" />
+    <edge source="nbconvert" target="jupyter-core" />
+    <edge source="nbconvert" target="jupyterlab-pygments" />
+    <edge source="nbconvert" target="markupsafe" />
+    <edge source="nbconvert" target="mistune" />
+    <edge source="nbconvert" target="nbclient" />
+    <edge source="nbconvert" target="nbformat" />
+    <edge source="nbconvert" target="packaging" />
+    <edge source="nbconvert" target="pandocfilters" />
+    <edge source="nbconvert" target="pygments" />
+    <edge source="nbconvert" target="traitlets" />
+    <edge source="nbformat" target="fastjsonschema" />
+    <edge source="nbformat" target="jsonschema" />
+    <edge source="nbformat" target="jupyter-core" />
+    <edge source="nbformat" target="traitlets" />
+    <edge source="nltk" target="click" />
+    <edge source="nltk" target="joblib" />
+    <edge source="nltk" target="regex" />
+    <edge source="nltk" target="tqdm" />
+    <edge source="notebook" target="jupyter-server" />
+    <edge source="notebook" target="jupyterlab" />
+    <edge source="notebook" target="jupyterlab-server" />
+    <edge source="notebook" target="notebook-shim" />
+    <edge source="notebook" target="tornado" />
+    <edge source="notebook-shim" target="jupyter-server" />
+    <edge source="openai" target="anyio" />
+    <edge source="openai" target="distro" />
+    <edge source="openai" target="httpx" />
+    <edge source="openai" target="jiter" />
+    <edge source="openai" target="pydantic" />
+    <edge source="openai" target="sniffio" />
+    <edge source="openai" target="tqdm" />
+    <edge source="openai" target="typing-extensions" />
+    <edge source="openapi-pydantic" target="pydantic" />
+    <edge source="opentelemetry-api" target="importlib-metadata" />
+    <edge source="opentelemetry-api" target="typing-extensions" />
+    <edge source="opentelemetry-exporter-otlp-proto-common" target="opentelemetry-proto" />
+    <edge source="opentelemetry-exporter-otlp-proto-grpc" target="googleapis-common-protos" />
+    <edge source="opentelemetry-exporter-otlp-proto-grpc" target="grpcio" />
+    <edge source="opentelemetry-exporter-otlp-proto-grpc" target="opentelemetry-api" />
+    <edge source="opentelemetry-exporter-otlp-proto-grpc" target="opentelemetry-exporter-otlp-proto-common" />
+    <edge source="opentelemetry-exporter-otlp-proto-grpc" target="opentelemetry-proto" />
+    <edge source="opentelemetry-exporter-otlp-proto-grpc" target="opentelemetry-sdk" />
+    <edge source="opentelemetry-exporter-otlp-proto-grpc" target="typing-extensions" />
+    <edge source="opentelemetry-instrumentation" target="opentelemetry-api" />
+    <edge source="opentelemetry-instrumentation" target="opentelemetry-semantic-conventions" />
+    <edge source="opentelemetry-instrumentation" target="packaging" />
+    <edge source="opentelemetry-instrumentation" target="wrapt" />
+    <edge source="opentelemetry-instrumentation-asgi" target="asgiref" />
+    <edge source="opentelemetry-instrumentation-asgi" target="opentelemetry-api" />
+    <edge source="opentelemetry-instrumentation-asgi" target="opentelemetry-instrumentation" />
+    <edge source="opentelemetry-instrumentation-asgi" target="opentelemetry-semantic-conventions" />
+    <edge source="opentelemetry-instrumentation-asgi" target="opentelemetry-util-http" />
+    <edge source="opentelemetry-instrumentation-dbapi" target="opentelemetry-api" />
+    <edge source="opentelemetry-instrumentation-dbapi" target="opentelemetry-instrumentation" />
+    <edge source="opentelemetry-instrumentation-dbapi" target="opentelemetry-semantic-conventions" />
+    <edge source="opentelemetry-instrumentation-dbapi" target="wrapt" />
+    <edge source="opentelemetry-instrumentation-django" target="opentelemetry-api" />
+    <edge source="opentelemetry-instrumentation-django" target="opentelemetry-instrumentation" />
+    <edge source="opentelemetry-instrumentation-django" target="opentelemetry-instrumentation-wsgi" />
+    <edge source="opentelemetry-instrumentation-django" target="opentelemetry-semantic-conventions" />
+    <edge source="opentelemetry-instrumentation-django" target="opentelemetry-util-http" />
+    <edge source="opentelemetry-instrumentation-fastapi" target="opentelemetry-api" />
+    <edge source="opentelemetry-instrumentation-fastapi" target="opentelemetry-instrumentation" />
+    <edge source="opentelemetry-instrumentation-fastapi" target="opentelemetry-instrumentation-asgi" />
+    <edge source="opentelemetry-instrumentation-fastapi" target="opentelemetry-semantic-conventions" />
+    <edge source="opentelemetry-instrumentation-fastapi" target="opentelemetry-util-http" />
+    <edge source="opentelemetry-instrumentation-flask" target="opentelemetry-api" />
+    <edge source="opentelemetry-instrumentation-flask" target="opentelemetry-instrumentation" />
+    <edge source="opentelemetry-instrumentation-flask" target="opentelemetry-instrumentation-wsgi" />
+    <edge source="opentelemetry-instrumentation-flask" target="opentelemetry-semantic-conventions" />
+    <edge source="opentelemetry-instrumentation-flask" target="opentelemetry-util-http" />
+    <edge source="opentelemetry-instrumentation-flask" target="packaging" />
+    <edge source="opentelemetry-instrumentation-httpx" target="opentelemetry-api" />
+    <edge source="opentelemetry-instrumentation-httpx" target="opentelemetry-instrumentation" />
+    <edge source="opentelemetry-instrumentation-httpx" target="opentelemetry-semantic-conventions" />
+    <edge source="opentelemetry-instrumentation-httpx" target="opentelemetry-util-http" />
+    <edge source="opentelemetry-instrumentation-httpx" target="wrapt" />
+    <edge source="opentelemetry-instrumentation-logging" target="opentelemetry-api" />
+    <edge source="opentelemetry-instrumentation-logging" target="opentelemetry-instrumentation" />
+    <edge source="opentelemetry-instrumentation-psycopg2" target="opentelemetry-api" />
+    <edge source="opentelemetry-instrumentation-psycopg2" target="opentelemetry-instrumentation" />
+    <edge source="opentelemetry-instrumentation-psycopg2" target="opentelemetry-instrumentation-dbapi" />
+    <edge source="opentelemetry-instrumentation-requests" target="opentelemetry-api" />
+    <edge source="opentelemetry-instrumentation-requests" target="opentelemetry-instrumentation" />
+    <edge source="opentelemetry-instrumentation-requests" target="opentelemetry-semantic-conventions" />
+    <edge source="opentelemetry-instrumentation-requests" target="opentelemetry-util-http" />
+    <edge source="opentelemetry-instrumentation-urllib" target="opentelemetry-api" />
+    <edge source="opentelemetry-instrumentation-urllib" target="opentelemetry-instrumentation" />
+    <edge source="opentelemetry-instrumentation-urllib" target="opentelemetry-semantic-conventions" />
+    <edge source="opentelemetry-instrumentation-urllib" target="opentelemetry-util-http" />
+    <edge source="opentelemetry-instrumentation-urllib3" target="opentelemetry-api" />
+    <edge source="opentelemetry-instrumentation-urllib3" target="opentelemetry-instrumentation" />
+    <edge source="opentelemetry-instrumentation-urllib3" target="opentelemetry-semantic-conventions" />
+    <edge source="opentelemetry-instrumentation-urllib3" target="opentelemetry-util-http" />
+    <edge source="opentelemetry-instrumentation-urllib3" target="wrapt" />
+    <edge source="opentelemetry-instrumentation-wsgi" target="opentelemetry-api" />
+    <edge source="opentelemetry-instrumentation-wsgi" target="opentelemetry-instrumentation" />
+    <edge source="opentelemetry-instrumentation-wsgi" target="opentelemetry-semantic-conventions" />
+    <edge source="opentelemetry-instrumentation-wsgi" target="opentelemetry-util-http" />
+    <edge source="opentelemetry-proto" target="protobuf" />
+    <edge source="opentelemetry-resource-detector-azure" target="opentelemetry-sdk" />
+    <edge source="opentelemetry-sdk" target="opentelemetry-api" />
+    <edge source="opentelemetry-sdk" target="opentelemetry-semantic-conventions" />
+    <edge source="opentelemetry-sdk" target="typing-extensions" />
+    <edge source="opentelemetry-semantic-conventions" target="opentelemetry-api" />
+    <edge source="opentelemetry-semantic-conventions" target="typing-extensions" />
+    <edge source="pandas" target="numpy" />
+    <edge source="pandas" target="python-dateutil" />
+    <edge source="pandas" target="pytz" />
+    <edge source="pandas" target="tzdata" />
+    <edge source="pexpect" target="ptyprocess" />
+    <edge source="pgvector" target="numpy" />
+    <edge source="polars" target="polars-runtime-32" />
+    <edge source="prompt-toolkit" target="wcwidth" />
+    <edge source="py-key-value-aio" target="beartype" />
+    <edge source="py-key-value-aio" target="cachetools" />
+    <edge source="py-key-value-aio" target="diskcache" />
+    <edge source="py-key-value-aio" target="keyring" />
+    <edge source="py-key-value-aio" target="pathvalidate" />
+    <edge source="py-key-value-aio" target="py-key-value-shared" />
+    <edge source="py-key-value-aio" target="redis" />
+    <edge source="py-key-value-shared" target="beartype" />
+    <edge source="py-key-value-shared" target="typing-extensions" />
+    <edge source="pydantic" target="annotated-types" />
+    <edge source="pydantic" target="email-validator" />
+    <edge source="pydantic" target="pydantic-core" />
+    <edge source="pydantic" target="typing-extensions" />
+    <edge source="pydantic" target="typing-inspection" />
+    <edge source="pydantic-core" target="typing-extensions" />
+    <edge source="pydantic-extra-types" target="pydantic" />
+    <edge source="pydantic-extra-types" target="typing-extensions" />
+    <edge source="pydantic-settings" target="pydantic" />
+    <edge source="pydantic-settings" target="python-dotenv" />
+    <edge source="pydantic-settings" target="typing-inspection" />
+    <edge source="pydeck" target="jinja2" />
+    <edge source="pydeck" target="numpy" />
+    <edge source="pydocket" target="cloudpickle" />
+    <edge source="pydocket" target="fakeredis" />
+    <edge source="pydocket" target="opentelemetry-api" />
+    <edge source="pydocket" target="prometheus-client" />
+    <edge source="pydocket" target="py-key-value-aio" />
+    <edge source="pydocket" target="python-json-logger" />
+    <edge source="pydocket" target="redis" />
+    <edge source="pydocket" target="rich" />
+    <edge source="pydocket" target="typer" />
+    <edge source="pydocket" target="typing-extensions" />
+    <edge source="pyjwt" target="cryptography" />
+    <edge source="pylint" target="astroid" />
+    <edge source="pylint" target="colorama" />
+    <edge source="pylint" target="dill" />
+    <edge source="pylint" target="isort" />
+    <edge source="pylint" target="mccabe" />
+    <edge source="pylint" target="platformdirs" />
+    <edge source="pylint" target="tomlkit" />
+    <edge source="pytest" target="colorama" />
+    <edge source="pytest" target="iniconfig" />
+    <edge source="pytest" target="packaging" />
+    <edge source="pytest" target="pluggy" />
+    <edge source="pytest" target="pygments" />
+    <edge source="pytest-asyncio" target="pytest" />
+    <edge source="pytest-cov" target="coverage" />
+    <edge source="pytest-cov" target="pluggy" />
+    <edge source="pytest-cov" target="pytest" />
+    <edge source="pytest-randomly" target="pytest" />
+    <edge source="python-dateutil" target="six" />
+    <edge source="pyvis" target="ipython" />
+    <edge source="pyvis" target="jinja2" />
+    <edge source="pyvis" target="jsonpickle" />
+    <edge source="pyvis" target="networkx" />
+    <edge source="pyzmq" target="cffi" />
+    <edge source="rdflib" target="pyparsing" />
+    <edge source="referencing" target="attrs" />
+    <edge source="referencing" target="rpds-py" />
+    <edge source="requests" target="certifi" />
+    <edge source="requests" target="charset-normalizer" />
+    <edge source="requests" target="idna" />
+    <edge source="requests" target="urllib3" />
+    <edge source="requests-oauthlib" target="oauthlib" />
+    <edge source="requests-oauthlib" target="requests" />
+    <edge source="rfc3339-validator" target="six" />
+    <edge source="rfc3987-syntax" target="lark" />
+    <edge source="rich" target="markdown-it-py" />
+    <edge source="rich" target="pygments" />
+    <edge source="rich-rst" target="docutils" />
+    <edge source="rich-rst" target="rich" />
+    <edge source="rich-toolkit" target="click" />
+    <edge source="rich-toolkit" target="rich" />
+    <edge source="rich-toolkit" target="typing-extensions" />
+    <edge source="secretstorage" target="cryptography" />
+    <edge source="secretstorage" target="jeepney" />
+    <edge source="sentry-sdk" target="certifi" />
+    <edge source="sentry-sdk" target="urllib3" />
+    <edge source="sqlalchemy" target="greenlet" />
+    <edge source="sqlalchemy" target="typing-extensions" />
+    <edge source="sqlalchemy-utils" target="sqlalchemy" />
+    <edge source="sse-starlette" target="anyio" />
+    <edge source="sse-starlette" target="starlette" />
+    <edge source="stack-data" target="asttokens" />
+    <edge source="stack-data" target="executing" />
+    <edge source="stack-data" target="pure-eval" />
+    <edge source="starlette" target="anyio" />
+    <edge source="streamlit" target="altair" />
+    <edge source="streamlit" target="blinker" />
+    <edge source="streamlit" target="cachetools" />
+    <edge source="streamlit" target="click" />
+    <edge source="streamlit" target="gitpython" />
+    <edge source="streamlit" target="numpy" />
+    <edge source="streamlit" target="packaging" />
+    <edge source="streamlit" target="pandas" />
+    <edge source="streamlit" target="pillow" />
+    <edge source="streamlit" target="protobuf" />
+    <edge source="streamlit" target="pyarrow" />
+    <edge source="streamlit" target="pydeck" />
+    <edge source="streamlit" target="requests" />
+    <edge source="streamlit" target="tenacity" />
+    <edge source="streamlit" target="toml" />
+    <edge source="streamlit" target="tornado" />
+    <edge source="streamlit" target="typing-extensions" />
+    <edge source="streamlit" target="watchdog" />
+    <edge source="terminado" target="ptyprocess" />
+    <edge source="terminado" target="pywinpty" />
+    <edge source="terminado" target="tornado" />
+    <edge source="tiktoken" target="regex" />
+    <edge source="tiktoken" target="requests" />
+    <edge source="tinycss2" target="webencodings" />
+    <edge source="tqdm" target="colorama" />
+    <edge source="typer" target="click" />
+    <edge source="typer" target="rich" />
+    <edge source="typer" target="shellingham" />
+    <edge source="typer" target="typing-extensions" />
+    <edge source="typing-inspection" target="typing-extensions" />
+    <edge source="uvicorn" target="click" />
+    <edge source="uvicorn" target="colorama" />
+    <edge source="uvicorn" target="h11" />
+    <edge source="uvicorn" target="httptools" />
+    <edge source="uvicorn" target="python-dotenv" />
+    <edge source="uvicorn" target="pyyaml" />
+    <edge source="uvicorn" target="uvloop" />
+    <edge source="uvicorn" target="watchfiles" />
+    <edge source="uvicorn" target="websockets" />
+    <edge source="watchfiles" target="anyio" />
+    <edge source="yarl" target="idna" />
+    <edge source="yarl" target="multidict" />
+    <edge source="yarl" target="propcache" />
+  </graph>
+</graphml>

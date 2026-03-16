@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="directed">
+    <node id="anyio" />
+    <node id="tqdm" />
+    <node id="colorama" />
+    <node id="typing-inspection" />
+    <node id="h11" />
+    <node id="email-validator" />
+    <node id="httpx" />
+    <node id="pygments" />
+    <node id="markdown-it-py" />
+    <node id="rich" />
+    <node id="distro" />
+    <node id="idna" />
+    <node id="pydantic-core" />
+    <node id="typing-extensions" />
+    <node id="mdurl" />
+    <node id="certifi" />
+    <node id="jiter" />
+    <node id="dnspython" />
+    <node id="click" />
+    <node id="openai" />
+    <node id="pydantic" />
+    <node id="httpcore" />
+    <node id="annotated-types" />
+    <node id="sniffio" />
+    <edge source="anyio" target="idna" />
+    <edge source="tqdm" target="colorama" />
+    <edge source="typing-inspection" target="typing-extensions" />
+    <edge source="email-validator" target="dnspython" />
+    <edge source="email-validator" target="idna" />
+    <edge source="httpx" target="anyio" />
+    <edge source="httpx" target="certifi" />
+    <edge source="httpx" target="click" />
+    <edge source="httpx" target="httpcore" />
+    <edge source="httpx" target="idna" />
+    <edge source="httpx" target="pygments" />
+    <edge source="httpx" target="rich" />
+    <edge source="markdown-it-py" target="mdurl" />
+    <edge source="rich" target="markdown-it-py" />
+    <edge source="rich" target="pygments" />
+    <edge source="pydantic-core" target="typing-extensions" />
+    <edge source="click" target="colorama" />
+    <edge source="openai" target="anyio" />
+    <edge source="openai" target="distro" />
+    <edge source="openai" target="httpx" />
+    <edge source="openai" target="jiter" />
+    <edge source="openai" target="pydantic" />
+    <edge source="openai" target="sniffio" />
+    <edge source="openai" target="tqdm" />
+    <edge source="openai" target="typing-extensions" />
+    <edge source="pydantic" target="annotated-types" />
+    <edge source="pydantic" target="email-validator" />
+    <edge source="pydantic" target="pydantic-core" />
+    <edge source="pydantic" target="typing-extensions" />
+    <edge source="pydantic" target="typing-inspection" />
+    <edge source="httpcore" target="certifi" />
+    <edge source="httpcore" target="h11" />
+  </graph>
+</graphml>

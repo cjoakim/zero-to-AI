@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "font": {"color": "#333333"}, "id": "anyio", "label": "anyio", "shape": "dot", "size": 10, "title": "anyio"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "tqdm", "label": "tqdm", "shape": "dot", "size": 10, "title": "tqdm"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "colorama", "label": "colorama", "shape": "dot", "size": 10, "title": "colorama"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "typing-inspection", "label": "typing-inspection", "shape": "dot", "size": 10, "title": "typing-inspection"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "h11", "label": "h11", "shape": "dot", "size": 10, "title": "h11"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "email-validator", "label": "email-validator", "shape": "dot", "size": 10, "title": "email-validator"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "httpx", "label": "httpx", "shape": "dot", "size": 10, "title": "httpx"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "pygments", "label": "pygments", "shape": "dot", "size": 10, "title": "pygments"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "markdown-it-py", "label": "markdown-it-py", "shape": "dot", "size": 10, "title": "markdown-it-py"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "rich", "label": "rich", "shape": "dot", "size": 10, "title": "rich"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "distro", "label": "distro", "shape": "dot", "size": 10, "title": "distro"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "idna", "label": "idna", "shape": "dot", "size": 10, "title": "idna"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "pydantic-core", "label": "pydantic-core", "shape": "dot", "size": 10, "title": "pydantic-core"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "typing-extensions", "label": "typing-extensions", "shape": "dot", "size": 10, "title": "typing-extensions"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "mdurl", "label": "mdurl", "shape": "dot", "size": 10, "title": "mdurl"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "certifi", "label": "certifi", "shape": "dot", "size": 10, "title": "certifi"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "jiter", "label": "jiter", "shape": "dot", "size": 10, "title": "jiter"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "dnspython", "label": "dnspython", "shape": "dot", "size": 10, "title": "dnspython"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "click", "label": "click", "shape": "dot", "size": 10, "title": "click"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "openai", "label": "openai", "shape": "dot", "size": 10, "title": "openai"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "pydantic", "label": "pydantic", "shape": "dot", "size": 10, "title": "pydantic"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "httpcore", "label": "httpcore", "shape": "dot", "size": 10, "title": "httpcore"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "annotated-types", "label": "annotated-types", "shape": "dot", "size": 10, "title": "annotated-types"}, {"color": "#97c2fc", "font": {"color": "#333333"}, "id": "sniffio", "label": "sniffio", "shape": "dot", "size": 10, "title": "sniffio"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "anyio", "to": "idna"}, {"arrows": "to", "from": "tqdm", "to": "colorama"}, {"arrows": "to", "from": "typing-inspection", "to": "typing-extensions"}, {"arrows": "to", "from": "email-validator", "to": "dnspython"}, {"arrows": "to", "from": "email-validator", "to": "idna"}, {"arrows": "to", "from": "httpx", "to": "anyio"}, {"arrows": "to", "from": "httpx", "to": "certifi"}, {"arrows": "to", "from": "httpx", "to": "click"}, {"arrows": "to", "from": "httpx", "to": "httpcore"}, {"arrows": "to", "from": "httpx", "to": "idna"}, {"arrows": "to", "from": "httpx", "to": "pygments"}, {"arrows": "to", "from": "httpx", "to": "rich"}, {"arrows": "to", "from": "markdown-it-py", "to": "mdurl"}, {"arrows": "to", "from": "rich", "to": "markdown-it-py"}, {"arrows": "to", "from": "rich", "to": "pygments"}, {"arrows": "to", "from": "pydantic-core", "to": "typing-extensions"}, {"arrows": "to", "from": "click", "to": "colorama"}, {"arrows": "to", "from": "openai", "to": "anyio"}, {"arrows": "to", "from": "openai", "to": "distro"}, {"arrows": "to", "from": "openai", "to": "httpx"}, {"arrows": "to", "from": "openai", "to": "jiter"}, {"arrows": "to", "from": "openai", "to": "pydantic"}, {"arrows": "to", "from": "openai", "to": "sniffio"}, {"arrows": "to", "from": "openai", "to": "tqdm"}, {"arrows": "to", "from": "openai", "to": "typing-extensions"}, {"arrows": "to", "from": "pydantic", "to": "annotated-types"}, {"arrows": "to", "from": "pydantic", "to": "email-validator"}, {"arrows": "to", "from": "pydantic", "to": "pydantic-core"}, {"arrows": "to", "from": "pydantic", "to": "typing-extensions"}, {"arrows": "to", "from": "pydantic", "to": "typing-inspection"}, {"arrows": "to", "from": "httpcore", "to": "certifi"}, {"arrows": "to", "from": "httpcore", "to": "h11"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"title": "openaiandtransitivedependencies", "edges": {"color": {"inherit": true}, "smooth": {"enabled": true, "type": "dynamic"}}, "physics": {"enabled": true, "stabilization": {"enabled": true, "iterations": 1000}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
