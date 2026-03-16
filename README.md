@@ -39,17 +39,17 @@ The goal is to <strong>empower students to build AI solutions.</strong>
 
 -  9  -  [Azure Storage](docs/session-azure-storage.md)
 -  10  -  [Models, Catalogs, Tokens, Prompts, Foundry](docs/session-models-catalogs-tokens-prompts-foundry.md)
--  11  -  [Azure OpenAI SDK](docs/session-not-available.md)
--  12  -  [Azure CosmosDB](docs/session-not-available.md)
--  13  -  [Azure Search](docs/session-not-available.md)
+-  11  -  [Azure OpenAI SDK](docs/session-azure-openai-sdk.md)
+-  12  -  [Azure CosmosDB](docs/session-azure-cosmosdb.md)
+-  13  -  [Azure Search](docs/session-azure-search.md)
 
 ## Part 3 - AI
 
 -  14  -  [Text Extraction, Markdown, Chunking, and Vectorization](docs/session-text-extraction.md)
--  15  -  [MCP, the Model Context Protocol](docs/session-not-available.md)
--  16  -  [Knowledge Graphs](docs/session-not-available.md)
+-  15  -  [MCP, the Model Context Protocol](docs/session-mcp-the-model-context-protocol.md)
+-  16  -  [Knowledge Graphs](docs/session-knowledge-graphs.md)
 -  17  -  [Azure Agent Framework](docs/session-not-available.md)
--  18  -  [Your Turn, Create Something!](docs/session-not-available.md)
+-  18  -  [Your Turn, Create Something!](docs/session-your-turn-create-something.md)
 
 <br>
 
