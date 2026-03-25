@@ -21,5 +21,5 @@ def test_parse_tree():
     data = uvp.parse_tree()
     assert isinstance(data, list)
 
-    assert len(data) > 780
+    assert len(data) > 760
     assert len(data) < 800
