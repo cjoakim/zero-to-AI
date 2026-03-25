@@ -2,6 +2,7 @@
 
 **/__MACOSX/
 **/__pycache__/
+**/.claude/
 **/.DS_Store
 **/.env
 **/.gradle/
@@ -16,6 +17,8 @@
 **/bin/
 **/build/
 **/chroma/
+**/claude*
+**/CLAUDE*
 **/dist/
 **/docs/private/
 **/gradle/
@@ -32,8 +35,8 @@
 **/port*.sh
 **/private.*
 **/pvt/
-**/python/env.txt
 **/python/*private*
+**/python/env.txt
 **/python/system-test.sh
 **/pyvenv.cfg
 **/Scripts/
