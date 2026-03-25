@@ -78,7 +78,7 @@ def test_all():
     assert "python-multipart" in dep_names
     assert "pytz" in dep_names
     assert "rdflib" in dep_names
-    assert "six" in dep_names
+    #assert "six" in dep_names
     assert "sqlalchemy_utils" in dep_names
     assert "streamlit" in dep_names
     assert "tenacity" in dep_names

@@ -207,9 +207,6 @@ class Env:
     def azure_foundry_project_key(cls) -> str:
         return cls.azure_envvar("AZURE_FOUNDRY_PROJECT_KEY", None)
 
-    @classmethod
-    def azure_foundry_project_key(cls) -> str:
-        return cls.azure_envvar("AZURE_FOUNDRY_PROJECT_KEY", None)
 
     @classmethod
     def azure_foundry_project_name(cls) -> str:

@@ -613,7 +613,9 @@ zero-to-ai v1.0.0
 │   └── networkx v3.6.1
 ├── rdflib v7.5.0
 │   └── pyparsing v3.3.1
-├── six v1.17.0
+├── reportlab v4.4.10
+│   ├── charset-normalizer v3.4.4
+│   └── pillow v12.1.0
 ├── sqlalchemy v2.0.46 (*)
 ├── sqlalchemy-utils v0.42.1
 │   └── sqlalchemy v2.0.46 (*)

@@ -2,7 +2,8 @@
 Usage:
   python main-agent-framework.py <func>
   python main-agent-framework.py check_env
-  python main-agent-framework.py explore1
+  python main-agent-framework.py generate_completion
+  python main-agent-framework.py generate_embedding Consulting companies like 3Cloud and Cognizant
 Options:
   -h --help     Show this screen.
   --version     Show version.
@@ -11,7 +12,7 @@ Options:
 # Chris Joakim, 3Cloud/Cognizant, 2026
 
 import asyncio
-import json
+import logging
 import sys
 import os
 import traceback
@@ -21,12 +22,9 @@ from pprint import pprint
 from docopt import docopt
 from dotenv import load_dotenv
 
-
 from openai import OpenAI
 
-from src.ai.aoai_util import AOAIUtil
-from src.io.fs import FS
-
+from src.ai.ai_util import AIUtil
 
 def print_options(msg):
     print(msg)
@@ -42,11 +40,20 @@ async def check_env():
             print("{}: {}".format(name, os.environ[name]))
 
 
-async def explore1():
+async def generate_completion():
     await asyncio.sleep(0.01)
     #simple_openai_response()
-    simple_openai_response_chaining()
+    #simple_openai_response_chaining()
 
+    ai_util = AIUtil()
+    comp = await ai_util.generate_completion(
+        "You are a grunge music expert.",
+        "Explain the 'Rooster' song by Alice in Chains in 100 words")
+    print(str(type(comp)))
+    print(comp)
+
+    if comp is not None:
+        print(comp.model_dump_json(indent=2)) 
 
 
 def simple_openai_response():
@@ -149,15 +156,26 @@ def simple_openai_response_chaining():
 #         api_key = api_key,
 #         deployment_name = deployment_name)
 
+async def generate_embedding(text: str):
+    await asyncio.sleep(0.01)
+    logging.warning(f"generate_embedding: {text}")
+    ai_util = AIUtil()
+    embedding = await ai_util.generate_embedding(str(text))
+    print(embedding)
+
 
 async def main():
     try:
+        logging.basicConfig(level=logging.INFO)
         load_dotenv(override=True)
         func = sys.argv[1].lower()
         if func == "check_env":
             await check_env()
-        elif func == "explore1":
-            await explore1()
+        elif func == "generate_completion":
+            await generate_completion()
+        elif func == "generate_embedding":
+            text = " ".join(sys.argv[2:])
+            await generate_embedding(text)
         else:
             print_options("Error: invalid function: {}".format(func))
     except Exception as e:
