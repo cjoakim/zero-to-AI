@@ -12,8 +12,8 @@ def test_parse_pip_list():
     assert names[0] == "a2a-sdk"
     assert names[-1] == "zipp"
     assert data["m26"] == "0.3.2"
-    assert len(data) > 290
-    assert len(data) < 310
+    assert len(data) > 310
+    assert len(data) < 350
 
 
 def test_parse_tree():
@@ -21,5 +21,5 @@ def test_parse_tree():
     data = uvp.parse_tree()
     assert isinstance(data, list)
 
-    assert len(data) > 630
-    assert len(data) < 660
+    assert len(data) > 780
+    assert len(data) < 800

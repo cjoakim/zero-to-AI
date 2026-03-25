@@ -1,8 +1,7 @@
 zero-to-ai v1.0.0
-├── agent-framework v1.0.0b251120
-│   └── agent-framework-core v1.0.0b251001
-│       ├── aiofiles v25.1.0
-│       ├── azure-identity v1.25.1
+├── agent-framework v1.0.0rc5
+│   └── agent-framework-core[all] v1.0.0rc5
+│       ├── azure-ai-projects v2.0.1
 │       │   ├── azure-core v1.38.2
 │       │   │   ├── requests v2.32.5
 │       │   │   │   ├── certifi v2025.11.12
@@ -10,120 +9,64 @@ zero-to-ai v1.0.0
 │       │   │   │   ├── idna v3.11
 │       │   │   │   └── urllib3 v2.6.2
 │       │   │   └── typing-extensions v4.15.0
-│       │   ├── cryptography v46.0.3
-│       │   │   └── cffi v2.0.0
-│       │   │       └── pycparser v2.23
-│       │   ├── msal v1.34.0
+│       │   ├── azure-identity v1.25.1
+│       │   │   ├── azure-core v1.38.2 (*)
+│       │   │   ├── cryptography v46.0.3
+│       │   │   │   └── cffi v2.0.0
+│       │   │   │       └── pycparser v2.23
+│       │   │   ├── msal v1.34.0
+│       │   │   │   ├── cryptography v46.0.3 (*)
+│       │   │   │   ├── pyjwt[crypto] v2.10.1
+│       │   │   │   │   └── cryptography v46.0.3 (extra: crypto) (*)
+│       │   │   │   └── requests v2.32.5 (*)
+│       │   │   ├── msal-extensions v1.3.1
+│       │   │   │   └── msal v1.34.0 (*)
+│       │   │   └── typing-extensions v4.15.0
+│       │   ├── azure-storage-blob v12.27.1
+│       │   │   ├── azure-core v1.38.2 (*)
 │       │   │   ├── cryptography v46.0.3 (*)
-│       │   │   ├── pyjwt[crypto] v2.10.1
-│       │   │   │   └── cryptography v46.0.3 (extra: crypto) (*)
-│       │   │   └── requests v2.32.5 (*)
-│       │   ├── msal-extensions v1.3.1
-│       │   │   └── msal v1.34.0 (*)
-│       │   └── typing-extensions v4.15.0
-│       ├── azure-monitor-opentelemetry v1.8.2
-│       │   ├── azure-core v1.38.2 (*)
-│       │   ├── azure-core-tracing-opentelemetry v1.0.0b12
-│       │   │   ├── azure-core v1.38.2 (*)
-│       │   │   └── opentelemetry-api v1.38.0
-│       │   │       ├── importlib-metadata v8.7.1
-│       │   │       │   └── zipp v3.23.0
-│       │   │       └── typing-extensions v4.15.0
-│       │   ├── azure-monitor-opentelemetry-exporter v1.0.0b45
-│       │   │   ├── azure-core v1.38.2 (*)
-│       │   │   ├── azure-identity v1.25.1 (*)
-│       │   │   ├── msrest v0.7.1
-│       │   │   │   ├── azure-core v1.38.2 (*)
+│       │   │   ├── isodate v0.7.2
+│       │   │   └── typing-extensions v4.15.0
+│       │   ├── isodate v0.7.2
+│       │   ├── openai v2.26.0
+│       │   │   ├── anyio v4.12.0
+│       │   │   │   └── idna v3.11
+│       │   │   ├── distro v1.9.0
+│       │   │   ├── httpx v0.28.1
+│       │   │   │   ├── anyio v4.12.0 (*)
 │       │   │   │   ├── certifi v2025.11.12
-│       │   │   │   ├── isodate v0.7.2
-│       │   │   │   ├── requests v2.32.5 (*)
-│       │   │   │   └── requests-oauthlib v2.0.0
-│       │   │   │       ├── oauthlib v3.3.1
-│       │   │   │       └── requests v2.32.5 (*)
-│       │   │   ├── opentelemetry-api v1.38.0 (*)
-│       │   │   ├── opentelemetry-sdk v1.38.0
-│       │   │   │   ├── opentelemetry-api v1.38.0 (*)
-│       │   │   │   ├── opentelemetry-semantic-conventions v0.59b0
-│       │   │   │   │   ├── opentelemetry-api v1.38.0 (*)
+│       │   │   │   ├── httpcore v1.0.9
+│       │   │   │   │   ├── certifi v2025.11.12
+│       │   │   │   │   └── h11 v0.16.0
+│       │   │   │   ├── idna v3.11
+│       │   │   │   ├── click v8.3.1 (extra: cli)
+│       │   │   │   ├── pygments v2.19.2 (extra: cli)
+│       │   │   │   ├── rich v13.9.4 (extra: cli)
+│       │   │   │   │   ├── markdown-it-py v4.0.0
+│       │   │   │   │   │   └── mdurl v0.1.2
+│       │   │   │   │   └── pygments v2.19.2
+│       │   │   │   └── h2 v4.3.0 (extra: http2)
+│       │   │   │       ├── hpack v4.1.0
+│       │   │   │       └── hyperframe v6.1.0
+│       │   │   ├── jiter v0.12.0
+│       │   │   ├── pydantic v2.12.5
+│       │   │   │   ├── annotated-types v0.7.0
+│       │   │   │   ├── pydantic-core v2.41.5
 │       │   │   │   │   └── typing-extensions v4.15.0
-│       │   │   │   └── typing-extensions v4.15.0
-│       │   │   └── psutil v7.2.0
-│       │   ├── opentelemetry-instrumentation-django v0.59b0
-│       │   │   ├── opentelemetry-api v1.38.0 (*)
-│       │   │   ├── opentelemetry-instrumentation v0.59b0
-│       │   │   │   ├── opentelemetry-api v1.38.0 (*)
-│       │   │   │   ├── opentelemetry-semantic-conventions v0.59b0 (*)
-│       │   │   │   ├── packaging v25.0
-│       │   │   │   └── wrapt v1.17.3
-│       │   │   ├── opentelemetry-instrumentation-wsgi v0.59b0
-│       │   │   │   ├── opentelemetry-api v1.38.0 (*)
-│       │   │   │   ├── opentelemetry-instrumentation v0.59b0 (*)
-│       │   │   │   ├── opentelemetry-semantic-conventions v0.59b0 (*)
-│       │   │   │   └── opentelemetry-util-http v0.59b0
-│       │   │   ├── opentelemetry-semantic-conventions v0.59b0 (*)
-│       │   │   └── opentelemetry-util-http v0.59b0
-│       │   ├── opentelemetry-instrumentation-fastapi v0.59b0
-│       │   │   ├── opentelemetry-api v1.38.0 (*)
-│       │   │   ├── opentelemetry-instrumentation v0.59b0 (*)
-│       │   │   ├── opentelemetry-instrumentation-asgi v0.59b0
-│       │   │   │   ├── asgiref v3.11.0
-│       │   │   │   ├── opentelemetry-api v1.38.0 (*)
-│       │   │   │   ├── opentelemetry-instrumentation v0.59b0 (*)
-│       │   │   │   ├── opentelemetry-semantic-conventions v0.59b0 (*)
-│       │   │   │   └── opentelemetry-util-http v0.59b0
-│       │   │   ├── opentelemetry-semantic-conventions v0.59b0 (*)
-│       │   │   └── opentelemetry-util-http v0.59b0
-│       │   ├── opentelemetry-instrumentation-flask v0.59b0
-│       │   │   ├── opentelemetry-api v1.38.0 (*)
-│       │   │   ├── opentelemetry-instrumentation v0.59b0 (*)
-│       │   │   ├── opentelemetry-instrumentation-wsgi v0.59b0 (*)
-│       │   │   ├── opentelemetry-semantic-conventions v0.59b0 (*)
-│       │   │   ├── opentelemetry-util-http v0.59b0
-│       │   │   └── packaging v25.0
-│       │   ├── opentelemetry-instrumentation-psycopg2 v0.59b0
-│       │   │   ├── opentelemetry-api v1.38.0 (*)
-│       │   │   ├── opentelemetry-instrumentation v0.59b0 (*)
-│       │   │   └── opentelemetry-instrumentation-dbapi v0.59b0
-│       │   │       ├── opentelemetry-api v1.38.0 (*)
-│       │   │       ├── opentelemetry-instrumentation v0.59b0 (*)
-│       │   │       ├── opentelemetry-semantic-conventions v0.59b0 (*)
-│       │   │       └── wrapt v1.17.3
-│       │   ├── opentelemetry-instrumentation-requests v0.59b0
-│       │   │   ├── opentelemetry-api v1.38.0 (*)
-│       │   │   ├── opentelemetry-instrumentation v0.59b0 (*)
-│       │   │   ├── opentelemetry-semantic-conventions v0.59b0 (*)
-│       │   │   └── opentelemetry-util-http v0.59b0
-│       │   ├── opentelemetry-instrumentation-urllib v0.59b0
-│       │   │   ├── opentelemetry-api v1.38.0 (*)
-│       │   │   ├── opentelemetry-instrumentation v0.59b0 (*)
-│       │   │   ├── opentelemetry-semantic-conventions v0.59b0 (*)
-│       │   │   └── opentelemetry-util-http v0.59b0
-│       │   ├── opentelemetry-instrumentation-urllib3 v0.59b0
-│       │   │   ├── opentelemetry-api v1.38.0 (*)
-│       │   │   ├── opentelemetry-instrumentation v0.59b0 (*)
-│       │   │   ├── opentelemetry-semantic-conventions v0.59b0 (*)
-│       │   │   ├── opentelemetry-util-http v0.59b0
-│       │   │   └── wrapt v1.17.3
-│       │   ├── opentelemetry-resource-detector-azure v0.1.5
-│       │   │   └── opentelemetry-sdk v1.38.0 (*)
-│       │   └── opentelemetry-sdk v1.38.0 (*)
-│       ├── azure-monitor-opentelemetry-exporter v1.0.0b45 (*)
+│       │   │   │   ├── typing-extensions v4.15.0
+│       │   │   │   ├── typing-inspection v0.4.2
+│       │   │   │   │   └── typing-extensions v4.15.0
+│       │   │   │   └── email-validator v2.3.0 (extra: email)
+│       │   │   │       ├── dnspython v2.8.0
+│       │   │   │       └── idna v3.11
+│       │   │   ├── sniffio v1.3.1
+│       │   │   ├── tqdm v4.67.1
+│       │   │   └── typing-extensions v4.15.0
+│       │   └── typing-extensions v4.15.0
+│       ├── azure-identity v1.25.1 (*)
 │       ├── mcp[ws] v1.25.0
-│       │   ├── anyio v4.12.0
-│       │   │   └── idna v3.11
-│       │   ├── httpx v0.28.1
-│       │   │   ├── anyio v4.12.0 (*)
-│       │   │   ├── certifi v2025.11.12
-│       │   │   ├── httpcore v1.0.9
-│       │   │   │   ├── certifi v2025.11.12
-│       │   │   │   └── h11 v0.16.0
-│       │   │   ├── idna v3.11
-│       │   │   ├── click v8.3.1 (extra: cli)
-│       │   │   ├── pygments v2.19.2 (extra: cli)
-│       │   │   └── rich v13.9.4 (extra: cli)
-│       │   │       ├── markdown-it-py v4.0.0
-│       │   │       │   └── mdurl v0.1.2
-│       │   │       └── pygments v2.19.2
+│       │   ├── anyio v4.12.0 (*)
+│       │   ├── httpx v0.28.1 (*)
 │       │   ├── httpx-sse v0.4.3
 │       │   ├── jsonschema v4.25.1
 │       │   │   ├── attrs v25.4.0
@@ -148,16 +91,7 @@ zero-to-ai v1.0.0
 │       │   │   │   └── lark v1.3.1
 │       │   │   ├── uri-template v1.3.0 (extra: format-nongpl)
 │       │   │   └── webcolors v25.10.0 (extra: format-nongpl)
-│       │   ├── pydantic v2.12.5
-│       │   │   ├── annotated-types v0.7.0
-│       │   │   ├── pydantic-core v2.41.5
-│       │   │   │   └── typing-extensions v4.15.0
-│       │   │   ├── typing-extensions v4.15.0
-│       │   │   ├── typing-inspection v0.4.2
-│       │   │   │   └── typing-extensions v4.15.0
-│       │   │   └── email-validator v2.3.0 (extra: email)
-│       │   │       ├── dnspython v2.8.0
-│       │   │       └── idna v3.11
+│       │   ├── pydantic v2.12.5 (*)
 │       │   ├── pydantic-settings v2.12.0
 │       │   │   ├── pydantic v2.12.5 (*)
 │       │   │   ├── python-dotenv v1.2.1
@@ -182,56 +116,266 @@ zero-to-ai v1.0.0
 │       │   │   │   └── anyio v4.12.0 (*)
 │       │   │   └── websockets v15.0.1 (extra: standard)
 │       │   └── websockets v15.0.1 (extra: ws)
-│       ├── openai v2.26.0
-│       │   ├── anyio v4.12.0 (*)
-│       │   ├── distro v1.9.0
-│       │   ├── httpx v0.28.1 (*)
-│       │   ├── jiter v0.12.0
-│       │   ├── pydantic v2.12.5 (*)
-│       │   ├── sniffio v1.3.1
-│       │   ├── tqdm v4.67.1
+│       ├── openai v2.26.0 (*)
+│       ├── opentelemetry-api v1.40.0
+│       │   ├── importlib-metadata v8.7.1
+│       │   │   └── zipp v3.23.0
 │       │   └── typing-extensions v4.15.0
-│       ├── opentelemetry-api v1.38.0 (*)
-│       ├── opentelemetry-exporter-otlp-proto-grpc v1.38.0
-│       │   ├── googleapis-common-protos v1.72.0
-│       │   │   └── protobuf v6.33.2
-│       │   ├── grpcio v1.76.0
+│       ├── opentelemetry-sdk v1.40.0
+│       │   ├── opentelemetry-api v1.40.0 (*)
+│       │   ├── opentelemetry-semantic-conventions v0.61b0
+│       │   │   ├── opentelemetry-api v1.40.0 (*)
 │       │   │   └── typing-extensions v4.15.0
-│       │   ├── opentelemetry-api v1.38.0 (*)
-│       │   ├── opentelemetry-exporter-otlp-proto-common v1.38.0
-│       │   │   └── opentelemetry-proto v1.38.0
-│       │   │       └── protobuf v6.33.2
-│       │   ├── opentelemetry-proto v1.38.0 (*)
-│       │   ├── opentelemetry-sdk v1.38.0 (*)
 │       │   └── typing-extensions v4.15.0
-│       ├── opentelemetry-sdk v1.38.0 (*)
 │       ├── opentelemetry-semantic-conventions-ai v0.4.13
+│       ├── packaging v24.2
 │       ├── pydantic v2.12.5 (*)
-│       ├── pydantic-settings v2.12.0 (*)
-│       └── typing-extensions v4.15.0
-├── aiohttp v3.13.2
-│   ├── aiohappyeyeballs v2.6.1
-│   ├── aiosignal v1.4.0
-│   │   └── frozenlist v1.8.0
-│   ├── attrs v25.4.0
-│   ├── frozenlist v1.8.0
-│   ├── multidict v6.7.0
-│   ├── propcache v0.4.1
-│   └── yarl v1.22.0
-│       ├── idna v3.11
-│       ├── multidict v6.7.0
-│       └── propcache v0.4.1
+│       ├── python-dotenv v1.2.1
+│       ├── typing-extensions v4.15.0
+│       ├── agent-framework-a2a v1.0.0b260319 (extra: all)
+│       │   ├── a2a-sdk v0.3.23
+│       │   │   ├── google-api-core v2.30.0
+│       │   │   │   ├── google-auth v2.49.1
+│       │   │   │   │   ├── cryptography v46.0.3 (*)
+│       │   │   │   │   └── pyasn1-modules v0.4.2
+│       │   │   │   │       └── pyasn1 v0.6.3
+│       │   │   │   ├── googleapis-common-protos v1.72.0
+│       │   │   │   │   └── protobuf v6.33.2
+│       │   │   │   ├── proto-plus v1.27.1
+│       │   │   │   │   └── protobuf v6.33.2
+│       │   │   │   ├── protobuf v6.33.2
+│       │   │   │   └── requests v2.32.5 (*)
+│       │   │   ├── httpx v0.28.1 (*)
+│       │   │   ├── httpx-sse v0.4.3
+│       │   │   ├── protobuf v6.33.2
+│       │   │   └── pydantic v2.12.5 (*)
+│       │   └── agent-framework-core v1.0.0rc5 (*)
+│       ├── agent-framework-ag-ui v1.0.0b260319 (extra: all)
+│       │   ├── ag-ui-protocol v0.1.13
+│       │   │   └── pydantic v2.12.5 (*)
+│       │   ├── agent-framework-core v1.0.0rc5 (*)
+│       │   ├── fastapi v0.128.0
+│       │   │   ├── annotated-doc v0.0.4
+│       │   │   ├── pydantic v2.12.5 (*)
+│       │   │   ├── starlette v0.50.0 (*)
+│       │   │   ├── typing-extensions v4.15.0
+│       │   │   ├── email-validator v2.3.0 (extra: standard) (*)
+│       │   │   ├── fastapi-cli[standard] v0.0.20 (extra: standard)
+│       │   │   │   ├── rich-toolkit v0.17.1
+│       │   │   │   │   ├── click v8.3.1
+│       │   │   │   │   ├── rich v13.9.4 (*)
+│       │   │   │   │   └── typing-extensions v4.15.0
+│       │   │   │   ├── typer v0.21.1
+│       │   │   │   │   ├── click v8.3.1
+│       │   │   │   │   ├── rich v13.9.4 (*)
+│       │   │   │   │   ├── shellingham v1.5.4
+│       │   │   │   │   └── typing-extensions v4.15.0
+│       │   │   │   ├── uvicorn[standard] v0.38.0 (*)
+│       │   │   │   ├── fastapi-cloud-cli v0.11.0 (extra: standard)
+│       │   │   │   │   ├── fastar v0.8.0
+│       │   │   │   │   ├── httpx v0.28.1 (*)
+│       │   │   │   │   ├── pydantic[email] v2.12.5 (*)
+│       │   │   │   │   ├── rich-toolkit v0.17.1 (*)
+│       │   │   │   │   ├── rignore v0.7.6
+│       │   │   │   │   ├── sentry-sdk v2.50.0
+│       │   │   │   │   │   ├── certifi v2025.11.12
+│       │   │   │   │   │   └── urllib3 v2.6.2
+│       │   │   │   │   ├── typer v0.21.1 (*)
+│       │   │   │   │   └── uvicorn[standard] v0.38.0 (*)
+│       │   │   │   └── uvicorn[standard] v0.38.0 (extra: standard) (*)
+│       │   │   ├── httpx v0.28.1 (extra: standard) (*)
+│       │   │   ├── jinja2 v3.1.6 (extra: standard)
+│       │   │   │   └── markupsafe v3.0.3
+│       │   │   ├── pydantic-extra-types v2.11.0 (extra: standard)
+│       │   │   │   ├── pydantic v2.12.5 (*)
+│       │   │   │   └── typing-extensions v4.15.0
+│       │   │   ├── pydantic-settings v2.12.0 (extra: standard) (*)
+│       │   │   ├── python-multipart v0.0.21 (extra: standard)
+│       │   │   └── uvicorn[standard] v0.38.0 (extra: standard) (*)
+│       │   └── uvicorn[standard] v0.38.0 (*)
+│       ├── agent-framework-anthropic v1.0.0b260319 (extra: all)
+│       │   ├── agent-framework-core v1.0.0rc5 (*)
+│       │   └── anthropic v0.80.0
+│       │       ├── anyio v4.12.0 (*)
+│       │       ├── distro v1.9.0
+│       │       ├── docstring-parser v0.17.0
+│       │       ├── httpx v0.28.1 (*)
+│       │       ├── jiter v0.12.0
+│       │       ├── pydantic v2.12.5 (*)
+│       │       ├── sniffio v1.3.1
+│       │       └── typing-extensions v4.15.0
+│       ├── agent-framework-azure-ai v1.0.0rc5 (extra: all)
+│       │   ├── agent-framework-core v1.0.0rc5 (*)
+│       │   ├── aiohttp v3.13.2
+│       │   │   ├── aiohappyeyeballs v2.6.1
+│       │   │   ├── aiosignal v1.4.0
+│       │   │   │   └── frozenlist v1.8.0
+│       │   │   ├── attrs v25.4.0
+│       │   │   ├── frozenlist v1.8.0
+│       │   │   ├── multidict v6.7.0
+│       │   │   ├── propcache v0.4.1
+│       │   │   └── yarl v1.22.0
+│       │   │       ├── idna v3.11
+│       │   │       ├── multidict v6.7.0
+│       │   │       └── propcache v0.4.1
+│       │   ├── azure-ai-agents v1.2.0b5
+│       │   │   ├── azure-core v1.38.2 (*)
+│       │   │   ├── isodate v0.7.2
+│       │   │   └── typing-extensions v4.15.0
+│       │   └── azure-ai-inference v1.0.0b9
+│       │       ├── azure-core v1.38.2 (*)
+│       │       ├── isodate v0.7.2
+│       │       └── typing-extensions v4.15.0
+│       ├── agent-framework-azure-ai-search v0.0.0a1 (extra: all)
+│       ├── agent-framework-azurefunctions v1.0.0b260319 (extra: all)
+│       │   ├── agent-framework-core v1.0.0rc5 (*)
+│       │   ├── agent-framework-durabletask v1.0.0b260319
+│       │   │   ├── agent-framework-core v1.0.0rc5 (*)
+│       │   │   ├── durabletask v1.3.0
+│       │   │   │   ├── asyncio v4.0.0
+│       │   │   │   ├── grpcio v1.76.0
+│       │   │   │   │   └── typing-extensions v4.15.0
+│       │   │   │   ├── packaging v24.2
+│       │   │   │   └── protobuf v6.33.2
+│       │   │   ├── durabletask-azuremanaged v1.3.0
+│       │   │   │   ├── azure-identity v1.25.1 (*)
+│       │   │   │   └── durabletask v1.3.0 (*)
+│       │   │   └── python-dateutil v2.9.0.post0 (*)
+│       │   ├── azure-functions v1.24.0
+│       │   │   └── werkzeug v3.1.7
+│       │   │       └── markupsafe v3.0.3
+│       │   └── azure-functions-durable v1.4.0
+│       │       ├── aiohttp v3.13.2 (*)
+│       │       ├── azure-functions v1.24.0 (*)
+│       │       ├── furl v2.1.4
+│       │       │   ├── orderedmultidict v1.0.2
+│       │       │   │   └── six v1.17.0
+│       │       │   └── six v1.17.0
+│       │       ├── opentelemetry-api v1.40.0 (*)
+│       │       ├── opentelemetry-sdk v1.40.0 (*)
+│       │       ├── python-dateutil v2.9.0.post0 (*)
+│       │       └── requests v2.32.5 (*)
+│       ├── agent-framework-bedrock v1.0.0b260319 (extra: all)
+│       │   ├── agent-framework-core v1.0.0rc5 (*)
+│       │   ├── boto3 v1.42.76
+│       │   │   ├── botocore v1.42.76
+│       │   │   │   ├── jmespath v1.1.0
+│       │   │   │   ├── python-dateutil v2.9.0.post0 (*)
+│       │   │   │   └── urllib3 v2.6.2
+│       │   │   ├── jmespath v1.1.0
+│       │   │   └── s3transfer v0.16.0
+│       │   │       └── botocore v1.42.76 (*)
+│       │   └── botocore v1.42.76 (*)
+│       ├── agent-framework-chatkit v1.0.0b260319 (extra: all)
+│       │   ├── agent-framework-core v1.0.0rc5 (*)
+│       │   └── openai-chatkit v1.6.3
+│       │       ├── jinja2 v3.1.6 (*)
+│       │       ├── openai v2.26.0 (*)
+│       │       ├── openai-agents v0.13.1
+│       │       │   ├── griffe v1.15.0
+│       │       │   │   └── colorama v0.4.6
+│       │       │   ├── mcp v1.25.0 (*)
+│       │       │   ├── openai v2.26.0 (*)
+│       │       │   ├── pydantic v2.12.5 (*)
+│       │       │   ├── requests v2.32.5 (*)
+│       │       │   ├── types-requests v2.32.4.20260324
+│       │       │   │   └── urllib3 v2.6.2
+│       │       │   └── typing-extensions v4.15.0
+│       │       ├── pydantic v2.12.5 (*)
+│       │       └── uvicorn v0.38.0 (*)
+│       ├── agent-framework-claude v1.0.0b260319 (extra: all)
+│       │   ├── agent-framework-core v1.0.0rc5 (*)
+│       │   └── claude-agent-sdk v0.1.48
+│       │       ├── anyio v4.12.0 (*)
+│       │       └── mcp v1.25.0 (*)
+│       ├── agent-framework-copilotstudio v1.0.0b260319 (extra: all)
+│       │   ├── agent-framework-core v1.0.0rc5 (*)
+│       │   └── microsoft-agents-copilotstudio-client v0.3.1
+│       │       └── microsoft-agents-hosting-core v0.3.1
+│       │           ├── azure-core v1.38.2 (*)
+│       │           ├── isodate v0.7.2
+│       │           ├── microsoft-agents-activity v0.3.1
+│       │           │   └── pydantic v2.12.5 (*)
+│       │           ├── pyjwt v2.10.1 (*)
+│       │           └── python-dotenv v1.2.1
+│       ├── agent-framework-declarative v1.0.0b260319 (extra: all)
+│       │   ├── agent-framework-core v1.0.0rc5 (*)
+│       │   └── pyyaml v6.0.3
+│       ├── agent-framework-devui v1.0.0b260319 (extra: all)
+│       │   ├── agent-framework-core v1.0.0rc5 (*)
+│       │   ├── fastapi v0.128.0 (*)
+│       │   └── uvicorn[standard] v0.38.0 (*)
+│       ├── agent-framework-durabletask v1.0.0b260319 (extra: all) (*)
+│       ├── agent-framework-foundry-local v1.0.0b260319 (extra: all)
+│       │   ├── agent-framework-core v1.0.0rc5 (*)
+│       │   └── foundry-local-sdk v0.5.1
+│       │       ├── httpx v0.28.1 (*)
+│       │       ├── pydantic v2.12.5 (*)
+│       │       └── tqdm v4.67.1
+│       ├── agent-framework-github-copilot v1.0.0b260319 (extra: all)
+│       │   ├── agent-framework-core v1.0.0rc5 (*)
+│       │   └── github-copilot-sdk v0.1.32
+│       │       ├── pydantic v2.12.5 (*)
+│       │       └── python-dateutil v2.9.0.post0 (*)
+│       ├── agent-framework-lab v1.0.0b251024 (extra: all)
+│       │   └── agent-framework-core v1.0.0rc5 (*)
+│       ├── agent-framework-mem0 v1.0.0b260319 (extra: all)
+│       │   ├── agent-framework-core v1.0.0rc5 (*)
+│       │   └── mem0ai v1.0.7
+│       │       ├── openai v2.26.0 (*)
+│       │       ├── posthog v7.9.12
+│       │       │   ├── backoff v2.2.1
+│       │       │   ├── distro v1.9.0
+│       │       │   ├── python-dateutil v2.9.0.post0 (*)
+│       │       │   ├── requests v2.32.5 (*)
+│       │       │   ├── six v1.17.0
+│       │       │   └── typing-extensions v4.15.0
+│       │       ├── protobuf v6.33.2
+│       │       ├── pydantic v2.12.5 (*)
+│       │       ├── pytz v2025.2
+│       │       ├── qdrant-client v1.17.1
+│       │       │   ├── grpcio v1.76.0 (*)
+│       │       │   ├── httpx[http2] v0.28.1 (*)
+│       │       │   ├── numpy v2.4.0
+│       │       │   ├── portalocker v3.2.0
+│       │       │   ├── protobuf v6.33.2
+│       │       │   ├── pydantic v2.12.5 (*)
+│       │       │   └── urllib3 v2.6.2
+│       │       └── sqlalchemy v2.0.46
+│       │           └── typing-extensions v4.15.0
+│       ├── agent-framework-ollama v1.0.0b260319 (extra: all)
+│       │   ├── agent-framework-core v1.0.0rc5 (*)
+│       │   └── ollama v0.5.3
+│       │       ├── httpx v0.28.1 (*)
+│       │       └── pydantic v2.12.5 (*)
+│       ├── agent-framework-orchestrations v1.0.0b260319 (extra: all)
+│       │   └── agent-framework-core v1.0.0rc5 (*)
+│       ├── agent-framework-purview v1.0.0b260319 (extra: all)
+│       │   ├── agent-framework-core v1.0.0rc5 (*)
+│       │   ├── azure-core v1.38.2 (*)
+│       │   └── httpx v0.28.1 (*)
+│       └── agent-framework-redis v1.0.0b260319 (extra: all)
+│           ├── agent-framework-core v1.0.0rc5 (*)
+│           ├── numpy v2.4.0
+│           ├── redis v7.1.0
+│           └── redisvl v0.15.0
+│               ├── jsonpath-ng v1.8.0
+│               ├── ml-dtypes v0.5.4
+│               │   └── numpy v2.4.0
+│               ├── numpy v2.4.0
+│               ├── pydantic v2.12.5 (*)
+│               ├── python-ulid v3.1.0
+│               ├── pyyaml v6.0.3
+│               ├── redis v7.1.0
+│               └── tenacity v9.1.2
+├── aiohttp v3.13.2 (*)
 ├── alembic v1.18.1
 │   ├── mako v1.3.10
 │   │   └── markupsafe v3.0.3
-│   ├── sqlalchemy v2.0.46
-│   │   └── typing-extensions v4.15.0
+│   ├── sqlalchemy v2.0.46 (*)
 │   └── typing-extensions v4.15.0
 ├── av v16.0.1
-├── azure-ai-agents v1.2.0b6
-│   ├── azure-core v1.38.2 (*)
-│   ├── isodate v0.7.2
-│   └── typing-extensions v4.15.0
+├── azure-ai-agents v1.2.0b5 (*)
 ├── azure-ai-documentintelligence v1.0.2
 │   ├── azure-core v1.38.2 (*)
 │   ├── isodate v0.7.2
@@ -240,15 +384,17 @@ zero-to-ai v1.0.0
 │   ├── aiohttp v3.13.2 (*)
 │   ├── azure-core v1.38.2 (*)
 │   ├── azure-identity v1.25.1 (*)
-│   ├── azure-storage-blob v12.27.1
-│   │   ├── azure-core v1.38.2 (*)
-│   │   ├── cryptography v46.0.3 (*)
-│   │   ├── isodate v0.7.2
-│   │   └── typing-extensions v4.15.0
+│   ├── azure-storage-blob v12.27.1 (*)
 │   ├── httpx v0.28.1 (*)
-│   ├── jinja2 v3.1.6
-│   │   └── markupsafe v3.0.3
-│   ├── msrest v0.7.1 (*)
+│   ├── jinja2 v3.1.6 (*)
+│   ├── msrest v0.7.1
+│   │   ├── azure-core v1.38.2 (*)
+│   │   ├── certifi v2025.11.12
+│   │   ├── isodate v0.7.2
+│   │   ├── requests v2.32.5 (*)
+│   │   └── requests-oauthlib v2.0.0
+│   │       ├── oauthlib v3.3.1
+│   │       └── requests v2.32.5 (*)
 │   ├── nltk v3.9.2
 │   │   ├── click v8.3.1
 │   │   ├── joblib v1.5.3
@@ -262,19 +408,16 @@ zero-to-ai v1.0.0
 │   │   └── tzdata v2025.3
 │   ├── pyjwt v2.10.1 (*)
 │   └── ruamel-yaml v0.19.1
-├── azure-ai-projects v1.0.0
-│   ├── azure-ai-agents v1.2.0b6 (*)
-│   ├── azure-core v1.38.2 (*)
-│   ├── azure-storage-blob v12.27.1 (*)
-│   ├── isodate v0.7.2
-│   └── typing-extensions v4.15.0
+├── azure-ai-projects v2.0.1 (*)
 ├── azure-ai-textanalytics v5.3.0
 │   ├── azure-common v1.1.28
 │   ├── azure-core v1.38.2 (*)
 │   ├── isodate v0.7.2
 │   └── typing-extensions v4.15.0
 ├── azure-core v1.38.2 (*)
-├── azure-core-tracing-opentelemetry v1.0.0b12 (*)
+├── azure-core-tracing-opentelemetry v1.0.0b12
+│   ├── azure-core v1.38.2 (*)
+│   └── opentelemetry-api v1.40.0 (*)
 ├── azure-cosmos v4.15.0
 │   ├── azure-core v1.38.2 (*)
 │   └── typing-extensions v4.15.0
@@ -306,43 +449,7 @@ zero-to-ai v1.0.0
 ├── duckdb v1.5.0
 ├── faker v39.0.0
 │   └── tzdata v2025.3
-├── fastapi[standard] v0.128.0
-│   ├── annotated-doc v0.0.4
-│   ├── pydantic v2.12.5 (*)
-│   ├── starlette v0.50.0 (*)
-│   ├── typing-extensions v4.15.0
-│   ├── email-validator v2.3.0 (extra: standard) (*)
-│   ├── fastapi-cli[standard] v0.0.20 (extra: standard)
-│   │   ├── rich-toolkit v0.17.1
-│   │   │   ├── click v8.3.1
-│   │   │   ├── rich v13.9.4 (*)
-│   │   │   └── typing-extensions v4.15.0
-│   │   ├── typer v0.21.1
-│   │   │   ├── click v8.3.1
-│   │   │   ├── rich v13.9.4 (*)
-│   │   │   ├── shellingham v1.5.4
-│   │   │   └── typing-extensions v4.15.0
-│   │   ├── uvicorn[standard] v0.38.0 (*)
-│   │   ├── fastapi-cloud-cli v0.11.0 (extra: standard)
-│   │   │   ├── fastar v0.8.0
-│   │   │   ├── httpx v0.28.1 (*)
-│   │   │   ├── pydantic[email] v2.12.5 (*)
-│   │   │   ├── rich-toolkit v0.17.1 (*)
-│   │   │   ├── rignore v0.7.6
-│   │   │   ├── sentry-sdk v2.50.0
-│   │   │   │   ├── certifi v2025.11.12
-│   │   │   │   └── urllib3 v2.6.2
-│   │   │   ├── typer v0.21.1 (*)
-│   │   │   └── uvicorn[standard] v0.38.0 (*)
-│   │   └── uvicorn[standard] v0.38.0 (extra: standard) (*)
-│   ├── httpx v0.28.1 (extra: standard) (*)
-│   ├── jinja2 v3.1.6 (extra: standard) (*)
-│   ├── pydantic-extra-types v2.11.0 (extra: standard)
-│   │   ├── pydantic v2.12.5 (*)
-│   │   └── typing-extensions v4.15.0
-│   ├── pydantic-settings v2.12.0 (extra: standard) (*)
-│   ├── python-multipart v0.0.21 (extra: standard)
-│   └── uvicorn[standard] v0.38.0 (extra: standard) (*)
+├── fastapi[standard] v0.128.0 (*)
 ├── fastmcp v2.14.3
 │   ├── authlib v1.6.6
 │   │   └── cryptography v46.0.3 (*)
@@ -386,7 +493,7 @@ zero-to-ai v1.0.0
 │   │   │   ├── redis v7.1.0
 │   │   │   ├── sortedcontainers v2.4.0
 │   │   │   └── lupa v2.6 (extra: lua)
-│   │   ├── opentelemetry-api v1.38.0 (*)
+│   │   ├── opentelemetry-api v1.40.0 (*)
 │   │   ├── prometheus-client v0.23.1
 │   │   ├── py-key-value-aio[memory, redis] v0.3.0 (*)
 │   │   ├── python-json-logger v4.0.0
@@ -438,7 +545,7 @@ zero-to-ai v1.0.0
 │   │   ├── jupyter-core v5.9.1 (*)
 │   │   ├── matplotlib-inline v0.2.1 (*)
 │   │   ├── nest-asyncio v1.6.0
-│   │   ├── packaging v25.0
+│   │   ├── packaging v24.2
 │   │   ├── psutil v7.2.0
 │   │   ├── pyzmq v27.1.0
 │   │   ├── tornado v6.5.4
@@ -475,7 +582,7 @@ zero-to-ai v1.0.0
 │   │   │       ├── jupyter-core v5.9.1 (*)
 │   │   │       ├── jupyter-events v0.12.0
 │   │   │       │   ├── jsonschema[format-nongpl] v4.25.1 (*)
-│   │   │       │   ├── packaging v25.0
+│   │   │       │   ├── packaging v24.2
 │   │   │       │   ├── python-json-logger v4.0.0
 │   │   │       │   ├── pyyaml v6.0.3
 │   │   │       │   ├── referencing v0.36.2 (*)
@@ -508,12 +615,12 @@ zero-to-ai v1.0.0
 │   │   │       │   │   │   └── traitlets v5.14.3
 │   │   │       │   │   └── traitlets v5.14.3
 │   │   │       │   ├── nbformat v5.10.4 (*)
-│   │   │       │   ├── packaging v25.0
+│   │   │       │   ├── packaging v24.2
 │   │   │       │   ├── pandocfilters v1.5.1
 │   │   │       │   ├── pygments v2.19.2
 │   │   │       │   └── traitlets v5.14.3
 │   │   │       ├── nbformat v5.10.4 (*)
-│   │   │       ├── packaging v25.0
+│   │   │       ├── packaging v24.2
 │   │   │       ├── prometheus-client v0.23.1
 │   │   │       ├── pyzmq v27.1.0
 │   │   │       ├── send2trash v1.8.3
@@ -528,11 +635,11 @@ zero-to-ai v1.0.0
 │   │   │   ├── json5 v0.12.1
 │   │   │   ├── jsonschema v4.25.1 (*)
 │   │   │   ├── jupyter-server v2.17.0 (*)
-│   │   │   ├── packaging v25.0
+│   │   │   ├── packaging v24.2
 │   │   │   └── requests v2.32.5 (*)
 │   │   ├── notebook-shim v0.2.4
 │   │   │   └── jupyter-server v2.17.0 (*)
-│   │   ├── packaging v25.0
+│   │   ├── packaging v24.2
 │   │   ├── setuptools v80.9.0
 │   │   ├── tornado v6.5.4
 │   │   └── traitlets v5.14.3
@@ -552,26 +659,50 @@ zero-to-ai v1.0.0
 │   ├── fonttools v4.61.1
 │   ├── kiwisolver v1.4.9
 │   ├── numpy v2.4.0
-│   ├── packaging v25.0
+│   ├── packaging v24.2
 │   ├── pillow v12.1.0
 │   ├── pyparsing v3.3.1
 │   └── python-dateutil v2.9.0.post0 (*)
 ├── networkx v3.6.1
 ├── openai v2.26.0 (*)
-├── opentelemetry-api v1.38.0 (*)
-├── opentelemetry-exporter-otlp-proto-grpc v1.38.0 (*)
-├── opentelemetry-instrumentation-httpx v0.59b0
-│   ├── opentelemetry-api v1.38.0 (*)
-│   ├── opentelemetry-instrumentation v0.59b0 (*)
-│   ├── opentelemetry-semantic-conventions v0.59b0 (*)
-│   ├── opentelemetry-util-http v0.59b0
+├── opentelemetry-api v1.40.0 (*)
+├── opentelemetry-exporter-otlp-proto-grpc v1.40.0
+│   ├── googleapis-common-protos v1.72.0 (*)
+│   ├── grpcio v1.76.0 (*)
+│   ├── opentelemetry-api v1.40.0 (*)
+│   ├── opentelemetry-exporter-otlp-proto-common v1.40.0
+│   │   └── opentelemetry-proto v1.40.0
+│   │       └── protobuf v6.33.2
+│   ├── opentelemetry-proto v1.40.0 (*)
+│   ├── opentelemetry-sdk v1.40.0 (*)
+│   └── typing-extensions v4.15.0
+├── opentelemetry-instrumentation-httpx v0.61b0
+│   ├── opentelemetry-api v1.40.0 (*)
+│   ├── opentelemetry-instrumentation v0.61b0
+│   │   ├── opentelemetry-api v1.40.0 (*)
+│   │   ├── opentelemetry-semantic-conventions v0.61b0 (*)
+│   │   ├── packaging v24.2
+│   │   └── wrapt v1.17.3
+│   ├── opentelemetry-semantic-conventions v0.61b0 (*)
+│   ├── opentelemetry-util-http v0.61b0
 │   └── wrapt v1.17.3
-├── opentelemetry-instrumentation-logging v0.59b0
-│   ├── opentelemetry-api v1.38.0 (*)
-│   └── opentelemetry-instrumentation v0.59b0 (*)
-├── opentelemetry-instrumentation-psycopg2 v0.59b0 (*)
-├── opentelemetry-instrumentation-requests v0.59b0 (*)
-├── opentelemetry-sdk v1.38.0 (*)
+├── opentelemetry-instrumentation-logging v0.61b0
+│   ├── opentelemetry-api v1.40.0 (*)
+│   └── opentelemetry-instrumentation v0.61b0 (*)
+├── opentelemetry-instrumentation-psycopg2 v0.61b0
+│   ├── opentelemetry-api v1.40.0 (*)
+│   ├── opentelemetry-instrumentation v0.61b0 (*)
+│   └── opentelemetry-instrumentation-dbapi v0.61b0
+│       ├── opentelemetry-api v1.40.0 (*)
+│       ├── opentelemetry-instrumentation v0.61b0 (*)
+│       ├── opentelemetry-semantic-conventions v0.61b0 (*)
+│       └── wrapt v1.17.3
+├── opentelemetry-instrumentation-requests v0.61b0
+│   ├── opentelemetry-api v1.40.0 (*)
+│   ├── opentelemetry-instrumentation v0.61b0 (*)
+│   ├── opentelemetry-semantic-conventions v0.61b0 (*)
+│   └── opentelemetry-util-http v0.61b0
+├── opentelemetry-sdk v1.40.0 (*)
 ├── pandas v2.3.3 (*)
 ├── pgvector v0.4.2
 │   └── numpy v2.4.0
@@ -590,7 +721,7 @@ zero-to-ai v1.0.0
 │   └── tomlkit v0.14.0
 ├── pytest v9.0.2
 │   ├── iniconfig v2.3.0
-│   ├── packaging v25.0
+│   ├── packaging v24.2
 │   ├── pluggy v1.6.0
 │   └── pygments v2.19.2
 ├── pytest-asyncio v1.3.0
@@ -624,7 +755,7 @@ zero-to-ai v1.0.0
 │   │   ├── jinja2 v3.1.6 (*)
 │   │   ├── jsonschema v4.25.1 (*)
 │   │   ├── narwhals v2.15.0
-│   │   ├── packaging v25.0
+│   │   ├── packaging v24.2
 │   │   └── typing-extensions v4.15.0
 │   ├── blinker v1.9.0
 │   ├── cachetools v6.2.4
@@ -633,7 +764,7 @@ zero-to-ai v1.0.0
 │   │   └── gitdb v4.0.12
 │   │       └── smmap v5.0.2
 │   ├── numpy v2.4.0
-│   ├── packaging v25.0
+│   ├── packaging v24.2
 │   ├── pandas v2.3.3 (*)
 │   ├── pillow v12.1.0
 │   ├── protobuf v6.33.2

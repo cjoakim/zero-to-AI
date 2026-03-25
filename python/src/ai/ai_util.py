@@ -14,6 +14,10 @@ from openai import AzureOpenAI
 from openai.types import CreateEmbeddingResponse
 from openai.types.chat.chat_completion import ChatCompletion
 
+from agent_framework import Agent
+from agent_framework.azure import AzureOpenAIResponsesClient
+from azure.identity.aio import DefaultAzureCredential
+
 from src.io.fs import FS
 
 # This Python module defines a class `AIUtil` that encapsulates operations

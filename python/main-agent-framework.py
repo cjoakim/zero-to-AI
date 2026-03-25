@@ -4,6 +4,7 @@ Usage:
   python main-agent-framework.py check_env
   python main-agent-framework.py generate_completion
   python main-agent-framework.py generate_embedding Consulting companies like 3Cloud and Cognizant
+  python main-agent-framework.py agent_framework_example1
 Options:
   -h --help     Show this screen.
   --version     Show version.
@@ -23,6 +24,9 @@ from docopt import docopt
 from dotenv import load_dotenv
 
 from openai import OpenAI
+
+# from agent_framework.azure import AzureOpenAIResponsesClient
+# from azure.identity import DefaultAzureCredential
 
 from src.ai.ai_util import AIUtil
 
@@ -144,24 +148,33 @@ def simple_openai_response_chaining():
     print(cleanup)
 
 
-# def responses_client():
-#     # https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/responses?tabs=python-key
-
-#     endpoint = os.environ["AZURE_OPENAI_RESP_COMPLETIONS_URL"]
-#     api_key = os.environ["AZURE_OPENAI_RESP_COMPLETIONS_KEY"]
-#     deployment_name = os.environ["AZURE_OPENAI_RESP_COMPLETIONS_DEP"]
-
-#     return AzureOpenAIResponsesClient(
-#         endpoint = endpoint,
-#         api_key = api_key,
-#         deployment_name = deployment_name)
-
 async def generate_embedding(text: str):
     await asyncio.sleep(0.01)
     logging.warning(f"generate_embedding: {text}")
     ai_util = AIUtil()
     embedding = await ai_util.generate_embedding(str(text))
     print(embedding)
+
+# async def agent_framework_example1():
+#     # See https://learn.microsoft.com/en-us/agent-framework/get-started/your-first-agent?pivots=programming-language-python
+#     # 2026-03-25: Authentication is failing with the following error:
+#     # agent_framework.exceptions.ChatClientException: <class 'agent_framework.azure._responses_client.AzureOpenAIResponsesClient'> service failed to complete the prompt: Error code: 401 - {'error': {'code': 'PermissionDenied', 'message': 'The principal `chris.joakim@3cloudsolutions.com` lacks the required data action `Microsoft.CognitiveServices/accounts/OpenAI/responses/write` to perform `POST /openai/v1/responses` operation.'}}
+#     await asyncio.sleep(0.01)
+#     credential = DefaultAzureCredential()
+#     client = AzureOpenAIResponsesClient(
+#         project_endpoint=os.environ["AZURE_AI_PROJECT_ENDPOINT"],
+#         deployment_name=os.environ["AZURE_OPENAI_RESPONSES_DEPLOYMENT_NAME"],
+#         credential=credential,
+#     )
+
+#     agent = client.as_agent(
+#         name="HelloAgent",
+#         instructions="You are a friendly assistant. Keep your answers brief.",
+#     )
+
+#     # Non-streaming: get the complete response at once
+#     result = await agent.run("What is the largest city in France?")
+#     print(f"Agent: {result}")
 
 
 async def main():
@@ -176,6 +189,8 @@ async def main():
         elif func == "generate_embedding":
             text = " ".join(sys.argv[2:])
             await generate_embedding(text)
+        # elif func == "agent_framework_example1":
+        #     await agent_framework_example1()
         else:
             print_options("Error: invalid function: {}".format(func))
     except Exception as e:
