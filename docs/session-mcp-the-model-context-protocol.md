@@ -1,4 +1,4 @@
-# Part 3, Session 16 - MCP, the Model Context Protocol
+# Part 3, Session 15 - MCP, the Model Context Protocol
 
 <br><br>
 
