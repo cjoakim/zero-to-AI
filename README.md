@@ -134,6 +134,4 @@ README.md                          Main/home page for the series
 
 ## Series Creator
 
-```
-Chris Joakim, Principal AI Architect @ 3Cloud, a Cognizant company, 2026
-```
+[Chris Joakim](https://www.linkedin.com/in/chris-joakim-4859b89), Principal AI Architect @ 3Cloud, a Cognizant company, 2026
