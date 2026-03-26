@@ -91,6 +91,18 @@ MCP Clients run within an LLM-powered **host application** or **Agentic AI Appli
 ---
 <br><br><br>
 
+## Rebrickable MCP Demonstration
+
+[Presentation](RebrickableMCP.md)
+
+Created and Delivered by:
+- [Perri Love](https://www.linkedin.com/in/perrialove/), Consultant - App Innovation - Power Platform
+- [Vy Duong](https://www.linkedin.com/in/vyduong5/), Consultant - App Innovation - Power Platform
+
+<br><br><br>
+---
+<br><br><br>
+
 ## FastAPI
 
 - [FastAPI Home](https://fastapi.tiangolo.com)
