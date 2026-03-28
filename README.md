@@ -48,7 +48,7 @@ The goal is to <strong>empower students to build AI solutions.</strong>
 -  14  -  [Text Extraction, Markdown, Chunking, and Vectorization](docs/session-text-extraction.md)
 -  15  -  [MCP, the Model Context Protocol](docs/session-mcp-the-model-context-protocol.md)
 -  16  -  [Knowledge Graphs](docs/session-knowledge-graphs.md)
--  17  -  [Azure Agent Framework](docs/session-not-available.md)
+-  17  -  [Cursor Deep Dive](docs/session-cursor-deepdive.md)
 -  18  -  [Your Turn, Create Something!](docs/session-your-turn-create-something.md)
 
 <br>
@@ -82,7 +82,7 @@ Notes:
 | 2026-03-26 | Text Extraction, Markdown, Chunking, and Vectorization |
 | 2026-03-31 | MCP, the Model Context Protocol |
 | 2026-04-02 | Knowledge Graphs |
-| 2026-04-07 | Azure Agent Framework |
+| 2026-04-07 | Cursor Deep Dive |
 | 2026-04-09 | Your Turn, Create Something! |
 
 <br><br>
@@ -135,3 +135,8 @@ README.md                          Main/home page for the series
 ## Series Creator
 
 [Chris Joakim](https://www.linkedin.com/in/chris-joakim-4859b89), Principal AI Architect @ 3Cloud, a Cognizant company, 2026
+
+<br>
+
+This project has been a [field of dreams](https://www.youtube.com/watch?v=Ut06d4dptWo) for me.
+I'm grateful to have the opportunity to share my knowledge and experience with others.
