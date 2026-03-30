@@ -10,6 +10,10 @@
 - The Agents operate autonomously using this standard protocol
 - But, you describe to the LLM what your MCP servers can do, and how
 
+<p align="center">
+   <img src="img/usb.jpg" width="25%">
+</p>
+
 <br>
 
 ### REST (Representational State Transfer) Web Services Design 
@@ -21,9 +25,13 @@
 - This design has been very helpful to simplify and standardize web applications 
 - **Likewise, MCP is expected to simplify and standardize agentic AI applications**
 
-<br><br><br>
+<p align="center">
+   <img src="img/rest.jpg" width="70%">
+</p>
+
+<br><br>
 ---
-<br><br><br>
+<br><br>
 
 ### MCP Servers 
 
@@ -41,9 +49,9 @@ For example, a Weather MCP server might have a **Tool** to get the current weath
 for a given location.  It might also have a **Resource** to get the weather history
 for a given location.
 
-<br><br><br>
+<br><br>
 ---
-<br><br><br>
+<br><br>
 
 ### MCP Clients 
 
@@ -56,9 +64,9 @@ The job of the client is to call the server and get a response.
 
 MCP Clients run within an LLM-powered **host application** or **Agentic AI Application**.
 
-<br><br><br>
+<br><br>
 ---
-<br><br><br>
+<br><br>
 
 ## What are Agentic AI Applications?
 
@@ -77,31 +85,19 @@ MCP Clients run within an LLM-powered **host application** or **Agentic AI Appli
 - This is a NOT Developer-specified set of imperative logic 
 - **Instead, the Agentic AI application figures out, itself, how to complete the task!**
 
-<br><br><br>
+<br><br>
 ---
-<br><br><br>
+<br><br>
 
 ## Agentic AI Architecture
 
 <p align="center">
-   <img src="img/mcp-architecture.png" width="90%">
+   <img src="img/mcp-architecture.png" width="85%">
 </p>
 
-<br><br><br>
+<br><br>
 ---
-<br><br><br>
-
-## Rebrickable MCP Demonstration
-
-[Presentation](RebrickableMCP.md)
-
-Created and Delivered by:
-- [Perri Love](https://www.linkedin.com/in/perrialove/), Consultant - App Innovation - Power Platform
-- [Vy Duong](https://www.linkedin.com/in/vyduong5/), Consultant - App Innovation - Power Platform
-
-<br><br><br>
----
-<br><br><br>
+<br><br>
 
 ## FastAPI
 
@@ -138,9 +134,9 @@ async def update_item(item_id: int, item: Item):
    ... update the item in the database ...
 ```
 
-<br><br><br>
+<br><br>
 ---
-<br><br><br>
+<br><br>
 
 ## FastMCP
 
@@ -159,9 +155,11 @@ async def update_item(item_id: int, item: Item):
 
 It has functionality to use/call MCP servers.  See https://cursor.com/docs/mcp 
 
-<br><br><br>
+This will be covered in the upcoming **Cursor Deep Dive** session.
+
+<br><br>
 ---
-<br><br><br>
+<br><br>
 
 ## Example App and Demonstration: m26 MCP Server in Cursor
 
@@ -267,7 +265,7 @@ In one PowerShell or Terminal window, in the python directory,run the MCP Server
 You should see output similar to the following:
 
 <p align="center">
-   <img src="imgm26-mcp-server-running-locally.png" width="80%">
+   <img src="img/m26-mcp-server-running-locally.png" width="60%">
 </p>
 
 <br><br>
@@ -415,7 +413,7 @@ Execute the following PowerShell or Bash script to deploy the MCP Server to Curs
 You should see output similar to the following in Cursor.
 
 <p align="center">
-   <img src="img/m26-mcp-server-in-cursor.png" width="90%">
+   <img src="img/m26-mcp-server-in-cursor.png" width="60%">
 </p>
 
 ### Submit a Prompt in Cursor 
@@ -427,7 +425,7 @@ Explain your reasoning.
 ```
 
 <p align="center">
-   <img src="img/m26-mcp-calculation-in-cursor.png" width="80%">
+   <img src="img/m26-mcp-calculation-in-cursor.png" width="50%">
 </p>
 
 <br><br><br>
@@ -436,9 +434,22 @@ Explain your reasoning.
 
 ## Homework
 
-- Visit https://modelcontextprotocol.io/docs/getting-started/intro and read the documentation
-- Run the demo on your computer 
+- Please read this page re: FastMCP andthe example m26 MCP Server in Cursor
+- Visit https://modelcontextprotocol.io/docs/getting-started/intro and read the MCP documentation
 - If you have Cursor, deploy the MCP Server to Cursor and submit a prompt to it
+
+<br><br><br>
+---
+<br><br><br>
+
+## Rebrickable MCP Demonstration
+
+[Presentation](RebrickableMCP.md)
+
+Created and Delivered by:
+- [Perri Love](https://www.linkedin.com/in/perrialove/), Consultant - App Innovation - Power Platform
+- [Vy Duong](https://www.linkedin.com/in/vyduong5/), Consultant - App Innovation - Power Platform
+
 
 <br><br><br>
 ---

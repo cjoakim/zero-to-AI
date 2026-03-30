@@ -27,6 +27,8 @@
   - **Invest in yourself** and your career (books, courses/Udemy, subscriptions like GitHub/Cursor/Claude, etc.)
   - **Adapt** to the ever-changing landscape of IT and technology
 
+<br>
+
 The above list is "how I usually do this".  You may have a different process.
 
 <br><br><br>
