@@ -95,6 +95,16 @@ MCP Clients run within an LLM-powered **host application** or **Agentic AI Appli
    <img src="img/mcp-architecture.png" width="85%">
 </p>
 
+### Tools 
+
+The agentic application is given a set of tools to use.
+
+**It** determines which ones to use, and in what sequence, to complete the given task.
+
+<p align="center">
+   <img src="img/tools.jpg" width="40%">
+</p>
+
 <br><br>
 ---
 <br><br>
