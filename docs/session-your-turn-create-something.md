@@ -2,27 +2,55 @@
 
 <br><br>
 
-## Advice 
+## Summary - What you've learned in the zero-to-AI series over ten weeks
 
-- **Start very small and simple**
+- Git and GitHub use
+- **Installing Python and Tooling** - virtual environments, pyproject.toml, uv
+- **Python CLI Programs** - main.py and command-line arguments
+- A Python UI app with Streamlit
+- **Python Coding Intro** - modules, classes, methods, datatypes, Object-Oriented Programming**
+- Data Wrangling
+- Notebooks, Jupyter, Dataframes, Pandas
+- Unit Testing, CI/CD
+- IDEs and Tooling - VSC, GitHub Copilot, **Cursor**
+- **Azure PaaS Services Intro** - Storage, Foundry, OpenAI, Cosmos DB, AI Search, Document Intelligence
+- Intro to Models, Catalogs, Tokens, Prompts, Azure Foundry
+- **Azure OpenAI SDK - Completions and Embeddings**
+- Text Extraction, Markdown, Chunking, and Vectorization
+- **Semantic Search / Vector Search** with Azure CosmosDB, DiskANN
+- **MCP, the Model Context Protocol**
+- Knowledge Graphs - LPG, RDF, SPARQL, RAG, Graph RAG, Ontologies
+- **Cursor Deep Dive** - UsingMCP Servers, Skills, the agent CLI program
+- **Vibe Learning** - a different way to work and learn with AI
+- **Access to a working core codebase for all of the above**
+
+---
+
+## Advice for Creating Your Own Projects
+
+- **Start small and simple**
 
 - Create something that interests **YOU**
 
-- Build on your success and growing (python) codebase
+- Identify use-cases: what should your app do?
+
+- Identify possible **datasets**, and **wrangle** them as necessary
+
+- Identify the **Form Factor**: Is it a CLI or Web App or Library or MCP Server?
+
+- Build on your success and your growing (python) codebase
+
+- Think Object-Oriented (instead of long procedural code)
+
+- Unit Test your code (sooner the better)
 
 - **Leverage AI - Vibe Coding and Vibe Learning**
 
 - **Use GitHub and source control**, either a private or public repository
 
-- Identify possible **datasets**, and **wrangle** them as necessary
-
-- Identify use-cases: what should your app do?
-
-- Identify the **Form Factor**: Is it a CLI or Web App or Library or MCP Server?
-
 - Consider Low-Cost Alternatives: Azure Free Services, Ollama on your laptop, etc.
 
-- **Tough Love**
+- **Career Advice**
   - **Constantly learn and train yourself**
   - **Invest in yourself** and your career (books, courses/Udemy, subscriptions like GitHub/Cursor/Claude, etc.)
   - **Adapt** to the ever-changing landscape of IT and technology
@@ -35,7 +63,7 @@ The above list is "how I usually do this".  You may have a different process.
 ---
 <br><br><br>
 
-## Final Thoughts
+## Next-to Final Thoughts
 
 - **Have fun, learn, explore!** 
 
@@ -50,8 +78,18 @@ The above list is "how I usually do this".  You may have a different process.
 <br>
 
 <p align="center">
-   <img src="img/wright-brothers-to-moon.png.webp" width="50%">
+   <img src="img/wright-brothers-to-moon.png.webp" width="40%">
 </p>
+
+<br><br><br>
+---
+<br><br><br>
+
+## Final Thoughts
+
+An example project created by **Dan Thomas**, a student in the zero-to-AI series.
+
+Dan created something very interesting and useful. **You can too!**
 
 <br><br><br>
 ---
